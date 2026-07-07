@@ -354,6 +354,10 @@ button.ghost{
 .card-modal-header{ border-bottom:1px dashed #ccd6d4; padding-bottom:1.1rem; margin-bottom:1.2rem; }
 .card-modal-header .muster-name{ font-size:1.35rem; display:block; margin-bottom:0.5rem; }
 .card-modal-header .anteil-line{ font-size:0.98rem; }
+.anteil-hinweis{
+  margin-top:0.4rem; font-family:'Open Sans', sans-serif; font-size:0.76rem;
+  font-style:italic; color:var(--muted);
+}
 .card-modal-body .details{ grid-template-columns:1fr; gap:1.3rem; }
 .card-modal-body .block h4{ font-size:0.78rem; }
 .card-modal-body .block p, .card-modal-body .block li{ font-size:1rem; line-height:1.65; }

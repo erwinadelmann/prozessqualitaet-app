@@ -81,6 +81,7 @@ function MusterModal({ item, onClose }){
               <span>→</span>
               <span className="anteil-neu">{item.anteil_neu}</span>
             </div>
+            <p className="anteil-hinweis">Vorschlag, kein feststehender Begriff. Prüfen Sie, ob ein anderes Bild für Sie stimmiger ist.</p>
           </div>
 
           <div className="card-modal-body">
