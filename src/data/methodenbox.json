@@ -74,6 +74,16 @@
       "quelle": "Gunter Schmidt gesamt"
     },
     {
+      "id": "autopoietische_gefuehle",
+      "titel": "Autopoietische Gefühlserzeugung, Gefühle hat man nicht einfach",
+      "kategorie": "Grundannahme",
+      "kernaussage": "Gefühle entstehen nicht als passive Reaktion auf äußere Reize, sondern werden im jeweiligen Moment selbst erzeugt, autopoietisch, durch die Art, wie Körper, innere Bilder und Aufmerksamkeit gerade organisiert werden. Ein Gefühl hat man nicht einfach, man erzeugt es fortlaufend mit.",
+      "einsatzkontext": "Grundhaltung, sobald ein Gefühl als feststehende Tatsache beschrieben wird, etwa \"ich bin halt so\".",
+      "ziel": "Vom Erleiden eines Zustands zur Mitverantwortung für seine Erzeugung wechseln, ohne Schuldzuweisung.",
+      "zitat": "Sie haben dieses Gefühl nicht einfach, Sie erzeugen es gerade, mit allem, was Sie gerade tun.",
+      "quelle": "Gunter Schmidt gesamt; Erleben als Netzwerk; Grundannahmen der Hypnosystemik"
+    },
+    {
       "id": "veraenderung_als_folge",
       "titel": "Veränderung ist eine Folge, kein Auftrag",
       "kategorie": "Haltung & Prinzip",
@@ -97,10 +107,10 @@
       "id": "impuls_als_angebot",
       "titel": "Jeder Impuls ist nur ein Angebot, kein Befehl",
       "kategorie": "Haltung & Prinzip",
-      "kernaussage": "Ein aufsteigender Impuls oder ein Gefühl muss nicht automatisch in Handlung übersetzt werden. Es ist eine Option, die geprüft werden kann.",
+      "kernaussage": "Ein aufsteigender Impuls oder ein Gefühl muss nicht automatisch in Handlung übersetzt werden. Es ist eine Option, die geprüft werden kann, und zugleich ein Bedürfnis-Anmelder, eine Meldung, dass im Hintergrund ein echtes Bedürfnis um Beachtung bittet, nicht der Befehl, sofort in der angebotenen Form zu handeln.",
       "einsatzkontext": "Impulsregulation, Steuerpositions-Arbeit im Alltag.",
       "ziel": "Wahlfreiheit zwischen Reiz und Reaktion herstellen.",
-      "zitat": "Jeder Impuls, jedes Gefühl ist nur ein Angebot, kein Befehl.",
+      "zitat": "Jeder Impuls, jedes Gefühl ist nur ein Angebot, kein Befehl, und meldet ein Bedürfnis an, das gehört werden will.",
       "quelle": "Jeder Impuls ist nur ein Angebot; was reguliert - Hypnosystemische Grundannahme"
     },
     {
@@ -280,6 +290,16 @@
       "ziel": "Schlummernde Kompetenzen über Körperkoordination statt über Sprache aktivieren.",
       "zitat": "Gehen und atmen Sie mal in den nächsten zehn Minuten so, als würde es Ihnen unglaublich gut gehen.",
       "quelle": "Wofür?; Erleben als Netzwerk; Gunter Schmidt gesamt"
+    },
+    {
+      "id": "einstreutechnik",
+      "titel": "Die Einstreutechnik, eingebettete Suggestion",
+      "kategorie": "Werkzeug & Modell",
+      "kernaussage": "Eine Zielsuggestion wird nicht direkt ausgesprochen, sondern unauffällig in einen größeren Satz, eine Geschichte oder eine beiläufige Bemerkung eingestreut, oft leicht markiert durch Tonfall, Pause oder Betonung. Das bewusste Denken wird nicht direkt adressiert, das Unbewusste registriert die Botschaft trotzdem.",
+      "einsatzkontext": "In Geschichten, Beispielen oder beiläufigen Nebensätzen, wenn eine direkte Aufforderung Widerstand auslösen würde.",
+      "ziel": "Eine Veränderungsidee unwillkürlich anbieten, ohne sie als Forderung zu formulieren.",
+      "zitat": "…und manche Menschen bemerken dann, ganz nebenbei, wie leicht es plötzlich geht…",
+      "quelle": "Allgemeine Erickson-Technik, nicht im hochgeladenen Quellmaterial als eigener Eintrag identifiziert, bitte gegenprüfen"
     },
     {
       "id": "metaposition_hoehere_ziele",
