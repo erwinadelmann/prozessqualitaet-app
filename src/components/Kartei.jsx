@@ -93,6 +93,12 @@ function MusterModal({ item, onClose }){
                 <h4>Schutzfunktion</h4>
                 <p>{item.schutzfunktion}</p>
               </div>
+              {item.wuerdigung && (
+                <div className="block wuerdigung-block">
+                  <h4>Würdigung</h4>
+                  <p>{item.wuerdigung}</p>
+                </div>
+              )}
               {item.ssi_zwischenschritt && (
                 <div className="block steps">
                   <h4>Zwischenschritt, Systemische Selbstintegration nach Langlotz</h4>
@@ -107,6 +113,12 @@ function MusterModal({ item, onClose }){
                   <li><strong>3 · Lernen ohne Selbstkritik</strong>{item.schritt3}</li>
                 </ol>
               </div>
+              {item.embodiment_frage && (
+                <div className="block embodiment-block">
+                  <h4>Embodiment, somatische Marker</h4>
+                  <p>{item.embodiment_frage}</p>
+                </div>
+              )}
             </div>
           </div>
         </div>

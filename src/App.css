@@ -357,6 +357,16 @@ button.ghost{
 .card-modal-body .details{ grid-template-columns:1fr; gap:1.3rem; }
 .card-modal-body .block h4{ font-size:0.78rem; }
 .card-modal-body .block p, .card-modal-body .block li{ font-size:1rem; line-height:1.65; }
+.wuerdigung-block{
+  background:linear-gradient(120deg, #fff 0%, #faf6f0 100%); border:1px solid var(--accent);
+  border-left:4px solid var(--accent); border-radius:8px; padding:0.9rem 1.1rem;
+}
+.wuerdigung-block h4{ color:var(--terracotta); }
+.embodiment-block{
+  background:linear-gradient(120deg, #fff 0%, #f2f7f6 100%); border:1px solid var(--sage);
+  border-left:4px solid var(--sage); border-radius:8px; padding:0.9rem 1.1rem;
+}
+.embodiment-block h4{ color:var(--primary); }
 
 /* Inner Game */
 .ig-reminder{

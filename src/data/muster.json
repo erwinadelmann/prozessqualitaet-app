@@ -1,8 +1,14 @@
 {
   "meta": {
     "titel": "Utilisations-Anteile-Bibliothek",
-    "version": "1.6-app-draft",
-    "kategorien": ["Beziehung & Bindung", "Leistung & Kontrolle", "Emotionsregulation & Schutz", "Süchte & Regulationsverhalten", "Verantwortung & Selbstwirksamkeit"],
+    "version": "1.7-app-draft",
+    "kategorien": [
+      "Beziehung & Bindung",
+      "Leistung & Kontrolle",
+      "Emotionsregulation & Schutz",
+      "Süchte & Regulationsverhalten",
+      "Verantwortung & Selbstwirksamkeit"
+    ],
     "methodik": "Hypnosystemik (Erickson, Gunther Schmidt), Utilisation, Inner Game (Gallwey)",
     "ablauf": [
       "1. Ursprungsintention und Schutzfunktion des Musters erkennen und würdigen",
@@ -21,7 +27,9 @@
       "schutzfunktion": "Selbstschutz durch Reduktion von Reizen und Risiko.",
       "schritt1": "Ohne Bewertung wahrnehmen, wann und wie sich der Rückzug gerade zeigt. Welche Reize, welche Nähe, welche Situation lösen ihn aus.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, sich für eine klar begrenzte Zeit bewusst zurückzuziehen und danach selbstbestimmt wieder in Kontakt zu gehen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Schutzraum-Wächter selbst: Wie müsstest du anders mit mir umgehen, damit der Rückzug kürzer und der Rückweg leichter wird? Miniinterventionen einsetzen, damit der Abstand zwischen Rückzug und Kontakt kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, ohne den Prozess im Detail zu steuern.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie der Rückzug tatsächlich verlaufen ist. Die Differenz zwischen dem Bild und dem Erlebten wird zur nächsten Feinjustierung."
+      "schritt3": "Ohne Selbstkritik beobachten, wie der Rückzug tatsächlich verlaufen ist. Die Differenz zwischen dem Bild und dem Erlebten wird zur nächsten Feinjustierung.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Vermeider ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Schutzraum-Wächter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Schutzraum-Wächter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "kontrollzwang",
@@ -33,7 +41,9 @@
       "schutzfunktion": "Ordnung als Ersatz für fehlendes Urvertrauen.",
       "schritt1": "Wahrnehmen, an welcher Stelle gerade Kontrolle ausgeübt wird, ohne das sofort zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, sich auf die wenigen wirklich beeinflussbaren Stellschrauben zu konzentrieren und den Rest bewusst loszulassen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Ordnungsstifter selbst: Wie müsstest du anders mit mir umgehen, damit Vertrauen an die Stelle von Kontrolle treten kann? Miniinterventionen einsetzen, damit der Abstand zwischen Kontrolle und Vertrauen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, was tatsächlich geschehen ist, wenn losgelassen wurde. Aus der Differenz entsteht die nächste, feinere Justierung von Halt und Vertrauen."
+      "schritt3": "Ohne Selbstkritik beobachten, was tatsächlich geschehen ist, wenn losgelassen wurde. Aus der Differenz entsteht die nächste, feinere Justierung von Halt und Vertrauen.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Kontrolleur ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Ordnungsstifter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Ordnungsstifter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "perfektionismus",
@@ -45,7 +55,9 @@
       "schutzfunktion": "Sicherheit durch Kontrolle über das eigene Ergebnis.",
       "schritt1": "Wahrnehmen, wie sich der Anspruch an das Ergebnis gerade zeigt, ohne ihn als gut oder schlecht zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines Ergebnisses, das gut genug für den jeweiligen Zweck ist, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Qualitätsmanager selbst: Wie müsstest du anders mit mir umgehen, damit gut genug tatsächlich genügt? Miniinterventionen einsetzen, damit der Abstand zwischen Anspruch und Zweck kleiner wird, bis beide zusammenarbeiten können. Danach die Kontrolle über jedes Detail loslassen.",
-      "schritt3": "Ohne Selbstkritik das tatsächliche Ergebnis betrachten. Die Differenz zwischen Anspruch und Resultat wird zur nächsten Kalibrierung, nicht zum Urteil."
+      "schritt3": "Ohne Selbstkritik das tatsächliche Ergebnis betrachten. Die Differenz zwischen Anspruch und Resultat wird zur nächsten Kalibrierung, nicht zum Urteil.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Perfektionist ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Qualitätsmanager übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Qualitätsmanager am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "prokrastination",
@@ -57,7 +69,9 @@
       "schutzfunktion": "Selbstschutz vor einem möglichen Beweis der eigenen Unzulänglichkeit.",
       "schritt1": "Wahrnehmen, was genau im Moment des Aufschiebens im Körper und im Denken passiert, ohne es zu verurteilen.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, risikoarmen ersten Schritts, mit der Bitte, genau diesen zu beginnen. Ergänzende Prozessfrage an den Zeitwächter selbst: Wie müsstest du anders mit mir umgehen, damit der erste Schritt leichter fällt als das Aufschieben? Miniinterventionen einsetzen, damit der Abstand zwischen Ankündigung und Beginn kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie es weitergeht.",
-      "schritt3": "Ohne Selbstkritik beobachten, was der erste Schritt ausgelöst hat. Die Erfahrung wird zur Grundlage für den nächsten Schritt."
+      "schritt3": "Ohne Selbstkritik beobachten, was der erste Schritt ausgelöst hat. Die Erfahrung wird zur Grundlage für den nächsten Schritt.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Aufschieber ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Zeitwächter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Zeitwächter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "harmoniesucht_anpassung",
@@ -70,7 +84,9 @@
       "schritt1": "Wahrnehmen, in welchem Moment die eigene Meinung gerade zurückgehalten wird, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, die eigene Position ruhig und klar zu äußern, während die Verbindung zum Gegenüber bestehen bleibt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Brückenbauer selbst: Wie müsstest du anders mit mir umgehen, damit Klarheit die Verbindung stärkt statt sie zu gefährden? Miniinterventionen einsetzen, damit der Abstand zwischen eigener Position und Verbindung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie das Gegenüber reagiert.",
       "schritt3": "Ohne Selbstkritik beobachten, was durch das Aussprechen der eigenen Position tatsächlich geschehen ist. Daraus entsteht Vertrauen in die eigene Stimme.",
-      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Erwartung aufbauen, dass die eigene Meinung die Verbindung gefährdet. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt."
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Erwartung aufbauen, dass die eigene Meinung die Verbindung gefährdet. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Anpasser ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Brückenbauer übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Brückenbauer am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "zynismus_distanzierung",
@@ -82,7 +98,9 @@
       "schutzfunktion": "Emotionale Vorwegnahme, um den Schmerz kontrollierbar zu machen.",
       "schritt1": "Wahrnehmen, wann der distanzierende Kommentar entsteht und was unmittelbar davor im Körper spürbar war.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer klarsichtigen, aber wohlwollenden Einschätzung, mit der Bitte, diese anstelle der Distanzierung zum Ausdruck zu bringen. Ergänzende Prozessfrage an den Scharfsichtigen selbst: Wie müsstest du anders mit mir umgehen, damit Schärfe und Wohlwollen gleichzeitig da sein dürfen? Miniinterventionen einsetzen, damit der Abstand zwischen Erkennen und Distanzieren kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie die Einschätzung ankommt.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich Klarheit ohne Härte tatsächlich angefühlt und ausgewirkt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Klarheit ohne Härte tatsächlich angefühlt und ausgewirkt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Zyniker ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Scharfsichtige übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Scharfsichtige am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "innerer_kritiker",
@@ -94,7 +112,9 @@
       "schutzfunktion": "Präventive Selbstkorrektur, bevor andere Fehler bemerken.",
       "schritt1": "Wahrnehmen, wann und in welcher Tonlage die innere kritische Stimme sich meldet, ohne ihr sofort zu folgen.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, die Warnung einmal kurz zu prüfen und danach wieder Raum für Handeln zu geben, statt dauerhaft zu bewerten, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Frühwarner selbst: Wie müsstest du anders mit mir umgehen, damit eine Warnung genügt, statt in Dauerbewertung überzugehen? Miniinterventionen einsetzen, damit der Abstand zwischen Warnen und Handeln kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, was durch das begrenzte Mandat des Frühwarners tatsächlich an Handlungsfähigkeit gewonnen wurde."
+      "schritt3": "Ohne Selbstkritik beobachten, was durch das begrenzte Mandat des Frühwarners tatsächlich an Handlungsfähigkeit gewonnen wurde.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Kritiker ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Frühwarner übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Frühwarner am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "workaholismus",
@@ -106,7 +126,9 @@
       "schutzfunktion": "Leistung als Ersatzwährung für Selbstwert.",
       "schritt1": "Wahrnehmen, wann der Drang zu arbeiten gerade auftaucht und was im Nicht-Tun davor spürbar war.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines selbstgesetzten Maßes, innerhalb dessen Wert unabhängig vom Output erlebbar wird, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Wertschöpfer selbst: Wie müsstest du anders mit mir umgehen, damit Wert auch im Nicht-Tun spürbar bleibt? Miniinterventionen einsetzen, damit der Abstand zwischen Leistung und Wert kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, was darüber hinausgeht.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich Wert innerhalb der gesetzten Grenze tatsächlich angefühlt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Wert innerhalb der gesetzten Grenze tatsächlich angefühlt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Schaffer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Wertschöpfer übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Wertschöpfer am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "explosive_wut",
@@ -118,7 +140,9 @@
       "schutzfunktion": "Grenzsetzung, wenn leise Signale nie gehört wurden.",
       "schritt1": "Wahrnehmen, an welcher Körperstelle sich der Druck zuerst zeigt, lange bevor die Wut ausbricht.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer frühen, klaren Grenzsetzung, mit der Bitte, diese zu setzen, sobald der erste Druck spürbar wird. Ergänzende Prozessfrage an den Grenzwächter selbst: Wie müsstest du anders mit mir umgehen, damit eine frühe, leise Grenze genügt? Miniinterventionen einsetzen, damit der Abstand zwischen erstem Druck und Grenzsetzung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, was die frühe Grenzsetzung im Vergleich zum Ausbruch bewirkt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, was die frühe Grenzsetzung im Vergleich zum Ausbruch bewirkt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Wüterich ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Grenzwächter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Grenzwächter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "erstarren_dissoziation",
@@ -130,7 +154,9 @@
       "schutzfunktion": "Überlebenssicherung durch Reizreduktion in einer als lebensbedrohlich erlebten Situation.",
       "schritt1": "Wahrnehmen, wo im Körper die Erstarrung beginnt, ohne sie wegdrücken zu wollen.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, über Atem, Bodenkontakt und Orientierung im Raum schrittweise wieder handlungsfähig zu werden, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Überlebenskünstler selbst: Wie müsstest du anders mit mir umgehen, damit die Rückkehr in den Kontakt sicher bleibt? Miniinterventionen einsetzen, damit der Abstand zwischen Erstarrung und Handlungsfähigkeit kleiner wird, bis beide zusammenarbeiten können. Danach loslassen und dem Nervensystem die Zeit geben, die es braucht.",
-      "schritt3": "Ohne Selbstkritik beobachten, welcher kleine Schritt der Regulation tatsächlich gewirkt hat, und darauf beim nächsten Mal aufbauen."
+      "schritt3": "Ohne Selbstkritik beobachten, welcher kleine Schritt der Regulation tatsächlich gewirkt hat, und darauf beim nächsten Mal aufbauen.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Erstarrte ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Überlebenskünstler übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Überlebenskünstler am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "helfersyndrom",
@@ -142,7 +168,9 @@
       "schutzfunktion": "Zugehörigkeit und Wert über das Gebrauchtwerden.",
       "schritt1": "Wahrnehmen, in welchem Moment der Impuls zu helfen auftaucht, bevor überhaupt gefragt wurde.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer Gabe, die aus freier Kapazität kommt, nicht aus Mangel, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Ermöglicher selbst: Wie müsstest du anders mit mir umgehen, damit Geben aus Fülle geschieht, nicht aus eigenem Mangel? Miniinterventionen einsetzen, damit der Abstand zwischen eigenem Bedürfnis und Geben kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, ob die Hilfe angenommen wird.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich Helfen aus Fülle im Vergleich zu Helfen aus Bedürftigkeit tatsächlich angefühlt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Helfen aus Fülle im Vergleich zu Helfen aus Bedürftigkeit tatsächlich angefühlt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Helfer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Ermöglicher übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Ermöglicher am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "selbstsabotage",
@@ -154,7 +182,9 @@
       "schutzfunktion": "Scheitern fühlt sich vertrauter an als eine unbekannte Erfolgsrolle.",
       "schritt1": "Wahrnehmen, an welcher Stelle kurz vor dem Erfolg eine Verzögerung oder ein Fehler auftaucht, ohne sie zu verurteilen.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, sicheren Schritts in die neue Erfolgsrolle, mit der Bitte, genau diesen zu gehen. Ergänzende Prozessfrage an den Vorsichtigen selbst: Wie müsstest du anders mit mir umgehen, damit Erfolg sich sicher statt riskant anfühlt? Miniinterventionen einsetzen, damit der Abstand zwischen vertrauter und neuer Rolle kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich der kleine Schritt in Richtung Erfolg tatsächlich angefühlt hat, und darauf aufbauen."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich der kleine Schritt in Richtung Erfolg tatsächlich angefühlt hat, und darauf aufbauen.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Saboteur ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Vorsichtige übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Vorsichtige am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "eifersucht",
@@ -166,7 +196,9 @@
       "schutzfunktion": "Bindungssicherung durch erhöhte Wachsamkeit.",
       "schritt1": "Wahrnehmen, welches konkrete Signal die Wachsamkeit gerade ausgelöst hat, ohne es sofort zu deuten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer direkten, ruhigen Kommunikation des Bindungsbedürfnisses, statt der Kontrolle über den anderen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Bindungswächter selbst: Wie müsstest du anders mit mir umgehen, damit Sicherheit aus Nähe entsteht, nicht aus Kontrolle? Miniinterventionen einsetzen, damit der Abstand zwischen Bedürfnis und Ausdruck kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie der andere antwortet.",
-      "schritt3": "Ohne Selbstkritik beobachten, was das offene Ansprechen des Bedürfnisses tatsächlich bewirkt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, was das offene Ansprechen des Bedürfnisses tatsächlich bewirkt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Eifersüchtige ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Bindungswächter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Bindungswächter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "opferhaltung",
@@ -179,7 +211,9 @@
       "schritt1": "Wahrnehmen, an welcher Stelle die Ursache gerade ganz nach außen verlegt wird, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, tatsächlich verfügbaren Handlungsspielraums, mit der Bitte, genau diesen zu nutzen. Ergänzende Prozessfrage an den Entlaster selbst: Wie müsstest du anders mit mir umgehen, damit ein kleiner Spielraum bereits als Wirksamkeit zählt? Miniinterventionen einsetzen, damit der Abstand zwischen Ohnmacht und Handlungsspielraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, was die Nutzung dieses kleinen Spielraums bewirkt hat.",
-      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Handeln ohnehin nichts bewirkt oder bestraft wird. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt."
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Handeln ohnehin nichts bewirkt oder bestraft wird. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird das Opfer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Entlaster übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Entlaster am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "gruebeln_rumination",
@@ -191,7 +225,9 @@
       "schutzfunktion": "Gefahrenabwehr durch gedankliches Durchspielen aller Szenarien.",
       "schritt1": "Wahrnehmen, wann die Gedankenschleife beginnt und welche Frage tatsächlich dahintersteht.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines begrenzten Zeitraums für genau diese eine Frage, mit der Bitte, danach eine Entscheidung oder Handlung folgen zu lassen. Ergänzende Prozessfrage an den Szenarienplaner selbst: Wie müsstest du anders mit mir umgehen, damit ein Durchgang genügt, statt endlos weiterzudenken? Miniinterventionen einsetzen, damit der Abstand zwischen Denken und Handeln kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, was die zeitlich begrenzte Auseinandersetzung im Vergleich zum endlosen Grübeln gebracht hat."
+      "schritt3": "Ohne Selbstkritik beobachten, was die zeitlich begrenzte Auseinandersetzung im Vergleich zum endlosen Grübeln gebracht hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Grübler ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Szenarienplaner übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Szenarienplaner am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "sturheit_starrsinn",
@@ -203,7 +239,9 @@
       "schutzfunktion": "Selbstbehauptung.",
       "schritt1": "Wahrnehmen, welcher Wert hinter der starren Position gerade wirklich geschützt werden soll.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, in der Sache flexibel zu bleiben, während der zugrunde liegende Wert unangetastet bleibt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Standhaften selbst: Wie müsstest du anders mit mir umgehen, damit Nachgeben in der Sache den Wert nicht gefährdet? Miniinterventionen einsetzen, damit der Abstand zwischen Wert und Sache kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, ob Nachgeben in der Sache die Identität tatsächlich gefährdet hat oder nicht."
+      "schritt3": "Ohne Selbstkritik beobachten, ob Nachgeben in der Sache die Identität tatsächlich gefährdet hat oder nicht.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Dickkopf ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Standhafte übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Standhafte am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "uebertriebene_bescheidenheit",
@@ -215,7 +253,9 @@
       "schutzfunktion": "Zurückhaltung als sicherste Strategie zur Sicherung der Zugehörigkeit.",
       "schritt1": "Wahrnehmen, in welchem Moment die eigene Leistung gerade heruntergespielt wird.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, die eigene Leistung sachlich und ruhig zu benennen, ohne Dramatisierung und ohne Verkleinerung, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Friedensstifter selbst: Wie müsstest du anders mit mir umgehen, damit sachliche Anerkennung nicht als Gefahr für den Frieden erscheint? Miniinterventionen einsetzen, damit der Abstand zwischen Leistung und Aussage kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie das sachliche Benennen der eigenen Leistung tatsächlich aufgenommen wurde."
+      "schritt3": "Ohne Selbstkritik beobachten, wie das sachliche Benennen der eigenen Leistung tatsächlich aufgenommen wurde.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Kleinmacher ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Friedensstifter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Friedensstifter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "sprachlosigkeit_konflikten",
@@ -227,7 +267,9 @@
       "schutzfunktion": "Vermeidung von Risiko durch Schweigen.",
       "schritt1": "Wahrnehmen, was im Moment des Verstummens im Körper spürbar ist, bevor das Schweigen einsetzt.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer klar dosierten, ruhigen Formulierung, die das Anliegen ausdrückt, mit der Bitte, genau diese zu finden. Ergänzende Prozessfrage an den Deeskalierer selbst: Wie müsstest du anders mit mir umgehen, damit Worte finden sicherer ist als schweigen? Miniinterventionen einsetzen, damit der Abstand zwischen Schweigen und Sprechen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie es ankommt.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie die dosierte Formulierung im Vergleich zum Schweigen tatsächlich gewirkt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie die dosierte Formulierung im Vergleich zum Schweigen tatsächlich gewirkt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Schweiger ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Deeskalierer übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Deeskalierer am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "suchtnahes_ablenkungsverhalten",
@@ -239,7 +281,9 @@
       "schutzfunktion": "Emotionale Regulation durch Reizersatz.",
       "schritt1": "Wahrnehmen, welches Gefühl unmittelbar vor dem Griff zur Ablenkung spürbar war.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer körperbezogenen Regulationsform wie Atem, Bewegung oder Ausdruck, mit der Bitte, diese stattdessen zu nutzen. Ergänzende Prozessfrage an den Regulierer selbst: Wie müsstest du anders mit mir umgehen, damit Regulation über den Körper genauso schnell wirkt wie die Ablenkung? Miniinterventionen einsetzen, damit der Abstand zwischen Anspannung und Regulation kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich die körperbezogene Regulation im Vergleich zur gewohnten Ablenkung tatsächlich angefühlt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die körperbezogene Regulation im Vergleich zur gewohnten Ablenkung tatsächlich angefühlt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Ablenker ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Regulierer übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Regulierer am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "noergeln_kritisieren",
@@ -251,7 +295,9 @@
       "schutzfunktion": "Ersatzventil, wenn direkte Formulierung nie gelernt oder nie sicher war.",
       "schritt1": "Wahrnehmen, welches unerfüllte Bedürfnis hinter der Kritik gerade tatsächlich steht.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines direkten, konstruktiven Anliegens, mit der Bitte, dieses anstelle der indirekten Kritik auszusprechen. Ergänzende Prozessfrage an den Anliegen-Anwalt selbst: Wie müsstest du anders mit mir umgehen, damit das Anliegen direkt gehört wird, ohne den Umweg über Kritik? Miniinterventionen einsetzen, damit der Abstand zwischen Kritik und Anliegen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie es aufgenommen wird.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie das direkte Anliegen im Vergleich zum Nörgeln tatsächlich aufgenommen wurde."
+      "schritt3": "Ohne Selbstkritik beobachten, wie das direkte Anliegen im Vergleich zum Nörgeln tatsächlich aufgenommen wurde.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Nörgler ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Anliegen-Anwalt übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Anliegen-Anwalt am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "kontrolle_ueber_andere",
@@ -263,7 +309,9 @@
       "schutzfunktion": "Sicherung von Einfluss und Relevanz.",
       "schritt1": "Wahrnehmen, an welcher Stelle gerade nachjustiert oder nachkontrolliert wird, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer klaren Vereinbarung mit schrittweise überprüftem Vertrauen, mit der Bitte, dieses Vertrauen zu wagen. Ergänzende Prozessfrage an den Verantwortungsträger selbst: Wie müsstest du anders mit mir umgehen, damit Vertrauen schrittweise wachsen darf, ohne sofort riskant zu wirken? Miniinterventionen einsetzen, damit der Abstand zwischen Kontrolle und Vertrauen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, was aus dem gewährten Vertrauen tatsächlich geworden ist."
+      "schritt3": "Ohne Selbstkritik beobachten, was aus dem gewährten Vertrauen tatsächlich geworden ist.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Kontrollfreak ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Verantwortungsträger übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Verantwortungsträger am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "people_pleasing",
@@ -276,7 +324,9 @@
       "schritt1": "Wahrnehmen, in welchem Moment die eigene Zustimmung schon automatisch da ist, bevor die eigene Meinung überhaupt geprüft wurde.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer bewussten Entscheidung, die die eigene Position mit der sozialen Sensibilität verbindet, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Vermittler selbst: Wie müsstest du anders mit mir umgehen, damit die eigene Position und die Rücksicht auf andere gleichzeitig Platz haben? Miniinterventionen einsetzen, damit der Abstand zwischen eigener Position und Rücksicht kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, wie sich die bewusste Entscheidung im Vergleich zur reflexhaften Zustimmung tatsächlich ausgewirkt hat.",
-      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber den ursprünglich verinnerlichten Forderungen der Bezugspersonen aufbauen. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt."
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber den ursprünglich verinnerlichten Forderungen der Bezugspersonen aufbauen. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Pleaser ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Vermittler übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Vermittler am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "klammern_verlustangst",
@@ -289,7 +339,9 @@
       "schritt1": "Wahrnehmen, welches Gefühl von Unsicherheit dem Klammern unmittelbar vorausgeht.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer verlässlichen, aber nicht anklammernden Nähe, gestützt auf innere statt äußere Sicherheit, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Nähe-Sucher selbst: Wie müsstest du anders mit mir umgehen, damit Sicherheit von innen kommt, nicht vom Festhalten? Miniinterventionen einsetzen, damit der Abstand zwischen Nähe und Freiraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, wie sich die innere Sicherheit im Vergleich zum Klammern tatsächlich angefühlt hat.",
-      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Sicherheit nur durch Nähe zum anderen entsteht. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt."
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Sicherheit nur durch Nähe zum anderen entsteht. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Klammerer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Nähe-Sucher übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Nähe-Sucher am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "analyse_paralyse",
@@ -301,7 +353,9 @@
       "schutzfunktion": "Vermeidung von Bedauern durch vollständige Absicherung.",
       "schritt1": "Wahrnehmen, wie oft dieselben Optionen bereits durchdacht wurden, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer klaren Entscheidungsfrist, nach der aus den verfügbaren Optionen die aktuell beste gewählt wird, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Abwäger selbst: Wie müsstest du anders mit mir umgehen, damit eine gute Entscheidung genügt, statt die perfekte zu suchen? Miniinterventionen einsetzen, damit der Abstand zwischen Abwägen und Entscheiden kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich die fristgebundene Entscheidung tatsächlich entwickelt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die fristgebundene Entscheidung tatsächlich entwickelt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Zauderer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Abwäger übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Abwäger am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "uebertriebenes_schuldbewusstsein",
@@ -313,7 +367,9 @@
       "schutzfunktion": "Beziehungserhalt durch Selbstbeschuldigung.",
       "schritt1": "Wahrnehmen, welcher tatsächliche eigene Anteil an der Situation besteht, ohne ihn zu übertreiben oder zu leugnen.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, Verantwortung genau für diesen tatsächlichen Anteil zu übernehmen, nicht für die gesamte Last, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Wiedergutmacher selbst: Wie müsstest du anders mit mir umgehen, damit der eigene Anteil sichtbar wird, ohne die ganze Last zu tragen? Miniinterventionen einsetzen, damit der Abstand zwischen eigenem Anteil und Gesamtlast kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich die begrenzte, klare Verantwortungsübernahme tatsächlich ausgewirkt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die begrenzte, klare Verantwortungsübernahme tatsächlich ausgewirkt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Schuldige ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Wiedergutmacher übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Wiedergutmacher am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "intellektualisieren",
@@ -325,7 +381,9 @@
       "schutzfunktion": "Emotionale Sicherheit durch kognitive Distanz.",
       "schritt1": "Wahrnehmen, wann das Denken einsetzt, kurz bevor ein Gefühl spürbar würde.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, der analytischen Klarheit einen zweiten Schritt der Gefühlswahrnehmung im Körper folgen zu lassen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Analytiker selbst: Wie müsstest du anders mit mir umgehen, damit auf das Verstehen auch das Spüren folgen darf? Miniinterventionen einsetzen, damit der Abstand zwischen Verstehen und Spüren kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, was durch den zweiten Schritt der Körperwahrnehmung zusätzlich zugänglich wurde."
+      "schritt3": "Ohne Selbstkritik beobachten, was durch den zweiten Schritt der Körperwahrnehmung zusätzlich zugänglich wurde.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Verkopfte ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Analytiker übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Analytiker am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "galgenhumor_verharmlosung",
@@ -337,7 +395,9 @@
       "schutzfunktion": "Erträglichmachen von Schwerem durch Distanzierung.",
       "schritt1": "Wahrnehmen, in welchem Moment der Humor einsetzt und was er gerade überdeckt.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, dem Humor einen ehrlichen Moment der Anerkennung der tatsächlichen Schwere folgen zu lassen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Erleichterer selbst: Wie müsstest du anders mit mir umgehen, damit Leichtigkeit und Ernst nacheinander Platz haben dürfen? Miniinterventionen einsetzen, damit der Abstand zwischen Humor und Schwere kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich Humor und ehrliche Anerkennung gemeinsam tatsächlich ausgewirkt haben."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Humor und ehrliche Anerkennung gemeinsam tatsächlich ausgewirkt haben.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Verharmloser ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Erleichterer übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Erleichterer am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "groessenphantasien",
@@ -349,7 +409,9 @@
       "schutzfunktion": "Schutz des Selbstwerts durch Überhöhung.",
       "schritt1": "Wahrnehmen, welche Unsicherheit unmittelbar vor der Selbstüberhöhung tatsächlich spürbar war.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer realistischen Selbsteinschätzung, die die zugrunde liegende Ambition trägt, ohne sie zu überhöhen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Visionär selbst: Wie müsstest du anders mit mir umgehen, damit die Vision auch auf realistischem Boden noch groß sein darf? Miniinterventionen einsetzen, damit der Abstand zwischen Vision und Realität kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich Selbstwert auf Basis der realistischen Einschätzung tatsächlich angefühlt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Selbstwert auf Basis der realistischen Einschätzung tatsächlich angefühlt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Größenwahnsinnige ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Visionär übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Visionär am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "materielles_horten",
@@ -361,7 +423,9 @@
       "schutzfunktion": "Absicherung gegen erneuten Mangel.",
       "schritt1": "Wahrnehmen, welches Mangelgefühl dem Impuls zum Horten unmittelbar vorausgeht.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines klar definierten Puffers, der Sicherheit gibt, ohne unbegrenzt zu akkumulieren, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Vorsorger selbst: Wie müsstest du anders mit mir umgehen, damit ein klar definiertes Maß bereits als genug gilt? Miniinterventionen einsetzen, damit der Abstand zwischen Sicherheit und Genug kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, ob der definierte Puffer tatsächlich ausreichend Sicherheit vermittelt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, ob der definierte Puffer tatsächlich ausreichend Sicherheit vermittelt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Horter ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Vorsorger übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Vorsorger am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "verantwortungsdiffusion",
@@ -373,7 +437,9 @@
       "schutzfunktion": "Entlastung durch Verteilung oder Vermeidung von Verantwortung.",
       "schritt1": "Wahrnehmen, an welcher Stelle Verantwortung gerade diffus bleibt, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, klar abgegrenzter, überschaubarer Verantwortungsteile, mit der Bitte, genau einen davon zu übernehmen. Ergänzende Prozessfrage an den Lastenteiler selbst: Wie müsstest du anders mit mir umgehen, damit ein klar abgegrenzter Teil leichter zu tragen ist als das Ganze? Miniinterventionen einsetzen, damit der Abstand zwischen Gesamtlast und eigenem Teil kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich die Übernahme des abgegrenzten Teils tatsächlich angefühlt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die Übernahme des abgegrenzten Teils tatsächlich angefühlt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Verantwortungsvermeider ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Lastenteiler übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Lastenteiler am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "emotionale_taubheit",
@@ -385,7 +451,9 @@
       "schutzfunktion": "Überlebenssicherung durch Reduktion der Gefühlsintensität.",
       "schritt1": "Wahrnehmen, wo im Körper noch die kleinste Regung spürbar ist, ohne mehr zu erwarten als das.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer behutsamen, dosierten Rückkehr der Körperwahrnehmung, in einem Tempo, das tragbar bleibt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Schutzschalter selbst: Wie müsstest du anders mit mir umgehen, damit Spüren schrittweise sicher bleibt? Miniinterventionen einsetzen, damit der Abstand zwischen Taubheit und Wahrnehmung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, welches Maß an Wahrnehmung gerade tragbar war, und darauf beim nächsten Mal aufbauen."
+      "schritt3": "Ohne Selbstkritik beobachten, welches Maß an Wahrnehmung gerade tragbar war, und darauf beim nächsten Mal aufbauen.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Abgeschaltete ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Schutzschalter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Schutzschalter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "imposter_syndrom",
@@ -399,7 +467,9 @@
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, wie gute Qualität, sichere Zielerreichung und verlässliches Einkommen auch ohne ständige Selbstprüfung entstehen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Anteil selbst: Wie müsste dieser Anteil anders mit mir umgehen, um ein anderes Ergebnis zu bekommen? Miniinterventionen einsetzen, damit der Abstand zwischen den Seiten kleiner wird, bis sie zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, wie das tatsächliche Ergebnis ausgefallen ist. Aus der Differenz zwischen Bild und Ergebnis entsteht die nächste Feinjustierung.",
       "referenzbeispiel": true,
-      "quelle": "Imposter Utilisation und Hypnosystemische Elemente, hochgeladenes Dokument"
+      "quelle": "Imposter Utilisation und Hypnosystemische Elemente, hochgeladenes Dokument",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Selbstzweifler ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Qualitätshüter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Qualitätshüter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "substanzgebrauch_bewaeltigung",
@@ -412,7 +482,9 @@
       "schritt1": "Wahrnehmen, welche konkrete Anspannung, welcher Schmerz oder welche Leere dem Impuls zur Substanz unmittelbar vorausgeht, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer alternativen, körperlich spürbaren und tatsächlich verfügbaren Form der Beruhigung, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Nothelfer selbst: Wie müsstest du anders mit mir umgehen, damit Erleichterung auch ohne die Substanz zuverlässig eintritt? Miniinterventionen einsetzen, damit der Abstand zwischen Anspannung und alternativer Beruhigung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, was die alternative Form der Beruhigung tatsächlich bewirkt hat, und an welcher Stelle zusätzliche fachliche oder medizinische Unterstützung sinnvoll ist.",
-      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Erleichterung nur über die Substanz erreichbar ist. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt. Bei tatsächlicher Abhängigkeit gehört die Behandlung zusätzlich in ärztliche oder suchttherapeutische Hände, dieser Prozess ersetzt keine Entwöhnungsbehandlung."
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Erleichterung nur über die Substanz erreichbar ist. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt. Bei tatsächlicher Abhängigkeit gehört die Behandlung zusätzlich in ärztliche oder suchttherapeutische Hände, dieser Prozess ersetzt keine Entwöhnungsbehandlung.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Betäuber ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Nothelfer übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Nothelfer am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "sexualisiertes_bewaeltigungsverhalten",
@@ -425,7 +497,9 @@
       "schritt1": "Wahrnehmen, welches Gefühl von Leere, Anspannung oder Einsamkeit dem Impuls unmittelbar vorausgeht, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer Form echter, sicherer Verbindung oder Selbstfürsorge, die die dahinterliegende Sehnsucht tatsächlich stillt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Verbindungssucher selbst: Wie müsstest du anders mit mir umgehen, damit echte Nähe genauso zuverlässig erreichbar wird wie die kurzfristige Erregung? Miniinterventionen einsetzen, damit der Abstand zwischen Leere und echter Verbindung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, was echte Verbindung oder Selbstfürsorge im Vergleich zur kurzfristigen Erleichterung tatsächlich bewirkt hat.",
-      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass echte Nähe nicht sicher oder nicht verfügbar ist. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt. Bei zwanghaftem, selbst- oder fremdschädigendem Ausmaß gehört die Arbeit zusätzlich in fachtherapeutische Hände."
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass echte Nähe nicht sicher oder nicht verfügbar ist. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt. Bei zwanghaftem, selbst- oder fremdschädigendem Ausmaß gehört die Arbeit zusätzlich in fachtherapeutische Hände.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Getriebene ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Verbindungssucher übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Verbindungssucher am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "kaufsucht_konsumverhalten",
@@ -437,7 +511,39 @@
       "schutzfunktion": "Kurzfristige Selbstberuhigung und Statussicherung über Konsum, wenn innere Zufriedenheit schwer zugänglich ist.",
       "schritt1": "Wahrnehmen, welches Gefühl von Mangel, Leere oder Unsicherheit dem Kaufimpuls unmittelbar vorausgeht, ohne es zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer Form der Selbstbelohnung, die nicht vom Kaufakt abhängt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Belohner selbst: Wie müsstest du anders mit mir umgehen, damit Belohnung auch ohne Kaufakt spürbar wird? Miniinterventionen einsetzen, damit der Abstand zwischen Mangelgefühl und innerer Belohnung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich die alternative Belohnung im Vergleich zum Kaufakt tatsächlich angefühlt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die alternative Belohnung im Vergleich zum Kaufakt tatsächlich angefühlt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Konsument ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Belohner übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Belohner am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
+    },
+    {
+      "id": "hoffnungslosigkeit",
+      "muster": "Hoffnungslosigkeit",
+      "kategorie": "Emotionsregulation & Schutz",
+      "anteil_alt": "der Resignierte",
+      "anteil_neu": "der Beharrliche",
+      "ursprungsintention": "Schutz vor der wiederholten Enttäuschung, die entsteht, wenn Hoffnung geweckt und danach nicht erfüllt wird.",
+      "schutzfunktion": "Vorwegnahme des schlechtesten Ausgangs, damit keine Energie in ein Ergebnis investiert wird, das ohnehin ausbleiben könnte.",
+      "schritt1": "Wahrnehmen, in welchem Moment eine Veränderung bereits im Ansatz für aussichtslos erklärt wird, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, tatsächlich machbaren nächsten Schritts, der unabhängig vom Gesamtausgang bereits einen Unterschied macht, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Beharrlichen selbst: Wie müsstest du anders mit mir umgehen, damit ein kleiner, machbarer Schritt bereits zählt, auch wenn das große Ergebnis ungewiss bleibt? Miniinterventionen einsetzen, damit der Abstand zwischen Aussichtslosigkeit und machbarem Schritt kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was der kleine, machbare Schritt tatsächlich bewirkt hat, unabhängig vom Gesamtausgang.",
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass sich ohnehin nichts zum Besseren wendet. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Resignierte ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Beharrliche übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Beharrliche am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
+    },
+    {
+      "id": "existenzangst",
+      "muster": "Existenz-Angst",
+      "kategorie": "Emotionsregulation & Schutz",
+      "anteil_alt": "der Alarmierte",
+      "anteil_neu": "der Grundhalter",
+      "ursprungsintention": "Alarmsystem angesichts einer als existenziell erlebten Bedrohung, der wirtschaftlichen, körperlichen oder sozialen Grundlage des eigenen Bestehens.",
+      "schutzfunktion": "Dauerhafte Wachsamkeit gegenüber Bedrohungen der eigenen Existenzgrundlage, auch dann, wenn die akute Gefahr längst vorüber ist.",
+      "schritt1": "Wahrnehmen, welches konkrete Existenzsignal, Sicherheit, Einkommen, Gesundheit oder Zugehörigkeit, die Angst gerade tatsächlich anspricht, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer tragfähigen Grundsicherheit, die auf tatsächlich vorhandenen Ressourcen beruht statt auf der ständigen Erwartung des Schlimmsten, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Grundhalter selbst: Wie müsstest du anders mit mir umgehen, damit die tatsächlich vorhandene Grundsicherheit spürbar wird, statt nur die Bedrohung? Miniinterventionen einsetzen, damit der Abstand zwischen Alarm und Grundsicherheit kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was das bewusste Wahrnehmen der tatsächlich vorhandenen Ressourcen an Alarmbereitschaft verändert hat.",
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass die eigene Existenz grundsätzlich ungesichert ist. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Alarmierte ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Grundhalter übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Grundhalter am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     }
   ]
 }
