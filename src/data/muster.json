@@ -1,7 +1,8 @@
 {
   "meta": {
     "titel": "Utilisations-Anteile-Bibliothek",
-    "version": "1.5-app-draft",
+    "version": "1.6-app-draft",
+    "kategorien": ["Beziehung & Bindung", "Leistung & Kontrolle", "Emotionsregulation & Schutz", "Süchte & Regulationsverhalten", "Verantwortung & Selbstwirksamkeit"],
     "methodik": "Hypnosystemik (Erickson, Gunther Schmidt), Utilisation, Inner Game (Gallwey)",
     "ablauf": [
       "1. Ursprungsintention und Schutzfunktion des Musters erkennen und würdigen",
@@ -13,6 +14,7 @@
     {
       "id": "rueckzug_vermeidung",
       "muster": "Rückzug und Vermeidung",
+      "kategorie": "Emotionsregulation & Schutz",
       "anteil_alt": "der Vermeider",
       "anteil_neu": "der Schutzraum-Wächter",
       "ursprungsintention": "Schutz vor Überforderung oder vor erneuter Verletzung in Beziehungen.",
@@ -24,6 +26,7 @@
     {
       "id": "kontrollzwang",
       "muster": "Kontrollzwang",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Kontrolleur",
       "anteil_neu": "der Ordnungsstifter",
       "ursprungsintention": "Entsteht in chaotischen oder unvorhersehbaren Umfeldern.",
@@ -35,6 +38,7 @@
     {
       "id": "perfektionismus",
       "muster": "Perfektionismus",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Perfektionist",
       "anteil_neu": "der Qualitätsmanager",
       "ursprungsintention": "Schutz vor Kritik oder Ablehnung.",
@@ -46,6 +50,7 @@
     {
       "id": "prokrastination",
       "muster": "Prokrastination",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Aufschieber",
       "anteil_neu": "der Zeitwächter",
       "ursprungsintention": "Schutz vor Bewertung, kein Faulheitsproblem.",
@@ -57,6 +62,7 @@
     {
       "id": "harmoniesucht_anpassung",
       "muster": "Harmoniesucht und Anpassung",
+      "kategorie": "Beziehung & Bindung",
       "anteil_alt": "der Anpasser",
       "anteil_neu": "der Brückenbauer",
       "ursprungsintention": "Kindliche Prägung in einem Umfeld, in dem Konflikt oder die eigene abweichende Meinung mit Liebesentzug oder Rückzug der Bezugspersonen beantwortet wurde. Anpassung war die einzig verfügbare Strategie, um Zugehörigkeit zu sichern.",
@@ -69,6 +75,7 @@
     {
       "id": "zynismus_distanzierung",
       "muster": "Zynismus und Distanzierung",
+      "kategorie": "Emotionsregulation & Schutz",
       "anteil_alt": "der Zyniker",
       "anteil_neu": "der Scharfsichtige",
       "ursprungsintention": "Schutz vor Enttäuschung.",
@@ -80,6 +87,7 @@
     {
       "id": "innerer_kritiker",
       "muster": "Innerer Kritiker",
+      "kategorie": "Emotionsregulation & Schutz",
       "anteil_alt": "der Kritiker",
       "anteil_neu": "der Frühwarner",
       "ursprungsintention": "Internalisierter Schutzmechanismus, der Fehler vorwegnehmen will.",
@@ -91,6 +99,7 @@
     {
       "id": "workaholismus",
       "muster": "Workaholismus und Selbstüberforderung",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Schaffer",
       "anteil_neu": "der Wertschöpfer",
       "ursprungsintention": "Schutz vor Leere oder vor dem Gefühl der eigenen Wertlosigkeit im Nicht-Tun.",
@@ -102,6 +111,7 @@
     {
       "id": "explosive_wut",
       "muster": "Explosive Reaktionen und Wut",
+      "kategorie": "Emotionsregulation & Schutz",
       "anteil_alt": "der Wüterich",
       "anteil_neu": "der Grenzwächter",
       "ursprungsintention": "Grenzen, die anders nicht kommuniziert werden konnten.",
@@ -113,6 +123,7 @@
     {
       "id": "erstarren_dissoziation",
       "muster": "Erstarren und Dissoziation",
+      "kategorie": "Emotionsregulation & Schutz",
       "anteil_alt": "der Erstarrte",
       "anteil_neu": "der Überlebenskünstler",
       "ursprungsintention": "Archaischer Schutzmechanismus des Nervensystems, wenn weder Kampf noch Flucht möglich waren.",
@@ -124,6 +135,7 @@
     {
       "id": "helfersyndrom",
       "muster": "Helfersyndrom",
+      "kategorie": "Verantwortung & Selbstwirksamkeit",
       "anteil_alt": "der Helfer",
       "anteil_neu": "der Ermöglicher",
       "ursprungsintention": "Schutz vor dem Gefühl der eigenen Bedeutungslosigkeit.",
@@ -135,6 +147,7 @@
     {
       "id": "selbstsabotage",
       "muster": "Selbstsabotage",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Saboteur",
       "anteil_neu": "der Vorsichtige",
       "ursprungsintention": "Schutz vor der Verantwortung sichtbaren Erfolgs.",
@@ -146,6 +159,7 @@
     {
       "id": "eifersucht",
       "muster": "Eifersucht",
+      "kategorie": "Beziehung & Bindung",
       "anteil_alt": "der Eifersüchtige",
       "anteil_neu": "der Bindungswächter",
       "ursprungsintention": "Alarmsystem für Bindungsverlust.",
@@ -157,6 +171,7 @@
     {
       "id": "opferhaltung",
       "muster": "Opferhaltung",
+      "kategorie": "Verantwortung & Selbstwirksamkeit",
       "anteil_alt": "das Opfer",
       "anteil_neu": "der Entlaster",
       "ursprungsintention": "Kindliche Prägung in einem Umfeld, in dem eigenes Handeln wenig bewirkte oder Eigenverantwortung mit Schuldzuweisung beantwortet wurde. Die Position der Ohnmacht war die ehrlichste und zugleich sicherste verfügbare Position.",
@@ -169,6 +184,7 @@
     {
       "id": "gruebeln_rumination",
       "muster": "Grübeln und Rumination",
+      "kategorie": "Emotionsregulation & Schutz",
       "anteil_alt": "der Grübler",
       "anteil_neu": "der Szenarienplaner",
       "ursprungsintention": "Versuch des Verstandes, Kontrolle über etwas Unlösbares zu gewinnen.",
@@ -180,6 +196,7 @@
     {
       "id": "sturheit_starrsinn",
       "muster": "Sturheit und Starrsinn",
+      "kategorie": "Verantwortung & Selbstwirksamkeit",
       "anteil_alt": "der Dickkopf",
       "anteil_neu": "der Standhafte",
       "ursprungsintention": "Schutz der eigenen Identität, wenn Nachgeben früher mit Selbstverlust gleichgesetzt wurde.",
@@ -191,6 +208,7 @@
     {
       "id": "uebertriebene_bescheidenheit",
       "muster": "Übertriebene Bescheidenheit",
+      "kategorie": "Beziehung & Bindung",
       "anteil_alt": "der Kleinmacher",
       "anteil_neu": "der Friedensstifter",
       "ursprungsintention": "Schutz vor Neid, Ablehnung oder dem Vorwurf der Überheblichkeit.",
@@ -202,6 +220,7 @@
     {
       "id": "sprachlosigkeit_konflikten",
       "muster": "Sprachlosigkeit in Konflikten",
+      "kategorie": "Beziehung & Bindung",
       "anteil_alt": "der Schweiger",
       "anteil_neu": "der Deeskalierer",
       "ursprungsintention": "Schutz vor Eskalation, wenn Worte früher zu Verletzung oder Strafe führten.",
@@ -213,6 +232,7 @@
     {
       "id": "suchtnahes_ablenkungsverhalten",
       "muster": "Suchtnahes Ablenkungsverhalten",
+      "kategorie": "Süchte & Regulationsverhalten",
       "anteil_alt": "der Ablenker",
       "anteil_neu": "der Regulierer",
       "ursprungsintention": "Schutz vor unangenehmen Gefühlen, die sonst ungefiltert ankämen.",
@@ -224,6 +244,7 @@
     {
       "id": "noergeln_kritisieren",
       "muster": "Nörgeln und chronisches Kritisieren",
+      "kategorie": "Beziehung & Bindung",
       "anteil_alt": "der Nörgler",
       "anteil_neu": "der Anliegen-Anwalt",
       "ursprungsintention": "Indirekter Ausdruck unerfüllter Bedürfnisse nach Anerkennung oder Einfluss.",
@@ -235,6 +256,7 @@
     {
       "id": "kontrolle_ueber_andere",
       "muster": "Übertriebene Kontrolle über andere",
+      "kategorie": "Beziehung & Bindung",
       "anteil_alt": "der Kontrollfreak",
       "anteil_neu": "der Verantwortungsträger",
       "ursprungsintention": "Schutz vor dem Gefühl der eigenen Austauschbarkeit oder vor Vertrauensverlust durch frühere Delegationserfahrungen.",
@@ -246,6 +268,7 @@
     {
       "id": "people_pleasing",
       "muster": "People-Pleasing",
+      "kategorie": "Beziehung & Bindung",
       "anteil_alt": "der Pleaser",
       "anteil_neu": "der Vermittler",
       "ursprungsintention": "Kindliche Prägung in einem als bedrohlich erlebten Umfeld, in dem die Bezugspersonen selbst, durch eigene traumatische Belastung, keinen Zugang zum wahren Selbst des Kindes hatten. Überanpassung war die einzig verfügbare Strategie, um in diesem Umfeld sicher zu bleiben.",
@@ -258,6 +281,7 @@
     {
       "id": "klammern_verlustangst",
       "muster": "Klammern und Verlustangst-Verhalten",
+      "kategorie": "Beziehung & Bindung",
       "anteil_alt": "der Klammerer",
       "anteil_neu": "der Nähe-Sucher",
       "ursprungsintention": "Kindliche Prägung durch eine real erlebte Trennung oder durch eine unzuverlässige Bindungsperson, bei der Nähe nie sicher verfügbar war. Festhalten war die einzig verfügbare Strategie, um den drohenden Verlust abzuwenden.",
@@ -270,6 +294,7 @@
     {
       "id": "analyse_paralyse",
       "muster": "Analyse-Paralyse bei Entscheidungen",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Zauderer",
       "anteil_neu": "der Abwäger",
       "ursprungsintention": "Schutz vor einer falschen, irreversiblen Wahl.",
@@ -281,6 +306,7 @@
     {
       "id": "uebertriebenes_schuldbewusstsein",
       "muster": "Übertriebenes Schuldbewusstsein",
+      "kategorie": "Verantwortung & Selbstwirksamkeit",
       "anteil_alt": "der Schuldige",
       "anteil_neu": "der Wiedergutmacher",
       "ursprungsintention": "Wiedergutmachungsversuch, um Beziehungen zu retten.",
@@ -292,6 +318,7 @@
     {
       "id": "intellektualisieren",
       "muster": "Intellektualisieren",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Verkopfte",
       "anteil_neu": "der Analytiker",
       "ursprungsintention": "Schutz vor überwältigenden Gefühlen durch Distanz über den Verstand.",
@@ -303,6 +330,7 @@
     {
       "id": "galgenhumor_verharmlosung",
       "muster": "Galgenhumor und Verharmlosung",
+      "kategorie": "Emotionsregulation & Schutz",
       "anteil_alt": "der Verharmloser",
       "anteil_neu": "der Erleichterer",
       "ursprungsintention": "Emotionale Entschärfung unerträglicher Situationen.",
@@ -314,6 +342,7 @@
     {
       "id": "groessenphantasien",
       "muster": "Größenphantasien und Selbstüberschätzung",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Größenwahnsinnige",
       "anteil_neu": "der Visionär",
       "ursprungsintention": "Kompensation tief sitzender Unsicherheit.",
@@ -325,6 +354,7 @@
     {
       "id": "materielles_horten",
       "muster": "Materielles Horten",
+      "kategorie": "Süchte & Regulationsverhalten",
       "anteil_alt": "der Horter",
       "anteil_neu": "der Vorsorger",
       "ursprungsintention": "Sicherheit durch Kontrolle über Ressourcen nach früherem Mangel.",
@@ -336,6 +366,7 @@
     {
       "id": "verantwortungsdiffusion",
       "muster": "Verantwortungsdiffusion",
+      "kategorie": "Verantwortung & Selbstwirksamkeit",
       "anteil_alt": "der Verantwortungsvermeider",
       "anteil_neu": "der Lastenteiler",
       "ursprungsintention": "Schutz vor Überforderung durch Entscheidungslast.",
@@ -347,6 +378,7 @@
     {
       "id": "emotionale_taubheit",
       "muster": "Emotionale Taubheit",
+      "kategorie": "Emotionsregulation & Schutz",
       "anteil_alt": "der Abgeschaltete",
       "anteil_neu": "der Schutzschalter",
       "ursprungsintention": "Schutzabschaltung nach chronischer Reizüberflutung.",
@@ -358,6 +390,7 @@
     {
       "id": "imposter_syndrom",
       "muster": "Imposter-Syndrom",
+      "kategorie": "Leistung & Kontrolle",
       "anteil_alt": "der Selbstzweifler",
       "anteil_neu": "der Qualitätshüter",
       "ursprungsintention": "Gute Qualität sichern, Ziele zuverlässig erreichen und verlässlich für Einkommen sorgen, auch wenn der eigene Wert innerlich infrage gestellt wird.",
@@ -371,6 +404,7 @@
     {
       "id": "substanzgebrauch_bewaeltigung",
       "muster": "Substanzgebrauch als Bewältigung",
+      "kategorie": "Süchte & Regulationsverhalten",
       "anteil_alt": "der Betäuber",
       "anteil_neu": "der Nothelfer",
       "ursprungsintention": "Kindliche oder spätere Prägung in Situationen unerträglicher innerer Anspannung, Schmerz oder Leere, in denen keine andere, sicher wirksame Form der Beruhigung verfügbar oder erreichbar war. Substanzgebrauch, etwa Alkohol, Medikamente oder andere Mittel, war die einzige Möglichkeit, sofortige Erleichterung zu erzeugen.",
@@ -383,6 +417,7 @@
     {
       "id": "sexualisiertes_bewaeltigungsverhalten",
       "muster": "Sexualisiertes Bewältigungsverhalten",
+      "kategorie": "Süchte & Regulationsverhalten",
       "anteil_alt": "der Getriebene",
       "anteil_neu": "der Verbindungssucher",
       "ursprungsintention": "Kindliche oder spätere Prägung in einem Umfeld, in dem echte emotionale Nähe nicht sicher verfügbar war, während körperliche Erregung eine zuverlässige, sofort wirksame Möglichkeit bot, innere Leere, Anspannung oder Einsamkeit kurzfristig zu füllen.",
@@ -395,6 +430,7 @@
     {
       "id": "kaufsucht_konsumverhalten",
       "muster": "Kaufsucht und Konsumverhalten",
+      "kategorie": "Süchte & Regulationsverhalten",
       "anteil_alt": "der Konsument",
       "anteil_neu": "der Belohner",
       "ursprungsintention": "Schutz vor einem inneren Gefühl von Mangel, Leere oder Unsicherheit über den eigenen Status durch sofort spürbare, äußere Belohnung.",
