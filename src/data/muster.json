@@ -1,7 +1,7 @@
 {
   "meta": {
     "titel": "Utilisations-Anteile-Bibliothek",
-    "version": "1.4",
+    "version": "1.5-app-draft",
     "methodik": "Hypnosystemik (Erickson, Gunther Schmidt), Utilisation, Inner Game (Gallwey)",
     "ablauf": [
       "1. Ursprungsintention und Schutzfunktion des Musters erkennen und würdigen",
@@ -367,6 +367,41 @@
       "schritt3": "Ohne Selbstkritik beobachten, wie das tatsächliche Ergebnis ausgefallen ist. Aus der Differenz zwischen Bild und Ergebnis entsteht die nächste Feinjustierung.",
       "referenzbeispiel": true,
       "quelle": "Imposter Utilisation und Hypnosystemische Elemente, hochgeladenes Dokument"
+    },
+    {
+      "id": "substanzgebrauch_bewaeltigung",
+      "muster": "Substanzgebrauch als Bewältigung",
+      "anteil_alt": "der Betäuber",
+      "anteil_neu": "der Nothelfer",
+      "ursprungsintention": "Kindliche oder spätere Prägung in Situationen unerträglicher innerer Anspannung, Schmerz oder Leere, in denen keine andere, sicher wirksame Form der Beruhigung verfügbar oder erreichbar war. Substanzgebrauch, etwa Alkohol, Medikamente oder andere Mittel, war die einzige Möglichkeit, sofortige Erleichterung zu erzeugen.",
+      "schutzfunktion": "Ein falsches Selbst entsteht, das akute innere Anspannung fast ausschließlich über die Substanz reguliert, weil andere Regulationswege in der prägenden Zeit weder vorhanden noch erreichbar waren. Bis heute wirkt der Griff zur Substanz als unwillkürlicher Reflex bei Überforderung, stärker als jede bewusste Absicht zur Selbstfürsorge.",
+      "schritt1": "Wahrnehmen, welche konkrete Anspannung, welcher Schmerz oder welche Leere dem Impuls zur Substanz unmittelbar vorausgeht, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer alternativen, körperlich spürbaren und tatsächlich verfügbaren Form der Beruhigung, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Nothelfer selbst: Wie müsstest du anders mit mir umgehen, damit Erleichterung auch ohne die Substanz zuverlässig eintritt? Miniinterventionen einsetzen, damit der Abstand zwischen Anspannung und alternativer Beruhigung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was die alternative Form der Beruhigung tatsächlich bewirkt hat, und an welcher Stelle zusätzliche fachliche oder medizinische Unterstützung sinnvoll ist.",
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Erleichterung nur über die Substanz erreichbar ist. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt. Bei tatsächlicher Abhängigkeit gehört die Behandlung zusätzlich in ärztliche oder suchttherapeutische Hände, dieser Prozess ersetzt keine Entwöhnungsbehandlung."
+    },
+    {
+      "id": "sexualisiertes_bewaeltigungsverhalten",
+      "muster": "Sexualisiertes Bewältigungsverhalten",
+      "anteil_alt": "der Getriebene",
+      "anteil_neu": "der Verbindungssucher",
+      "ursprungsintention": "Kindliche oder spätere Prägung in einem Umfeld, in dem echte emotionale Nähe nicht sicher verfügbar war, während körperliche Erregung eine zuverlässige, sofort wirksame Möglichkeit bot, innere Leere, Anspannung oder Einsamkeit kurzfristig zu füllen.",
+      "schutzfunktion": "Ein falsches Selbst entsteht, das Nähe und Beruhigung nahezu ausschließlich über körperliche Erregung sucht, weil emotionale Nähe in der prägenden Zeit gefährlich, unzuverlässig oder abwesend war. Bis heute wirkt dieser Impuls als unwillkürlicher Reflex bei innerer Leere oder Anspannung, stärker als jede bewusste Absicht zu echter Verbindung.",
+      "schritt1": "Wahrnehmen, welches Gefühl von Leere, Anspannung oder Einsamkeit dem Impuls unmittelbar vorausgeht, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer Form echter, sicherer Verbindung oder Selbstfürsorge, die die dahinterliegende Sehnsucht tatsächlich stillt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Verbindungssucher selbst: Wie müsstest du anders mit mir umgehen, damit echte Nähe genauso zuverlässig erreichbar wird wie die kurzfristige Erregung? Miniinterventionen einsetzen, damit der Abstand zwischen Leere und echter Verbindung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was echte Verbindung oder Selbstfürsorge im Vergleich zur kurzfristigen Erleichterung tatsächlich bewirkt hat.",
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass echte Nähe nicht sicher oder nicht verfügbar ist. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt. Bei zwanghaftem, selbst- oder fremdschädigendem Ausmaß gehört die Arbeit zusätzlich in fachtherapeutische Hände."
+    },
+    {
+      "id": "kaufsucht_konsumverhalten",
+      "muster": "Kaufsucht und Konsumverhalten",
+      "anteil_alt": "der Konsument",
+      "anteil_neu": "der Belohner",
+      "ursprungsintention": "Schutz vor einem inneren Gefühl von Mangel, Leere oder Unsicherheit über den eigenen Status durch sofort spürbare, äußere Belohnung.",
+      "schutzfunktion": "Kurzfristige Selbstberuhigung und Statussicherung über Konsum, wenn innere Zufriedenheit schwer zugänglich ist.",
+      "schritt1": "Wahrnehmen, welches Gefühl von Mangel, Leere oder Unsicherheit dem Kaufimpuls unmittelbar vorausgeht, ohne es zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer Form der Selbstbelohnung, die nicht vom Kaufakt abhängt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Belohner selbst: Wie müsstest du anders mit mir umgehen, damit Belohnung auch ohne Kaufakt spürbar wird? Miniinterventionen einsetzen, damit der Abstand zwischen Mangelgefühl und innerer Belohnung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die alternative Belohnung im Vergleich zum Kaufakt tatsächlich angefühlt hat."
     }
   ]
 }

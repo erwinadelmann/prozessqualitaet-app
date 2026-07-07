@@ -1,0 +1,294 @@
+{
+  "meta": {
+    "titel": "Methodenbox",
+    "version": "0.1-draft",
+    "hinweis": "Erste Destillation aus Erwins hochgeladenem Quellmaterial zu Hypnosystemik und Utilisation (Gunther Schmidt, Erickson, eigene Notizen). Teilweise bereits KI-vorverdichtet, nicht durchgehend Primärzitat. Bitte fachlich prüfen und laufend mit eigenem Material ergänzen.",
+    "kategorien": ["Grundannahme", "Haltung & Prinzip", "Prozessformat", "Frage-Technik", "Werkzeug & Modell"]
+  },
+  "elemente": [
+    {
+      "id": "wofuer_statt_warum",
+      "titel": "Wofür statt Warum",
+      "kategorie": "Grundannahme",
+      "kernaussage": "Die zentrale hypnosystemische Frageumkehr: nicht nach Ursachen in der Vergangenheit fragen, sondern nach Funktion und Ziel. Ersetzt Problemarchäologie durch Zieldienlichkeit.",
+      "einsatzkontext": "Durchgehend, in jeder Phase eines Gesprächs als Denkbewegung.",
+      "ziel": "Fokus von Defizit auf Kompetenz und Zukunft verschieben.",
+      "zitat": "Wofür ist dieser Zustand gut? Nicht warum.",
+      "quelle": "VOLLSTÄNDIGE Utilisation erklärt; Wofür?; Grundannahmen der Hypnosystemik"
+    },
+    {
+      "id": "wahrgebung",
+      "titel": "Erleben ist konstruiert und selbstorganisiert (Wahrgebung)",
+      "kategorie": "Grundannahme",
+      "kernaussage": "Realität und Erleben werden fortlaufend durch Aufmerksamkeitsfokussierung erzeugt, größtenteils unbewusst. Schmidt spricht statt von Wahrnehmung bewusst von Wahrgebung, weil Bilder von innen erzeugt werden.",
+      "einsatzkontext": "Grundhaltung zu Beginn jeder Arbeit.",
+      "ziel": "Klient als aktiven Konstrukteur seines Erlebens positionieren, nicht als Opfer der Umstände.",
+      "zitat": "Erleben ist dort, wo unsere Aufmerksamkeit hingeht.",
+      "quelle": "Grundannahmen der Hypnosystemik; Gunter Schmidt gesamt; Erleben als Netzwerk"
+    },
+    {
+      "id": "unwillkuerliches",
+      "titel": "Umgang mit dem Unwillkürlichen",
+      "kategorie": "Grundannahme",
+      "kernaussage": "Der weitaus größte Teil des Erlebens läuft unwillkürlich ab, nur ein kleiner Teil ist bewusst-willentlich steuerbar. Ziel hypnosystemischer Arbeit ist nicht Kontrolle, sondern erweiterte Wahlmöglichkeiten im Umgang mit dem Unwillkürlichen.",
+      "einsatzkontext": "Als Rahmenverständnis, besonders wenn Klienten sich für willensschwach halten.",
+      "ziel": "Selbstverurteilung reduzieren, Ansatzpunkt für Veränderung realistisch verorten.",
+      "zitat": "Unwillkürliche Prozesse sind nicht löschbar, aber wir können sie umbauen.",
+      "quelle": "Grundannahmen der Hypnosystemik; Erleben als Netzwerk"
+    },
+    {
+      "id": "jede_hypnose_selbsthypnose",
+      "titel": "Jede Hypnose ist Selbsthypnose",
+      "kategorie": "Grundannahme",
+      "kernaussage": "Bedeutung und Wirkung einer Botschaft bestimmt immer der Empfänger, nicht der Sender. Der Berater macht nichts, sondern bietet an.",
+      "einsatzkontext": "Haltungsgrundlage für jede Intervention und jede Formulierung.",
+      "ziel": "Kontrollillusion des Beraters auflösen, Autonomie des Klienten respektieren.",
+      "quelle": "Grundannahmen der Hypnosystemik"
+    },
+    {
+      "id": "seitenmodell",
+      "titel": "Das Seitenmodell, viele innere Ichs",
+      "kategorie": "Grundannahme",
+      "kernaussage": "Menschen bestehen aus multiplen inneren Seiten oder Teilidentitäten, einem inneren Parlament. Je nach Aufmerksamkeitsfokus wird eine andere Seite dominant, etwa das Angst-Ich oder das Kompetenz-Ich.",
+      "einsatzkontext": "Sobald ein Problem als Ich bin so statt als situative Identifikation beschrieben wird.",
+      "ziel": "Dissoziation vom Problem-Ich ermöglichen, Zugang zu Ressourcen-Seiten öffnen.",
+      "quelle": "Grundannahmen der Hypnosystemik; Gunter Schmidt gesamt; Meine Inneren Anteile in der würdigenden Betrachtung"
+    },
+    {
+      "id": "muster_als_regulation",
+      "titel": "Problemmuster als Regulationsstrategie, nicht Kompetenzmangel",
+      "kategorie": "Grundannahme",
+      "kernaussage": "Ein wiederholt auftretendes, selbst schädliches Verhalten erfüllt eine hoch relevante Regulationsfunktion, etwa für Stress, Selbstwert oder Bindung. Es ist kein Beweis fehlender Fähigkeit.",
+      "einsatzkontext": "Funktionsklärungsphase, besonders bei hartnäckigen oder unvernünftig wirkenden Mustern.",
+      "ziel": "Weg von Bekämpfung und Scham, hin zu Funktionsverständnis.",
+      "zitat": "Was reguliert dieses Verhalten so effizient, dass das System es immer wieder wählt?",
+      "quelle": "Was reguliert dieses Verhalten so effizient; was reguliert - Hypnosystemische Grundannahme; Grundannahmen der Hypnosystemik"
+    },
+    {
+      "id": "problem_loesungstrance",
+      "titel": "Problem-Trance versus Lösungs-Trance",
+      "kategorie": "Grundannahme",
+      "kernaussage": "Begriffspaar: Problem-Trance ist die unwillkürliche Einengung auf Bedrohung und Defizit, ein Röhrenblick. Lösungs-Trance ist die gezielte Weitung auf Möglichkeitsraum und Muster des Gelingens.",
+      "einsatzkontext": "Diagnostisch, um zu erkennen, in welchem Zustand ein Klient gerade steckt.",
+      "ziel": "Den Zustandswechsel als eigentliches Ziel der Arbeit begreifbar machen.",
+      "quelle": "Gunter Schmidt gesamt"
+    },
+    {
+      "id": "veraenderung_als_folge",
+      "titel": "Veränderung ist eine Folge, kein Auftrag",
+      "kategorie": "Haltung & Prinzip",
+      "kernaussage": "Veränderung soll nicht direkt anvisiert oder verordnet werden, sondern als Konsequenz erhöhter Selbststeuerung organisch entstehen.",
+      "einsatzkontext": "Auftragsklärung und als Sprachdisziplin während der gesamten Sitzung.",
+      "ziel": "Widerstand vermeiden, Drucksprache aus dem Prozess nehmen.",
+      "zitat": "Veränderung ist eine Folge, kein Auftrag.",
+      "quelle": "Hypnosystemische Grundlagen"
+    },
+    {
+      "id": "widerstand_kompetenz",
+      "titel": "Widerstand als Kompetenz, nicht Störung",
+      "kategorie": "Haltung & Prinzip",
+      "kernaussage": "Widerstand wird als kompetente Rückmeldung über berechtigte Bedenken oder fehlende Passung gelesen, nicht als Blockade, die überwunden werden muss.",
+      "einsatzkontext": "Sobald ein Klient zögert, ambivalent ist oder Ja, aber sagt.",
+      "ziel": "Kooperation statt Kampf gegen sich selbst herstellen.",
+      "zitat": "Ihr Widerstand ist kein Feind, er ist ein Informant.",
+      "quelle": "Hypnosystemische Grundlagen; Utilisieren von Widerständen; Grundannahmen der Hypnosystemik"
+    },
+    {
+      "id": "impuls_als_angebot",
+      "titel": "Jeder Impuls ist nur ein Angebot, kein Befehl",
+      "kategorie": "Haltung & Prinzip",
+      "kernaussage": "Ein aufsteigender Impuls oder ein Gefühl muss nicht automatisch in Handlung übersetzt werden. Es ist eine Option, die geprüft werden kann.",
+      "einsatzkontext": "Impulsregulation, Steuerpositions-Arbeit im Alltag.",
+      "ziel": "Wahlfreiheit zwischen Reiz und Reaktion herstellen.",
+      "zitat": "Jeder Impuls, jedes Gefühl ist nur ein Angebot, kein Befehl.",
+      "quelle": "Jeder Impuls ist nur ein Angebot; was reguliert - Hypnosystemische Grundannahme"
+    },
+    {
+      "id": "sprachregeln",
+      "titel": "Sprachregeln, keine Soll- und Muss-Sprache",
+      "kategorie": "Haltung & Prinzip",
+      "kernaussage": "Vermeidung normativer Wörter wie müssen, sollen, besser, richtig, endlich, stattdessen einladende Begriffe wie stimmig, dienlich, hilfreich, passend. Auch Lob wird beobachtend statt bewertend formuliert.",
+      "einsatzkontext": "Durchgehend in Fragestellung und Feedback.",
+      "ziel": "Sprache soll einladen statt zwingen.",
+      "zitat": "Sprache lädt ein, sie zwingt nicht.",
+      "quelle": "Hypnosystemische Grundlagen"
+    },
+    {
+      "id": "zwei_ebenen_auftrag",
+      "titel": "Zwei-Ebenen-Auftragsklärung",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Unterscheidung zwischen formalem Auftrag, etwa Selbstbewusstsein stärken, und dem übersetzten hypnosystemischen Arbeitsauftrag, etwa Selbststeuerung erhöhen und Wahlmöglichkeiten erweitern. Der formale Auftrag wird angenommen, aber nicht wörtlich als Muss umgesetzt.",
+      "einsatzkontext": "Zu Beginn jeder Zusammenarbeit, auch bei Firmen- oder Institutionsaufträgen.",
+      "ziel": "Drucksprache vermeiden, Auftrag auf Prozessebene statt Ergebnisnorm formulieren.",
+      "zitat": "Wir erkunden Ihre inneren Ressourcen und erweitern Handlungsspielräume, Veränderung entsteht als Folge.",
+      "quelle": "Hypnosystemische Grundlagen"
+    },
+    {
+      "id": "beratungs_checkliste_10phasen",
+      "titel": "Hypnosystemische Beratungs-Checkliste, 10 Phasen",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Vollständiges Gesprächsgerüst: Auftrag, Problemkontext, Problemorganisation, Utilisation und Würdigung, Systemmuster, Ausnahmen, Aufmerksamkeitsfokus, Steuerposition, nächste Schritte, Transfer.",
+      "einsatzkontext": "Strukturiertes Erstgespräch oder vertiefte Klärungssitzung.",
+      "ziel": "Von Problemtrance zu zieldienlicher Selbstorganisation führen.",
+      "zitat": "Wie organisiere ich mein Erleben und Verhalten bisher so, dass genau dieses Ergebnis entsteht, und wofür ist das sinnvoll?",
+      "quelle": "Beratungs-Checkliste hypnosystemisch mit erweiterter Leitfrage"
+    },
+    {
+      "id": "fuenf_phasen_sequenz",
+      "titel": "Hypnosystemische 5-Phasen-Sequenz, ca. 20 Minuten",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Andocken an aktuelles Erleben, Muster präzise beschreiben, Funktion explorieren, Würdigung als Kompetenz, Einladung zur Weiterentwicklung, Mikro-Integration im Alltag.",
+      "einsatzkontext": "Reguläre Coaching-Sitzung, kompakte Version der 10-Phasen-Checkliste.",
+      "ziel": "Symptom vom Gegner zum Kooperationspartner machen.",
+      "zitat": "Interessant, wie Ihr System für Sie sorgt.",
+      "quelle": "Hypnosystemische Grundlagen"
+    },
+    {
+      "id": "dreissig_sekunden_intervention",
+      "titel": "Hypnosystemische 30-Sekunden-Intervention",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Wahrnehmung verlangsamen, Funktion sichtbar machen, den Anteil würdigen, Kompetenz sichtbar machen, Übergang in die Steuerposition.",
+      "einsatzkontext": "Akuter Moment im Gespräch, wenn der Klient in Problemtrance ist.",
+      "ziel": "Schneller Wechsel von Problemtrance zu Steuerposition ohne lange Sitzung.",
+      "zitat": "Was reguliert dieses Verhalten so effizient, dass Ihr System es immer wieder wählt?",
+      "quelle": "Was reguliert dieses Verhalten so effizient"
+    },
+    {
+      "id": "vollstaendige_utilisation_7schritte",
+      "titel": "Vollständige Utilisation, 7-Schritte-Modell",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Sensorisches Andocken, Funktionsklärung, Würdigung, Kompetenz extrahieren, Re-Integration bei der die Form sich ändert und die Kompetenz bleibt, Embodiment, Future Pace.",
+      "einsatzkontext": "Vollständige Utilisationsarbeit an einem konkreten Zustand oder Muster.",
+      "ziel": "Aus einem Schutzprogramm eine nutzbare Fähigkeit machen, im Körper verankern, in eine Zukunftsszene transferieren.",
+      "zitat": "Nicht: ich will keine Angst mehr. Sondern: ich nutze diese Sensibilität bewusst, während ich handele.",
+      "quelle": "VOLLSTÄNDIGE Utilisation erklärt"
+    },
+    {
+      "id": "kurze_utilisations_sitzung",
+      "titel": "Kurze Utilisations-Sitzung, geführter Dialog mit Schutzanteil",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Vollständiges Sitzungsskript: Körper spüren, Schutzanteil differenzieren etwa als Warner, Perfektionist oder angepasster Anteil, Embodiment-Erinnerung an gelungenes Lernen, wörtliche Ansprache an den warnenden Anteil, Rubikon-Moment als nächster sauberer Schritt statt Gesamtaufgabe.",
+      "einsatzkontext": "Bei lähmender Angst vor einem konkreten Schritt, etwa dem Weg in die Selbstständigkeit.",
+      "ziel": "Beziehung statt Kampf mit dem Schutzanteil, Führung zurückgewinnen.",
+      "zitat": "Ich erkenne Ihre gute Absicht. Ich übernehme. Sie dürfen mich ab jetzt durch Hinweise unterstützen.",
+      "quelle": "Kurze Utilisations-Sitzung"
+    },
+    {
+      "id": "wertschaetzendes_reframing",
+      "titel": "Wertschätzendes Reframing, 4 Schritte plus Verantwortungslinie",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Benennung ohne Pathologisierung, Würdigung der positiven Absicht, explizite Anerkennung der Kompetenz, Einladung zur Weiterentwicklung, zwingend ergänzt um eine Verantwortungslinie, damit es nicht in Rationalisierung kippt.",
+      "einsatzkontext": "Wenn ein belastendes Verhalten oder Muster neu gedeutet werden soll.",
+      "ziel": "Scham senken, Kooperationsbereitschaft erhöhen, ohne Verantwortung zu relativieren.",
+      "zitat": "Ein Teil von mir versucht gerade, diesen Zustand schnell zu regulieren. Das ist eine nachvollziehbare Schutzleistung. Und ich übernehme Verantwortung.",
+      "quelle": "was reguliert - Hypnosystemische Grundannahme; Was reguliert dieses Verhalten so effizient"
+    },
+    {
+      "id": "widerstaende_utilisieren_5schritte",
+      "titel": "Widerstände utilisieren, 5 Schritte",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Resonanz durch lautes Benennen und Würdigen des Widerstands, Frage nach der positiven Absicht, Umwandlung in konkrete Arbeitsschritte, Dialog mit dem Protektor-Anteil als Vereinbarung statt Blockade, Future-Pacing mit kleinem Erfolgserlebnis.",
+      "einsatzkontext": "Bei konkreten Zweifeln oder Blockaden vor einem Vorhaben, etwa Sichtbarkeit oder Kurserstellung.",
+      "ziel": "Widerstand in Umsetzungsenergie überführen statt ihn zu bekämpfen.",
+      "zitat": "Widerstände werden gewürdigt, ihre positive Absicht erkannt und in eine zieldienliche Funktion überführt.",
+      "quelle": "Utilisieren von Widerständen"
+    },
+    {
+      "id": "steuerposition_ehrenrunde",
+      "titel": "Steuerposition und Ehren-Runde-Anker",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Die Steuerposition ist die moderierende innere Instanz. Die Ehren-Runde ist ein Notfall-Anker für den Moment, in dem ein altes Muster kurzzeitig wieder übernimmt, gefolgt von körperlicher Aufrichtung und einem klaren, verkörperten Satz.",
+      "einsatzkontext": "Akute Rückfallmomente im Alltag.",
+      "ziel": "Schnelle Rückkehr in die Steuerposition ohne Selbstabwertung.",
+      "zitat": "Woran erinnert mich das? An Tiefen-Atmung, an Verbundenheit.",
+      "quelle": "Wofür?"
+    },
+    {
+      "id": "trigger_drang_pause_plan",
+      "titel": "Trigger-Drang-Pause-Plan",
+      "kategorie": "Prozessformat",
+      "kernaussage": "Vierschrittige Struktur zur Impulsregulation: Trigger erkennen, Drang benennen als spürbaren Impuls statt als Muss, 90-Sekunden-Pause mit Atemfokus, Kältereiz oder kurzem Spaziergang, anschließend ein Wenn-Dann-Plan.",
+      "einsatzkontext": "Konkrete Selbststeuerungsarbeit zwischen den Sitzungen, alltagstauglich.",
+      "ziel": "Handlungsspielraum zwischen Impuls und Reaktion schaffen.",
+      "quelle": "was reguliert - Hypnosystemische Grundannahme"
+    },
+    {
+      "id": "master_fragen_12",
+      "titel": "Zwölf hypnosystemische Masterfragen",
+      "kategorie": "Frage-Technik",
+      "kernaussage": "Verdichtete Liste von Schlüsselfragen, die vom frühen Signal über Funktion, Schutzauftrag, biografische Sinnhaftigkeit, Kompetenz bis zur Steuerposition führen.",
+      "einsatzkontext": "Als Frage-Set für ein vollständiges Coachinggespräch oder als Nachschlagewerk.",
+      "ziel": "Gespräch schnell aus der Problemtrance führen.",
+      "zitat": "Woran merken Sie als Erstes, dass dieses Muster beginnt?",
+      "quelle": "Was reguliert dieses Verhalten so effizient; Grundannahmen der Hypnosystemik"
+    },
+    {
+      "id": "funktionsklaerungsfragen",
+      "titel": "Funktionsklärungs-Fragen, Sammlung",
+      "kategorie": "Frage-Technik",
+      "kernaussage": "Fragenbündel, das gezielt die Regulationsleistung eines Verhaltens öffnet, etwa wobei es im Moment besonders zuverlässig hilft.",
+      "einsatzkontext": "Nach dem Andocken, vor der Würdigung, in jedem Prozessformat.",
+      "ziel": "Die kurzfristige Funktion eines Musters sichtbar machen.",
+      "zitat": "Wenn dieses Verhalten sprechen könnte, wofür würde es sich einsetzen?",
+      "quelle": "Was reguliert dieses Verhalten so effizient; Hypnosystemische Grundlagen"
+    },
+    {
+      "id": "wuerdigungsfragen",
+      "titel": "Würdigungsfragen",
+      "kategorie": "Frage-Technik",
+      "kernaussage": "Fragen, die die Beziehung zum Muster verändern, etwa wovor ein Anteil bewahren möchte oder welche Stärke sich in einer Strategie zeigt.",
+      "einsatzkontext": "Nach der Funktionsklärung, vor der Utilisation.",
+      "ziel": "Respekt gegenüber dem Anteil herstellen, Eskalation senken.",
+      "quelle": "Was reguliert dieses Verhalten so effizient"
+    },
+    {
+      "id": "drei_personen_perspektive",
+      "titel": "Drei-Personen-Perspektiven-Technik",
+      "kategorie": "Frage-Technik",
+      "kernaussage": "Der Klient schildert das Problem zunächst direkt, dann in der dritten Person empathisch, danach folgt gemeinsame Hypothesenbildung, was diese dritte Person bräuchte, abschließend ein Vergleich des Erlebens in beiden Rollen.",
+      "einsatzkontext": "Bei festgefahrener Problemidentifikation.",
+      "ziel": "Dissoziation vom Problem-Ich, Zugang zu Mitgefühl und neuen Hypothesen.",
+      "zitat": "Wie geht es der Person, über die wir gerade sprechen?",
+      "quelle": "Erleben als Netzwerk"
+    },
+    {
+      "id": "erleben_als_netzwerk",
+      "titel": "Erleben als Netzwerk, Analyse-Raster",
+      "kategorie": "Werkzeug & Modell",
+      "kernaussage": "Analyseraster für ein Erlebnismuster entlang der Dimensionen Körperhaltung, Bewegung, Atmung, Raumnahme, innere Dialoge, Sprache und Wortwahl, Blickfeld, Bildqualität und erlebte Größe.",
+      "einsatzkontext": "Musterrekonstruktion in der Phase der genauen Beschreibung.",
+      "ziel": "Ein diffuses schlechtes Gefühl in konkrete, veränderbare Netzwerk-Elemente auflösen.",
+      "zitat": "Erleben wird erzeugt durch Prozesse der Aufmerksamkeitsfokussierung.",
+      "quelle": "Erleben als Netzwerk; Wofür?"
+    },
+    {
+      "id": "teile_modell_wuerdigend",
+      "titel": "Teile-Modell, würdigende Anteile-Betrachtung",
+      "kategorie": "Werkzeug & Modell",
+      "kernaussage": "Katalog benannter innerer Anteile, etwa Hüter der Ressourcen, Wert- und Würde-Wächter, Sicherheitsbeauftragter, Qualitätsmanager, Entwicklungsbeauftragter, als Vorlage, um die eigene Vielschichtigkeit wertschätzend zu kartieren.",
+      "einsatzkontext": "Selbstreflexionsübung oder Einstieg in Teile-Arbeit.",
+      "ziel": "Unwillkürliche Seiten als Botschafter von Bedürfnissen integrieren statt bekämpfen.",
+      "zitat": "Oh, das ist ja toll, wie vielschichtig ich bin.",
+      "quelle": "Meine Inneren Anteile in der würdigenden Betrachtung"
+    },
+    {
+      "id": "embodiment_gehen_als_ob",
+      "titel": "Embodiment-Aktivierung, Gehen als ob",
+      "kategorie": "Werkzeug & Modell",
+      "kernaussage": "Konkrete Körperübung: einige Minuten so gehen und atmen, als würde es einem unglaublich gut gehen, um ressourcenreiche Erlebnisnetzwerke unwillkürlich zu aktivieren, Priming über den Körper.",
+      "einsatzkontext": "Wenn kognitive Ressourcenfragen nicht greifen, als körperbasierter Zugang.",
+      "ziel": "Schlummernde Kompetenzen über Körperkoordination statt über Sprache aktivieren.",
+      "zitat": "Gehen und atmen Sie mal in den nächsten zehn Minuten so, als würde es Ihnen unglaublich gut gehen.",
+      "quelle": "Wofür?; Erleben als Netzwerk; Gunter Schmidt gesamt"
+    },
+    {
+      "id": "metaposition_hoehere_ziele",
+      "titel": "Metaposition durch höhere Ziele",
+      "kategorie": "Werkzeug & Modell",
+      "kernaussage": "Das Einblenden eines übergeordneten, sinnstiftenden Ziels, etwa das Wohl der eigenen Kinder, schafft Distanz zum unmittelbaren Angstimpuls und adelt die Veränderung, statt sie als Schwäche zu werten.",
+      "einsatzkontext": "In Angst-Trance-Momenten mit hohem emotionalem Sog.",
+      "ziel": "Autonomie und Wahlmöglichkeit zurückgewinnen, ohne den Impuls zu bekämpfen.",
+      "quelle": "Gunter Schmidt gesamt"
+    }
+  ]
+}

@@ -32,6 +32,7 @@ header p.sub{
   padding:0 1.5rem;
   display:flex;
   gap:0.4rem;
+  flex-wrap:wrap;
 }
 .tab-btn{
   font-weight:600;
@@ -42,8 +43,18 @@ header p.sub{
   border-bottom:none;
   padding:0.7rem 1.3rem;
   border-radius:8px 8px 0 0;
+  transition:background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  display:inline-flex; align-items:center; gap:0.45rem;
 }
+.tab-btn:hover{ background:rgba(255,255,255,0.16); transform:translateY(-1px); }
 .tab-btn.active{ background:var(--bg); color:var(--primary); }
+.tab-btn.active:hover{ background:var(--bg); transform:none; }
+.tab-btn svg{ flex-shrink:0; opacity:0.85; }
+.tab-count{
+  font-family:'Open Sans', sans-serif; font-weight:600; font-size:0.68rem;
+  background:rgba(255,255,255,0.18); color:inherit; padding:0.05rem 0.45rem; border-radius:999px;
+}
+.tab-btn.active .tab-count{ background:rgba(0,111,106,0.12); color:var(--primary); }
 
 .search-wrap{ max-width:920px; margin:0 auto; padding:1.4rem 1.5rem 0; }
 .search-box{
@@ -72,17 +83,25 @@ header p.sub{
   font-family:'Montserrat', sans-serif; font-size:0.82rem;
   background:var(--card-bg); border:1px solid #d7e0de; color:var(--ink);
   padding:0.45rem 0.9rem; border-radius:999px;
+  transition:background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
+.chip:hover{ transform:translateY(-1px); box-shadow:0 4px 10px rgba(0,20,18,0.08); }
 .chip.active{ background:var(--primary); border-color:var(--primary); color:#fff; }
 .chip.reset{ color:var(--terracotta); border-color:var(--terracotta); background:transparent; }
+.chip.reset.active{ background:var(--terracotta); border-color:var(--terracotta); color:#fff; }
 
 main{ max-width:920px; margin:0 auto; padding:1.8rem 1.5rem 4rem; }
 .grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:0.9rem; }
+@keyframes cardFadeIn{ from{ opacity:0; transform:translateY(8px); } to{ opacity:1; transform:translateY(0); } }
 .card{
   background:var(--card-bg); border-radius:8px; border:1px solid #e3e7e6;
   border-left:4px solid var(--sage); padding:1.1rem 1.2rem 1rem; cursor:pointer;
+  transition:box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+  animation:cardFadeIn 0.35s ease both;
 }
+.card:hover{ box-shadow:0 10px 24px rgba(0,20,18,0.1); transform:translateY(-2px); }
 .card.open{ border-left-color:var(--terracotta); grid-column:1 / -1; }
+.card.open:hover{ transform:none; }
 .card.referenz{ border-left-color:var(--accent); background:linear-gradient(120deg, #fff 0%, #fdf8f1 100%); }
 .card.referenz.open{ border-left-color:var(--terracotta); }
 .referenz-badge{
@@ -215,3 +234,29 @@ button.ghost{
 .sp-farbe-3{ background:linear-gradient(135deg, var(--sage), #5c7a63); }
 .sp-farbe-4{ background:linear-gradient(135deg, #4b7f7c, var(--primary)); }
 .fokus-add-hint{ font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted); text-align:center; padding:0.6rem 0 2rem; }
+
+/* Methodenbox */
+.methodenbox-hinweis{
+  max-width:920px; margin:1.2rem auto 0; padding:0 1.5rem;
+  font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted); line-height:1.5;
+}
+.method-card{ border-left-color:var(--muted); }
+.method-card .anteil-line{ display:block; }
+.method-zitat{ font-family:'Lora', serif; font-style:italic; color:var(--terracotta); }
+.method-quelle{ font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted); }
+.kat-badge{
+  display:inline-block; font-family:'Montserrat', sans-serif; font-size:0.6rem;
+  letter-spacing:0.05em; text-transform:uppercase; color:#fff;
+  padding:0.15rem 0.55rem; border-radius:999px; margin-left:0.5rem; vertical-align:middle;
+}
+.kat-grundannahme{ background:var(--primary); }
+.kat-haltung{ background:var(--sage); }
+.kat-prozess{ background:var(--terracotta); }
+.kat-frage{ background:var(--accent); color:#4a3418; }
+.kat-werkzeug{ background:var(--muted); }
+.chip.kat-chip{ border-width:1px; }
+.chip.kat-chip.kat-grundannahme.active{ background:var(--primary); border-color:var(--primary); color:#fff; }
+.chip.kat-chip.kat-haltung.active{ background:var(--sage); border-color:var(--sage); color:#fff; }
+.chip.kat-chip.kat-prozess.active{ background:var(--terracotta); border-color:var(--terracotta); color:#fff; }
+.chip.kat-chip.kat-frage.active{ background:var(--accent); border-color:var(--accent); color:#4a3418; }
+.chip.kat-chip.kat-werkzeug.active{ background:var(--muted); border-color:var(--muted); color:#fff; }
