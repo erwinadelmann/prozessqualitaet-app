@@ -309,6 +309,55 @@ button.ghost{
 .chip.kat-chip.kk-sucht.active{ background:var(--accent); border-color:var(--accent); color:#4a3418; }
 .chip.kat-chip.kk-verantwortung.active{ background:var(--muted); border-color:var(--muted); color:#fff; }
 
+/* Karteikarte, bildschirmfüllende Ansicht */
+@keyframes modalFadeIn{ from{ opacity:0; } to{ opacity:1; } }
+@keyframes modalRiseIn{ from{ opacity:0; transform:translateY(14px) scale(0.99); } to{ opacity:1; transform:translateY(0) scale(1); } }
+.card-modal-backdrop{
+  position:fixed; inset:0; z-index:1000;
+  background:rgba(10,22,20,0.6);
+  display:flex; align-items:center; justify-content:center;
+  animation:modalFadeIn 0.16s ease both;
+}
+.card-modal{
+  background:var(--card-bg);
+  width:100%; height:100%;
+  max-width:100%; max-height:100%;
+  border-radius:0;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  animation:modalRiseIn 0.2s ease both;
+}
+@media (min-width:760px){
+  .card-modal-backdrop{ padding:2.4rem; }
+  .card-modal{
+    width:min(760px, 100%);
+    height:auto; max-height:100%;
+    border-radius:16px;
+    box-shadow:0 30px 70px rgba(0,10,9,0.4);
+  }
+}
+.card-modal-topbar{
+  position:sticky; top:0; z-index:2;
+  display:flex; justify-content:flex-end;
+  background:var(--card-bg);
+  padding:0.7rem 0.9rem 0;
+}
+.card-modal-close{
+  width:2.2rem; height:2.2rem; border-radius:50%;
+  border:1px solid #e3e7e6; background:var(--bg); color:var(--ink);
+  font-size:1.3rem; line-height:1; display:flex; align-items:center; justify-content:center;
+  transition:background 0.15s ease, transform 0.15s ease;
+}
+.card-modal-close:hover{ background:var(--terracotta); color:#fff; transform:rotate(90deg); }
+.card-modal-inner{ padding:0.6rem 1.5rem 3rem; }
+@media (min-width:760px){ .card-modal-inner{ padding:0.4rem 2.4rem 3rem; } }
+.card-modal-header{ border-bottom:1px dashed #ccd6d4; padding-bottom:1.1rem; margin-bottom:1.2rem; }
+.card-modal-header .muster-name{ font-size:1.35rem; display:block; margin-bottom:0.5rem; }
+.card-modal-header .anteil-line{ font-size:0.98rem; }
+.card-modal-body .details{ grid-template-columns:1fr; gap:1.3rem; }
+.card-modal-body .block h4{ font-size:0.78rem; }
+.card-modal-body .block p, .card-modal-body .block li{ font-size:1rem; line-height:1.65; }
+
 /* Inner Game */
 .ig-reminder{
   max-width:920px; margin:1.8rem auto 0; padding:0.9rem 1.5rem;

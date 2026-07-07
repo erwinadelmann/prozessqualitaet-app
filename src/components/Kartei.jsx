@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import DATA from '../data/muster.json';
 
 const KATEGORIE_CLASS = {
@@ -16,15 +16,15 @@ function matches(item, query){
     .join(' ').toLowerCase().includes(q);
 }
 
-function MusterCard({ item, isOpen, onToggle }){
+function MusterCard({ item, isOpen, onOpen }){
   return (
     <div
       className={'card' + (isOpen ? ' open' : '') + (item.referenzbeispiel ? ' referenz' : '')}
       tabIndex={0}
       role="button"
       aria-expanded={isOpen}
-      onClick={onToggle}
-      onKeyDown={e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); onToggle(); } }}
+      onClick={() => onOpen(item.id)}
+      onKeyDown={e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); onOpen(item.id); } }}
     >
       <div className="card-top">
         <div className="muster-name">
@@ -32,39 +32,85 @@ function MusterCard({ item, isOpen, onToggle }){
           {item.referenzbeispiel && <span className="referenz-badge">Referenz-Beispiel</span>}
           <span className={'kat-badge ' + KATEGORIE_CLASS[item.kategorie]}>{item.kategorie}</span>
         </div>
-        <div className="toggle-icon">{isOpen ? '−' : '+'}</div>
+        <div className="toggle-icon">+</div>
       </div>
       <div className="anteil-line">
         <span className="anteil-alt">{item.anteil_alt}</span>
         <span>→</span>
         <span className="anteil-neu">{item.anteil_neu}</span>
       </div>
-      {isOpen && (
-        <div className="details">
-          <div className="block">
-            <h4>Ursprungsintention</h4>
-            <p>{item.ursprungsintention}</p>
-          </div>
-          <div className="block">
-            <h4>Schutzfunktion</h4>
-            <p>{item.schutzfunktion}</p>
-          </div>
-          {item.ssi_zwischenschritt && (
-            <div className="block steps">
-              <h4>Zwischenschritt, Systemische Selbstintegration nach Langlotz</h4>
-              <p>{item.ssi_zwischenschritt}</p>
+    </div>
+  );
+}
+
+function MusterModal({ item, onClose }){
+  useEffect(() => {
+    const onKey = e => { if(e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [onClose]);
+
+  if(!item) return null;
+
+  return (
+    <div className="card-modal-backdrop" onClick={onClose}>
+      <div
+        className="card-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label={item.muster}
+        onClick={e => e.stopPropagation()}
+      >
+        <div className="card-modal-topbar">
+          <button className="card-modal-close" onClick={onClose} aria-label="Schließen">×</button>
+        </div>
+
+        <div className="card-modal-inner">
+          <div className="card-modal-header">
+            <div className="muster-name">
+              {item.muster}
+              {item.referenzbeispiel && <span className="referenz-badge">Referenz-Beispiel</span>}
+              <span className={'kat-badge ' + KATEGORIE_CLASS[item.kategorie]}>{item.kategorie}</span>
             </div>
-          )}
-          <div className="block steps">
-            <h4>Umlenkung als {item.anteil_neu}, Inner Game in drei Schritten</h4>
-            <ol>
-              <li><strong>1 · Wahrnehmen</strong>{item.schritt1}</li>
-              <li><strong>2 · Dem wahren Selbst anvertrauen, mit der Bitte, es zu erfüllen</strong>{item.schritt2}</li>
-              <li><strong>3 · Lernen ohne Selbstkritik</strong>{item.schritt3}</li>
-            </ol>
+            <div className="anteil-line">
+              <span className="anteil-alt">{item.anteil_alt}</span>
+              <span>→</span>
+              <span className="anteil-neu">{item.anteil_neu}</span>
+            </div>
+          </div>
+
+          <div className="card-modal-body">
+            <div className="details">
+              <div className="block">
+                <h4>Ursprungsintention</h4>
+                <p>{item.ursprungsintention}</p>
+              </div>
+              <div className="block">
+                <h4>Schutzfunktion</h4>
+                <p>{item.schutzfunktion}</p>
+              </div>
+              {item.ssi_zwischenschritt && (
+                <div className="block steps">
+                  <h4>Zwischenschritt, Systemische Selbstintegration nach Langlotz</h4>
+                  <p>{item.ssi_zwischenschritt}</p>
+                </div>
+              )}
+              <div className="block steps">
+                <h4>Umlenkung als {item.anteil_neu}, Inner Game in drei Schritten</h4>
+                <ol>
+                  <li><strong>1 · Wahrnehmen</strong>{item.schritt1}</li>
+                  <li><strong>2 · Dem wahren Selbst anvertrauen, mit der Bitte, es zu erfüllen</strong>{item.schritt2}</li>
+                  <li><strong>3 · Lernen ohne Selbstkritik</strong>{item.schritt3}</li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }
@@ -81,6 +127,7 @@ export default function Kartei(){
 
   const referenz = gefiltert.find(m => m.referenzbeispiel);
   const rest = gefiltert.filter(m => !m.referenzbeispiel);
+  const offenesItem = openId ? DATA.muster.find(m => m.id === openId) : null;
 
   const gruppen = useMemo(() => {
     const map = new Map();
@@ -92,7 +139,8 @@ export default function Kartei(){
     return [...map.entries()].filter(([, items]) => items.length > 0);
   }, [rest]);
 
-  function toggle(id){ setOpenId(openId === id ? null : id); }
+  function open(id){ setOpenId(id); }
+  function close(){ setOpenId(null); }
 
   return (
     <>
@@ -135,7 +183,7 @@ export default function Kartei(){
           <>
             {referenz && (
               <div className="grid" style={{ marginBottom: '1.4rem' }}>
-                <MusterCard item={referenz} isOpen={openId === referenz.id} onToggle={() => toggle(referenz.id)} />
+                <MusterCard item={referenz} isOpen={openId === referenz.id} onOpen={open} />
               </div>
             )}
             {gruppen.map(([kat, items]) => (
@@ -143,7 +191,7 @@ export default function Kartei(){
                 <h3 className={'kategorie-titel ' + KATEGORIE_CLASS[kat]}>{kat} <span className="kategorie-count">{items.length}</span></h3>
                 <div className="grid">
                   {items.map(item => (
-                    <MusterCard key={item.id} item={item} isOpen={openId === item.id} onToggle={() => toggle(item.id)} />
+                    <MusterCard key={item.id} item={item} isOpen={openId === item.id} onOpen={open} />
                   ))}
                 </div>
               </div>
@@ -151,6 +199,8 @@ export default function Kartei(){
           </>
         )}
       </main>
+
+      {offenesItem && <MusterModal item={offenesItem} onClose={close} />}
     </>
   );
 }
