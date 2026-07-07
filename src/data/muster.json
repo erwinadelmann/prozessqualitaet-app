@@ -1,7 +1,7 @@
 {
   "meta": {
     "titel": "Utilisations-Anteile-Bibliothek",
-    "version": "1.3",
+    "version": "1.4",
     "methodik": "Hypnosystemik (Erickson, Gunther Schmidt), Utilisation, Inner Game (Gallwey)",
     "ablauf": [
       "1. Ursprungsintention und Schutzfunktion des Musters erkennen und würdigen",
@@ -59,11 +59,12 @@
       "muster": "Harmoniesucht und Anpassung",
       "anteil_alt": "der Anpasser",
       "anteil_neu": "der Brückenbauer",
-      "ursprungsintention": "Schutz vor Konflikt und vor Liebesentzug.",
-      "schutzfunktion": "Beziehungssicherung um jeden Preis.",
+      "ursprungsintention": "Kindliche Prägung in einem Umfeld, in dem Konflikt oder die eigene abweichende Meinung mit Liebesentzug oder Rückzug der Bezugspersonen beantwortet wurde. Anpassung war die einzig verfügbare Strategie, um Zugehörigkeit zu sichern.",
+      "schutzfunktion": "Ein falsches Selbst entsteht, das die eigene Meinung dauerhaft zurückstellt, um die Verbindung zu den Bezugspersonen nicht zu gefährden. Bis heute wirkt dieses Zurückstellen als unwillkürlicher Reflex, stärker als jede bewusste Absicht zur Klarheit.",
       "schritt1": "Wahrnehmen, in welchem Moment die eigene Meinung gerade zurückgehalten wird, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, die eigene Position ruhig und klar zu äußern, während die Verbindung zum Gegenüber bestehen bleibt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Brückenbauer selbst: Wie müsstest du anders mit mir umgehen, damit Klarheit die Verbindung stärkt statt sie zu gefährden? Miniinterventionen einsetzen, damit der Abstand zwischen eigener Position und Verbindung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie das Gegenüber reagiert.",
-      "schritt3": "Ohne Selbstkritik beobachten, was durch das Aussprechen der eigenen Position tatsächlich geschehen ist. Daraus entsteht Vertrauen in die eigene Stimme."
+      "schritt3": "Ohne Selbstkritik beobachten, was durch das Aussprechen der eigenen Position tatsächlich geschehen ist. Daraus entsteht Vertrauen in die eigene Stimme.",
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Erwartung aufbauen, dass die eigene Meinung die Verbindung gefährdet. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt."
     },
     {
       "id": "zynismus_distanzierung",
@@ -158,11 +159,12 @@
       "muster": "Opferhaltung",
       "anteil_alt": "das Opfer",
       "anteil_neu": "der Entlaster",
-      "ursprungsintention": "Schutz vor der Last der Eigenverantwortung und oft vor Schuldgefühlen.",
-      "schutzfunktion": "Entlastung in echt ohnmächtigen Situationen.",
+      "ursprungsintention": "Kindliche Prägung in einem Umfeld, in dem eigenes Handeln wenig bewirkte oder Eigenverantwortung mit Schuldzuweisung beantwortet wurde. Die Position der Ohnmacht war die ehrlichste und zugleich sicherste verfügbare Position.",
+      "schutzfunktion": "Ein falsches Selbst entsteht, das eigene Handlungsspielräume dauerhaft übersieht, um sich nicht erneut der Last der Verantwortung oder der Schuldzuweisung auszusetzen. Bis heute wirkt diese Übersicht als unwillkürlicher Reflex, stärker als jede bewusste Absicht zur Wirksamkeit.",
       "schritt1": "Wahrnehmen, an welcher Stelle die Ursache gerade ganz nach außen verlegt wird, ohne das zu bewerten.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, tatsächlich verfügbaren Handlungsspielraums, mit der Bitte, genau diesen zu nutzen. Ergänzende Prozessfrage an den Entlaster selbst: Wie müsstest du anders mit mir umgehen, damit ein kleiner Spielraum bereits als Wirksamkeit zählt? Miniinterventionen einsetzen, damit der Abstand zwischen Ohnmacht und Handlungsspielraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, was die Nutzung dieses kleinen Spielraums bewirkt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, was die Nutzung dieses kleinen Spielraums bewirkt hat.",
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Handeln ohnehin nichts bewirkt oder bestraft wird. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt."
     },
     {
       "id": "gruebeln_rumination",
@@ -258,11 +260,12 @@
       "muster": "Klammern und Verlustangst-Verhalten",
       "anteil_alt": "der Klammerer",
       "anteil_neu": "der Nähe-Sucher",
-      "ursprungsintention": "Bindungssicherung nach früherer Trennungserfahrung.",
-      "schutzfunktion": "Vermeidung von erneutem Verlust durch erhöhte Nähe.",
+      "ursprungsintention": "Kindliche Prägung durch eine real erlebte Trennung oder durch eine unzuverlässige Bindungsperson, bei der Nähe nie sicher verfügbar war. Festhalten war die einzig verfügbare Strategie, um den drohenden Verlust abzuwenden.",
+      "schutzfunktion": "Ein falsches Selbst entsteht, das die eigene innere Sicherheit von der ständigen Nähe des anderen abhängig macht. Bis heute wirkt das Klammern als unwillkürlicher Impuls bei jedem Anzeichen von Distanz, stärker als jede bewusste Absicht zur Gelassenheit.",
       "schritt1": "Wahrnehmen, welches Gefühl von Unsicherheit dem Klammern unmittelbar vorausgeht.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer verlässlichen, aber nicht anklammernden Nähe, gestützt auf innere statt äußere Sicherheit, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Nähe-Sucher selbst: Wie müsstest du anders mit mir umgehen, damit Sicherheit von innen kommt, nicht vom Festhalten? Miniinterventionen einsetzen, damit der Abstand zwischen Nähe und Freiraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
-      "schritt3": "Ohne Selbstkritik beobachten, wie sich die innere Sicherheit im Vergleich zum Klammern tatsächlich angefühlt hat."
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die innere Sicherheit im Vergleich zum Klammern tatsächlich angefühlt hat.",
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Sicherheit nur durch Nähe zum anderen entsteht. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt."
     },
     {
       "id": "analyse_paralyse",
