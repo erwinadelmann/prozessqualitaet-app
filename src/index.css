@@ -10,8 +10,12 @@
   --bg:#f0f2f5;
   --card-bg:#ffffff;
   --ink:#1c2b2a;
+  --content-max:920px;
   color-scheme: light;
 }
+@media (min-width:1200px){ :root{ --content-max:1180px; } }
+@media (min-width:1600px){ :root{ --content-max:1480px; } }
+@media (min-width:2000px){ :root{ --content-max:1760px; } }
 
 *{ box-sizing:border-box; }
 

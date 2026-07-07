@@ -3,7 +3,8 @@
   "short_name": "Prozessqualität",
   "description": "Persönliches Nachschlage- und Prüfwerkzeug für den hypnosystemischen Utilisations-Prozess.",
   "start_url": "/",
-  "display": "standalone",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone", "minimal-ui"],
   "background_color": "#f0f2f5",
   "theme_color": "#006f6a",
   "icons": [
