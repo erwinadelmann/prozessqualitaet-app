@@ -115,7 +115,7 @@ main{ max-width:920px; margin:0 auto; padding:1.8rem 1.5rem 4rem; }
   animation:cardFadeIn 0.35s ease both;
 }
 .card:hover{ box-shadow:0 10px 24px rgba(0,20,18,0.1); transform:translateY(-2px); }
-.card.open{ border-left-color:var(--terracotta); grid-column:1 / -1; }
+.card.open{ border-left-color:var(--terracotta); }
 .card.open:hover{ transform:none; }
 .card.referenz{ border-left-color:var(--accent); background:linear-gradient(120deg, #fff 0%, #fdf8f1 100%); }
 .card.referenz.open{ border-left-color:var(--terracotta); }
@@ -135,9 +135,8 @@ main{ max-width:920px; margin:0 auto; padding:1.8rem 1.5rem 4rem; }
 .anteil-neu{ color:var(--primary); font-weight:600; }
 .details{
   margin-top:1rem; padding-top:1rem; border-top:1px dashed #ccd6d4;
-  display:grid; grid-template-columns:1fr 1fr; gap:1.2rem 1.6rem;
+  display:grid; grid-template-columns:1fr; gap:1rem;
 }
-@media (max-width:640px){ .details{ grid-template-columns:1fr; } }
 .block h4{
   font-family:'Montserrat', sans-serif; font-size:0.72rem; letter-spacing:0.07em;
   text-transform:uppercase; color:var(--primary); margin:0 0 0.35rem;
