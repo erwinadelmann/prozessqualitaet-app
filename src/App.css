@@ -18,6 +18,12 @@ header{
     border-radius:10px;
     box-shadow:0 10px 28px rgba(0,10,9,0.35);
     border:1px solid rgba(255,255,255,0.25);
+    cursor:pointer;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .header-hero:hover{
+    transform:translateY(-2px) scale(1.02);
+    box-shadow:0 14px 34px rgba(0,10,9,0.42);
   }
 }
 header h1{
