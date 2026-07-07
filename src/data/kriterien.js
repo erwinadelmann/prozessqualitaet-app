@@ -1,0 +1,16 @@
+// Zehn Kriterien für saubere hypnosystemische Arbeit
+// Quelle: "Utilisation prüfen, Zehn Kriterien für saubere hypnosystemische Arbeit", mentaltraining.at
+// Wortlaut bewusst deckungsgleich mit der PDF halten, damit App und Dokument nie auseinanderlaufen.
+
+export const KRITERIEN = [
+  { nr: 1, titel: "Utilisation statt Bekämpfung", frage: "Habe ich das Muster als Feind behandelt oder als Signal mit Funktion gewürdigt?", hinweis: "Wird ein Muster „wegmacht“, ist die Utilisation verlassen. Kommt vor jeder Veränderung eine Würdigung des Ursprungsintents, bleibt der Prozess methodisch sauber." },
+  { nr: 2, titel: "Ja-und-Haltung statt Entweder-Oder", frage: "Wurden alle beteiligten inneren Anteile gehört, auch der bremsende?", hinweis: "Verliert am Ende ein Anteil, ist es ein Kompromiss zulasten eines Teils, keine hypnosystemische Lösung. Der Augenhöhe-Prozess ist hier der Prüfstein." },
+  { nr: 3, titel: "Prozessführung statt Inhaltsführung", frage: "Wurde dem Klienten gesagt, was zu tun ist, oder wurde der Rahmen gehalten, in dem er selbst die Lösung findet?", hinweis: "Ein verlässlicher Indikator ist das Verhältnis von Aussagen zu Fragen in der Sitzung. Überwiegt das Erklären, ist der Prozess in den Content-Modus gerutscht." },
+  { nr: 4, titel: "Präsupposition statt Direktive", frage: "Wurden offene, präsupponierende Formulierungen genutzt statt geschlossener Suggestionen?", hinweis: "Direktive Sprache von außen widerspricht dem Grundprinzip, dass die Lösung im System des Klienten liegt und nicht im Coach." },
+  { nr: 5, titel: "Wofür statt Warum", frage: "Wurde nach der Funktion gefragt oder nach der Ursache gegraben?", hinweis: "„Warum“ führt in Erklärungsschleifen und Rechtfertigung, „Wofür“ führt in Nutzbarmachung. Verhandelt eine Sitzung mehr Vergangenheit als Zukunft, ist das ein Warnsignal." },
+  { nr: 6, titel: "Körper und Embodiment einbeziehen", frage: "Kam eine konkrete körperliche Verortung vor, etwa „wo im Körper spüren Sie das“?", hinweis: "Rein kognitive Sitzungen ohne somatischen Anker bleiben unvollständig, weil Veränderung über Erleben stattfindet, nicht über Verstehen." },
+  { nr: 7, titel: "Neue Erfahrung im Hier-und-Jetzt", frage: "Wurde in der Sitzung etwas Neues erlebt, oder nur über das Problem gesprochen?", hinweis: "Bleibt am Ende nur mehr Klarheit über das Problem, aber keine erlebte Alternative, fehlt der zentrale Wirkfaktor." },
+  { nr: 8, titel: "Ökologie-Check", frage: "Ist die angestrebte Veränderung mit allen relevanten Lebensbereichen und Beziehungen verträglich?", hinweis: "Löst eine Lösung ein Symptom und erzeugt an anderer Stelle ein neues Problem, war es keine saubere Utilisation, sondern Verschiebung." },
+  { nr: 9, titel: "Selbstorganisation stärken", frage: "Verlässt der Klient die Sitzung mit einem eigenen Werkzeug, oder mit der Erwartung, die Lösung beim nächsten Mal wieder vom Coach zu bekommen?", hinweis: "Guter Prozess macht den Klienten zunehmend selbständiger, nicht zunehmend gebundener an den Coach." },
+  { nr: 10, titel: "Zieldienliche Ersatzorganisation", frage: "Endet die Sitzung mit einem konkreten, verkörperten nächsten Schritt, oder nur mit Einsicht?", hinweis: "Einsicht ohne Transfer in Verhalten ist ausdrücklich nicht das Ziel der Methodik." }
+];

@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "titel": "Utilisations-Anteile-Bibliothek",
+    "version": "1.3",
+    "methodik": "Hypnosystemik (Erickson, Gunther Schmidt), Utilisation, Inner Game (Gallwey)",
+    "ablauf": [
+      "1. Ursprungsintention und Schutzfunktion des Musters erkennen und würdigen",
+      "2. Anteil wertschätzend nach seiner Funktion umbenennen (alt -> neu)",
+      "3. Umlenkung nach dem Drei-Schritte-Modell des Inner Game: nicht wertend wahrnehmen, dem wahren Selbst das Bild anvertrauen, mit der Bitte, es zu erfüllen, und loslassen, ohne Selbstkritik aus dem Ergebnis lernen"
+    ]
+  },
+  "muster": [
+    {
+      "id": "rueckzug_vermeidung",
+      "muster": "Rückzug und Vermeidung",
+      "anteil_alt": "der Vermeider",
+      "anteil_neu": "der Schutzraum-Wächter",
+      "ursprungsintention": "Schutz vor Überforderung oder vor erneuter Verletzung in Beziehungen.",
+      "schutzfunktion": "Selbstschutz durch Reduktion von Reizen und Risiko.",
+      "schritt1": "Ohne Bewertung wahrnehmen, wann und wie sich der Rückzug gerade zeigt. Welche Reize, welche Nähe, welche Situation lösen ihn aus.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, sich für eine klar begrenzte Zeit bewusst zurückzuziehen und danach selbstbestimmt wieder in Kontakt zu gehen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Schutzraum-Wächter selbst: Wie müsstest du anders mit mir umgehen, damit der Rückzug kürzer und der Rückweg leichter wird? Miniinterventionen einsetzen, damit der Abstand zwischen Rückzug und Kontakt kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, ohne den Prozess im Detail zu steuern.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie der Rückzug tatsächlich verlaufen ist. Die Differenz zwischen dem Bild und dem Erlebten wird zur nächsten Feinjustierung."
+    },
+    {
+      "id": "kontrollzwang",
+      "muster": "Kontrollzwang",
+      "anteil_alt": "der Kontrolleur",
+      "anteil_neu": "der Ordnungsstifter",
+      "ursprungsintention": "Entsteht in chaotischen oder unvorhersehbaren Umfeldern.",
+      "schutzfunktion": "Ordnung als Ersatz für fehlendes Urvertrauen.",
+      "schritt1": "Wahrnehmen, an welcher Stelle gerade Kontrolle ausgeübt wird, ohne das sofort zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, sich auf die wenigen wirklich beeinflussbaren Stellschrauben zu konzentrieren und den Rest bewusst loszulassen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Ordnungsstifter selbst: Wie müsstest du anders mit mir umgehen, damit Vertrauen an die Stelle von Kontrolle treten kann? Miniinterventionen einsetzen, damit der Abstand zwischen Kontrolle und Vertrauen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was tatsächlich geschehen ist, wenn losgelassen wurde. Aus der Differenz entsteht die nächste, feinere Justierung von Halt und Vertrauen."
+    },
+    {
+      "id": "perfektionismus",
+      "muster": "Perfektionismus",
+      "anteil_alt": "der Perfektionist",
+      "anteil_neu": "der Qualitätsmanager",
+      "ursprungsintention": "Schutz vor Kritik oder Ablehnung.",
+      "schutzfunktion": "Sicherheit durch Kontrolle über das eigene Ergebnis.",
+      "schritt1": "Wahrnehmen, wie sich der Anspruch an das Ergebnis gerade zeigt, ohne ihn als gut oder schlecht zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines Ergebnisses, das gut genug für den jeweiligen Zweck ist, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Qualitätsmanager selbst: Wie müsstest du anders mit mir umgehen, damit gut genug tatsächlich genügt? Miniinterventionen einsetzen, damit der Abstand zwischen Anspruch und Zweck kleiner wird, bis beide zusammenarbeiten können. Danach die Kontrolle über jedes Detail loslassen.",
+      "schritt3": "Ohne Selbstkritik das tatsächliche Ergebnis betrachten. Die Differenz zwischen Anspruch und Resultat wird zur nächsten Kalibrierung, nicht zum Urteil."
+    },
+    {
+      "id": "prokrastination",
+      "muster": "Prokrastination",
+      "anteil_alt": "der Aufschieber",
+      "anteil_neu": "der Zeitwächter",
+      "ursprungsintention": "Schutz vor Bewertung, kein Faulheitsproblem.",
+      "schutzfunktion": "Selbstschutz vor einem möglichen Beweis der eigenen Unzulänglichkeit.",
+      "schritt1": "Wahrnehmen, was genau im Moment des Aufschiebens im Körper und im Denken passiert, ohne es zu verurteilen.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, risikoarmen ersten Schritts, mit der Bitte, genau diesen zu beginnen. Ergänzende Prozessfrage an den Zeitwächter selbst: Wie müsstest du anders mit mir umgehen, damit der erste Schritt leichter fällt als das Aufschieben? Miniinterventionen einsetzen, damit der Abstand zwischen Ankündigung und Beginn kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie es weitergeht.",
+      "schritt3": "Ohne Selbstkritik beobachten, was der erste Schritt ausgelöst hat. Die Erfahrung wird zur Grundlage für den nächsten Schritt."
+    },
+    {
+      "id": "harmoniesucht_anpassung",
+      "muster": "Harmoniesucht und Anpassung",
+      "anteil_alt": "der Anpasser",
+      "anteil_neu": "der Brückenbauer",
+      "ursprungsintention": "Schutz vor Konflikt und vor Liebesentzug.",
+      "schutzfunktion": "Beziehungssicherung um jeden Preis.",
+      "schritt1": "Wahrnehmen, in welchem Moment die eigene Meinung gerade zurückgehalten wird, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, die eigene Position ruhig und klar zu äußern, während die Verbindung zum Gegenüber bestehen bleibt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Brückenbauer selbst: Wie müsstest du anders mit mir umgehen, damit Klarheit die Verbindung stärkt statt sie zu gefährden? Miniinterventionen einsetzen, damit der Abstand zwischen eigener Position und Verbindung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie das Gegenüber reagiert.",
+      "schritt3": "Ohne Selbstkritik beobachten, was durch das Aussprechen der eigenen Position tatsächlich geschehen ist. Daraus entsteht Vertrauen in die eigene Stimme."
+    },
+    {
+      "id": "zynismus_distanzierung",
+      "muster": "Zynismus und Distanzierung",
+      "anteil_alt": "der Zyniker",
+      "anteil_neu": "der Scharfsichtige",
+      "ursprungsintention": "Schutz vor Enttäuschung.",
+      "schutzfunktion": "Emotionale Vorwegnahme, um den Schmerz kontrollierbar zu machen.",
+      "schritt1": "Wahrnehmen, wann der distanzierende Kommentar entsteht und was unmittelbar davor im Körper spürbar war.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer klarsichtigen, aber wohlwollenden Einschätzung, mit der Bitte, diese anstelle der Distanzierung zum Ausdruck zu bringen. Ergänzende Prozessfrage an den Scharfsichtigen selbst: Wie müsstest du anders mit mir umgehen, damit Schärfe und Wohlwollen gleichzeitig da sein dürfen? Miniinterventionen einsetzen, damit der Abstand zwischen Erkennen und Distanzieren kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie die Einschätzung ankommt.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Klarheit ohne Härte tatsächlich angefühlt und ausgewirkt hat."
+    },
+    {
+      "id": "innerer_kritiker",
+      "muster": "Innerer Kritiker",
+      "anteil_alt": "der Kritiker",
+      "anteil_neu": "der Frühwarner",
+      "ursprungsintention": "Internalisierter Schutzmechanismus, der Fehler vorwegnehmen will.",
+      "schutzfunktion": "Präventive Selbstkorrektur, bevor andere Fehler bemerken.",
+      "schritt1": "Wahrnehmen, wann und in welcher Tonlage die innere kritische Stimme sich meldet, ohne ihr sofort zu folgen.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, die Warnung einmal kurz zu prüfen und danach wieder Raum für Handeln zu geben, statt dauerhaft zu bewerten, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Frühwarner selbst: Wie müsstest du anders mit mir umgehen, damit eine Warnung genügt, statt in Dauerbewertung überzugehen? Miniinterventionen einsetzen, damit der Abstand zwischen Warnen und Handeln kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was durch das begrenzte Mandat des Frühwarners tatsächlich an Handlungsfähigkeit gewonnen wurde."
+    },
+    {
+      "id": "workaholismus",
+      "muster": "Workaholismus und Selbstüberforderung",
+      "anteil_alt": "der Schaffer",
+      "anteil_neu": "der Wertschöpfer",
+      "ursprungsintention": "Schutz vor Leere oder vor dem Gefühl der eigenen Wertlosigkeit im Nicht-Tun.",
+      "schutzfunktion": "Leistung als Ersatzwährung für Selbstwert.",
+      "schritt1": "Wahrnehmen, wann der Drang zu arbeiten gerade auftaucht und was im Nicht-Tun davor spürbar war.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines selbstgesetzten Maßes, innerhalb dessen Wert unabhängig vom Output erlebbar wird, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Wertschöpfer selbst: Wie müsstest du anders mit mir umgehen, damit Wert auch im Nicht-Tun spürbar bleibt? Miniinterventionen einsetzen, damit der Abstand zwischen Leistung und Wert kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, was darüber hinausgeht.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Wert innerhalb der gesetzten Grenze tatsächlich angefühlt hat."
+    },
+    {
+      "id": "explosive_wut",
+      "muster": "Explosive Reaktionen und Wut",
+      "anteil_alt": "der Wüterich",
+      "anteil_neu": "der Grenzwächter",
+      "ursprungsintention": "Grenzen, die anders nicht kommuniziert werden konnten.",
+      "schutzfunktion": "Grenzsetzung, wenn leise Signale nie gehört wurden.",
+      "schritt1": "Wahrnehmen, an welcher Körperstelle sich der Druck zuerst zeigt, lange bevor die Wut ausbricht.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer frühen, klaren Grenzsetzung, mit der Bitte, diese zu setzen, sobald der erste Druck spürbar wird. Ergänzende Prozessfrage an den Grenzwächter selbst: Wie müsstest du anders mit mir umgehen, damit eine frühe, leise Grenze genügt? Miniinterventionen einsetzen, damit der Abstand zwischen erstem Druck und Grenzsetzung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was die frühe Grenzsetzung im Vergleich zum Ausbruch bewirkt hat."
+    },
+    {
+      "id": "erstarren_dissoziation",
+      "muster": "Erstarren und Dissoziation",
+      "anteil_alt": "der Erstarrte",
+      "anteil_neu": "der Überlebenskünstler",
+      "ursprungsintention": "Archaischer Schutzmechanismus des Nervensystems, wenn weder Kampf noch Flucht möglich waren.",
+      "schutzfunktion": "Überlebenssicherung durch Reizreduktion in einer als lebensbedrohlich erlebten Situation.",
+      "schritt1": "Wahrnehmen, wo im Körper die Erstarrung beginnt, ohne sie wegdrücken zu wollen.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, über Atem, Bodenkontakt und Orientierung im Raum schrittweise wieder handlungsfähig zu werden, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Überlebenskünstler selbst: Wie müsstest du anders mit mir umgehen, damit die Rückkehr in den Kontakt sicher bleibt? Miniinterventionen einsetzen, damit der Abstand zwischen Erstarrung und Handlungsfähigkeit kleiner wird, bis beide zusammenarbeiten können. Danach loslassen und dem Nervensystem die Zeit geben, die es braucht.",
+      "schritt3": "Ohne Selbstkritik beobachten, welcher kleine Schritt der Regulation tatsächlich gewirkt hat, und darauf beim nächsten Mal aufbauen."
+    },
+    {
+      "id": "helfersyndrom",
+      "muster": "Helfersyndrom",
+      "anteil_alt": "der Helfer",
+      "anteil_neu": "der Ermöglicher",
+      "ursprungsintention": "Schutz vor dem Gefühl der eigenen Bedeutungslosigkeit.",
+      "schutzfunktion": "Zugehörigkeit und Wert über das Gebrauchtwerden.",
+      "schritt1": "Wahrnehmen, in welchem Moment der Impuls zu helfen auftaucht, bevor überhaupt gefragt wurde.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer Gabe, die aus freier Kapazität kommt, nicht aus Mangel, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Ermöglicher selbst: Wie müsstest du anders mit mir umgehen, damit Geben aus Fülle geschieht, nicht aus eigenem Mangel? Miniinterventionen einsetzen, damit der Abstand zwischen eigenem Bedürfnis und Geben kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, ob die Hilfe angenommen wird.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Helfen aus Fülle im Vergleich zu Helfen aus Bedürftigkeit tatsächlich angefühlt hat."
+    },
+    {
+      "id": "selbstsabotage",
+      "muster": "Selbstsabotage",
+      "anteil_alt": "der Saboteur",
+      "anteil_neu": "der Vorsichtige",
+      "ursprungsintention": "Schutz vor der Verantwortung sichtbaren Erfolgs.",
+      "schutzfunktion": "Scheitern fühlt sich vertrauter an als eine unbekannte Erfolgsrolle.",
+      "schritt1": "Wahrnehmen, an welcher Stelle kurz vor dem Erfolg eine Verzögerung oder ein Fehler auftaucht, ohne sie zu verurteilen.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, sicheren Schritts in die neue Erfolgsrolle, mit der Bitte, genau diesen zu gehen. Ergänzende Prozessfrage an den Vorsichtigen selbst: Wie müsstest du anders mit mir umgehen, damit Erfolg sich sicher statt riskant anfühlt? Miniinterventionen einsetzen, damit der Abstand zwischen vertrauter und neuer Rolle kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich der kleine Schritt in Richtung Erfolg tatsächlich angefühlt hat, und darauf aufbauen."
+    },
+    {
+      "id": "eifersucht",
+      "muster": "Eifersucht",
+      "anteil_alt": "der Eifersüchtige",
+      "anteil_neu": "der Bindungswächter",
+      "ursprungsintention": "Alarmsystem für Bindungsverlust.",
+      "schutzfunktion": "Bindungssicherung durch erhöhte Wachsamkeit.",
+      "schritt1": "Wahrnehmen, welches konkrete Signal die Wachsamkeit gerade ausgelöst hat, ohne es sofort zu deuten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer direkten, ruhigen Kommunikation des Bindungsbedürfnisses, statt der Kontrolle über den anderen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Bindungswächter selbst: Wie müsstest du anders mit mir umgehen, damit Sicherheit aus Nähe entsteht, nicht aus Kontrolle? Miniinterventionen einsetzen, damit der Abstand zwischen Bedürfnis und Ausdruck kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie der andere antwortet.",
+      "schritt3": "Ohne Selbstkritik beobachten, was das offene Ansprechen des Bedürfnisses tatsächlich bewirkt hat."
+    },
+    {
+      "id": "opferhaltung",
+      "muster": "Opferhaltung",
+      "anteil_alt": "das Opfer",
+      "anteil_neu": "der Entlaster",
+      "ursprungsintention": "Schutz vor der Last der Eigenverantwortung und oft vor Schuldgefühlen.",
+      "schutzfunktion": "Entlastung in echt ohnmächtigen Situationen.",
+      "schritt1": "Wahrnehmen, an welcher Stelle die Ursache gerade ganz nach außen verlegt wird, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, tatsächlich verfügbaren Handlungsspielraums, mit der Bitte, genau diesen zu nutzen. Ergänzende Prozessfrage an den Entlaster selbst: Wie müsstest du anders mit mir umgehen, damit ein kleiner Spielraum bereits als Wirksamkeit zählt? Miniinterventionen einsetzen, damit der Abstand zwischen Ohnmacht und Handlungsspielraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was die Nutzung dieses kleinen Spielraums bewirkt hat."
+    },
+    {
+      "id": "gruebeln_rumination",
+      "muster": "Grübeln und Rumination",
+      "anteil_alt": "der Grübler",
+      "anteil_neu": "der Szenarienplaner",
+      "ursprungsintention": "Versuch des Verstandes, Kontrolle über etwas Unlösbares zu gewinnen.",
+      "schutzfunktion": "Gefahrenabwehr durch gedankliches Durchspielen aller Szenarien.",
+      "schritt1": "Wahrnehmen, wann die Gedankenschleife beginnt und welche Frage tatsächlich dahintersteht.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines begrenzten Zeitraums für genau diese eine Frage, mit der Bitte, danach eine Entscheidung oder Handlung folgen zu lassen. Ergänzende Prozessfrage an den Szenarienplaner selbst: Wie müsstest du anders mit mir umgehen, damit ein Durchgang genügt, statt endlos weiterzudenken? Miniinterventionen einsetzen, damit der Abstand zwischen Denken und Handeln kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was die zeitlich begrenzte Auseinandersetzung im Vergleich zum endlosen Grübeln gebracht hat."
+    },
+    {
+      "id": "sturheit_starrsinn",
+      "muster": "Sturheit und Starrsinn",
+      "anteil_alt": "der Dickkopf",
+      "anteil_neu": "der Standhafte",
+      "ursprungsintention": "Schutz der eigenen Identität, wenn Nachgeben früher mit Selbstverlust gleichgesetzt wurde.",
+      "schutzfunktion": "Selbstbehauptung.",
+      "schritt1": "Wahrnehmen, welcher Wert hinter der starren Position gerade wirklich geschützt werden soll.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, in der Sache flexibel zu bleiben, während der zugrunde liegende Wert unangetastet bleibt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Standhaften selbst: Wie müsstest du anders mit mir umgehen, damit Nachgeben in der Sache den Wert nicht gefährdet? Miniinterventionen einsetzen, damit der Abstand zwischen Wert und Sache kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, ob Nachgeben in der Sache die Identität tatsächlich gefährdet hat oder nicht."
+    },
+    {
+      "id": "uebertriebene_bescheidenheit",
+      "muster": "Übertriebene Bescheidenheit",
+      "anteil_alt": "der Kleinmacher",
+      "anteil_neu": "der Friedensstifter",
+      "ursprungsintention": "Schutz vor Neid, Ablehnung oder dem Vorwurf der Überheblichkeit.",
+      "schutzfunktion": "Zurückhaltung als sicherste Strategie zur Sicherung der Zugehörigkeit.",
+      "schritt1": "Wahrnehmen, in welchem Moment die eigene Leistung gerade heruntergespielt wird.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, die eigene Leistung sachlich und ruhig zu benennen, ohne Dramatisierung und ohne Verkleinerung, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Friedensstifter selbst: Wie müsstest du anders mit mir umgehen, damit sachliche Anerkennung nicht als Gefahr für den Frieden erscheint? Miniinterventionen einsetzen, damit der Abstand zwischen Leistung und Aussage kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie das sachliche Benennen der eigenen Leistung tatsächlich aufgenommen wurde."
+    },
+    {
+      "id": "sprachlosigkeit_konflikten",
+      "muster": "Sprachlosigkeit in Konflikten",
+      "anteil_alt": "der Schweiger",
+      "anteil_neu": "der Deeskalierer",
+      "ursprungsintention": "Schutz vor Eskalation, wenn Worte früher zu Verletzung oder Strafe führten.",
+      "schutzfunktion": "Vermeidung von Risiko durch Schweigen.",
+      "schritt1": "Wahrnehmen, was im Moment des Verstummens im Körper spürbar ist, bevor das Schweigen einsetzt.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer klar dosierten, ruhigen Formulierung, die das Anliegen ausdrückt, mit der Bitte, genau diese zu finden. Ergänzende Prozessfrage an den Deeskalierer selbst: Wie müsstest du anders mit mir umgehen, damit Worte finden sicherer ist als schweigen? Miniinterventionen einsetzen, damit der Abstand zwischen Schweigen und Sprechen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie es ankommt.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie die dosierte Formulierung im Vergleich zum Schweigen tatsächlich gewirkt hat."
+    },
+    {
+      "id": "suchtnahes_ablenkungsverhalten",
+      "muster": "Suchtnahes Ablenkungsverhalten",
+      "anteil_alt": "der Ablenker",
+      "anteil_neu": "der Regulierer",
+      "ursprungsintention": "Schutz vor unangenehmen Gefühlen, die sonst ungefiltert ankämen.",
+      "schutzfunktion": "Emotionale Regulation durch Reizersatz.",
+      "schritt1": "Wahrnehmen, welches Gefühl unmittelbar vor dem Griff zur Ablenkung spürbar war.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer körperbezogenen Regulationsform wie Atem, Bewegung oder Ausdruck, mit der Bitte, diese stattdessen zu nutzen. Ergänzende Prozessfrage an den Regulierer selbst: Wie müsstest du anders mit mir umgehen, damit Regulation über den Körper genauso schnell wirkt wie die Ablenkung? Miniinterventionen einsetzen, damit der Abstand zwischen Anspannung und Regulation kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die körperbezogene Regulation im Vergleich zur gewohnten Ablenkung tatsächlich angefühlt hat."
+    },
+    {
+      "id": "noergeln_kritisieren",
+      "muster": "Nörgeln und chronisches Kritisieren",
+      "anteil_alt": "der Nörgler",
+      "anteil_neu": "der Anliegen-Anwalt",
+      "ursprungsintention": "Indirekter Ausdruck unerfüllter Bedürfnisse nach Anerkennung oder Einfluss.",
+      "schutzfunktion": "Ersatzventil, wenn direkte Formulierung nie gelernt oder nie sicher war.",
+      "schritt1": "Wahrnehmen, welches unerfüllte Bedürfnis hinter der Kritik gerade tatsächlich steht.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines direkten, konstruktiven Anliegens, mit der Bitte, dieses anstelle der indirekten Kritik auszusprechen. Ergänzende Prozessfrage an den Anliegen-Anwalt selbst: Wie müsstest du anders mit mir umgehen, damit das Anliegen direkt gehört wird, ohne den Umweg über Kritik? Miniinterventionen einsetzen, damit der Abstand zwischen Kritik und Anliegen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie es aufgenommen wird.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie das direkte Anliegen im Vergleich zum Nörgeln tatsächlich aufgenommen wurde."
+    },
+    {
+      "id": "kontrolle_ueber_andere",
+      "muster": "Übertriebene Kontrolle über andere",
+      "anteil_alt": "der Kontrollfreak",
+      "anteil_neu": "der Verantwortungsträger",
+      "ursprungsintention": "Schutz vor dem Gefühl der eigenen Austauschbarkeit oder vor Vertrauensverlust durch frühere Delegationserfahrungen.",
+      "schutzfunktion": "Sicherung von Einfluss und Relevanz.",
+      "schritt1": "Wahrnehmen, an welcher Stelle gerade nachjustiert oder nachkontrolliert wird, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer klaren Vereinbarung mit schrittweise überprüftem Vertrauen, mit der Bitte, dieses Vertrauen zu wagen. Ergänzende Prozessfrage an den Verantwortungsträger selbst: Wie müsstest du anders mit mir umgehen, damit Vertrauen schrittweise wachsen darf, ohne sofort riskant zu wirken? Miniinterventionen einsetzen, damit der Abstand zwischen Kontrolle und Vertrauen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was aus dem gewährten Vertrauen tatsächlich geworden ist."
+    },
+    {
+      "id": "people_pleasing",
+      "muster": "People-Pleasing",
+      "anteil_alt": "der Pleaser",
+      "anteil_neu": "der Vermittler",
+      "ursprungsintention": "Kindliche Prägung in einem als bedrohlich erlebten Umfeld, in dem die Bezugspersonen selbst, durch eigene traumatische Belastung, keinen Zugang zum wahren Selbst des Kindes hatten. Überanpassung war die einzig verfügbare Strategie, um in diesem Umfeld sicher zu bleiben.",
+      "schutzfunktion": "Ein falsches Selbst entsteht, das die eigenen Bedürfnisse verdrängt und die Bedürfnisse der Bezugspersonen ins Zentrum des inneren Raums stellt. Bis heute wirkt diese Überanpassung als unwillkürlicher Impuls, mit starken Antennen für die Bedürfnisse anderer, stärker als jede bewusste Absicht.",
+      "schritt1": "Wahrnehmen, in welchem Moment die eigene Zustimmung schon automatisch da ist, bevor die eigene Meinung überhaupt geprüft wurde.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer bewussten Entscheidung, die die eigene Position mit der sozialen Sensibilität verbindet, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Vermittler selbst: Wie müsstest du anders mit mir umgehen, damit die eigene Position und die Rücksicht auf andere gleichzeitig Platz haben? Miniinterventionen einsetzen, damit der Abstand zwischen eigener Position und Rücksicht kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die bewusste Entscheidung im Vergleich zur reflexhaften Zustimmung tatsächlich ausgewirkt hat.",
+      "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber den ursprünglich verinnerlichten Forderungen der Bezugspersonen aufbauen. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt."
+    },
+    {
+      "id": "klammern_verlustangst",
+      "muster": "Klammern und Verlustangst-Verhalten",
+      "anteil_alt": "der Klammerer",
+      "anteil_neu": "der Nähe-Sucher",
+      "ursprungsintention": "Bindungssicherung nach früherer Trennungserfahrung.",
+      "schutzfunktion": "Vermeidung von erneutem Verlust durch erhöhte Nähe.",
+      "schritt1": "Wahrnehmen, welches Gefühl von Unsicherheit dem Klammern unmittelbar vorausgeht.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer verlässlichen, aber nicht anklammernden Nähe, gestützt auf innere statt äußere Sicherheit, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Nähe-Sucher selbst: Wie müsstest du anders mit mir umgehen, damit Sicherheit von innen kommt, nicht vom Festhalten? Miniinterventionen einsetzen, damit der Abstand zwischen Nähe und Freiraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die innere Sicherheit im Vergleich zum Klammern tatsächlich angefühlt hat."
+    },
+    {
+      "id": "analyse_paralyse",
+      "muster": "Analyse-Paralyse bei Entscheidungen",
+      "anteil_alt": "der Zauderer",
+      "anteil_neu": "der Abwäger",
+      "ursprungsintention": "Schutz vor einer falschen, irreversiblen Wahl.",
+      "schutzfunktion": "Vermeidung von Bedauern durch vollständige Absicherung.",
+      "schritt1": "Wahrnehmen, wie oft dieselben Optionen bereits durchdacht wurden, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer klaren Entscheidungsfrist, nach der aus den verfügbaren Optionen die aktuell beste gewählt wird, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Abwäger selbst: Wie müsstest du anders mit mir umgehen, damit eine gute Entscheidung genügt, statt die perfekte zu suchen? Miniinterventionen einsetzen, damit der Abstand zwischen Abwägen und Entscheiden kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die fristgebundene Entscheidung tatsächlich entwickelt hat."
+    },
+    {
+      "id": "uebertriebenes_schuldbewusstsein",
+      "muster": "Übertriebenes Schuldbewusstsein",
+      "anteil_alt": "der Schuldige",
+      "anteil_neu": "der Wiedergutmacher",
+      "ursprungsintention": "Wiedergutmachungsversuch, um Beziehungen zu retten.",
+      "schutzfunktion": "Beziehungserhalt durch Selbstbeschuldigung.",
+      "schritt1": "Wahrnehmen, welcher tatsächliche eigene Anteil an der Situation besteht, ohne ihn zu übertreiben oder zu leugnen.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, Verantwortung genau für diesen tatsächlichen Anteil zu übernehmen, nicht für die gesamte Last, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Wiedergutmacher selbst: Wie müsstest du anders mit mir umgehen, damit der eigene Anteil sichtbar wird, ohne die ganze Last zu tragen? Miniinterventionen einsetzen, damit der Abstand zwischen eigenem Anteil und Gesamtlast kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die begrenzte, klare Verantwortungsübernahme tatsächlich ausgewirkt hat."
+    },
+    {
+      "id": "intellektualisieren",
+      "muster": "Intellektualisieren",
+      "anteil_alt": "der Verkopfte",
+      "anteil_neu": "der Analytiker",
+      "ursprungsintention": "Schutz vor überwältigenden Gefühlen durch Distanz über den Verstand.",
+      "schutzfunktion": "Emotionale Sicherheit durch kognitive Distanz.",
+      "schritt1": "Wahrnehmen, wann das Denken einsetzt, kurz bevor ein Gefühl spürbar würde.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, der analytischen Klarheit einen zweiten Schritt der Gefühlswahrnehmung im Körper folgen zu lassen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Analytiker selbst: Wie müsstest du anders mit mir umgehen, damit auf das Verstehen auch das Spüren folgen darf? Miniinterventionen einsetzen, damit der Abstand zwischen Verstehen und Spüren kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, was durch den zweiten Schritt der Körperwahrnehmung zusätzlich zugänglich wurde."
+    },
+    {
+      "id": "galgenhumor_verharmlosung",
+      "muster": "Galgenhumor und Verharmlosung",
+      "anteil_alt": "der Verharmloser",
+      "anteil_neu": "der Erleichterer",
+      "ursprungsintention": "Emotionale Entschärfung unerträglicher Situationen.",
+      "schutzfunktion": "Erträglichmachen von Schwerem durch Distanzierung.",
+      "schritt1": "Wahrnehmen, in welchem Moment der Humor einsetzt und was er gerade überdeckt.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, dem Humor einen ehrlichen Moment der Anerkennung der tatsächlichen Schwere folgen zu lassen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Erleichterer selbst: Wie müsstest du anders mit mir umgehen, damit Leichtigkeit und Ernst nacheinander Platz haben dürfen? Miniinterventionen einsetzen, damit der Abstand zwischen Humor und Schwere kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Humor und ehrliche Anerkennung gemeinsam tatsächlich ausgewirkt haben."
+    },
+    {
+      "id": "groessenphantasien",
+      "muster": "Größenphantasien und Selbstüberschätzung",
+      "anteil_alt": "der Größenwahnsinnige",
+      "anteil_neu": "der Visionär",
+      "ursprungsintention": "Kompensation tief sitzender Unsicherheit.",
+      "schutzfunktion": "Schutz des Selbstwerts durch Überhöhung.",
+      "schritt1": "Wahrnehmen, welche Unsicherheit unmittelbar vor der Selbstüberhöhung tatsächlich spürbar war.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer realistischen Selbsteinschätzung, die die zugrunde liegende Ambition trägt, ohne sie zu überhöhen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Visionär selbst: Wie müsstest du anders mit mir umgehen, damit die Vision auch auf realistischem Boden noch groß sein darf? Miniinterventionen einsetzen, damit der Abstand zwischen Vision und Realität kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich Selbstwert auf Basis der realistischen Einschätzung tatsächlich angefühlt hat."
+    },
+    {
+      "id": "materielles_horten",
+      "muster": "Materielles Horten",
+      "anteil_alt": "der Horter",
+      "anteil_neu": "der Vorsorger",
+      "ursprungsintention": "Sicherheit durch Kontrolle über Ressourcen nach früherem Mangel.",
+      "schutzfunktion": "Absicherung gegen erneuten Mangel.",
+      "schritt1": "Wahrnehmen, welches Mangelgefühl dem Impuls zum Horten unmittelbar vorausgeht.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines klar definierten Puffers, der Sicherheit gibt, ohne unbegrenzt zu akkumulieren, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Vorsorger selbst: Wie müsstest du anders mit mir umgehen, damit ein klar definiertes Maß bereits als genug gilt? Miniinterventionen einsetzen, damit der Abstand zwischen Sicherheit und Genug kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, ob der definierte Puffer tatsächlich ausreichend Sicherheit vermittelt hat."
+    },
+    {
+      "id": "verantwortungsdiffusion",
+      "muster": "Verantwortungsdiffusion",
+      "anteil_alt": "der Verantwortungsvermeider",
+      "anteil_neu": "der Lastenteiler",
+      "ursprungsintention": "Schutz vor Überforderung durch Entscheidungslast.",
+      "schutzfunktion": "Entlastung durch Verteilung oder Vermeidung von Verantwortung.",
+      "schritt1": "Wahrnehmen, an welcher Stelle Verantwortung gerade diffus bleibt, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, klar abgegrenzter, überschaubarer Verantwortungsteile, mit der Bitte, genau einen davon zu übernehmen. Ergänzende Prozessfrage an den Lastenteiler selbst: Wie müsstest du anders mit mir umgehen, damit ein klar abgegrenzter Teil leichter zu tragen ist als das Ganze? Miniinterventionen einsetzen, damit der Abstand zwischen Gesamtlast und eigenem Teil kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich die Übernahme des abgegrenzten Teils tatsächlich angefühlt hat."
+    },
+    {
+      "id": "emotionale_taubheit",
+      "muster": "Emotionale Taubheit",
+      "anteil_alt": "der Abgeschaltete",
+      "anteil_neu": "der Schutzschalter",
+      "ursprungsintention": "Schutzabschaltung nach chronischer Reizüberflutung.",
+      "schutzfunktion": "Überlebenssicherung durch Reduktion der Gefühlsintensität.",
+      "schritt1": "Wahrnehmen, wo im Körper noch die kleinste Regung spürbar ist, ohne mehr zu erwarten als das.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer behutsamen, dosierten Rückkehr der Körperwahrnehmung, in einem Tempo, das tragbar bleibt, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Schutzschalter selbst: Wie müsstest du anders mit mir umgehen, damit Spüren schrittweise sicher bleibt? Miniinterventionen einsetzen, damit der Abstand zwischen Taubheit und Wahrnehmung kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, welches Maß an Wahrnehmung gerade tragbar war, und darauf beim nächsten Mal aufbauen."
+    },
+    {
+      "id": "imposter_syndrom",
+      "muster": "Imposter-Syndrom",
+      "anteil_alt": "der Selbstzweifler",
+      "anteil_neu": "der Qualitätshüter",
+      "ursprungsintention": "Gute Qualität sichern, Ziele zuverlässig erreichen und verlässlich für Einkommen sorgen, auch wenn der eigene Wert innerlich infrage gestellt wird.",
+      "schutzfunktion": "Schutz vor dem Risiko, als unzureichend oder nicht kompetent genug entlarvt zu werden, durch ständige Selbstprüfung und Kontrolle.",
+      "schritt1": "Ohne Bewertung wahrnehmen, wann der Zweifel an der eigenen Kompetenz auftaucht und welche Kontroll- oder Prüfhandlung er auslöst.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, wie gute Qualität, sichere Zielerreichung und verlässliches Einkommen auch ohne ständige Selbstprüfung entstehen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Anteil selbst: Wie müsste dieser Anteil anders mit mir umgehen, um ein anderes Ergebnis zu bekommen? Miniinterventionen einsetzen, damit der Abstand zwischen den Seiten kleiner wird, bis sie zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie das tatsächliche Ergebnis ausgefallen ist. Aus der Differenz zwischen Bild und Ergebnis entsteht die nächste Feinjustierung.",
+      "referenzbeispiel": true,
+      "quelle": "Imposter Utilisation und Hypnosystemische Elemente, hochgeladenes Dokument"
+    }
+  ]
+}
