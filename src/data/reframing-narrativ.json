@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "titel": "Reframing-Erzählungen im Stile Hypnosystemik Utilisation",
+    "hinweis": "Eigenständiger Tab, ergänzt die Kartei um eine erzählerische Einstiegsebene. Ersetzt nicht ursprungsintention, schutzfunktion oder den Inner-Game-Dreischritt in muster.json, verweist über id auf denselben Eintrag.",
+    "untertitel_standard": "Orchestriertes respektvolles Reframing der Verhaltensweise mittels hypnosystemischer Ressourcennutzung",
+    "einladung_standard": "Möchten Sie das auf eine konkrete Situation anwenden? Dann gehen wir gemeinsam den Inner-Game-Dreischritt durch, wahrnehmen ohne Bewertung, dem wahren Selbst das Bild anvertrauen, ohne Selbstkritik aus dem Ergebnis lernen."
+  },
+  "reframings": [
+    {
+      "id": "rueckzug_vermeidung",
+      "titel": "Reframe: Rückzug und Vermeidung",
+      "einstieg": "\"Der Vermeider\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Reizreduktion als Notbremse. Wo Nähe früher überfordernd oder verletzend war, schafft Rückzug einen Raum, in dem nichts mehr zusätzlich verletzen kann.",
+        "Risikoabwägung, nicht Schwäche. Der Rückzug wägt vorsichtig ab, ob Kontakt gerade sicher ist, bevor er ihn zulässt, ein feines Sensorium für Gefahr.",
+        "Selbstschutz mit eingebautem Rückweg. Anders als reine Flucht enthält Vermeidung stets die Option, wiederzukommen, sobald es tragbar erscheint.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das überforderte oder verletzte, sicherte Rückzug das Überleben, auch um den Preis von Nähe und Verbindung."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit der Rückzug kürzer und der Rückweg leichter wird?",
+      "kernfunktion": "Nervensystem-Regulation durch Reizreduktion, weniger Kontakt bedeutet weniger potenzielle Verletzung."
+    },
+    {
+      "id": "kontrollzwang",
+      "titel": "Reframe: Kontrollzwang",
+      "einstieg": "\"Der Kontrolleur\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Ordnung als Ersatz für Urvertrauen. In chaotischen oder unvorhersehbaren Umfeldern war eigene Kontrolle oft die einzige verlässliche Sicherheit.",
+        "Vorhersehbarkeit schafft Boden. Wo niemand sonst für Struktur sorgte, übernahm dieser Anteil genau diese Aufgabe, zuverlässig und beharrlich.",
+        "Feines Gespür für Stellschrauben. Kontrolle setzt eine genaue Wahrnehmung dafür voraus, was tatsächlich beeinflussbar ist, eine Ressource, die bleibt, auch wenn sich ihr Ziel ändert.",
+        "Überleben im gegebenen Umfeld. In einem chaotischen oder unvorhersehbaren Umfeld sicherte Kontrolle das Überleben, auch um den Preis von Leichtigkeit und Vertrauen."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Vertrauen an die Stelle von Kontrolle treten kann?",
+      "kernfunktion": "Sicherheitsgewinn durch Vorhersehbarkeit, Kontrolle ersetzt fehlendes Urvertrauen."
+    },
+    {
+      "id": "perfektionismus",
+      "titel": "Reframe: Perfektionismus",
+      "einstieg": "\"Der Perfektionist\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutzschild gegen Kritik. Wenn Ablehnung früher an sichtbaren Fehlern festgemacht wurde, sichert makellose Arbeit Zugehörigkeit und Anerkennung.",
+        "Kontrolle über das Ergebnis, wo sonst wenig kontrollierbar war. Perfektion verschiebt Unsicherheit auf ein Feld, das tatsächlich beeinflussbar ist, das eigene Tun.",
+        "Hoher Anspruch als Antrieb. Derselbe Mechanismus, der erschöpft, hat über Jahre auch Qualität und Verlässlichkeit gesichert, eine Fähigkeit, die bleibt, wenn das Maß neu gesetzt wird.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Fehler hart bestrafte, sicherte Makellosigkeit Zugehörigkeit, auch um den Preis von Erschöpfung und Selbstkritik."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit gut genug tatsächlich genügt?",
+      "kernfunktion": "Selbstwertschutz durch Fehlervermeidung, Makellosigkeit sichert Zugehörigkeit."
+    },
+    {
+      "id": "prokrastination",
+      "titel": "Reframe: Prokrastination",
+      "einstieg": "\"Der Aufschieber\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor dem Beweis der eigenen Unzulänglichkeit, kein Faulheitsproblem, sondern Aufschub der Bewertung.",
+        "Endloses Vorbereiten als Sicherheitsvorsprung. Jede zusätzliche Runde soll mehr Boden verschaffen, bevor der eigentliche, unsichere Schritt gewagt wird.",
+        "Aufschub des Ernstfalls. Solange noch vorbereitet wird, bleibt der Moment echter Konfrontation, in dem Bewertung unausweichlich würde, in sicherer Distanz.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Bewertung gefährlich machte, sicherte Aufschub Sicherheit, auch um den Preis von Zeit und Gelegenheiten."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit der erste Schritt leichter fällt als das Aufschieben?",
+      "kernfunktion": "Selbstwertschutz durch Aufschub der Bewertung, kein Ergebnis heißt keine Blöße."
+    },
+    {
+      "id": "harmoniesucht_anpassung",
+      "titel": "Reframe: Harmoniesucht und Anpassung",
+      "einstieg": "\"Der Anpasser\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Bindungssicherung in der Kindheit. Wo Konflikt oder abweichende Meinung mit Liebesentzug beantwortet wurde, war Anpassung die einzig verfügbare Strategie, Zugehörigkeit zu sichern.",
+        "Ein falsches Selbst als Schutzhülle. Die eigene Meinung wird bis heute reflexhaft zurückgestellt, stärker als jede bewusste Absicht zur Klarheit, um die Verbindung nicht zu gefährden.",
+        "Feines Gespür für das Gegenüber. Dieselbe Anpassungsfähigkeit, die die eigene Stimme verdrängt hat, ist zugleich eine hochentwickelte soziale Wahrnehmung, eine Ressource, sobald sie auch der eigenen Position dient.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Zugehörigkeit an Anpassung knüpfte, sicherte dieses Muster das Überleben in der Bindung, auch um den Preis der eigenen Stimme."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Klarheit die Verbindung stärkt statt sie zu gefährden?",
+      "kernfunktion": "Bindungssicherung durch Anpassung, die eigene Stimme wird der Verbindung untergeordnet."
+    },
+    {
+      "id": "zynismus_distanzierung",
+      "titel": "Reframe: Zynismus und Distanzierung",
+      "einstieg": "\"Der Zyniker\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Emotionale Vorwegnahme. Wer Enttäuschung schon vorwegnimmt, macht den Schmerz kontrollierbar, statt ihm unvorbereitet ausgeliefert zu sein.",
+        "Schutz durch Distanz. Der distanzierende Kommentar hält eine Situation auf Abstand, bevor sie zu nah herankommen und wirklich verletzen kann.",
+        "Klarsichtigkeit als Kern. Hinter der Schärfe steckt eine genaue, oft zutreffende Wahrnehmung, eine Ressource, die auch wohlwollend eingesetzt werden kann.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld voller Enttäuschung sicherte Distanz das seelische Überleben, auch um den Preis echter Nähe."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Schärfe und Wohlwollen gleichzeitig da sein dürfen?",
+      "kernfunktion": "Nervensystem-Regulation durch emotionale Vorwegnahme, der Schmerz wird kontrollierbar gemacht, bevor er eintrifft."
+    },
+    {
+      "id": "innerer_kritiker",
+      "titel": "Reframe: Innerer Kritiker",
+      "einstieg": "\"Der Kritiker\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Präventive Selbstkorrektur. Ein interner Mechanismus, der gelernt hat, Fehler vorwegzunehmen, bevor andere sie bemerken.",
+        "Verinnerlichter Schutz. Eine Stimme, die ursprünglich von außen kam und irgendwann zur eigenen wurde, wohlmeinend, auch wenn die Tonlage längst zu hart geworden ist.",
+        "Ein Mandat, das ausgeufert ist. Ursprünglich sollte eine einzelne Warnung genügen, heute läuft daraus oft eine Dauerbewertung, die begrenzt werden darf.",
+        "Überleben im gegebenen Umfeld. In einem bewertenden Umfeld sicherte Selbstkontrolle das Überleben, auch um den Preis innerer Ruhe."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit eine Warnung genügt, statt in Dauerbewertung überzugehen?",
+      "kernfunktion": "Selbstwertschutz durch präventive Selbstkorrektur, Fehler sollen vor anderen entdeckt werden."
+    },
+    {
+      "id": "workaholismus",
+      "titel": "Reframe: Workaholismus und Selbstüberforderung",
+      "einstieg": "\"Der Schaffer\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Leere. Wo Nicht-Tun sich wie Wertlosigkeit anfühlte, füllte Arbeit diese Lücke zuverlässig und sofort.",
+        "Leistung als Ersatzwährung für Selbstwert. Wert wurde nicht durch Sein erlebt, sondern musste durch Output verdient werden.",
+        "Ausdauer als Ressource. Dieselbe Fähigkeit, die zur Überforderung führt, ist zugleich Durchhaltevermögen, das auch für selbstgewählte, begrenzte Ziele nutzbar bleibt.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Wert an Leistung knüpfte, sicherte unermüdliches Schaffen das Überleben des Selbstwerts, auch um den Preis von Erholung und Nähe."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Wert auch im Nicht-Tun spürbar bleibt?",
+      "kernfunktion": "Selbstwertschutz durch Leistung, Wert wird über Output erzeugt, nicht über Sein."
+    },
+    {
+      "id": "explosive_wut",
+      "titel": "Reframe: Explosive Reaktionen und Wut",
+      "einstieg": "\"Der Wüterich\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Grenzsetzung, wenn leise Signale nie gehört wurden. Die Intensität übernimmt die Funktion eines Stoppsignals, das nicht überhört werden kann.",
+        "Schutz eines empfindlichen Kerns. Hinter der schnellen Eskalation liegt oft eine hohe Verletzlichkeit, die blitzschnell in Handlungsfähigkeit umschaltet.",
+        "Energie, die auch früh nutzbar ist. Wird der Druck bereits an seiner ersten Körperstelle wahrgenommen, kann dieselbe Kraft eine frühe, ruhige Grenze setzen, statt spät zu explodieren.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das leise Signale überhörte, sicherte die Intensität das Überleben der eigenen Grenzen, auch um den Preis von Beziehungen."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit eine frühe, leise Grenze genügt?",
+      "kernfunktion": "Grenzsicherung durch Intensität, wenn leise Signale nie gehört wurden."
+    },
+    {
+      "id": "erstarren_dissoziation",
+      "titel": "Reframe: Erstarren und Dissoziation",
+      "einstieg": "\"Der Erstarrte\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Überlebenssicherung, wenn weder Kampf noch Flucht möglich waren. Das Nervensystem wählt Erstarrung als letzte verfügbare Option in echter Ausweglosigkeit.",
+        "Reizreduktion in Lebensgefahr. Weniger zu spüren war in diesem Moment die sicherste Wahl, kein Versagen, sondern ein archaischer Schutzmechanismus.",
+        "Rückkehr in eigenem Tempo. Was einmal abrupt abgeschaltet hat, kann über Atem, Bodenkontakt und Orientierung schrittweise und sicher wieder verbunden werden.",
+        "Überleben im gegebenen Umfeld. In einer als lebensbedrohlich erlebten Situation sicherte Erstarrung das nackte Überleben, auch um den Preis von Gegenwart und Verbindung."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit die Rückkehr in den Kontakt sicher bleibt?",
+      "kernfunktion": "Nervensystem-Regulation im Überlebensmodus, Reizreduktion, wenn weder Kampf noch Flucht möglich waren."
+    },
+    {
+      "id": "helfersyndrom",
+      "titel": "Reframe: Helfersyndrom",
+      "einstieg": "\"Der Helfer\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Bedeutungslosigkeit. Gebraucht zu werden war ein verlässlicher Weg, Wert und Zugehörigkeit zu spüren.",
+        "Helfen als Beziehungswährung. Wo eigener Wert nicht selbstverständlich war, sicherte Hilfe Nähe und Anerkennung ab.",
+        "Echte Großzügigkeit als Kern. Die Fähigkeit zu geben bleibt eine Ressource, sobald sie aus Fülle geschieht statt aus dem eigenen Mangel heraus.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Wert an Nützlichkeit knüpfte, sicherte Helfen das Überleben der eigenen Bedeutung, auch um den Preis eigener Bedürfnisse."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Geben aus Fülle geschieht, nicht aus eigenem Mangel?",
+      "kernfunktion": "Selbstwertschutz durch Gebrauchtwerden, Bedeutung entsteht über das Helfen."
+    },
+    {
+      "id": "selbstsabotage",
+      "titel": "Reframe: Selbstsabotage",
+      "einstieg": "\"Der Saboteur\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor der Verantwortung sichtbaren Erfolgs. Scheitern kurz vor dem Ziel fühlt sich vertrauter an als eine unbekannte Erfolgsrolle.",
+        "Sicherung im Gewohnten. Wo die neue Rolle riskant erscheint, hält ein bekannter Ausgang die Situation kontrollierbar, selbst wenn er unangenehm ist.",
+        "Feines Gespür für Risiko. Dieselbe Wachsamkeit, die knapp vor dem Erfolg bremst, kann auch genutzt werden, um kleine, sichere Schritte in die neue Rolle bewusst zu wählen.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, in dem Erfolg gefährliche neue Erwartungen weckte, sicherte das Scheitern nahe am Ziel das vertraute Überleben, auch um den Preis der eigenen Entfaltung."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Erfolg sich sicher statt riskant anfühlt?",
+      "kernfunktion": "Selbstwertschutz durch das Vertraute, Scheitern ist sicherer als eine unbekannte Erfolgsrolle."
+    },
+    {
+      "id": "eifersucht",
+      "titel": "Reframe: Eifersucht",
+      "einstieg": "\"Der Eifersüchtige\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Alarmsystem für Bindungsverlust. Erhöhte Wachsamkeit registriert früh, was auf Distanz oder Untreue hindeuten könnte.",
+        "Bindungssicherung durch Aufmerksamkeit. Wo Nähe früher nicht sicher verfügbar war, hält diese Wachsamkeit die Verbindung im Blick.",
+        "Tiefe Bindungsbereitschaft als Kern. Dieselbe Intensität, die kontrollieren will, zeugt von einer hochaktiven Fähigkeit zur Bindung, nutzbar auch für offene, direkte Nähe.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld unsicherer Bindung sicherte Wachsamkeit das Überleben der Beziehung, auch um den Preis von Vertrauen und Leichtigkeit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Sicherheit aus Nähe entsteht, nicht aus Kontrolle?",
+      "kernfunktion": "Bindungssicherung durch erhöhte Wachsamkeit gegenüber Anzeichen von Verlust."
+    },
+    {
+      "id": "opferhaltung",
+      "titel": "Reframe: Opferhaltung",
+      "einstieg": "\"Das Opfer\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Ehrliche Antwort auf echte Ohnmacht. Wo eigenes Handeln früher wenig bewirkte oder mit Schuldzuweisung beantwortet wurde, war diese Position die sicherste verfügbare Wahrheit.",
+        "Ein falsches Selbst als Schutz vor Last. Handlungsspielräume werden bis heute reflexhaft übersehen, um sich nicht erneut Verantwortung oder Schuld auszusetzen.",
+        "Genaues Gespür für reale Grenzen. Dieselbe Aufmerksamkeit, die Ohnmacht registriert, kann auch die kleinen, tatsächlich vorhandenen Handlungsspielräume erkennen.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, in dem eigenes Handeln wenig bewirkte oder bestraft wurde, sicherte die Position der Ohnmacht das Überleben, auch um den Preis der eigenen Wirksamkeit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit ein kleiner Spielraum bereits als Wirksamkeit zählt?",
+      "kernfunktion": "Selbstschutz durch Verantwortungsabgabe, Ohnmacht schützt vor erneuter Schuldzuweisung."
+    },
+    {
+      "id": "gruebeln_rumination",
+      "titel": "Reframe: Grübeln und Rumination",
+      "einstieg": "\"Der Grübler\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Versuch, Kontrolle über Unlösbares zu gewinnen. Der Verstand durchsucht jede Möglichkeit, um Sicherheit zu schaffen, wo Ungewissheit unerträglich erscheint.",
+        "Gefahrenabwehr durch Durchspielen aller Szenarien. Kein Ausgang soll unbedacht bleiben, aus Sorge, etwas Wichtiges zu übersehen.",
+        "Gründlichkeit als Ressource. Dieselbe Sorgfalt, die endlos kreist, reicht oft schon nach einem einzigen bewussten Durchgang, um eine gute Entscheidung zu tragen.",
+        "Überleben im gegebenen Umfeld. In einem unberechenbaren Umfeld sicherte gedankliches Durchspielen das Überleben durch Vorbereitung, auch um den Preis von Ruhe und Gegenwart."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit ein Durchgang genügt, statt endlos weiterzudenken?",
+      "kernfunktion": "Kontrollgewinn durch gedankliches Durchspielen aller Szenarien, Gefahrenabwehr im Kopf."
+    },
+    {
+      "id": "sturheit_starrsinn",
+      "titel": "Reframe: Sturheit und Starrsinn",
+      "einstieg": "\"Der Dickkopf\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz der eigenen Identität. Wo Nachgeben früher mit Selbstverlust gleichgesetzt wurde, sicherte die starre Position das Gefühl, noch man selbst zu sein.",
+        "Rechtbehalten als Würdesicherung. War Unrechthaben früher mit Bloßstellung oder Machtverlust verbunden, wurde die eigene Gewissheit selbst zum Schutzschild.",
+        "Klarheit über den eigenen Wert. Hinter der starren Position steht oft ein echter, benennbarer Wert, der auch bei Flexibilität in der Sache unangetastet bleiben kann.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Nachgeben mit Selbstverlust gleichsetzte, sicherte Starrheit das Überleben der eigenen Identität, auch um den Preis von Nähe und Beweglichkeit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Nachgeben in der Sache den Wert nicht gefährdet?",
+      "kernfunktion": "Identitätsschutz durch Unbeugsamkeit, Nachgeben würde sich wie Selbstverlust anfühlen."
+    },
+    {
+      "id": "uebertriebene_bescheidenheit",
+      "titel": "Reframe: Übertriebene Bescheidenheit",
+      "einstieg": "\"Der Kleinmacher\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Neid und Ablehnung. Kleiner erscheinen als man ist, kann Sicherheit gebracht haben, wo Erfolg früher Distanz oder Missgunst auslöste.",
+        "Zugehörigkeit durch Zurückhaltung. In manchen Umfeldern war Bescheidenheit die sicherste Strategie, um dazuzugehören und niemanden zu verstimmen.",
+        "Sachlichkeit als eigentlicher Kern. Die Fähigkeit, Leistung nüchtern einzuordnen, bleibt eine Ressource, sobald sie nicht mehr zur Verkleinerung, sondern zur klaren Benennung genutzt wird.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Erfolg mit Neid beantwortete, sicherte Kleinmachen das Überleben der Zugehörigkeit, auch um den Preis der eigenen Sichtbarkeit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit sachliche Anerkennung nicht als Gefahr für den Frieden erscheint?",
+      "kernfunktion": "Bindungssicherung durch Zurückhaltung, Sichtbarkeit könnte Neid oder Ablehnung provozieren."
+    },
+    {
+      "id": "sprachlosigkeit_konflikten",
+      "titel": "Reframe: Sprachlosigkeit in Konflikten",
+      "einstieg": "\"Der Schweiger\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Eskalation. Wo Worte früher zu Verletzung oder Strafe führten, war Schweigen die sicherste verfügbare Reaktion.",
+        "Risikoabwägung im Moment des Konflikts. Verstummen vermeidet zuverlässig, dass etwas Falsches gesagt wird, das nicht mehr zurückgenommen werden kann.",
+        "Feines Sprachgefühl im Kern. Wer so genau spürt, wann Worte gefährlich werden können, hat oft auch das Gespür dafür, wie eine dosierte, sichere Formulierung aussehen könnte.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Worte bestrafte, sicherte Schweigen das Überleben, auch um den Preis des eigenen Anliegens."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Worte finden sicherer ist als schweigen?",
+      "kernfunktion": "Nervensystem-Regulation durch Schweigen, Worte werden als Risiko vermieden."
+    },
+    {
+      "id": "suchtnahes_ablenkungsverhalten",
+      "titel": "Reframe: Suchtnahes Ablenkungsverhalten",
+      "einstieg": "\"Der Ablenker\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor ungefilterten Gefühlen. Ablenkung schiebt sich zwischen die Person und ein Gefühl, das sonst unvermittelt ankäme.",
+        "Regulation des Nervensystems. Das Verhalten übernimmt eine echte Beruhigungsfunktion, weil eine wirksame, gesunde Alternative im Moment nicht greifbar erscheint.",
+        "Verfügbare Ruhe als Ziel. Dieselbe Suche nach Beruhigung kann auch über Atem, Bewegung oder Ausdruck gestillt werden, nur auf einem anderen Weg.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld ohne verfügbare Regulation sicherte Ablenkung das Überleben der inneren Balance, auch um den Preis echter Auseinandersetzung mit dem Gefühl."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Regulation über den Körper genauso schnell wirkt wie die Ablenkung?",
+      "kernfunktion": "Rasche Nervensystem-Regulation durch Reizersatz, wenn ein Gefühl sonst ungefiltert ankäme."
+    },
+    {
+      "id": "noergeln_kritisieren",
+      "titel": "Reframe: Nörgeln und chronisches Kritisieren",
+      "einstieg": "\"Der Nörgler\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Indirekter Ausdruck unerfüllter Bedürfnisse. Hinter der Kritik steht meist ein echtes Anliegen nach Anerkennung oder Einfluss.",
+        "Ersatzventil, wo direkte Sprache fehlte. Nörgeln entstand dort, wo eine klare, direkte Formulierung nie gelernt oder nie sicher war.",
+        "Wachsames Gespür für das Fehlende. Wer so genau sieht, was nicht passt, hat auch das Material für ein klares, konstruktives Anliegen zur Hand.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld ohne sichere direkte Sprache sicherte Nörgeln das Überleben des eigenen Anliegens, auch um den Preis von Nähe und Gehörtwerden."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit das Anliegen direkt gehört wird, ohne den Umweg über Kritik?",
+      "kernfunktion": "Bindungssicherung durch indirekten Ausdruck, ein Anliegen sucht sich einen sicheren Umweg."
+    },
+    {
+      "id": "kontrolle_ueber_andere",
+      "titel": "Reframe: Übertriebene Kontrolle über andere",
+      "einstieg": "\"Der Kontrollfreak\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Austauschbarkeit. Frühere Erfahrungen mit Delegation, die schiefging, machten Nachkontrolle zur sichersten Strategie.",
+        "Sicherung von Einfluss und Relevanz. Wer die Fäden hält, sichert sich einen unübersehbaren, wichtigen Platz im Geschehen.",
+        "Verantwortungsbewusstsein als Kern. Dieselbe Sorgfalt kann auch in eine klare Vereinbarung mit schrittweise erprobtem Vertrauen übersetzt werden.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Vertrauen riskant erscheinen ließ, sicherte Kontrolle über andere das Überleben von Einfluss und Relevanz, auch um den Preis von Vertrauen und Nähe."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Vertrauen schrittweise wachsen darf, ohne sofort riskant zu wirken?",
+      "kernfunktion": "Sicherheitsgewinn durch Einfluss, Kontrolle über andere sichert die eigene Relevanz."
+    },
+    {
+      "id": "people_pleasing",
+      "titel": "Reframe: People-Pleasing",
+      "einstieg": "\"Der Pleaser\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Sicherheit in einem belasteten Umfeld. Wo Bezugspersonen selbst überfordert waren, war Überanpassung die einzig verfügbare Strategie, sicher zu bleiben.",
+        "Ein falsches Selbst mit starken Antennen. Die eigenen Bedürfnisse wurden zugunsten der Bedürfnisse anderer verdrängt, bis heute oft ein unwillkürlicher Impuls.",
+        "Soziale Feinfühligkeit als Kern. Dieselben Antennen, die fremde Bedürfnisse aufspüren, können auch die eigene Position mit Rücksicht auf andere verbinden.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das selbst überfordert oder bedrohlich war, sicherte Überanpassung das Überleben, auch um den Preis der eigenen Bedürfnisse."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit die eigene Position und die Rücksicht auf andere gleichzeitig Platz haben?",
+      "kernfunktion": "Bindungssicherung durch Überanpassung, die eigenen Bedürfnisse treten hinter die der anderen zurück."
+    },
+    {
+      "id": "klammern_verlustangst",
+      "titel": "Reframe: Klammern und Verlustangst-Verhalten",
+      "einstieg": "\"Der Klammerer\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Antwort auf reale Trennungserfahrung. Wo Nähe nie sicher verfügbar war, war Festhalten die einzige Möglichkeit, drohenden Verlust abzuwenden.",
+        "Ein falsches Selbst, das Sicherheit von außen holt. Die eigene innere Ruhe wurde von der ständigen Nähe des anderen abhängig gemacht.",
+        "Tiefe Bindungsfähigkeit als Kern. Dieselbe Intensität der Bindung kann auch aus innerer, selbst getragener Sicherheit heraus gelebt werden.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, in dem Nähe nie sicher verfügbar war, sicherte Festhalten das Überleben der Bindung, auch um den Preis von Freiraum und Gelassenheit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Sicherheit von innen kommt, nicht vom Festhalten?",
+      "kernfunktion": "Bindungssicherung durch Festhalten, wenn Nähe nie sicher verfügbar war."
+    },
+    {
+      "id": "analyse_paralyse",
+      "titel": "Reframe: Analyse-Paralyse bei Entscheidungen",
+      "einstieg": "\"Der Zauderer\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor einer irreversiblen Fehlentscheidung. Vollständige Absicherung sollte verhindern, dass eine falsche Wahl nicht mehr rückgängig gemacht werden kann.",
+        "Vermeidung von Bedauern. Jede weitere Option wird geprüft, um später nicht sagen zu müssen, man habe nicht gründlich genug abgewogen.",
+        "Gründlichkeit als Ressource. Dieselbe Sorgfalt reicht oft bereits nach einer klaren Frist, um aus den verfügbaren Optionen die aktuell beste zu wählen.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Fehler hart bestrafte, sicherte vollständige Absicherung das Überleben vor irreversiblem Schaden, auch um den Preis von Zeit und Gelegenheit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit eine gute Entscheidung genügt, statt die perfekte zu suchen?",
+      "kernfunktion": "Selbstwertschutz durch vollständige Absicherung, keine Entscheidung soll bereut werden müssen."
+    },
+    {
+      "id": "uebertriebenes_schuldbewusstsein",
+      "titel": "Reframe: Übertriebenes Schuldbewusstsein",
+      "einstieg": "\"Der Schuldige\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Wiedergutmachungsversuch zur Rettung von Beziehung. Eigene Schuld zu übernehmen, auch übertrieben, sollte die Verbindung zum anderen erhalten.",
+        "Beziehungserhalt durch Selbstbeschuldigung. Wo Konflikt gefährlich für die Bindung schien, war das eigene Schuldeingeständnis der sicherste Ausweg.",
+        "Verantwortungsbewusstsein als Kern. Der genaue Blick für den eigenen Anteil bleibt wertvoll, sobald er sich auf das tatsächliche Maß begrenzt, statt die ganze Last zu tragen.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Beziehung über Schuldübernahme regelte, sicherte Selbstbeschuldigung das Überleben der Bindung, auch um den Preis des eigenen Wertgefühls."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit der eigene Anteil sichtbar wird, ohne die ganze Last zu tragen?",
+      "kernfunktion": "Bindungssicherung durch Selbstbeschuldigung, die Beziehung soll um jeden Preis erhalten bleiben."
+    },
+    {
+      "id": "intellektualisieren",
+      "titel": "Reframe: Intellektualisieren",
+      "einstieg": "\"Der Verkopfte\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Überwältigung. Wo Gefühle zu groß oder zu gefährlich erschienen, schuf der Verstand sichere Distanz.",
+        "Emotionale Sicherheit durch kognitive Klarheit. Verstehen war oft der einzige verfügbare Weg, mit etwas Schwerem überhaupt umzugehen.",
+        "Analytische Schärfe als Ressource. Dieselbe Klarheit im Denken kann auch als erster Schritt dienen, dem ein zweiter, körperlicher Schritt des Spürens folgt.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld überwältigender Gefühle sicherte der Rückzug in den Verstand das seelische Überleben, auch um den Preis echten Spürens."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit auf das Verstehen auch das Spüren folgen darf?",
+      "kernfunktion": "Nervensystem-Regulation durch kognitive Distanz, Verstehen schützt vor Überwältigung durch das Gefühl."
+    },
+    {
+      "id": "galgenhumor_verharmlosung",
+      "titel": "Reframe: Galgenhumor und Verharmlosung",
+      "einstieg": "\"Der Verharmloser\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Emotionale Entschärfung des Unerträglichen. Humor macht eine sonst überwältigende Situation für einen Moment tragbar.",
+        "Distanzierung als Überlebenswerkzeug. Wo Ernst kaum auszuhalten war, verschaffte Leichtigkeit gerade genug Abstand, um weiterzumachen.",
+        "Leichtigkeit als echte Fähigkeit. Dieselbe Gabe kann auch dem ehrlichen Anerkennen der tatsächlichen Schwere Platz machen, nacheinander statt anstelle davon.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld kaum erträglicher Schwere sicherte Humor das Überleben, auch um den Preis ehrlicher Anerkennung des Ernstes."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Leichtigkeit und Ernst nacheinander Platz haben dürfen?",
+      "kernfunktion": "Nervensystem-Regulation durch Humor, Leichtigkeit macht das Unerträgliche für einen Moment tragbar."
+    },
+    {
+      "id": "groessenphantasien",
+      "titel": "Reframe: Größenphantasien und Selbstüberschätzung",
+      "einstieg": "\"Der Größenwahnsinnige\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Kompensation tief sitzender Unsicherheit. Überhöhung schützt den Selbstwert dort, wo er sich sonst ungeschützt fühlte.",
+        "Innere Rettungsfantasie als Sinnstifter. Grenzenlose Wirksamkeit in der Vorstellung hält Hoffnung aufrecht, wenn reale Ohnmacht oder Bedeutungslosigkeit erfahren wurde.",
+        "Große Ambition als echter Kern. Die zugrunde liegende Vision bleibt tragfähig, sobald sie auf realistischem Boden steht, statt sich zu überhöhen.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld erlebter Ohnmacht oder Bedeutungslosigkeit sicherte die Größenfantasie das Überleben von Hoffnung und Sinn, auch um den Preis des Realitätsbezugs."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit die Vision auch auf realistischem Boden noch groß sein darf?",
+      "kernfunktion": "Selbstwertschutz durch Überhöhung, Hoffnung und Bedeutung werden in der Fantasie gesichert."
+    },
+    {
+      "id": "materielles_horten",
+      "titel": "Reframe: Materielles Horten",
+      "einstieg": "\"Der Horter\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Sicherheit nach früherem Mangel. Kontrolle über Ressourcen sichert gegen eine Erfahrung ab, die einmal real bedrohlich war.",
+        "Absicherung gegen erneuten Mangel. Horten hält einen Puffer bereit, für den Fall, dass die Not zurückkehrt.",
+        "Vorsorge als Ressource. Dieselbe Fähigkeit zur Absicherung kann auch als klar definiertes, bewusst begrenztes Maß an Sicherheit dienen.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld früheren Mangels sicherte Horten das Überleben gegen erneute Not, auch um den Preis von Leichtigkeit und Vertrauen."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit ein klar definiertes Maß bereits als genug gilt?",
+      "kernfunktion": "Sicherheitsgewinn durch Ressourcenkontrolle, Horten sichert gegen erneuten Mangel ab."
+    },
+    {
+      "id": "verantwortungsdiffusion",
+      "titel": "Reframe: Verantwortungsdiffusion",
+      "einstieg": "\"Der Verantwortungsvermeider\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Überforderung. Verantwortung diffus zu halten entlastet, wenn die gesamte Last als zu groß erlebt wird.",
+        "Entlastung durch Verteilung. Verantwortung auf mehrere Schultern zu verteilen, oder sie zeitweise zu vermeiden, kann eine kluge Selbstfürsorge sein.",
+        "Überblick als Ressource. Der Blick für das große Ganze bleibt wertvoll, sobald daraus ein klar abgegrenzter, tragbarer eigener Teil wird.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld überfordernder Entscheidungslast sicherte das Verteilen von Verantwortung das Überleben der eigenen Kapazität, auch um den Preis von Einfluss und Klarheit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit ein klar abgegrenzter Teil leichter zu tragen ist als das Ganze?",
+      "kernfunktion": "Selbstschutz durch Entlastung, Verantwortung wird verteilt, um Überforderung zu vermeiden."
+    },
+    {
+      "id": "emotionale_taubheit",
+      "titel": "Reframe: Emotionale Taubheit",
+      "einstieg": "\"Der Abgeschaltete\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutzabschaltung nach Reizüberflutung. Wo Gefühle chronisch zu viel wurden, reduzierte das System ihre Intensität, um überhaupt weiter funktionsfähig zu bleiben.",
+        "Überlebenssicherung durch Reduktion. Weniger zu spüren war die sicherste verfügbare Antwort auf ein Übermaß an Belastung.",
+        "Kleinste Regungen als Ressource. Selbst im Abgeschaltetsein bleibt ein Rest an Wahrnehmung erhalten, ein Ausgangspunkt für behutsame, dosierte Rückkehr.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld chronischer Reizüberflutung sicherte das Abschalten der Gefühle das nackte Überleben, auch um den Preis von Lebendigkeit und Nähe."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Spüren schrittweise sicher bleibt?",
+      "kernfunktion": "Nervensystem-Regulation durch Abschaltung, Reizreduktion nach chronischer Überflutung."
+    },
+    {
+      "id": "imposter_syndrom",
+      "titel": "Reframe: Imposter-Syndrom",
+      "einstieg": "\"Der Selbstzweifler\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Sicherung von Qualität und Einkommen. Selbstprüfung sorgt zuverlässig dafür, dass Ziele erreicht und Standards gehalten werden, auch wenn der eigene Wert innerlich infrage steht.",
+        "Schutz vor Entlarvung. Ständige Kontrolle soll verhindern, als unzureichend oder nicht kompetent genug erkannt zu werden.",
+        "Qualitätsbewusstsein als echter Kern. Derselbe Anspruch an gute Arbeit trägt auch ohne die ständige Selbstprüfung, sobald Qualität nicht mehr an Selbstzweifel gekoppelt ist.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Entlarvung als Bedrohung erscheinen ließ, sicherte ständige Selbstprüfung das Überleben von Qualität und Einkommen, auch um den Preis innerer Ruhe."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsste dieser Anteil anders mit mir umgehen, um ein anderes Ergebnis zu bekommen?",
+      "kernfunktion": "Selbstwertschutz durch ständige Selbstprüfung, Entlarvung soll unmöglich gemacht werden."
+    },
+    {
+      "id": "substanzgebrauch_bewaeltigung",
+      "titel": "Reframe: Substanzgebrauch als Bewältigung",
+      "einstieg": "\"Der Betäuber\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Sofortige Erleichterung, wo keine andere verfügbar war. In Momenten unerträglicher Anspannung oder Leere bot die Substanz die einzige erreichbare Beruhigung.",
+        "Ein falsches Selbst, das über die Substanz reguliert. Andere Regulationswege waren in der prägenden Zeit weder vorhanden noch erreichbar.",
+        "Sehnsucht nach Erleichterung als Kern. Dieselbe Sehnsucht kann über eine alternative, körperlich verfügbare Form der Beruhigung gestillt werden, wo nötig zusätzlich fachlich begleitet.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld ohne andere erreichbare Beruhigung sicherte die Substanz das Überleben unerträglicher Anspannung, auch um den Preis der Gesundheit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Erleichterung auch ohne die Substanz zuverlässig eintritt?",
+      "kernfunktion": "Rasche Nervensystem-Regulation durch die Substanz, wenn keine andere Beruhigung erreichbar war."
+    },
+    {
+      "id": "sexualisiertes_bewaeltigungsverhalten",
+      "titel": "Reframe: Sexualisiertes Bewältigungsverhalten",
+      "einstieg": "\"Der Getriebene\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Regulation, wo echte Nähe nicht sicher war. Körperliche Erregung bot eine zuverlässige, sofort wirksame Möglichkeit, Leere oder Anspannung zu füllen.",
+        "Ein falsches Selbst, das Nähe über den Körper sucht. Emotionale Nähe war in der prägenden Zeit gefährlich, unzuverlässig oder abwesend.",
+        "Sehnsucht nach echter Verbindung als Kern. Dieselbe Sehnsucht kann auch über echte, sichere Nähe oder Selbstfürsorge gestillt werden, wo nötig zusätzlich fachtherapeutisch begleitet.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, in dem echte Nähe nicht sicher war, sicherte körperliche Erregung das Überleben von Leere und Einsamkeit, auch um den Preis echter Verbindung."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit echte Nähe genauso zuverlässig erreichbar wird wie die kurzfristige Erregung?",
+      "kernfunktion": "Rasche Nervensystem-Regulation durch körperliche Erregung, wenn echte Nähe nicht sicher verfügbar war."
+    },
+    {
+      "id": "kaufsucht_konsumverhalten",
+      "titel": "Reframe: Kaufsucht und Konsumverhalten",
+      "einstieg": "\"Der Konsument\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Mangelgefühl. Sofort spürbare, äußere Belohnung wirkt dort, wo innere Zufriedenheit schwer zugänglich ist.",
+        "Statussicherung durch Konsum. Kauf kann kurzfristig Unsicherheit über den eigenen Status beruhigen.",
+        "Bedürfnis nach Belohnung als Kern. Dieselbe Suche nach Belohnung kann auch auf einem Weg gestillt werden, der nicht vom Kaufakt abhängt.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld schwer zugänglicher innerer Zufriedenheit sicherte Konsum das Überleben von Status und Beruhigung, auch um den Preis finanzieller Freiheit."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit Belohnung auch ohne Kaufakt spürbar wird?",
+      "kernfunktion": "Selbstwert- und Statussicherung durch sofort spürbare äußere Belohnung."
+    },
+    {
+      "id": "hoffnungslosigkeit",
+      "titel": "Reframe: Hoffnungslosigkeit",
+      "einstieg": "\"Der Resignierte\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor wiederholter Enttäuschung. Wer nichts erwartet, kann auch nicht erneut enttäuscht werden.",
+        "Ein falsches Selbst, das Aussichtslosigkeit vorwegnimmt. Keine Energie in ein Ergebnis zu investieren, das ohnehin ausbleiben könnte, wurde zur reflexhaften Grundhaltung.",
+        "Genauer Blick für das tatsächlich Machbare. Dieselbe Aufmerksamkeit kann auch kleine, wirklich machbare Schritte erkennen, die unabhängig vom Gesamtausgang bereits zählen.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld wiederholter Enttäuschung sicherte Resignation das Überleben vor weiterem Schmerz, auch um den Preis von Hoffnung und Antrieb."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit ein kleiner, machbarer Schritt bereits zählt, auch wenn das große Ergebnis ungewiss bleibt?",
+      "kernfunktion": "Schutz vor Enttäuschung durch Vorwegnahme des schlechtesten Ausgangs, keine Hoffnung heißt kein erneuter Schmerz."
+    },
+    {
+      "id": "existenzangst",
+      "titel": "Reframe: Existenz-Angst",
+      "einstieg": "\"Der Alarmierte\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Alarmsystem gegen existenzielle Bedrohung. Dauerhafte Wachsamkeit schützt die wirtschaftliche, körperliche oder soziale Grundlage des eigenen Bestehens.",
+        "Generalisierte Vorsorge. Verwandt damit eine Form, die reflexhaft in jeder Situation zuerst den schlechtesten Ausgang durchdenkt, auch ohne unmittelbare Existenzfrage.",
+        "Sinn für tatsächliche Ressourcen als Kern. Dieselbe Wachsamkeit kann auch die tatsächlich vorhandene Grundsicherheit erkennen, statt nur die Bedrohung.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld existenzieller Bedrohung sicherte dauerhafte Wachsamkeit das Überleben der eigenen Grundlage, auch um den Preis von Ruhe und Vertrauen."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit die tatsächlich vorhandene Grundsicherheit spürbar wird, statt nur die Bedrohung?",
+      "kernfunktion": "Sicherheitsgewinn durch dauerhafte Wachsamkeit gegenüber Bedrohungen der eigenen Existenzgrundlage."
+    },
+    {
+      "id": "schlampigkeit_nachlaessigkeit",
+      "titel": "Reframe: Schlampigkeit und Nachlässigkeit",
+      "einstieg": "\"Der Schlampige\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Tempo statt Perfektion. Fertig werden war wichtiger als ein makelloses Ergebnis, ein klarer Wirkungsvorteil in dynamischen Zusammenhängen.",
+        "Selbstbehauptung gegen zu enge Vorgaben. Wo strenge Kontrolle mehr Energie kostete, als sie an Sicherheit brachte, war Nachlässigkeit eine stille Form von Autonomie.",
+        "Bewusste Prioritätensetzung als Kern. Dieselbe Fähigkeit, Energie gezielt zu verteilen, kann auch bewusst gewählt werden, statt automatisch zu passieren.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld überzogener Kontrolle sicherte Nachlässigkeit das Überleben von Energie und Autonomie, auch um den Preis von Anerkennung für Sorgfalt."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit die Wahl zwischen Tempo und Sorgfalt bewusst getroffen wird, statt automatisch zu passieren?",
+      "kernfunktion": "Autonomiesicherung durch Tempo, Energie wird bewusst dort gespart, wo Kontrolle zu viel kostet."
+    },
+    {
+      "id": "chronische_scham",
+      "titel": "Reframe: Chronische Scham",
+      "einstieg": "\"Der Schambehaftete\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Soziale Warnung vor Ausschluss. Scham signalisiert früh, wenn eigenes Verhalten von der Gruppe abzuweichen droht, und schützt so vor erneutem Ausschluss.",
+        "Ein falsches Selbst, das sich vorsorglich abwertet. Die eigene Person wird vorsorglich als potenziell falsch eingestuft, um erneuter Bloßstellung zuvorzukommen.",
+        "Wacher moralischer Kompass als Kern. Dieselbe Empfindsamkeit für Grenzen kann auch bestehen bleiben, ohne dass sie die ganze Person infrage stellen muss.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das Bloßstellung mit Ausschluss bestrafte, sicherte vorsorgliche Scham das Überleben der Zugehörigkeit, auch um den Preis der Selbstachtung."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit ein wacher moralischer Kompass nicht mehr die ganze Person infrage stellen muss?",
+      "kernfunktion": "Bindungssicherung durch vorsorgliche Selbstabwertung, Bloßstellung soll durch Scham von vornherein verhindert werden."
+    },
+    {
+      "id": "generalisierte_unsicherheit",
+      "titel": "Reframe: Generalisierte Unsicherheit und Selbstzweifel",
+      "einstieg": "\"Der Unsichere\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor Fehleinschätzung. Wo die eigene Einschätzung früher wiederholt korrigiert oder abgewertet wurde, sichert das Rückversichern bei anderen vor weiteren Fehlern.",
+        "Vorsicht als erlernte Klugheit. Ständiges Prüfen und Nachfragen kann eine reife Reaktion auf ein Umfeld sein, in dem dem eigenen Urteil tatsächlich nicht getraut werden durfte.",
+        "Feines Gespür für Fehlerquellen als Kern. Dieselbe Aufmerksamkeit, die ständig rückversichert, ist zugleich eine genaue Wahrnehmung möglicher Irrtümer, nutzbar auch für die eigene Urteilskraft.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das die eigene Einschätzung wiederholt abwertete, sicherte Rückversicherung das Überleben der Beziehung zu denen, deren Urteil zählte, auch um den Preis der eigenen Stimme."
+      ],
+      "kernfunktion": "Selbstwertschutz durch Rückversicherung, das eigene Urteil wird erst durch fremde Bestätigung tragfähig.",
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit die eigene Einschätzung zählt, auch bevor sie von außen bestätigt wird?"
+    }
+  ]
+}
