@@ -432,3 +432,10 @@ button.ghost{
   border-radius:8px; padding:1rem 1.2rem; margin-top:0.4rem;
 }
 .einladung-block p{ margin:0; font-family:'Lora', serif; font-size:0.95rem; line-height:1.6; }
+.einladung-block .einladung-frage{ margin-bottom:0.7rem; }
+.einladung-schritte{ margin:0; padding-left:1.2rem; display:flex; flex-direction:column; gap:0.4rem; }
+.einladung-schritte li{ font-family:'Lora', serif; font-size:0.95rem; line-height:1.5; }
+.einladung-schritte strong{
+  font-family:'Montserrat', sans-serif; font-size:0.8rem; letter-spacing:0.03em;
+  color:var(--secondary);
+}

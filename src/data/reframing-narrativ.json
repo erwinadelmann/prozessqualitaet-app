@@ -3,7 +3,12 @@
     "titel": "Reframing-Erzählungen im Stile Hypnosystemik Utilisation",
     "hinweis": "Eigenständiger Tab, ergänzt die Kartei um eine erzählerische Einstiegsebene. Ersetzt nicht ursprungsintention, schutzfunktion oder den Inner-Game-Dreischritt in muster.json, verweist über id auf denselben Eintrag.",
     "untertitel_standard": "Orchestriertes respektvolles Reframing der Verhaltensweise mittels hypnosystemischer Ressourcennutzung",
-    "einladung_standard": "Möchten Sie das auf eine konkrete Situation anwenden? Dann gehen wir gemeinsam den Inner-Game-Dreischritt durch, wahrnehmen ohne Bewertung, dem wahren Selbst das Bild anvertrauen, ohne Selbstkritik aus dem Ergebnis lernen."
+    "einladung_frage": "Möchten Sie das auf eine konkrete Situation anwenden? Dann gehen wir gemeinsam den Inner-Game-Dreischritt durch:",
+    "einladung_schritte": [
+      "Wahrnehmen ohne Bewertung",
+      "Dem wahren Selbst anvertrauen",
+      "Ohne Selbstkritik aus dem Ergebnis lernen"
+    ]
   },
   "reframings": [
     {

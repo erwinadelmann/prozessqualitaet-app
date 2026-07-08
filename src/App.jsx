@@ -33,20 +33,20 @@ function App(){
 
         <div className="tab-bar">
           <button className={'tab-btn' + (tab === 'kartei' ? ' active' : '')} onClick={() => setTab('kartei')}>{TAB_ICONS.kartei}Kartei <span className="tab-count">{MUSTER_DATA.muster.length}</span></button>
+          <button className={'tab-btn' + (tab === 'reframing' ? ' active' : '')} onClick={() => setTab('reframing')}>{TAB_ICONS.reframing}Reframing <span className="tab-count">{NARRATIV_DATA.reframings.length}</span></button>
+          <button className={'tab-btn' + (tab === 'innergame' ? ' active' : '')} onClick={() => setTab('innergame')}>{TAB_ICONS.innergame}Inner Game</button>
           <button className={'tab-btn' + (tab === 'pruefung' ? ' active' : '')} onClick={() => setTab('pruefung')}>{TAB_ICONS.pruefung}Qualitäts-Check</button>
           <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
-          <button className={'tab-btn' + (tab === 'innergame' ? ' active' : '')} onClick={() => setTab('innergame')}>{TAB_ICONS.innergame}Inner Game</button>
           <button className={'tab-btn' + (tab === 'fokus' ? ' active' : '')} onClick={() => setTab('fokus')}>{TAB_ICONS.fokus}Mein Fokus</button>
-          <button className={'tab-btn' + (tab === 'reframing' ? ' active' : '')} onClick={() => setTab('reframing')}>{TAB_ICONS.reframing}Reframing <span className="tab-count">{NARRATIV_DATA.reframings.length}</span></button>
         </div>
       </header>
 
       {tab === 'kartei' && <Kartei />}
+      {tab === 'reframing' && <Reframing />}
+      {tab === 'innergame' && <InnerGame />}
       {tab === 'pruefung' && <QualitaetsCheck />}
       {tab === 'methodenbox' && <Methodenbox />}
-      {tab === 'innergame' && <InnerGame />}
       {tab === 'fokus' && <MeinFokus />}
-      {tab === 'reframing' && <Reframing />}
 
       <footer>Utilisations-Kanon · Steuerposition-Methodik · für den eigenen Gebrauch</footer>
     </>

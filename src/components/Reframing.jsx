@@ -113,7 +113,12 @@ function ReframingModal({ item, onClose }){
               </div>
 
               <div className="block einladung-block">
-                <p>{NARRATIV_DATA.meta.einladung_standard}</p>
+                <p className="einladung-frage">{NARRATIV_DATA.meta.einladung_frage}</p>
+                <ol className="einladung-schritte">
+                  {NARRATIV_DATA.meta.einladung_schritte.map((s, i) => (
+                    <li key={i}><strong>{i + 1} · </strong>{s}</li>
+                  ))}
+                </ol>
               </div>
             </div>
           </div>
