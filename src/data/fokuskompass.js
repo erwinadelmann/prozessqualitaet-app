@@ -98,7 +98,16 @@ export const FOKUS_SEED = [
   // Logische Ebenen nach Robert Dilts (NLP): Umgebung, Verhalten, Fähigkeiten, Werte/Glaubenssätze,
   // Identität, Zugehörigkeit/Vision. Ein Thema auf der richtigen Ebene bearbeiten statt z. B. auf
   // Verhaltensebene zu üben, wenn eigentlich eine Glaubenssatz- oder Identitätsfrage dahintersteckt.
-  { id: "logische-ebenen-dilts", text: "Logische Ebenen (Dilts) prüfen: Auf welcher Ebene liegt das Thema wirklich – Umgebung, Verhalten, Fähigkeiten, Werte/Glaubenssätze, Identität oder Zugehörigkeit?", erklaerung: "Ein Thema auf der Ebene bearbeiten, auf der es wirklich sitzt, statt z. B. nur Verhalten zu ändern, wenn ein Glaubenssatz dahintersteckt.", kategorie: "Wirksamkeit: Denken & Handeln", hebelwirkung: 3, aufwand: 2, opportunitaet: 2 }
+  { id: "logische-ebenen-dilts", text: "Logische Ebenen (Dilts) prüfen: Auf welcher Ebene liegt das Thema wirklich – Umgebung, Verhalten, Fähigkeiten, Werte/Glaubenssätze, Identität oder Zugehörigkeit?", erklaerung: "Ein Thema auf der Ebene bearbeiten, auf der es wirklich sitzt, statt z. B. nur Verhalten zu ändern, wenn ein Glaubenssatz dahintersteckt.", kategorie: "Wirksamkeit: Denken & Handeln", hebelwirkung: 3, aufwand: 2, opportunitaet: 2 },
+
+  // Zielpyramide nach Maja Storch (ZRM), von Erwin selbst präzisiert: Haltungsebene, Ergebnisebene,
+  // Verhaltensebene – im Unterschied zu SMART wird zuerst die innere Haltung geklärt, bevor Ergebnis
+  // und Handlung festgelegt werden. Eingebettet in den 5-Phasen-ZRM-Prozess.
+  { id: "zielpyramide-storch", text: "Zielpyramide (Maja Storch) durchlaufen: Haltungsebene (welche innere Haltung braucht das Ziel?), Ergebnisebene (woran erkenne ich, dass ich es erreicht habe?), Verhaltensebene (was tue ich konkret?)", erklaerung: "Ein Ziel über drei Ebenen klären, statt direkt ins Tun zu springen: erst Haltung, dann Ergebnis, dann Verhalten.", kategorie: "Wirksamkeit: Denken & Handeln", hebelwirkung: 3, aufwand: 2, opportunitaet: 2 },
+
+  // Priming/Erinnerungshilfen: neue neuronale Verbindungen entstehen nicht durch einmaliges Erleben,
+  // sondern durch wiederholte Aktivierung – ein zentraler Wirkfaktor in ZRM und Embodiment-Arbeit.
+  { id: "erinnerungshilfen-priming", text: "Mit Erinnerungshilfen und Priming arbeiten: neue neuronale Verbindungen durch häufige Nutzung festigen", erklaerung: "Neue Denk- und Verhaltensmuster nicht einmalig erproben, sondern durch wiederholte Erinnerung und Priming im Alltag verankern.", kategorie: "Wirksamkeit: Denken & Handeln", hebelwirkung: 4, aufwand: 2, opportunitaet: 3 }
 ];
 
 export function scoreOf(item){
