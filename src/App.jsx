@@ -6,9 +6,12 @@ import MeinFokus from './components/MeinFokus.jsx';
 import Methodenbox from './components/Methodenbox.jsx';
 import InnerGame from './components/InnerGame.jsx';
 import Reframing from './components/Reframing.jsx';
+import Ressourcen from './components/Ressourcen.jsx';
+import FokusKompass from './components/FokusKompass.jsx';
 import MUSTER_DATA from './data/muster.json';
 import METHODEN_DATA from './data/methodenbox.json';
 import NARRATIV_DATA from './data/reframing-narrativ.json';
+import { BILDER_KATEGORIEN, VIDEOS } from './data/ressourcen.js';
 import heroImage from './assets/logo_mental.png';
 
 const TAB_ICONS = {
@@ -17,7 +20,9 @@ const TAB_ICONS = {
   methodenbox: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 7h-3a2 2 0 0 1-2-2V2"/><path d="M9 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-7-7z"/></svg>,
   innergame: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>,
   fokus: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>,
-  reframing: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  reframing: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,
+  ressourcen: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>,
+  fokuskompass: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
 };
 
 function App(){
@@ -37,7 +42,9 @@ function App(){
           <button className={'tab-btn' + (tab === 'innergame' ? ' active' : '')} onClick={() => setTab('innergame')}>{TAB_ICONS.innergame}Inner Game</button>
           <button className={'tab-btn' + (tab === 'pruefung' ? ' active' : '')} onClick={() => setTab('pruefung')}>{TAB_ICONS.pruefung}Qualitäts-Check</button>
           <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
+          <button className={'tab-btn' + (tab === 'ressourcen' ? ' active' : '')} onClick={() => setTab('ressourcen')}>{TAB_ICONS.ressourcen}Ressourcen <span className="tab-count">{BILDER_KATEGORIEN.reduce((a, k) => a + k.bilder.length, 0) + VIDEOS.length}</span></button>
           <button className={'tab-btn' + (tab === 'fokus' ? ' active' : '')} onClick={() => setTab('fokus')}>{TAB_ICONS.fokus}Mein Fokus</button>
+          <button className={'tab-btn' + (tab === 'fokuskompass' ? ' active' : '')} onClick={() => setTab('fokuskompass')}>{TAB_ICONS.fokuskompass}Fokus-Kompass</button>
         </div>
       </header>
 
@@ -46,7 +53,9 @@ function App(){
       {tab === 'innergame' && <InnerGame />}
       {tab === 'pruefung' && <QualitaetsCheck />}
       {tab === 'methodenbox' && <Methodenbox />}
+      {tab === 'ressourcen' && <Ressourcen />}
       {tab === 'fokus' && <MeinFokus />}
+      {tab === 'fokuskompass' && <FokusKompass />}
 
       <footer>Utilisations-Kanon · Steuerposition-Methodik · für den eigenen Gebrauch</footer>
     </>

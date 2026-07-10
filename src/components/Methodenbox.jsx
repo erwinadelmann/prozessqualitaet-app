@@ -12,7 +12,7 @@ const KATEGORIE_CLASS = {
 function matches(item, query){
   if(!query) return true;
   const q = query.toLowerCase();
-  return [item.titel, item.kernaussage, item.zitat, item.einsatzkontext, item.ziel]
+  return [item.titel, item.kernaussage, item.erklaerung, item.zitat, item.einsatzkontext, item.ziel]
     .filter(Boolean).join(' ').toLowerCase().includes(q);
 }
 
@@ -79,6 +79,12 @@ function MethodModal({ item, onClose }){
 
           <div className="card-modal-body">
             <div className="details">
+              {item.erklaerung && (
+                <div className="block">
+                  <h4>Erklärung</h4>
+                  <p>{item.erklaerung}</p>
+                </div>
+              )}
               <div className="block">
                 <h4>Einsatzkontext</h4>
                 <p>{item.einsatzkontext}</p>
