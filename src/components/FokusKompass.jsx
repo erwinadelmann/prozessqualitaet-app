@@ -76,8 +76,8 @@ export default function FokusKompass(){
         <div className="blob b1"></div>
         <div className="blob b2"></div>
         <p className="eyebrow">Fokus-Kompass</p>
-        <h2>Nicht auf hundert Hochzeiten gleichzeitig tanzen</h2>
-        <p className="ig-zielsatz">„{FOCUSING_QUESTION}"</p>
+        <h2>{FOCUSING_QUESTION}</h2>
+        <p className="ig-zielsatz">Nicht auf hundert Hochzeiten gleichzeitig tanzen</p>
         <div className="fk-motto">
           {MOTTO_FRAGEN.map((frage, i) => (
             <p key={i}>„{frage}"</p>
