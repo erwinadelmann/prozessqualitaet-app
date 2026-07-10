@@ -1,25 +1,47 @@
 import { useState, useMemo, useEffect } from 'react';
 import { RESSOURCEN_REMINDER, BILDER_KATEGORIEN, VIDEOS, VIDEO_THEMEN } from '../data/ressourcen.js';
 
-function Lightbox({ bild, onClose }){
+function Lightbox({ bilder, index, onClose, onNavigate }){
   useEffect(() => {
-    const onKey = e => { if(e.key === 'Escape') onClose(); };
+    const onKey = e => {
+      if(e.key === 'Escape') onClose();
+      if(e.key === 'ArrowRight') onNavigate((index + 1) % bilder.length);
+      if(e.key === 'ArrowLeft') onNavigate((index - 1 + bilder.length) % bilder.length);
+    };
     document.addEventListener('keydown', onKey);
     document.body.style.overflow = 'hidden';
     return () => {
       document.removeEventListener('keydown', onKey);
       document.body.style.overflow = '';
     };
-  }, [onClose]);
+  }, [onClose, onNavigate, index, bilder.length]);
 
+  const bild = bilder[index];
   if(!bild) return null;
 
   return (
     <div className="card-modal-backdrop lightbox-backdrop" onClick={onClose}>
       <div className="lightbox-inner" onClick={e => e.stopPropagation()}>
-        <button className="card-modal-close" onClick={onClose} aria-label="Schließen">×</button>
+        <button className="card-modal-close lightbox-close" onClick={onClose} aria-label="Schließen">×</button>
+        {bilder.length > 1 && (
+          <>
+            <button
+              className="lightbox-nav lightbox-nav-prev"
+              onClick={() => onNavigate((index - 1 + bilder.length) % bilder.length)}
+              aria-label="Vorheriges Bild"
+            >‹</button>
+            <button
+              className="lightbox-nav lightbox-nav-next"
+              onClick={() => onNavigate((index + 1) % bilder.length)}
+              aria-label="Nächstes Bild"
+            >›</button>
+          </>
+        )}
         <img src={bild.src} alt={bild.alt} />
-        <p className="lightbox-caption">{bild.alt}</p>
+        <p className="lightbox-caption">
+          {bild.alt}
+          {bilder.length > 1 && <span className="lightbox-zaehler"> · {index + 1} / {bilder.length}</span>}
+        </p>
       </div>
     </div>
   );
@@ -28,7 +50,7 @@ function Lightbox({ bild, onClose }){
 export default function Ressourcen(){
   const [kategorie, setKategorie] = useState(null);
   const [query, setQuery] = useState('');
-  const [openBild, setOpenBild] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null);
   const [videoThema, setVideoThema] = useState(null);
 
   const kategorien = BILDER_KATEGORIEN.map(k => k.kategorie);
@@ -91,7 +113,7 @@ export default function Ressourcen(){
         ) : (
           <div className="bild-grid">
             {bilder.map((b, i) => (
-              <button className="bild-thumb" key={b.src + i} onClick={() => setOpenBild(b)} title={b.alt}>
+              <button className="bild-thumb" key={b.src + i} onClick={() => setOpenIndex(i)} title={b.alt}>
                 <img src={b.src} alt={b.alt} loading="lazy" />
                 <span className="bild-thumb-label">{b.alt}</span>
               </button>
@@ -136,7 +158,9 @@ export default function Ressourcen(){
         </div>
       </main>
 
-      {openBild && <Lightbox bild={openBild} onClose={() => setOpenBild(null)} />}
+      {openIndex !== null && (
+        <Lightbox bilder={bilder} index={openIndex} onClose={() => setOpenIndex(null)} onNavigate={setOpenIndex} />
+      )}
     </>
   );
 }

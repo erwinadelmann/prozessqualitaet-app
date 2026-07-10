@@ -1,8 +1,11 @@
 // Ressourcen: ZRM-zieldienliche Bilder und Videos, gespiegelt von mentaltraining.at/haltung/
 // Bilder werden per Hotlink von der Website geladen (Jetpack-CDN i0.wp.com).
-// Reminder: regelmäßig auf mentaltraining.at/haltung/ nach neuen zieldienlichen Bildern schauen und hier ergänzen.
+// Abgleich mit mentaltraining.at/haltung/ erfolgt durch Claude, nicht durch Erwin selbst.
+// Stand des letzten Abgleichs: 2026-07-10 (13 neue Bilder ergänzt, u. a. Aufwärts-Spirale,
+// Blick des Erblühens, Kronen-Chakra – neue Themen ohne bestehende Kategorie, unter
+// "Weitere Ressourcen" einsortiert).
 
-export const RESSOURCEN_REMINDER = "Reminder: Regelmäßig auf mentaltraining.at/haltung/ nach aktuell passenden, zieldienlichen und ressourcenstarken Bildern Ausschau halten. Bilder, die mein Embodiment und meine somatischen Marker aktivieren, hier ergänzen.";
+export const RESSOURCEN_REMINDER = "Diese Bilder werden regelmäßig mit mentaltraining.at/haltung/ abgeglichen. Neue Bilder, die Embodiment und somatische Marker aktivieren können, werden hier automatisch ergänzt.";
 
 export const BILDER_KATEGORIEN = [
   {
@@ -382,7 +385,20 @@ export const BILDER_KATEGORIEN = [
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2024/08/Ressouren-Bilder00036.jpg", "alt": "Ressourcen-Bilder" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2024/08/Ressouren-Bilder00045.jpg", "alt": "Ressourcen-Bilder" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2024/08/Ressouren-Bilder00023.jpg", "alt": "Ressourcen-Bilder" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2024/08/Ressouren-Bilder00024.jpg", "alt": "Ressourcen-Bilder" }
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2024/08/Ressouren-Bilder00024.jpg", "alt": "Ressourcen-Bilder" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Kino-Saal.png", "alt": "Kino-Saal" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/10/Grenze-00005-5.jpg", "alt": "Grenze" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/10/Innerer-Raum00011-2.jpg", "alt": "Innerer Raum" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/10/Innerer-Raum-Grenze-Koenig-Schutz-00004-3.jpg", "alt": "Innerer Raum – Grenze – König – Schutz" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreites-Kind-00007.jpg", "alt": "Befreites Kind" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/10/Fuelle-des-Lebens-00001.webp", "alt": "Fülle des Lebens" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/10/Geld-verdienen-Fuelle00029-1.jpg", "alt": "Geld verdienen – Fülle" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Aufwaerts-Spirale-00007.jpg", "alt": "Aufwärts-Spirale" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Aufwaerts-Spirale-00003.jpg", "alt": "Aufwärts-Spirale" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/10/ChatGPT-Image-30.-Okt.-2025-19_59_29.png", "alt": "Ressourcen-Bild" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/IMG_1881.jpeg", "alt": "IMG_1881" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Blick-des-Erbluehens-00003.jpg", "alt": "Blick des Erblühens" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Kronen-Chakra-00001.jpg", "alt": "Kronen-Chakra" }
     ]
   }
 ];

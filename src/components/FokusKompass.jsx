@@ -1,72 +1,117 @@
 import { useState, useMemo, useEffect } from 'react';
 import {
-  FOCUSING_QUESTION, METHODIK_TEXT, METHODIK_QUELLE, MOTTO_FRAGEN,
-  DEFAULT_KATEGORIEN, FOKUS_SEED, scoreOf
+  FOCUSING_QUESTION, METHODIK_QUELLE, MOTTO_FRAGEN, THEMEN_VORSCHLAEGE, KARTEI_KATEGORIE_MAPPING,
+  DEFAULT_KATEGORIEN, FOKUS_SEED, STEUERPOSITION
 } from '../data/fokuskompass.js';
+import MUSTER_DATA from '../data/muster.json';
 
-const STORAGE_KEY = 'fokuskompass-state-v1';
-const TOP_N = 3;
+const STORAGE_KEY = 'fokuskompass-manuell-v1';
 
-function loadState(){
-  let stored = null;
+function ladeZustand(){
+  const leer = { thema: '', ausgewaehlt: [], gewaehlterAnteilId: null, versoehnungAntwort: '' };
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if(raw) stored = JSON.parse(raw);
+    if(raw){
+      const geladen = JSON.parse(raw);
+      return { ...leer, ...geladen };
+    }
   } catch(e){}
-  if(!stored) return JSON.parse(JSON.stringify(FOKUS_SEED));
-  // Text/Kategorie/Erklärung aus dem aktuellen SEED übernehmen (Struktur), Regler-Werte des Nutzers
-  // beibehalten – so wirken Neukategorisierung und neue Erklärungen auch bei bereits gespeicherten
-  // Daten, ohne eigene Bewertungen zu verlieren.
-  const seedById = new Map(FOKUS_SEED.map(s => [s.id, s]));
-  const aktualisiert = stored.map(item => {
-    const seed = seedById.get(item.id);
-    return seed ? { ...item, text: seed.text, kategorie: seed.kategorie, erklaerung: seed.erklaerung } : item;
-  });
-  const bekannteIds = new Set(stored.map(i => i.id));
-  const neue = FOKUS_SEED.filter(s => !bekannteIds.has(s.id));
-  return neue.length ? [...aktualisiert, ...JSON.parse(JSON.stringify(neue))] : aktualisiert;
+  return leer;
 }
 
 export default function FokusKompass(){
-  const [items, setItems] = useState(loadState);
+  const [thema, setThema] = useState(() => ladeZustand().thema);
+  const [ausgewaehlt, setAusgewaehlt] = useState(() => ladeZustand().ausgewaehlt);
+  const [gewaehlterAnteilId, setGewaehlterAnteilId] = useState(() => ladeZustand().gewaehlterAnteilId);
+  const [versoehnungAntwort, setVersoehnungAntwort] = useState(() => ladeZustand().versoehnungAntwort);
   const [neuText, setNeuText] = useState('');
   const [neuKat, setNeuKat] = useState(DEFAULT_KATEGORIEN[0]);
-  const [zeigeAlleRang, setZeigeAlleRang] = useState(false);
-  const [bearbeitenOffen, setBearbeitenOffen] = useState(false);
 
   useEffect(() => {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch(e){}
-  }, [items]);
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ thema, ausgewaehlt, gewaehlterAnteilId, versoehnungAntwort }));
+    } catch(e){}
+  }, [thema, ausgewaehlt, gewaehlterAnteilId, versoehnungAntwort]);
 
   const kategorien = useMemo(() => {
     const set = new Set(DEFAULT_KATEGORIEN);
-    items.forEach(i => set.add(i.kategorie));
-    return Array.from(set);
-  }, [items]);
+    FOKUS_SEED.forEach(i => set.add(i.kategorie));
+    return Array.from(set).filter(k => FOKUS_SEED.some(i => i.kategorie === k));
+  }, []);
 
-  const sorted = useMemo(() => [...items].sort((a, b) => scoreOf(b) - scoreOf(a)), [items]);
+  const ausgewaehlteIds = useMemo(() => new Set(ausgewaehlt.map(i => i.id)), [ausgewaehlt]);
 
-  function updateFeld(id, feld, wert){
-    setItems(prev => prev.map(i => i.id === id ? { ...i, [feld]: wert } : i));
+  function istAusgewaehlt(item){
+    return ausgewaehlteIds.has(item.id);
   }
 
-  function entfernen(id){
-    setItems(prev => prev.filter(i => i.id !== id));
+  function toggleAuswahl(item){
+    setAusgewaehlt(prev => {
+      if(prev.some(i => i.id === item.id)) return prev.filter(i => i.id !== item.id);
+      return [...prev, { id: item.id, text: item.text, erklaerung: item.erklaerung, kategorie: item.kategorie }];
+    });
   }
 
-  function hinzufuegen(){
+  function verschieben(index, richtung){
+    setAusgewaehlt(prev => {
+      const neu = [...prev];
+      const ziel = index + richtung;
+      if(ziel < 0 || ziel >= neu.length) return prev;
+      [neu[index], neu[ziel]] = [neu[ziel], neu[index]];
+      return neu;
+    });
+  }
+
+  function entfernenAusAuswahl(id){
+    setAusgewaehlt(prev => prev.filter(i => i.id !== id));
+  }
+
+  function eigeneOptionHinzufuegen(){
     const text = neuText.trim();
     if(!text) return;
-    setItems(prev => [...prev, {
-      id: 'custom-' + Date.now(), text, kategorie: neuKat,
-      hebelwirkung: 3, aufwand: 3, opportunitaet: 3
-    }]);
+    setAusgewaehlt(prev => [...prev, { id: 'custom-' + Date.now(), text, erklaerung: '', kategorie: neuKat }]);
     setNeuText('');
   }
 
+  function vorschlagThema(){
+    if(ausgewaehlt.length > 0){
+      setThema(`Umgang mit „${ausgewaehlt[0].text}“`);
+    } else {
+      const zufall = THEMEN_VORSCHLAEGE[Math.floor(Math.random() * THEMEN_VORSCHLAEGE.length)];
+      setThema(zufall);
+    }
+  }
+
+  const zielKarteiKategorie = ausgewaehlt.length > 0 ? KARTEI_KATEGORIE_MAPPING[ausgewaehlt[0].kategorie] : null;
+
+  const anteilKandidaten = useMemo(() => {
+    if(!zielKarteiKategorie) return [];
+    return MUSTER_DATA.muster.filter(m => m.kategorie === zielKarteiKategorie);
+  }, [zielKarteiKategorie]);
+
+  useEffect(() => {
+    if(anteilKandidaten.length === 0){
+      if(gewaehlterAnteilId !== null) setGewaehlterAnteilId(null);
+      return;
+    }
+    if(!anteilKandidaten.some(a => a.id === gewaehlterAnteilId)){
+      setGewaehlterAnteilId(anteilKandidaten[0].id);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [zielKarteiKategorie]);
+
+  const gewaehlterAnteil = anteilKandidaten.find(a => a.id === gewaehlterAnteilId) || null;
+  const andereVarianten = anteilKandidaten.filter(a => a.id !== gewaehlterAnteilId);
+
+  const item1 = ausgewaehlt[0];
+  const item2 = ausgewaehlt[1];
+
   function zuruecksetzen(){
-    if(window.confirm('Wirklich auf die Ausgangsliste zurücksetzen? Eigene Ergänzungen und Bewertungen gehen verloren.')){
-      setItems(JSON.parse(JSON.stringify(FOKUS_SEED)));
+    if(window.confirm('Wirklich alles zurücksetzen? Thema, Auswahl, Anteil-Wahl und Versöhnungs-Antwort gehen verloren.')){
+      setThema('');
+      setAusgewaehlt([]);
+      setGewaehlterAnteilId(null);
+      setVersoehnungAntwort('');
     }
   }
 
@@ -76,8 +121,8 @@ export default function FokusKompass(){
         <div className="blob b1"></div>
         <div className="blob b2"></div>
         <p className="eyebrow">Fokus-Kompass</p>
-        <h2>{FOCUSING_QUESTION}</h2>
-        <p className="ig-zielsatz">Nicht auf hundert Hochzeiten gleichzeitig tanzen</p>
+        <h2>Nicht auf hundert Hochzeiten gleichzeitig tanzen</h2>
+        <p className="ig-zielsatz">„{FOCUSING_QUESTION}"</p>
         <div className="fk-motto">
           {MOTTO_FRAGEN.map((frage, i) => (
             <p key={i}>„{frage}"</p>
@@ -85,17 +130,95 @@ export default function FokusKompass(){
         </div>
       </div>
 
-      <div className="methodenbox-hinweis" style={{ maxWidth: 'var(--content-max)', margin: '1.4rem auto 0' }}>
-        <strong>Wie die Bewertung funktioniert:</strong> Hebelwirkung (macht diese Sache andere leichter oder überflüssig, nach Gary Kellers Focusing Question), Aufwand bis spürbare Wirkung, Kosten des Aufschiebens (Opportunitätskosten explizit gemacht). {METHODIK_TEXT}
-        <div style={{ marginTop: '0.5rem', fontSize: '0.72rem', color: 'var(--muted)' }}>{METHODIK_QUELLE}</div>
+      <div className="fk-thema-box">
+        <label htmlFor="fk-thema">Mein aktuelles Thema</label>
+        <div className="fk-thema-row">
+          <input
+            id="fk-thema"
+            type="text"
+            value={thema}
+            onChange={e => setThema(e.target.value)}
+            placeholder="z. B. Wie gehe ich gerade mit … um?"
+          />
+          <button className="chip no-print" onClick={vorschlagThema}>Vorschlag</button>
+        </div>
+        <p className="fk-hinweis no-print">Der Vorschlag ist ein einfacher, lokaler Impuls, keine KI-generierte Analyse Ihrer Lage.</p>
       </div>
 
-      <main>
-        <div className="fk-rangfolge">
-          <p className="fokus-section-label">
-            {zeigeAlleRang ? `Alle ${sorted.length} Optionen, sortiert` : `Ihre Top ${Math.min(TOP_N, sorted.length)}`}
-          </p>
-          {(zeigeAlleRang ? sorted : sorted.slice(0, TOP_N)).map((item, idx) => (
+      <div className="fk-steuerposition-box">
+        <p className="fokus-section-label">{STEUERPOSITION.untertitel}</p>
+        <h3>{STEUERPOSITION.titel}</h3>
+        <p className="fk-steuerposition-quelle">{STEUERPOSITION.quelle}</p>
+        <p className="fk-steuerposition-einleitung">{STEUERPOSITION.einleitung}</p>
+        <div className="fk-steuerposition-schritte">
+          {STEUERPOSITION.schritte.map((schritt, i) => (
+            <div className="fk-steuerposition-schritt" key={i}>
+              <div className="fk-steuerposition-nr">{i + 1}</div>
+              <div>
+                <h4>{schritt.titel}</h4>
+                <p>{schritt.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="fk-steuerposition-frage">„{STEUERPOSITION.abschlussfrage}“</p>
+      </div>
+
+      <main className="no-print">
+        <p className="fokus-section-label">Elemente auswählen – anklicken, was gerade resoniert</p>
+        {kategorien.map(kat => {
+          const katItems = FOKUS_SEED.filter(i => i.kategorie === kat);
+          if(katItems.length === 0) return null;
+          return (
+            <div className="kategorie-block" key={kat}>
+              <span className="kategorie-titel">{kat}</span>
+              <div className="fk-auswahl-grid">
+                {katItems.map(item => (
+                  <button
+                    key={item.id}
+                    className={'fk-auswahl-card' + (istAusgewaehlt(item) ? ' aktiv' : '')}
+                    onClick={() => toggleAuswahl(item)}
+                  >
+                    <span className="fk-auswahl-check">{istAusgewaehlt(item) ? '✓' : ''}</span>
+                    <span>
+                      <span className="fk-auswahl-titel">{item.text}</span>
+                      {item.erklaerung && <span className="fk-auswahl-erklaerung">{item.erklaerung}</span>}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+
+        <div className="fk-neue-option">
+          <h3>Eigene Option ergänzen – jederzeit erweiterbar</h3>
+          <div className="fk-neue-option-grid">
+            <div>
+              <label>Was steht noch zur Auswahl?</label>
+              <input type="text" value={neuText} onChange={e => setNeuText(e.target.value)}
+                placeholder="z. B. Website überarbeiten"
+                onKeyDown={e => { if(e.key === 'Enter') eigeneOptionHinzufuegen(); }} />
+            </div>
+            <div>
+              <label>Kategorie</label>
+              <select value={neuKat} onChange={e => setNeuKat(e.target.value)}>
+                {kategorien.map(k => <option key={k} value={k}>{k}</option>)}
+              </select>
+            </div>
+            <div>
+              <button className="btn-primary" onClick={eigeneOptionHinzufuegen}>Hinzufügen</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div className="fk-rangfolge">
+        <p className="fokus-section-label">Ihre Reihenfolge</p>
+        {ausgewaehlt.length === 0 ? (
+          <p className="fk-hinweis">Noch nichts ausgewählt. Oben anklicken, was gerade zählt.</p>
+        ) : (
+          ausgewaehlt.map((item, idx) => (
             <div className={'fk-rang-item' + (idx === 0 ? ' top-1' : '')} key={item.id}>
               <div className="fk-rang-nr">{idx + 1}</div>
               <div className="fk-rang-text">
@@ -103,96 +226,76 @@ export default function FokusKompass(){
                 {item.erklaerung && <span className="fk-rang-erklaerung">{item.erklaerung}</span>}
                 <span className="fk-rang-kat">{item.kategorie}</span>
               </div>
-              <div className="fk-rang-score">{scoreOf(item).toFixed(1)}</div>
-            </div>
-          ))}
-          {sorted.length > 0 && (
-            <p className="fk-top-frage">„Ist „{sorted[0].text}" wirklich die EINE Sache – oder nur die lauteste gerade?"</p>
-          )}
-          {sorted.length > TOP_N && (
-            <button className="chip" style={{ marginTop: '0.8rem' }} onClick={() => setZeigeAlleRang(v => !v)}>
-              {zeigeAlleRang ? `Nur Top ${TOP_N} anzeigen` : `Alle ${sorted.length} Optionen anzeigen`}
-            </button>
-          )}
-        </div>
-
-        <div style={{ display: 'flex', justifyContent: 'center', margin: '1.4rem 0' }}>
-          <button className="btn-primary" onClick={() => setBearbeitenOffen(v => !v)}>
-            {bearbeitenOffen ? 'Bearbeiten schließen' : `Bewertungen anpassen & Optionen verwalten (${items.length})`}
-          </button>
-        </div>
-
-        {bearbeitenOffen && (
-          <>
-            <p style={{ maxWidth: 'var(--content-max)', margin: '0 auto 1rem', fontSize: '0.8rem', color: 'var(--muted)', fontFamily: "'Open Sans', sans-serif" }}>
-              Absichtlich eingeklappt: Der Kompass soll auf die EINE Sache zeigen, nicht alle {items.length} Möglichkeiten gleichzeitig vor Augen halten. Hier stellen Sie die Regler ein oder ergänzen Neues – die Rangfolge oben bleibt bewusst knapp.
-            </p>
-
-            <div style={{ display: 'flex', justifyContent: 'flex-end', margin: '1rem 0' }}>
-              <button className="chip reset" onClick={zuruecksetzen}>Auf Ausgangspunkt zurücksetzen</button>
-            </div>
-
-            {kategorien.map(kat => {
-              const katItems = items.filter(i => i.kategorie === kat);
-              if(katItems.length === 0) return null;
-              return (
-                <div className="kategorie-block" key={kat}>
-                  <span className="kategorie-titel">{kat}</span>
-                  {katItems.map(item => (
-                    <div className="fk-option-card" key={item.id}>
-                      <div className="fk-option-top">
-                        <div>
-                          <div className="fk-option-titel">{item.text}</div>
-                          {item.erklaerung && <div className="fk-option-erklaerung">{item.erklaerung}</div>}
-                        </div>
-                        <button className="fk-option-remove" onClick={() => entfernen(item.id)}>entfernen</button>
-                      </div>
-                      <div className="fk-sliders">
-                        <div className="fk-slider-block">
-                          <label>Hebelwirkung <span className="fk-val">{item.hebelwirkung}</span></label>
-                          <input type="range" min="1" max="5" step="1" value={item.hebelwirkung}
-                            onChange={e => updateFeld(item.id, 'hebelwirkung', Number(e.target.value))} />
-                        </div>
-                        <div className="fk-slider-block">
-                          <label>Aufwand <span className="fk-val">{item.aufwand}</span></label>
-                          <input type="range" min="1" max="5" step="1" value={item.aufwand}
-                            onChange={e => updateFeld(item.id, 'aufwand', Number(e.target.value))} />
-                        </div>
-                        <div className="fk-slider-block">
-                          <label>Kosten des Aufschiebens <span className="fk-val">{item.opportunitaet}</span></label>
-                          <input type="range" min="1" max="5" step="1" value={item.opportunitaet}
-                            onChange={e => updateFeld(item.id, 'opportunitaet', Number(e.target.value))} />
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              );
-            })}
-
-            <div className="fk-neue-option">
-              <h3>Eigene Option ergänzen – jederzeit erweiterbar</h3>
-              <div className="fk-neue-option-grid">
-                <div>
-                  <label>Was steht noch zur Auswahl?</label>
-                  <input type="text" value={neuText} onChange={e => setNeuText(e.target.value)}
-                    placeholder="z. B. Website überarbeiten"
-                    onKeyDown={e => { if(e.key === 'Enter') hinzufuegen(); }} />
-                </div>
-                <div>
-                  <label>Kategorie</label>
-                  <select value={neuKat} onChange={e => setNeuKat(e.target.value)}>
-                    {kategorien.map(k => <option key={k} value={k}>{k}</option>)}
-                  </select>
-                </div>
-                <div>
-                  <button className="btn-primary" onClick={hinzufuegen}>Hinzufügen</button>
-                </div>
+              <div className="fk-rang-buttons no-print">
+                <button onClick={() => verschieben(idx, -1)} disabled={idx === 0} aria-label="Nach oben">↑</button>
+                <button onClick={() => verschieben(idx, 1)} disabled={idx === ausgewaehlt.length - 1} aria-label="Nach unten">↓</button>
+                <button onClick={() => entfernenAusAuswahl(item.id)} aria-label="Entfernen">×</button>
               </div>
             </div>
+          ))
+        )}
+        {ausgewaehlt.length > 0 && (
+          <p className="fk-top-frage">„Ist „{ausgewaehlt[0].text}" wirklich die EINE Sache – oder nur die lauteste gerade?"</p>
+        )}
+      </div>
+
+      <div className="fk-anteil-box">
+        <p className="fokus-section-label">Welcher Anteil soll gestärkt werden?</p>
+        {!gewaehlterAnteil ? (
+          <p className="fk-hinweis">Wählen Sie oben mindestens einen Punkt aus, dann schlägt der Kompass einen passenden Anteil aus Ihrer Kartei vor.</p>
+        ) : (
+          <>
+            <div className="fk-anteil-card">
+              <div className="fk-anteil-titel">{gewaehlterAnteil.anteil_alt} <span className="fk-anteil-pfeil">→</span> {gewaehlterAnteil.anteil_neu}</div>
+              <p className="fk-anteil-feld"><strong>Ursprungsintention:</strong> {gewaehlterAnteil.ursprungsintention}</p>
+              <p className="fk-anteil-feld"><strong>Würdigung:</strong> {gewaehlterAnteil.wuerdigung}</p>
+              <p className="fk-anteil-feld"><strong>Embodiment-Frage:</strong> {gewaehlterAnteil.embodiment_frage}</p>
+            </div>
+            {andereVarianten.length > 0 && (
+              <div className="no-print">
+                <p className="fk-hinweis" style={{ marginTop: '0.9rem' }}>Andere Varianten in derselben Kartei-Kategorie ({zielKarteiKategorie}):</p>
+                <div className="chip-grid">
+                  {andereVarianten.map(a => (
+                    <button key={a.id} className="chip" onClick={() => setGewaehlterAnteilId(a.id)}>
+                      {a.anteil_alt} → {a.anteil_neu}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+            <p className="fk-hinweis" style={{ marginTop: '0.7rem' }}>
+              Vorschlag aus Ihrer Kartei, abgeleitet aus der Kategorie Ihres wichtigsten ausgewählten Punkts. Diese Zuordnung ist meine Einordnung, keine geprüfte Zuordnung.
+            </p>
           </>
         )}
-      </main>
+      </div>
+
+      {item1 && item2 && (
+        <div className="fk-versoehnung-box">
+          <p className="fokus-section-label">Versöhnungs-Frage</p>
+          <p className="fk-versoehnung-frage">
+            Wie kann es gelingen, „{item1.text}" und „{item2.text}" miteinander zu versöhnen – so scheinbar unvereinbar sie gerade wirken?
+          </p>
+          <p className="fk-hinweis">
+            Welche Pflanze fällt Ihnen ein, der es wunderbar gelingen kann, diese Anteile miteinander zu versöhnen? Welches Tier? Welche Phantasie-Figur?
+          </p>
+          <textarea
+            className="fk-versoehnung-textarea"
+            value={versoehnungAntwort}
+            onChange={e => setVersoehnungAntwort(e.target.value)}
+            placeholder="Ihre Antwort, Ihr Bild, Ihre Figur …"
+            rows={4}
+          />
+        </div>
+      )}
+
+      <div className="fk-aktionen no-print">
+        <button className="chip reset" onClick={zuruecksetzen}>Alles zurücksetzen</button>
+        <button className="btn-primary" onClick={() => window.print()}>Als PDF drucken</button>
+      </div>
+      <p className="fk-hinweis no-print" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+        Wird automatisch auf diesem Gerät gespeichert. {METHODIK_QUELLE.split('·')[0]}
+      </p>
     </>
   );
 }
