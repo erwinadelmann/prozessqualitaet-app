@@ -188,6 +188,13 @@ function MethodModal({ item, onClose }){
                   <p>{item.erklaerung}</p>
                 </div>
               )}
+              {item.schritte && (
+                <ol className="up-phase-schritte">
+                  {item.schritte.map((s, i) => (
+                    <li key={i}><strong style={{ display: 'block', fontFamily: "'Montserrat', sans-serif", fontSize: '0.82rem' }}>{s.titel}</strong>{s.text}</li>
+                  ))}
+                </ol>
+              )}
               <div className="block">
                 <h4>Einsatzkontext</h4>
                 <p>{item.einsatzkontext}</p>
