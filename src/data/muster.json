@@ -591,7 +591,8 @@
     },
     {
       "id": "feigheit_scheinbarer_ressourcenmangel",
-      "muster": "Feigheit bei scheinbar fehlendem Zugriff auf eigene Ressourcen",
+      "muster": "der Feigling",
+      "muster_untertitel": "Feigheit bei scheinbar fehlendem Zugriff auf eigene Ressourcen",
       "kategorie": "Verantwortung & Selbstwirksamkeit",
       "anteil_alt": "der Feigling",
       "anteil_neu": "der Schöpfende",

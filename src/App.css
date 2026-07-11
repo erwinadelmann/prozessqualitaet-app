@@ -354,6 +354,11 @@ button.ghost{
 .card-modal-header{ border-bottom:1px dashed #ccd6d4; padding-bottom:1.1rem; margin-bottom:1.2rem; }
 .card-modal-header .muster-name{ font-size:1.35rem; display:block; margin-bottom:0.5rem; }
 .card-modal-header .anteil-line{ font-size:0.98rem; }
+.muster-untertitel{
+  margin:0.2rem 0 0.7rem; font-family:'Lora', serif; font-style:italic; font-size:0.85rem;
+  color:var(--muted); line-height:1.4;
+}
+.card-modal-header .muster-untertitel{ font-size:0.92rem; margin-top:0.3rem; }
 .anteil-hinweis{
   margin-top:0.4rem; font-family:'Open Sans', sans-serif; font-size:0.76rem;
   font-style:italic; color:var(--muted);

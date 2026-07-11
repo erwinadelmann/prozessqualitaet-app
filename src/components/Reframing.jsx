@@ -40,6 +40,7 @@ function ReframingCard({ item, isOpen, onOpen }){
         </div>
         <div className="toggle-icon">+</div>
       </div>
+      {item.muster_untertitel && <p className="muster-untertitel">{item.muster_untertitel}</p>}
       <div className="anteil-line">
         <span className="anteil-alt">{item.anteil_alt}</span>
         <span>→</span>
@@ -83,6 +84,7 @@ function ReframingModal({ item, onClose }){
               {n.titel}
               <span className={'kat-badge ' + KATEGORIE_CLASS[item.kategorie]}>{item.kategorie}</span>
             </div>
+            {item.muster_untertitel && <p className="muster-untertitel">{item.muster_untertitel}</p>}
             <div className="anteil-line">
               <span className="anteil-alt">{item.anteil_alt}</span>
               <span>→</span>
