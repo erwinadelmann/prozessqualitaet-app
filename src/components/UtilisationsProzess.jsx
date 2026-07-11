@@ -34,6 +34,11 @@ function ModusCard({ modus, isOpen, onToggle }){
                 <div className="up-phase-body">
                   <h5>{p.titel}</h5>
                   <p>{p.text}</p>
+                  {p.schritte && (
+                    <ol className="up-phase-schritte">
+                      {p.schritte.map((s, si) => <li key={si}>{s}</li>)}
+                    </ol>
+                  )}
                 </div>
               </div>
             ))}
