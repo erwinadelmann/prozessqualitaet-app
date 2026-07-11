@@ -205,15 +205,15 @@
       "muster": "Opferhaltung",
       "kategorie": "Verantwortung & Selbstwirksamkeit",
       "anteil_alt": "das Opfer",
-      "anteil_neu": "der Bewegliche",
+      "anteil_neu": "der Anpassungsprofi",
       "ursprungsintention": "Kindliche Prägung in einem Umfeld, in dem eigenes Handeln wenig bewirkte oder Eigenverantwortung mit Schuldzuweisung beantwortet wurde. Die Position der Ohnmacht war die ehrlichste und zugleich sicherste verfügbare Position.",
       "schutzfunktion": "Ein falsches Selbst entsteht, das eigene Handlungsspielräume dauerhaft übersieht, um sich nicht erneut der Last der Verantwortung oder der Schuldzuweisung auszusetzen. Bis heute wirkt diese Übersicht als unwillkürlicher Reflex, stärker als jede bewusste Absicht zur Wirksamkeit.",
       "schritt1": "Wahrnehmen, an welcher Stelle die Ursache gerade ganz nach außen verlegt wird, ohne das zu bewerten.",
-      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, tatsächlich verfügbaren Handlungsspielraums, mit der Bitte, genau diesen zu nutzen. Ergänzende Prozessfrage an den Beweglichen selbst: Wie müsstest du anders mit mir umgehen, damit ein kleiner Spielraum bereits als Wirksamkeit zählt? Miniinterventionen einsetzen, damit der Abstand zwischen Ohnmacht und Handlungsspielraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, tatsächlich verfügbaren Handlungsspielraums, mit der Bitte, genau diesen zu nutzen. Ergänzende Prozessfrage an den Anpassungsprofi selbst: Wie müsstest du anders mit mir umgehen, damit ein kleiner Spielraum bereits als Wirksamkeit zählt? Miniinterventionen einsetzen, damit der Abstand zwischen Ohnmacht und Handlungsspielraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, was die Nutzung dieses kleinen Spielraums bewirkt hat.",
       "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Handeln ohnehin nichts bewirkt oder bestraft wird. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
-      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird das Opfer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Bewegliche übernehmen darf, nicht deren Vorstufe.",
-      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Bewegliche am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird das Opfer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Anpassungsprofi übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Anpassungsprofi am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "gruebeln_rumination",
@@ -588,6 +588,20 @@
       "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass die eigene Einschätzung grundsätzlich weniger wert ist als die anderer. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
       "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Unsichere ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Prüfende übernehmen darf, nicht deren Vorstufe.",
       "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Prüfende am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
+    },
+    {
+      "id": "feigheit_scheinbarer_ressourcenmangel",
+      "muster": "Feigheit bei scheinbar fehlendem Zugriff auf eigene Ressourcen",
+      "kategorie": "Verantwortung & Selbstwirksamkeit",
+      "anteil_alt": "der Feigling",
+      "anteil_neu": "der Schöpfende",
+      "ursprungsintention": "Schutz vor dem Risiko, in eine Situation oder Entscheidung zu gehen, für die kein Zugriff auf die nötigen Ressourcen spürbar ist, auch wenn dieser Zugriff in Wahrheit besteht und nur aktiviert werden müsste.",
+      "schutzfunktion": "Vermeidung von Situationen und Entscheidungen, solange die eigenen Ressourcen nicht als verfügbar erlebt werden, um ein vermeintliches Scheitern von vornherein auszuschließen.",
+      "schritt1": "Wahrnehmen, in welchem Moment eine Situation oder Entscheidung bereits vermieden wird, weil sich der Zugriff auf die eigenen Ressourcen unsicher anfühlt, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, davon wie die eigenen, bereits vorhandenen Ressourcen aktiviert und genutzt werden, mit der Bitte, genau dieses Bild zu erfüllen. Ergänzende Prozessfrage an den Schöpfenden selbst: Woran würdest du merken, dass die Ressourcen, die du brauchst, längst da sind und nur aktiviert werden müssen? Miniinterventionen einsetzen, damit der Abstand zwischen gefühltem Mangel und tatsächlichem Zugriff kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie es ankommt.",
+      "schritt3": "Ohne Selbstkritik beobachten, was die Aktivierung der eigenen Ressourcen im Vergleich zum gewohnten Ausweichen tatsächlich bewirkt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Feigling ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Schöpfende übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie stehen Sie, wie atmen Sie, wohin geht Ihr Blick, wenn der Schöpfende aus den eigenen, längst vorhandenen Ressourcen schöpft, statt auszuweichen? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     }
   ]
 }

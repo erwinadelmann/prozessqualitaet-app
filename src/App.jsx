@@ -27,6 +27,12 @@ const TAB_ICONS = {
 
 function App(){
   const [tab, setTab] = useState('kartei');
+  const [reframingOpenId, setReframingOpenId] = useState(null);
+
+  function openReframing(id){
+    setReframingOpenId(id);
+    setTab('reframing');
+  }
 
   return (
     <>
@@ -38,7 +44,7 @@ function App(){
 
         <div className="tab-bar">
           <button className={'tab-btn' + (tab === 'kartei' ? ' active' : '')} onClick={() => setTab('kartei')}>{TAB_ICONS.kartei}Kartei <span className="tab-count">{MUSTER_DATA.muster.length}</span></button>
-          <button className={'tab-btn' + (tab === 'reframing' ? ' active' : '')} onClick={() => setTab('reframing')}>{TAB_ICONS.reframing}Reframing <span className="tab-count">{NARRATIV_DATA.reframings.length}</span></button>
+          <button className={'tab-btn' + (tab === 'reframing' ? ' active' : '')} onClick={() => { setReframingOpenId(null); setTab('reframing'); }}>{TAB_ICONS.reframing}Reframing <span className="tab-count">{NARRATIV_DATA.reframings.length}</span></button>
           <button className={'tab-btn' + (tab === 'innergame' ? ' active' : '')} onClick={() => setTab('innergame')}>{TAB_ICONS.innergame}Inner Game</button>
           <button className={'tab-btn' + (tab === 'pruefung' ? ' active' : '')} onClick={() => setTab('pruefung')}>{TAB_ICONS.pruefung}Qualitäts-Check</button>
           <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
@@ -48,8 +54,8 @@ function App(){
         </div>
       </header>
 
-      {tab === 'kartei' && <Kartei />}
-      {tab === 'reframing' && <Reframing />}
+      {tab === 'kartei' && <Kartei onOpenReframing={openReframing} />}
+      {tab === 'reframing' && <Reframing initialOpenId={reframingOpenId} />}
       {tab === 'innergame' && <InnerGame />}
       {tab === 'pruefung' && <QualitaetsCheck />}
       {tab === 'methodenbox' && <Methodenbox />}

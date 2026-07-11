@@ -1,5 +1,8 @@
 import { useState, useMemo, useEffect } from 'react';
 import DATA from '../data/muster.json';
+import NARRATIV_DATA from '../data/reframing-narrativ.json';
+
+const narrativIds = new Set(NARRATIV_DATA.reframings.map(r => r.id));
 
 const KATEGORIE_CLASS = {
   'Beziehung & Bindung': 'kk-beziehung',
@@ -43,7 +46,7 @@ function MusterCard({ item, isOpen, onOpen }){
   );
 }
 
-function MusterModal({ item, onClose }){
+function MusterModal({ item, onClose, onOpenReframing }){
   useEffect(() => {
     const onKey = e => { if(e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', onKey);
@@ -82,6 +85,15 @@ function MusterModal({ item, onClose }){
               <span className="anteil-neu">{item.anteil_neu}</span>
             </div>
             <p className="anteil-hinweis">Vorschlag, kein feststehender Begriff. Prüfen Sie, ob ein anderes Bild für Sie stimmiger ist.</p>
+            {onOpenReframing && narrativIds.has(item.id) && (
+              <button
+                className="reframing-link"
+                onClick={() => onOpenReframing(item.id)}
+              >
+                Zum Reframing „{item.anteil_alt}" lesen
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            )}
           </div>
 
           <div className="card-modal-body">
@@ -128,7 +140,7 @@ function MusterModal({ item, onClose }){
   );
 }
 
-export default function Kartei(){
+export default function Kartei({ onOpenReframing }){
   const [query, setQuery] = useState('');
   const [kategorie, setKategorie] = useState(null);
   const [openId, setOpenId] = useState(null);
@@ -213,7 +225,7 @@ export default function Kartei(){
         )}
       </main>
 
-      {offenesItem && <MusterModal item={offenesItem} onClose={close} />}
+      {offenesItem && <MusterModal item={offenesItem} onClose={close} onOpenReframing={onOpenReframing} />}
     </>
   );
 }

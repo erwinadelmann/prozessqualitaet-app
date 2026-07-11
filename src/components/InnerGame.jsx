@@ -8,12 +8,24 @@ export default function InnerGame(){
         <p>{INNER_GAME.reminder}</p>
       </div>
 
+      <div className="ig-abwertung">
+        <p className="eyebrow">{INNER_GAME.abwertungsfrage.eyebrow}</p>
+        <h3>{INNER_GAME.abwertungsfrage.frage}</h3>
+        <p className="ig-abwertung-hinweis">{INNER_GAME.abwertungsfrage.hinweis}</p>
+        <p className="ig-abwertung-text">{INNER_GAME.abwertungsfrage.erklaerung}</p>
+      </div>
+
       <div className="fokus-hero ig-hero">
         <div className="blob b1"></div>
         <div className="blob b2"></div>
         <p className="eyebrow">{INNER_GAME.sehnsuchtsfrage.eyebrow}</p>
         <h2>{INNER_GAME.sehnsuchtsfrage.frage}</h2>
         <p className="ig-zielsatz">„{INNER_GAME.sehnsuchtsfrage.zielsatz}"</p>
+      </div>
+
+      <div className="ig-methode">
+        <p className="ig-methode-titel">{INNER_GAME.methode.titel} <span>{INNER_GAME.methode.untertitel}</span></p>
+        <p className="ig-methode-text">{INNER_GAME.methode.text}</p>
       </div>
 
       <p className="fokus-section-label">Die drei Schritte</p>

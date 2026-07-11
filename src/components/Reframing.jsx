@@ -128,10 +128,10 @@ function ReframingModal({ item, onClose }){
   );
 }
 
-export default function Reframing(){
+export default function Reframing({ initialOpenId }){
   const [query, setQuery] = useState('');
   const [kategorie, setKategorie] = useState(null);
-  const [openId, setOpenId] = useState(null);
+  const [openId, setOpenId] = useState(initialOpenId || null);
 
   const gefiltert = useMemo(
     () => COMBINED.filter(m => matches(m, query) && (!kategorie || m.kategorie === kategorie)),
