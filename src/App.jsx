@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Kartei from './components/Kartei.jsx';
+import UtilisationsProzess from './components/UtilisationsProzess.jsx';
 import QualitaetsCheck from './components/QualitaetsCheck.jsx';
 import MeinFokus from './components/MeinFokus.jsx';
 import Methodenbox from './components/Methodenbox.jsx';
@@ -8,6 +9,8 @@ import InnerGame from './components/InnerGame.jsx';
 import Reframing from './components/Reframing.jsx';
 import Ressourcen from './components/Ressourcen.jsx';
 import FokusKompass from './components/FokusKompass.jsx';
+import EMDR from './components/EMDR.jsx';
+import ACTDefusion from './components/ACTDefusion.jsx';
 import MUSTER_DATA from './data/muster.json';
 import METHODEN_DATA from './data/methodenbox.json';
 import NARRATIV_DATA from './data/reframing-narrativ.json';
@@ -22,7 +25,10 @@ const TAB_ICONS = {
   fokus: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>,
   reframing: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,
   ressourcen: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>,
-  fokuskompass: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+  fokuskompass: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>,
+  utilisationsprozess: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>,
+  emdr: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>,
+  act: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 3l4 4-4 4"/><path d="M21 7H9a4 4 0 0 0-4 4v1"/><path d="M7 21l-4-4 4-4"/><path d="M3 17h12a4 4 0 0 0 4-4v-1"/></svg>
 };
 
 function App(){
@@ -43,9 +49,12 @@ function App(){
         <div className="drawer-label">Persönliches Nachschlage- und Prüfwerkzeug für den hypnosystemischen Utilisations-Prozess. Ausschließlich zum eigenen Gebrauch.</div>
 
         <div className="tab-bar">
+          <button className={'tab-btn tab-btn-prominent' + (tab === 'utilisationsprozess' ? ' active' : '')} onClick={() => setTab('utilisationsprozess')}>{TAB_ICONS.utilisationsprozess}Utilisationsprozess <span className="tab-count">4</span></button>
           <button className={'tab-btn' + (tab === 'kartei' ? ' active' : '')} onClick={() => setTab('kartei')}>{TAB_ICONS.kartei}Kartei <span className="tab-count">{MUSTER_DATA.muster.length}</span></button>
           <button className={'tab-btn' + (tab === 'reframing' ? ' active' : '')} onClick={() => { setReframingOpenId(null); setTab('reframing'); }}>{TAB_ICONS.reframing}Reframing <span className="tab-count">{NARRATIV_DATA.reframings.length}</span></button>
           <button className={'tab-btn' + (tab === 'innergame' ? ' active' : '')} onClick={() => setTab('innergame')}>{TAB_ICONS.innergame}Inner Game</button>
+          <button className={'tab-btn' + (tab === 'emdr' ? ' active' : '')} onClick={() => setTab('emdr')}>{TAB_ICONS.emdr}EMDR</button>
+          <button className={'tab-btn' + (tab === 'act' ? ' active' : '')} onClick={() => setTab('act')}>{TAB_ICONS.act}ACT, Defusion</button>
           <button className={'tab-btn' + (tab === 'pruefung' ? ' active' : '')} onClick={() => setTab('pruefung')}>{TAB_ICONS.pruefung}Qualitäts-Check</button>
           <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
           <button className={'tab-btn' + (tab === 'ressourcen' ? ' active' : '')} onClick={() => setTab('ressourcen')}>{TAB_ICONS.ressourcen}Ressourcen <span className="tab-count">{BILDER_KATEGORIEN.reduce((a, k) => a + k.bilder.length, 0) + VIDEOS.length}</span></button>
@@ -54,9 +63,12 @@ function App(){
         </div>
       </header>
 
+      {tab === 'utilisationsprozess' && <UtilisationsProzess />}
       {tab === 'kartei' && <Kartei onOpenReframing={openReframing} />}
       {tab === 'reframing' && <Reframing initialOpenId={reframingOpenId} />}
       {tab === 'innergame' && <InnerGame />}
+      {tab === 'emdr' && <EMDR />}
+      {tab === 'act' && <ACTDefusion />}
       {tab === 'pruefung' && <QualitaetsCheck />}
       {tab === 'methodenbox' && <Methodenbox />}
       {tab === 'ressourcen' && <Ressourcen />}

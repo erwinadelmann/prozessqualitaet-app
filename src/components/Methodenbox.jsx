@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import DATA from '../data/methodenbox.json';
+import UP_DATA from '../data/utilisationsprozess.json';
 
 const KATEGORIE_CLASS = {
   'Grundannahme': 'kat-grundannahme',
@@ -35,6 +36,108 @@ function MethodCard({ item, isOpen, onOpen }){
       </div>
       <div className="anteil-line">
         <span>{item.kernaussage}</span>
+      </div>
+    </div>
+  );
+}
+
+function KernprozessCard({ modus, onOpen }){
+  return (
+    <div
+      className="card kernprozess-card"
+      tabIndex={0}
+      role="button"
+      onClick={() => onOpen(modus.id)}
+      onKeyDown={e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); onOpen(modus.id); } }}
+    >
+      <div className="card-top">
+        <div className="muster-name">
+          <span className="kernprozess-badge">Modus {modus.nr}</span>
+          {modus.titel}
+        </div>
+        <div className="toggle-icon">+</div>
+      </div>
+      <div className="anteil-line kernprozess-kurz">
+        <span>{modus.kurz}</span>
+      </div>
+    </div>
+  );
+}
+
+function KernprozessModal({ modus, onClose }){
+  useEffect(() => {
+    const onKey = e => { if(e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [onClose]);
+
+  if(!modus) return null;
+
+  return (
+    <div className="card-modal-backdrop" onClick={onClose}>
+      <div
+        className="card-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label={modus.titel}
+        onClick={e => e.stopPropagation()}
+      >
+        <div className="card-modal-topbar">
+          <button className="card-modal-close" onClick={onClose} aria-label="Schließen">×</button>
+        </div>
+
+        <div className="card-modal-inner">
+          <div className="card-modal-header">
+            <div className="muster-name">
+              <span className="kernprozess-badge">Modus {modus.nr}</span>
+              {modus.titel}
+            </div>
+            <div className="anteil-line">
+              <span>{modus.kurz}</span>
+            </div>
+          </div>
+
+          <div className="card-modal-body">
+            <div className="details up-modus-body" style={{ padding: 0 }}>
+              <div className="up-modus-wann">
+                <h4>Wann dieser Modus greift</h4>
+                <p>{modus.wann}</p>
+              </div>
+
+              {modus.leitplanke && (
+                <div className="up-modus-leitplanke">
+                  <h4>Leitplanke</h4>
+                  <p>{modus.leitplanke}</p>
+                </div>
+              )}
+
+              <div className="up-modus-phasen">
+                {modus.phasen.map((p, i) => (
+                  <div className="up-phase" key={i}>
+                    <div className="up-phase-nr">{i + 1}</div>
+                    <div className="up-phase-body">
+                      <h5>{p.titel}</h5>
+                      <p>{p.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {modus.abschluss && (
+                <div className="up-modus-abschluss">
+                  <h4>Abschluss</h4>
+                  <p>{modus.abschluss}</p>
+                </div>
+              )}
+
+              <p className="up-modus-quelle">{modus.quelle}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -115,18 +218,29 @@ export default function Methodenbox(){
   const [query, setQuery] = useState('');
   const [kategorie, setKategorie] = useState(null);
   const [openId, setOpenId] = useState(null);
+  const [openModusId, setOpenModusId] = useState(null);
 
   const list = useMemo(() => DATA.elemente.filter(item =>
     matches(item, query) && (!kategorie || item.kategorie === kategorie)
   ), [query, kategorie]);
 
   const offenesItem = openId ? DATA.elemente.find(i => i.id === openId) : null;
+  const offenerModus = openModusId ? UP_DATA.modi.find(m => m.id === openModusId) : null;
 
   function open(id){ setOpenId(id); }
   function close(){ setOpenId(null); }
 
   return (
     <>
+      <div className="kernprozess-wrap">
+        <p className="picker-label">{UP_DATA.meta.titel} · {UP_DATA.meta.untertitel}</p>
+        <div className="kernprozess-grid">
+          {UP_DATA.modi.map(modus => (
+            <KernprozessCard key={modus.id} modus={modus} onOpen={setOpenModusId} />
+          ))}
+        </div>
+      </div>
+
       <div className="picker-wrap">
         <p className="picker-label">Methodenbox · nach Kategorie filtern</p>
         <div className="chip-grid">
@@ -173,6 +287,7 @@ export default function Methodenbox(){
       </main>
 
       {offenesItem && <MethodModal item={offenesItem} onClose={close} />}
+      {offenerModus && <KernprozessModal modus={offenerModus} onClose={() => setOpenModusId(null)} />}
     </>
   );
 }

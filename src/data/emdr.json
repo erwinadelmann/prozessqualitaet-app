@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "titel": "EMDR",
+    "untertitel": "Eye Movement Desensitization and Reprocessing, achtphasiges Standardprotokoll",
+    "hinweis": "Text von Ihnen eingefügt am 2026-07-11, vermutlich Referat der Standard-EMDR-Literatur nach Francine Shapiro, von mir nicht gegen eine Primärquelle geprüft. EMDR selbst ist für PTBS [EVIDENZ: gut belegt], u. a. als Erstlinienbehandlung von der WHO anerkannt und in der NICE-Leitlinie NG116 empfohlen, ebenso von ISTSS und dem VA/DoD-Leitfaden. Einsatz außerhalb einer PTBS-Diagnostik ist in diesem Dokument nicht eingeordnet."
+  },
+  "phasen": [
+    {
+      "nr": "1",
+      "titel": "Anamnese und Behandlungsplanung",
+      "kurz": "Kennenlernen, Diagnostik, Vorgeschichte erheben, Behandlungsverlauf planen.",
+      "inhalt": "Therapeut und Patient lernen einander kennen. Es wird eine fundierte Diagnostik durchgeführt und die Vorgeschichte des Patienten erhoben.",
+      "funktion": "Da Erinnerungen eine zentrale Rolle spielen, wird das aktuelle Problem genau analysiert, um den weiteren Behandlungsverlauf zu planen."
+    },
+    {
+      "nr": "2",
+      "titel": "Vorbereitung und Stabilisierung",
+      "kurz": "Methode erklären, Stabilität prüfen, bei Bedarf gezielt stabilisieren.",
+      "inhalt": "Der Patient wird auf die Methode vorbereitet. Ihm werden alle Details erklärt, einschließlich der Möglichkeit, die Arbeit jederzeit zu unterbrechen.",
+      "funktion": "Ein wesentlicher Teil ist die Prüfung der Stabilität des Patienten. Falls nötig, erfolgt eine gezielte Stabilisierung, um die Sicherheit während der späteren Interventionen zu gewährleisten."
+    },
+    {
+      "nr": "3",
+      "titel": "Bewertung (Assessment)",
+      "kurz": "Zentrale Erinnerung auswählen, Gedanke, Bild, Gefühl und Körperempfindung identifizieren.",
+      "inhalt": "Eine zentrale Erinnerung, die für das aktuelle Problem wichtig ist, wird ausgewählt. Dabei werden der belastendste Gedanke, das wichtigste Bild, die begleitenden Gefühle sowie die körperlichen Empfindungen identifiziert.",
+      "funktion": "Mithilfe einer Skala von 0 bis 10 wird der Belastungsgrad, das vegetative Arousal, gemessen, um eine Ausgangsbasis für die Bearbeitung zu haben."
+    },
+    {
+      "nr": "4",
+      "titel": "Desensibilisierung",
+      "kurz": "Kurze Kontaktphasen mit der Erinnerung, begleitet von bilateraler Stimulation.",
+      "inhalt": "Der Patient tritt in kurzen Abschnitten von etwa 30 Sekunden mit der Erinnerung in Kontakt, während der Therapeut Augenbewegungen, bilaterale Stimulation, anleitet. Nach jedem Set wird kurz innegehalten und nachgefragt, was gerade präsent ist.",
+      "funktion": "Das ist der Kernprozess, der der freien Assoziation ähnelt. Das Gehirn des Patienten wird dabei unterstützt, sich selbst zu heilen. Ziel ist es, die Belastung der Erinnerung in der Regel auf null zu senken."
+    },
+    {
+      "nr": "5",
+      "titel": "Verankerung (Installation)",
+      "kurz": "Positiven Gedanken aus Phase 3 fokussieren und durch Stimulation festigen.",
+      "inhalt": "Wenn die Belastung abgeklungen ist, wird ein zu Beginn, in Phase 3, definierter positiver Gedanke fokussiert, etwa „Es ist vorbei“ oder „Ich kann heute damit umgehen“.",
+      "funktion": "Durch erneute Stimulation wird die Wirksamkeit und Stimmigkeit dieses positiven Gedankens für den Patienten spürbar verstärkt und gefestigt."
+    },
+    {
+      "nr": "6",
+      "titel": "Körpertest (Body Scan)",
+      "kurz": "Körper nach verbleibender Unruhe abscannen, während an die Erinnerung gedacht wird.",
+      "inhalt": "Der Patient scannt seinen gesamten Körper nach verbleibenden Resten von Unruhe oder vegetativer Erregung ab, während er an die bearbeitete Erinnerung denkt.",
+      "funktion": "Falls noch körperliche Spannungen vorhanden sind, werden diese durch weitere Stimulation nachbearbeitet, bis auch der Körper vollständig entspannt bleibt."
+    },
+    {
+      "nr": "7",
+      "titel": "Abschluss (Closure)",
+      "kurz": "Sitzung strukturiert beenden, sicherer Übergang in den Alltag.",
+      "inhalt": "Jede Sitzung oder die Bearbeitung einer spezifischen Erinnerung wird strukturiert beendet.",
+      "funktion": "Das dient dazu, den Patienten sicher aus dem therapeutischen Prozess in den Alltag zu entlassen."
+    },
+    {
+      "nr": "8",
+      "titel": "Nachbefragung (Re-evaluation)",
+      "kurz": "Rund eine Woche später prüfen, wie stabil die Entlastung geblieben ist.",
+      "inhalt": "Etwa eine Woche später wird geprüft, was in der Zwischenzeit passiert ist und wie sich die Erinnerung nun anfühlt.",
+      "funktion": "In den meisten Fällen bleibt die Entlastung stabil. Diese Phase dient der Überprüfung des langfristigen Therapieerfolgs."
+    }
+  ],
+  "mechanismus": {
+    "titel": "Heilung durch bilaterale Stimulation",
+    "einleitung": "In der EMDR-Therapie spielt die bilaterale Stimulation, meist in Form von gezielten Augenbewegungen, eine entscheidende Rolle für die Art und Weise, wie das Gehirn belastende Informationen verarbeitet.",
+    "punkte": [
+      { "titel": "Aktivierung der Selbstheilungskräfte", "text": "Die Stimulation unterstützt das Gehirn des Patienten dabei, sich selbst zu heilen. Während der Therapeut den Prozess lediglich begleitet, ermöglicht die Stimulation dem Gehirn, die traumatische Erinnerung neu zu sortieren und zu verarbeiten." },
+      { "titel": "Durchbrechen gewohnter Reaktionsmuster", "text": "Durch die Augenbewegungen passiert im Gehirn etwas anderes als bei der bloßen Rückschau auf ein traumatisches Ereignis. Anstatt in der gewohnten Belastung stecken zu bleiben, wird ein Prozess angestoßen, der der freien Assoziation ähnelt." },
+      { "titel": "Senkung des vegetativen Arousals", "text": "Die Stimulation hilft dabei, die emotionale Belastung, das vegetative Stressniveau einer Erinnerung, systematisch abzubauen. Ziel ist es, den Stresslevel im Gehirn und Körper oft bis auf null zu senken." },
+      { "titel": "Verstärkung positiver Netzwerke", "text": "In der Phase der Verankerung wird die Stimulation genutzt, um die Wirksamkeit positiver Gedanken, etwa Ich kann heute damit umgehen, im Gehirn spürbar zu verstärken und zu festigen." },
+      { "titel": "Verarbeitung körperlicher Resonanzen", "text": "Auch wenn der Kopf eine Erinnerung bereits als entlastet einstuft, kann das Gehirn durch die Stimulation noch verbleibende vegetative Erregungen im Körper aufspüren und auflösen." }
+    ],
+    "zusammenfassung": "Zusammenfassend dient die bilaterale Stimulation als Katalysator, der es dem Gehirn ermöglicht, steckengebliebene traumatische Prozesse wieder in Fluss zu bringen und gesund in das Gedächtnis zu integrieren."
+  },
+  "beiPersistenz": {
+    "titel": "Protokoll bei persistierender Belastung",
+    "einleitung": "Wenn die Belastung am Ende einer Sequenz nicht auf null sinkt, sieht das EMDR-Protokoll folgende Schritte vor, um den Prozess fortzusetzen oder sicher abzuschließen:",
+    "punkte": [
+      { "titel": "Fortführung über mehrere Sitzungen", "text": "Obwohl das Ziel der Phase 4, Desensibilisierung, in der Regel eine Belastung von null ist, kann dieser Prozess bei Bedarf über mehrere Sitzungen hinweg verlaufen. Die Bearbeitung wird so lange fortgesetzt, bis die vegetative Erregung vollständig abgeklungen ist." },
+      { "titel": "Nachbearbeitung im Körpertest", "text": "Sollte der Patient im Kopf keine Belastung mehr spüren, aber in Phase 6, Körpertest, noch Unruhe oder vegetative Erregung im Körper wahrnehmen, wird erneut stimuliert. Diese Reste werden gezielt nachbearbeitet, bis auch die körperliche Resonanz verschwindet." },
+      { "titel": "Strukturierter Abschluss", "text": "Unabhängig davon, ob eine Erinnerung vollständig verarbeitet wurde, wird jede Sitzung in Phase 7 kontrolliert abgeschlossen. Das stellt sicher, dass der Patient stabil aus der Sitzung geht, auch wenn die Bearbeitung dieser speziellen Erinnerung zu einem späteren Zeitpunkt fortgesetzt werden muss." },
+      { "titel": "Überprüfung in der Nachbefragung", "text": "In Phase 8 wird eine Woche später evaluiert, wie sich die Belastung entwickelt hat. Hier zeigt sich, ob die Entlastung stabil geblieben ist oder ob weitere Bearbeitungsschritte notwendig sind." }
+    ],
+    "zusammenfassung": "Zusammenfassend gilt: Sinkt die Belastung nicht sofort, wird die bilaterale Stimulation fortgesetzt, entweder direkt in derselben Sitzung, durch Einbeziehen körperlicher Reaktionen oder in folgenden Terminen, bis das Ziel erreicht ist."
+  }
+}

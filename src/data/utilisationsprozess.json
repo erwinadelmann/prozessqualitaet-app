@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "titel": "Utilisationsprozess",
+    "untertitel": "Die vier Modi der Steuerposition, sofort verstehbar und anwendbar",
+    "hinweis": "Quelle: Steuerposition_Description.md. Modus 1 ist der Grundprozess, den jeder Kartei- und Reframing-Eintrag im Kern anwendet. Modus 2 bis 4 sind Sondermodi für bestimmte Situationen, erkennbar an klaren Auslösemerkmalen."
+  },
+  "modi": [
+    {
+      "id": "modus1_utilisationsprozess",
+      "nr": "1",
+      "titel": "Utilisations-Prozess",
+      "kurz": "Der sechsphasige Grundprozess. Gilt für jedes Anliegen, das ein einzelnes inneres Muster betrifft.",
+      "wann": "Als Grundprozess, immer, wenn ein einzelner Anteil oder eine belastende Reaktion beschrieben wird.",
+      "phasen": [
+        { "titel": "Ankommen", "text": "Würdigende Spiegelung, ohne Einordnung, ohne Lösung. Erst weiter, wenn die Person sich vollständig verstanden fühlt." },
+        { "titel": "Den Anteil würdigen", "text": "Wofür sorgt dieser Teil von Ihnen gerade? Der Anteil tut, womit er sich auskennt, seine beste verfügbare Lösung, keine Schwäche." },
+        { "titel": "Selbstbewertung erfragen, immer", "text": "Direkt danach, fester Bestandteil, nicht optional: Wie finden Sie das eigentlich von sich? Werten Sie sich dafür ab? Zeigt sich Abwertung, die Spaltung zwischen bewertendem und handelndem Anteil sichtbar machen, ohne sie aufzulösen." },
+        { "titel": "Sehnsuchtsfrage", "text": "Was wäre denn die Sehnsucht dahinter? Dass Sie sagen, ja genau, so ist es perfekt. Die Antwort als Zielbild festhalten, für die folgenden Phasen." },
+        { "titel": "Den eigentlichen Wunsch freilegen", "text": "Was würde dieser Anteil wirklich wollen, wenn ihm alles zur Verfügung stünde? Danach würdigen, verständlicherweise ist das im Moment so noch nicht möglich." },
+        { "titel": "Die Steuerposition einnehmen", "text": "Der Anteil hat seinen Wunsch benannt, ein anderer Teil verfolgt im selben Moment ein widersprüchliches, ebenso berechtigtes Ziel. Diese Gleichzeitigkeit benennen, keine Seite ausspielen: Ein Teil in Ihnen möchte X, um Y zu erreichen, gleichzeitig verfolgt ein anderer Teil ein anderes Ziel. Aus dieser Beobachter-Position eine Priorität setzen und den zurückstehenden Teil ausdrücklich würdigen: Ich verstehe dich, gerade hat aber etwas anderes Vorrang, danke, dass du zurückstehst." },
+        { "titel": "Ausnahmen aktivieren", "text": "Gab es schon einmal einen Moment, und sei er noch so klein, wo es ein bisschen anders war? Kurz groß machen, dann sanft zurück." },
+        { "titel": "Embodiment", "text": "Wie würde dieser Anteil atmen, welche Körperhaltung hätte er, wo im Körper spüren Sie das? Die Haltung zwei bis drei Minuten wirklich einnehmen." },
+        { "titel": "Future Pace", "text": "Wenn Sie aus dieser Haltung heraus auf die Situation schauen, was verändert sich? Wie begegnen Sie dem morgen, in einer Woche?" }
+      ],
+      "abschluss": "Den Abschluss bildet die Umlenkung im Inner-Game-Dreischritt: ohne Bewertung wahrnehmen, was da ist. Dem wahren Selbst ein multifaktorisches Bild anvertrauen, mit allen Sinneskanälen, VAKOG, und den passenden Submodalitäten geschärft. Danach loslassen, ohne Selbstkritik aus dem Ergebnis lernen.",
+      "quelle": "Steuerposition_Description.md, Modus 1"
+    },
+    {
+      "id": "modus2_dokumentenpruefung",
+      "nr": "2",
+      "titel": "Dokumentenprüfung",
+      "kurz": "Prüfung eines Dokuments auf drei Ebenen: sprachlich, inhaltlich-methodisch, evidenzkritisch.",
+      "wann": "Immer, sobald ein Dokument hochgeladen oder eingefügt wird und auf Hypnosystemik-Stimmigkeit geprüft werden soll.",
+      "phasen": [
+        { "titel": "Sprachlich", "text": "Stil, Grammatik, Klarheit, Konsistenz, Fluss. Korrekturen stillschweigend einarbeiten." },
+        { "titel": "Inhaltlich-methodisch", "text": "Stimmigkeit mit Hypnosystemik, Utilisationsprinzip und lösungsfokussiertem Ansatz. Widersprüche als nummerierte Liste am Ende, nicht versteckt im Fließtext." },
+        { "titel": "Evidenzkritisch", "text": "Aussagen im Text kennzeichnen: gut belegt für Lösungsfokus nach de Shazer und Berg, IFS nach Schwartz, Hypnotherapie nach Flammer und Bongartz, ZRM nach Storch und Krause, Atemarbeit und Polyvagal nach Porges. Praxisbewährt, empirisch dünn für Hypnosystemik als Gesamtformat nach Schmidt und für das Utilisationsprinzip nach Erickson. Nicht repliziert für Power Posing nach Cuddy und Facial Feedback nach Strack. Nicht belegbar, wenn keine valide Grundlage erkennbar ist." }
+      ],
+      "abschluss": "",
+      "quelle": "Steuerposition_Description.md, Modus 2"
+    },
+    {
+      "id": "modus3_anteilskonflikte",
+      "nr": "3",
+      "titel": "Anteilskonflikte, beidseitige Stärkung",
+      "kurz": "Wechseln, sobald zwei gegensätzliche innere Positionen im selben Anliegen auftauchen, nicht ein einzelnes Muster.",
+      "wann": "Erkennungsmerkmale: einerseits will ich, andererseits, ein Teil von mir sagt, zwei erkennbar widersprüchliche Bedürfnisse im selben Anliegen.",
+      "phasen": [
+        { "titel": "Beide Seiten benennen", "text": "Klar und wertfrei, etwa der Teil, der Sicherheit sucht, und der Teil, der Wachstum sucht." },
+        { "titel": "Beide Seiten würdigen", "text": "Für jede Seite einzeln, wofür sie einmal wichtig war, welchen Beitrag sie geleistet hat. Keine Seite gegen die andere ausspielen." },
+        { "titel": "Die schwächere Seite stärken", "text": "Welche Seite hat gerade weniger Raum oder Stimme? Genau diese stärken, bis Gleichgewicht entsteht, nicht die dominante Seite schwächen." },
+        { "titel": "Kooperation ermöglichen", "text": "Erst wenn beide gleichwertig repräsentiert sind: Wie können beide gemeinsam zu einer neuen Lösung beitragen? Kein Kompromiss der Ausgangspositionen." }
+      ],
+      "abschluss": "Augenhöhe ist Voraussetzung für Kooperation, nicht deren Ergebnis. Die Reihenfolge wird nie umgestellt, keine Seite wird als das eigentliche Problem dargestellt.",
+      "quelle": "Steuerposition_Description.md, Modus 3"
+    },
+    {
+      "id": "modus4_bedrohtes_selbst",
+      "nr": "4",
+      "titel": "Bedrohtes Selbst",
+      "kurz": "Wechseln, sobald Fantasien von Vergeltung, Dominanz oder Kontrolle über einen anderen Menschen auftauchen, ausgelöst durch eine erlebte Kränkung.",
+      "wann": "Rache-, Macht- oder Kontrollfantasien gegenüber einer konkreten Person, verbunden mit einer aktuellen oder erinnerten Kränkung. Nicht gemeint: bloßer Konsum von Gewaltfiktion oder Fantasien, selbst dominiert zu werden, beide unproblematisch, keine Umlenkung nötig.",
+      "leitplanke": "Nicht verhandelbar: Die Fantasie selbst darf im Prozess nicht ausgebaut, ausgemalt oder als Ventil durchgespielt werden. Wer Vergeltung gedanklich rehearst, wird nachweislich wütender und aggressiver, nicht ruhiger (Bushman 2002). Der Prozess bleibt auf dem Bedürfnis hinter der Fantasie, nie auf der Vergeltungshandlung selbst.",
+      "phasen": [
+        { "titel": "Ankommen", "text": "Das klingt, als wäre gerade etwas in Ihnen verletzt worden, das Ihnen wirklich wichtig ist." },
+        { "titel": "Den Anteil würdigen, dann Selbstbewertung erfragen", "text": "Wofür sorgt dieser Teil gerade? Direkt danach: Wie finden Sie das eigentlich von sich, solche Gedanken zu haben? Rache- und Machtfantasien sind oft zusätzlich mit Scham belegt." },
+        { "titel": "Sehnsuchtsfrage", "text": "Was wäre denn die Sehnsucht dahinter? Dass Sie sagen, ja genau, so ist es perfekt." },
+        { "titel": "Den eigentlichen Wunsch freilegen", "text": "Fast immer zeigt sich: gesehen werden, ernst genommen werden, Würde zurückerhalten, wieder wirksam sein, nicht die Vergeltungshandlung selbst." },
+        { "titel": "Ausnahmen, Embodiment, Future Pace", "text": "Wie in Modus 1, bezogen auf Würde und Kontrolle, die ohne Vergeltung zurückgewonnen wurden." }
+      ],
+      "abschluss": "Wiederherstellung von Wert, Würde und Wirksamkeit auf realem, nicht-vergeltendem Weg.",
+      "quelle": "Steuerposition_Description.md, Modus 4; Utilisations-Vorlage Kategorie C (Original: Erwin); Bushman 2002"
+    }
+  ]
+}
