@@ -48,24 +48,28 @@ header p.sub{
   line-height:1.5;
 }
 .tab-bar{
-  max-width:var(--content-max);
+  max-width:var(--tabbar-max);
   margin:1.6rem auto 0;
   padding:0 1.5rem;
   display:flex;
-  gap:0.4rem;
-  flex-wrap:wrap;
+  gap:0.35rem;
+  flex-wrap:nowrap;
+  overflow-x:auto;
+  scrollbar-width:thin;
 }
 .tab-btn{
   font-weight:600;
-  font-size:0.85rem;
+  font-size:0.82rem;
   background:rgba(255,255,255,0.08);
   color:#dfeceb;
   border:1px solid rgba(255,255,255,0.18);
   border-bottom:none;
-  padding:0.7rem 1.3rem;
+  padding:0.68rem 1.05rem;
   border-radius:8px 8px 0 0;
   transition:background 0.18s ease, color 0.18s ease, transform 0.18s ease;
-  display:inline-flex; align-items:center; gap:0.45rem;
+  display:inline-flex; align-items:center; gap:0.4rem;
+  white-space:nowrap;
+  flex-shrink:0;
 }
 .tab-btn:hover{ background:rgba(255,255,255,0.16); transform:translateY(-1px); }
 .tab-btn.active{ background:var(--bg); color:var(--primary); }

@@ -12,11 +12,12 @@
   --card-bg:#ffffff;
   --ink:#1c2b2a;
   --content-max:920px;
+  --tabbar-max:920px;
   color-scheme: light;
 }
-@media (min-width:1200px){ :root{ --content-max:1180px; } }
-@media (min-width:1600px){ :root{ --content-max:1480px; } }
-@media (min-width:2000px){ :root{ --content-max:1760px; } }
+@media (min-width:1200px){ :root{ --content-max:1280px; --tabbar-max:1400px; } }
+@media (min-width:1600px){ :root{ --content-max:1620px; --tabbar-max:1760px; } }
+@media (min-width:2000px){ :root{ --content-max:1900px; --tabbar-max:2100px; } }
 
 *{ box-sizing:border-box; }
 
