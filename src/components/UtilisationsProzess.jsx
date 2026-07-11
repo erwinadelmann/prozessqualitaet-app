@@ -58,8 +58,8 @@ function ModusCard({ modus, isOpen, onToggle }){
   );
 }
 
-export default function UtilisationsProzess(){
-  const [openId, setOpenId] = useState(DATA.modi[0].id);
+export default function UtilisationsProzess({ initialOpenId }){
+  const [openId, setOpenId] = useState(initialOpenId || DATA.modi[0].id);
 
   function toggle(id){
     setOpenId(prev => prev === id ? null : id);

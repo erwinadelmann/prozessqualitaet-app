@@ -49,8 +49,8 @@ function InfoBlock({ data, className }){
   );
 }
 
-export default function EMDR(){
-  const [openNr, setOpenNr] = useState(DATA.phasen[0].nr);
+export default function EMDR({ initialOpenNr }){
+  const [openNr, setOpenNr] = useState(initialOpenNr || DATA.phasen[0].nr);
 
   function toggle(nr){
     setOpenNr(prev => prev === nr ? null : nr);
@@ -61,9 +61,8 @@ export default function EMDR(){
       <div className="up-hero">
         <p className="eyebrow">{DATA.meta.titel}</p>
         <h2>{DATA.meta.untertitel}</h2>
+        {DATA.meta.untertitel_klein && <p className="up-hero-sub">{DATA.meta.untertitel_klein}</p>}
       </div>
-
-      <p className="up-hinweis">{DATA.meta.hinweis}</p>
 
       <div className="up-modi-liste">
         {DATA.phasen.map(phase => (

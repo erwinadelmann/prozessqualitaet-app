@@ -214,10 +214,10 @@ function MethodModal({ item, onClose }){
   );
 }
 
-export default function Methodenbox(){
+export default function Methodenbox({ initialOpenId }){
   const [query, setQuery] = useState('');
   const [kategorie, setKategorie] = useState(null);
-  const [openId, setOpenId] = useState(null);
+  const [openId, setOpenId] = useState(initialOpenId || null);
   const [openModusId, setOpenModusId] = useState(null);
 
   const list = useMemo(() => DATA.elemente.filter(item =>

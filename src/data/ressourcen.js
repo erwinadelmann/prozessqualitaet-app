@@ -1,11 +1,12 @@
 // Ressourcen: ZRM-zieldienliche Bilder und Videos, gespiegelt von mentaltraining.at/haltung/
 // Bilder werden per Hotlink von der Website geladen (Jetpack-CDN i0.wp.com).
-// Abgleich mit mentaltraining.at/haltung/ erfolgt durch Claude, nicht durch Erwin selbst.
+// Der Abgleich mit mentaltraining.at/haltung/ ist bisher KEIN automatischer Hintergrundprozess,
+// sondern geschieht, wenn Claude in einer Arbeitssitzung darum gebeten wird, die Seite zu prüfen.
 // Stand des letzten Abgleichs: 2026-07-10 (13 neue Bilder ergänzt, u. a. Aufwärts-Spirale,
 // Blick des Erblühens, Kronen-Chakra – neue Themen ohne bestehende Kategorie, unter
 // "Weitere Ressourcen" einsortiert).
 
-export const RESSOURCEN_REMINDER = "Diese Bilder werden regelmäßig mit mentaltraining.at/haltung/ abgeglichen. Neue Bilder, die Embodiment und somatische Marker aktivieren können, werden hier automatisch ergänzt.";
+export const RESSOURCEN_REMINDER = "Diese Bilder werden von Claude in eigenen Arbeitssitzungen mit mentaltraining.at/haltung/ abgeglichen, kein automatischer Hintergrundprozess. Zuletzt aktualisiert am 2026-07-10.";
 
 export const BILDER_KATEGORIEN = [
   {

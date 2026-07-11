@@ -15,6 +15,7 @@ import MUSTER_DATA from './data/muster.json';
 import METHODEN_DATA from './data/methodenbox.json';
 import NARRATIV_DATA from './data/reframing-narrativ.json';
 import { BILDER_KATEGORIEN, VIDEOS } from './data/ressourcen.js';
+import { searchGlobal } from './searchIndex.js';
 import heroImage from './assets/logo_mental.png';
 
 const TAB_ICONS = {
@@ -34,11 +35,25 @@ const TAB_ICONS = {
 function App(){
   const [tab, setTab] = useState('kartei');
   const [reframingOpenId, setReframingOpenId] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchFocused, setSearchFocused] = useState(false);
+  const [jump, setJump] = useState(null);
 
   function openReframing(id){
     setReframingOpenId(id);
     setTab('reframing');
   }
+
+  function goToResult(result){
+    setTab(result.tab);
+    setJump({ tab: result.tab, openId: result.openId || null, openNr: result.openNr || null, nonce: Date.now() });
+    setSearchQuery('');
+    setSearchFocused(false);
+  }
+
+  const searchResults = searchGlobal(searchQuery);
+  const jumpForTab = jump && jump.tab === tab ? jump : null;
+  const tabKey = jumpForTab ? tab + '-jump-' + jumpForTab.nonce : tab;
 
   return (
     <>
@@ -47,6 +62,39 @@ function App(){
         <h1>Prozessqualität</h1>
         <p className="sub">Vorbereitung während der Sitzung · Selbstsupervision danach · Mein Fokus</p>
         <div className="drawer-label">Persönliches Nachschlage- und Prüfwerkzeug für den hypnosystemischen Utilisations-Prozess. Ausschließlich zum eigenen Gebrauch.</div>
+
+        <div className="global-search-wrap">
+          <div className="search-box global-search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input
+              type="text"
+              placeholder="Alles durchsuchen, Muster, Methode, Reframing, Phase …"
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              onFocus={() => setSearchFocused(true)}
+              onBlur={() => setTimeout(() => setSearchFocused(false), 150)}
+              onKeyDown={e => { if(e.key === 'Escape'){ setSearchQuery(''); setSearchFocused(false); } }}
+            />
+            {searchQuery && <span className="count">{searchResults.length}</span>}
+          </div>
+          {searchFocused && searchQuery && (
+            <div className="global-search-results">
+              {searchResults.length === 0 ? (
+                <div className="global-search-empty">Keine Treffer. Anderen Begriff versuchen.</div>
+              ) : (
+                searchResults.map(r => (
+                  <button key={r.key} className="global-search-result" onMouseDown={() => goToResult(r)}>
+                    <span className="global-search-result-titel">{r.titel}</span>
+                    <span className="global-search-result-kontext">{r.kontext}</span>
+                    <span className="global-search-result-snippet">{r.snippet}</span>
+                  </button>
+                ))
+              )}
+            </div>
+          )}
+        </div>
 
         <div className="tab-bar">
           <button className={'tab-btn tab-btn-prominent' + (tab === 'utilisationsprozess' ? ' active' : '')} onClick={() => setTab('utilisationsprozess')}>{TAB_ICONS.utilisationsprozess}Utilisationsprozess <span className="tab-count">3</span></button>
@@ -63,14 +111,14 @@ function App(){
         </div>
       </header>
 
-      {tab === 'utilisationsprozess' && <UtilisationsProzess />}
-      {tab === 'kartei' && <Kartei onOpenReframing={openReframing} />}
-      {tab === 'reframing' && <Reframing initialOpenId={reframingOpenId} />}
+      {tab === 'utilisationsprozess' && <UtilisationsProzess key={tabKey} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
+      {tab === 'kartei' && <Kartei key={tabKey} onOpenReframing={openReframing} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
+      {tab === 'reframing' && <Reframing key={tabKey} initialOpenId={jumpForTab ? jumpForTab.openId : reframingOpenId} />}
       {tab === 'innergame' && <InnerGame />}
-      {tab === 'emdr' && <EMDR />}
-      {tab === 'act' && <ACTDefusion />}
+      {tab === 'emdr' && <EMDR key={tabKey} initialOpenNr={jumpForTab ? jumpForTab.openNr : undefined} />}
+      {tab === 'act' && <ACTDefusion key={tabKey} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
       {tab === 'pruefung' && <QualitaetsCheck />}
-      {tab === 'methodenbox' && <Methodenbox />}
+      {tab === 'methodenbox' && <Methodenbox key={tabKey} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
       {tab === 'ressourcen' && <Ressourcen />}
       {tab === 'fokus' && <MeinFokus />}
       {tab === 'fokuskompass' && <FokusKompass />}

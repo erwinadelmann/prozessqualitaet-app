@@ -66,8 +66,8 @@ function AbschnittCard({ abschnitt, isOpen, onToggle }){
   );
 }
 
-export default function ACTDefusion(){
-  const [openId, setOpenId] = useState(DATA.abschnitte[0].id);
+export default function ACTDefusion({ initialOpenId }){
+  const [openId, setOpenId] = useState(initialOpenId || DATA.abschnitte[0].id);
 
   function toggle(id){
     setOpenId(prev => prev === id ? null : id);
@@ -78,9 +78,8 @@ export default function ACTDefusion(){
       <div className="up-hero">
         <p className="eyebrow">{DATA.meta.titel}</p>
         <h2>{DATA.meta.untertitel}</h2>
+        {DATA.meta.untertitel_klein && <p className="up-hero-sub">{DATA.meta.untertitel_klein}</p>}
       </div>
-
-      <p className="up-hinweis">{DATA.meta.hinweis}</p>
 
       <div className="up-modi-liste">
         {DATA.abschnitte.map(abschnitt => (
