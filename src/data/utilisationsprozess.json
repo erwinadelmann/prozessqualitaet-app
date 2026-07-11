@@ -2,7 +2,7 @@
   "meta": {
     "titel": "Utilisationsprozess",
     "untertitel": "Drei Modi der Steuerposition, sofort verstehbar und anwendbar",
-    "hinweis": "Quelle: Steuerposition_Description.md. Modus 1 ist der Grundprozess, den jeder Kartei- und Reframing-Eintrag im Kern anwendet. Modus 3 und 4 sind Sondermodi für bestimmte Situationen, erkennbar an klaren Auslösemerkmalen. Modus 2, Dokumentenprüfung, ist hier bewusst nicht als Karte aufgeführt: Er ist keine Coaching-Prozesskarte zum Durcharbeiten, sondern eine Verhaltensregel für die KI beim Bewerten hochgeladener Dokumente. Er bleibt vollständig in Steuerposition_Description.md bestehen und wirkt dort weiter. Die Nummerierung 1, 3, 4 bleibt deshalb absichtlich lückenhaft, damit sie mit der Quellenangabe jeder Karte übereinstimmt."
+    "hinweis": "Quelle: Steuerposition_Description.md. Modus 1 ist der Grundprozess, den jeder Kartei- und Reframing-Eintrag im Kern anwendet. Modus 2 und 3 sind Sondermodi für bestimmte Situationen, erkennbar an klaren Auslösemerkmalen. Die Dokumentenprüfung, im Skill dort als Modus 2 geführt, ist hier bewusst nicht als eigene Karte aufgeführt: Sie ist keine Coaching-Prozesskarte zum Durcharbeiten, sondern eine Verhaltensregel für die KI beim Bewerten hochgeladener Dokumente. Sie bleibt vollständig in Steuerposition_Description.md bestehen und wirkt dort weiter. Die App-Nummerierung 1, 2, 3 ist deshalb eine eigene, durchgehende Zählung nur für diese drei Karten, sie weicht bewusst von der Nummerierung im Skill-Dokument ab, siehe Quellenangabe jeder Karte für die Zuordnung."
   },
   "modi": [
     {
@@ -27,7 +27,7 @@
     },
     {
       "id": "modus3_anteilskonflikte",
-      "nr": "3",
+      "nr": "2",
       "titel": "Anteilskonflikte, beidseitige Stärkung",
       "kurz": "Wechseln, sobald zwei gegensätzliche innere Positionen im selben Anliegen auftauchen, nicht ein einzelnes Muster.",
       "wann": "Erkennungsmerkmale: einerseits will ich, andererseits, ein Teil von mir sagt, zwei erkennbar widersprüchliche Bedürfnisse im selben Anliegen.",
@@ -38,11 +38,11 @@
         { "titel": "Kooperation ermöglichen", "text": "Erst wenn beide gleichwertig repräsentiert sind: Wie können beide gemeinsam zu einer neuen Lösung beitragen? Kein Kompromiss der Ausgangspositionen." }
       ],
       "abschluss": "Augenhöhe ist Voraussetzung für Kooperation, nicht deren Ergebnis. Die Reihenfolge wird nie umgestellt, keine Seite wird als das eigentliche Problem dargestellt.",
-      "quelle": "Steuerposition_Description.md, Modus 3"
+      "quelle": "Steuerposition_Description.md, dort geführt als Modus 3"
     },
     {
       "id": "modus4_bedrohtes_selbst",
-      "nr": "4",
+      "nr": "3",
       "titel": "Bedrohtes Selbst",
       "kurz": "Wechseln, sobald Fantasien von Vergeltung, Dominanz oder Kontrolle über einen anderen Menschen auftauchen, ausgelöst durch eine erlebte Kränkung.",
       "wann": "Rache-, Macht- oder Kontrollfantasien gegenüber einer konkreten Person, verbunden mit einer aktuellen oder erinnerten Kränkung. Nicht gemeint: bloßer Konsum von Gewaltfiktion oder Fantasien, selbst dominiert zu werden, beide unproblematisch, keine Umlenkung nötig.",
@@ -55,7 +55,7 @@
         { "titel": "Ausnahmen, Embodiment, Future Pace", "text": "Wie in Modus 1, bezogen auf Würde und Kontrolle, die ohne Vergeltung zurückgewonnen wurden." }
       ],
       "abschluss": "Wiederherstellung von Wert, Würde und Wirksamkeit auf realem, nicht-vergeltendem Weg.",
-      "quelle": "Steuerposition_Description.md, Modus 4; Utilisations-Vorlage Kategorie C (Original: Erwin); Bushman 2002"
+      "quelle": "Steuerposition_Description.md, dort geführt als Modus 4; Utilisations-Vorlage Kategorie C (Original: Erwin); Bushman 2002"
     }
   ]
 }
