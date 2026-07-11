@@ -50,12 +50,11 @@ header p.sub{
 .tab-bar{
   max-width:var(--tabbar-max);
   margin:1.6rem auto 0;
-  padding:0 1.5rem;
+  padding:0 1.5rem 1.6rem;
   display:flex;
   gap:0.35rem;
-  flex-wrap:nowrap;
-  overflow-x:auto;
-  scrollbar-width:thin;
+  flex-wrap:wrap;
+  row-gap:0.55rem;
 }
 .tab-btn{
   font-weight:600;
@@ -145,7 +144,7 @@ main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }
   letter-spacing:0.08em; text-transform:uppercase; background:var(--primary); color:#fff;
   padding:0.2rem 0.6rem; border-radius:999px; margin-right:0.6rem; vertical-align:middle;
 }
-.kernprozess-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:0.9rem; }
+.kernprozess-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:0.9rem; }
 @media (max-width:980px){ .kernprozess-grid{ grid-template-columns:repeat(2, 1fr); } }
 @media (max-width:560px){ .kernprozess-grid{ grid-template-columns:1fr; } }
 .kernprozess-kurz{ min-height:2.6rem; }
@@ -800,3 +799,22 @@ button.ghost{
 .up-phase-body h5{ font-family:'Montserrat', sans-serif; font-size:0.86rem; font-weight:600; color:var(--ink); margin:0 0 0.2rem; }
 .up-phase-body p{ font-family:'Lora', serif; font-size:0.88rem; line-height:1.5; margin:0; color:var(--ink); }
 .up-modus-quelle{ font-family:'Open Sans', sans-serif; font-size:0.72rem; font-style:italic; color:var(--muted); margin:0; }
+
+/* ACT Vergleichstabelle */
+.act-vergleich{ border:1px solid #e3e7e6; border-radius:8px; overflow:hidden; }
+.act-vergleich-row{
+  display:grid; grid-template-columns:1fr 1.4fr 1.4fr; gap:0.8rem;
+  padding:0.65rem 0.9rem; font-family:'Lora', serif; font-size:0.86rem; color:var(--ink);
+  border-top:1px solid #e3e7e6;
+}
+.act-vergleich-row:first-child{ border-top:none; }
+.act-vergleich-head{
+  background:var(--primary); color:#fff; font-family:'Montserrat', sans-serif;
+  font-size:0.7rem; letter-spacing:0.04em; text-transform:uppercase; font-weight:700;
+}
+.act-vergleich-merkmal{ font-weight:600; color:var(--terracotta); }
+@media (max-width:640px){
+  .act-vergleich-row{ grid-template-columns:1fr; gap:0.2rem; }
+  .act-vergleich-head{ display:none; }
+  .act-vergleich-row:not(.act-vergleich-head){ padding:0.8rem 0.9rem; }
+}

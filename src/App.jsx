@@ -49,14 +49,14 @@ function App(){
         <div className="drawer-label">Persönliches Nachschlage- und Prüfwerkzeug für den hypnosystemischen Utilisations-Prozess. Ausschließlich zum eigenen Gebrauch.</div>
 
         <div className="tab-bar">
-          <button className={'tab-btn tab-btn-prominent' + (tab === 'utilisationsprozess' ? ' active' : '')} onClick={() => setTab('utilisationsprozess')}>{TAB_ICONS.utilisationsprozess}Utilisationsprozess <span className="tab-count">4</span></button>
+          <button className={'tab-btn tab-btn-prominent' + (tab === 'utilisationsprozess' ? ' active' : '')} onClick={() => setTab('utilisationsprozess')}>{TAB_ICONS.utilisationsprozess}Utilisationsprozess <span className="tab-count">3</span></button>
           <button className={'tab-btn' + (tab === 'kartei' ? ' active' : '')} onClick={() => setTab('kartei')}>{TAB_ICONS.kartei}Kartei <span className="tab-count">{MUSTER_DATA.muster.length}</span></button>
+          <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
           <button className={'tab-btn' + (tab === 'reframing' ? ' active' : '')} onClick={() => { setReframingOpenId(null); setTab('reframing'); }}>{TAB_ICONS.reframing}Reframing <span className="tab-count">{NARRATIV_DATA.reframings.length}</span></button>
           <button className={'tab-btn' + (tab === 'innergame' ? ' active' : '')} onClick={() => setTab('innergame')}>{TAB_ICONS.innergame}Inner Game</button>
           <button className={'tab-btn' + (tab === 'emdr' ? ' active' : '')} onClick={() => setTab('emdr')}>{TAB_ICONS.emdr}EMDR</button>
           <button className={'tab-btn' + (tab === 'act' ? ' active' : '')} onClick={() => setTab('act')}>{TAB_ICONS.act}ACT, Defusion</button>
           <button className={'tab-btn' + (tab === 'pruefung' ? ' active' : '')} onClick={() => setTab('pruefung')}>{TAB_ICONS.pruefung}Qualitäts-Check</button>
-          <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
           <button className={'tab-btn' + (tab === 'ressourcen' ? ' active' : '')} onClick={() => setTab('ressourcen')}>{TAB_ICONS.ressourcen}Ressourcen <span className="tab-count">{BILDER_KATEGORIEN.reduce((a, k) => a + k.bilder.length, 0) + VIDEOS.length}</span></button>
           <button className={'tab-btn' + (tab === 'fokus' ? ' active' : '')} onClick={() => setTab('fokus')}>{TAB_ICONS.fokus}Mein Fokus</button>
           <button className={'tab-btn' + (tab === 'fokuskompass' ? ' active' : '')} onClick={() => setTab('fokuskompass')}>{TAB_ICONS.fokuskompass}Fokus-Kompass</button>

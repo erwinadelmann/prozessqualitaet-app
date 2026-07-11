@@ -1,8 +1,71 @@
 {
   "meta": {
     "titel": "ACT, Kognitive Defusion",
-    "untertitel": "Inhalte folgen",
-    "hinweis": "Platzhalter-Tab, angelegt am 2026-07-11. Noch keine Inhalte eingefügt, Struktur folgt dem Muster von EMDR und Utilisationsprozess, sobald Text vorliegt."
+    "untertitel": "Die Beziehung zum Gedanken verändern, statt seinen Inhalt zu bekämpfen",
+    "hinweis": "Text von Ihnen eingefügt am 2026-07-11, mehrere Quellblöcke mit starken inhaltlichen Überschneidungen wurden zu sechs eigenständigen Abschnitten verdichtet, ohne Inhalte zu verändern. Vermutlich Referat der Standard-ACT-Literatur nach Hayes, von mir nicht gegen eine Primärquelle geprüft. ACT insgesamt ist für diverse Störungsbilder [EVIDENZ: gut belegt], u. a. mehrere Metaanalysen zu Angst, Depression und chronischem Schmerz, kognitive Defusion als einzelne Technik ist seltener isoliert untersucht."
   },
-  "phasen": []
+  "abschnitte": [
+    {
+      "id": "fusion_defusion",
+      "titel": "Fusion und Defusion",
+      "kurz": "Warum wir unsere Gedanken oft für die Realität halten, und was Defusion daran verändert.",
+      "text": "Im Alltag befinden wir uns oft in einem Zustand der Fusion, der Verschmelzung: Wir glauben, wir sind unsere Gedanken, oder unsere Gedanken spiegeln die absolute Realität. Defusion bedeutet Entschärfung oder Lösen. Wir lernen, Abstand zu unseren Gedanken zu gewinnen und sie als das zu sehen, was sie sind, bloße Worte, Bilder oder elektrische Impulse im Geist, die kommen und gehen. Der Verstand produziert bis zu 60.000 Gedanken am Tag, viele davon unbrauchbar oder schlicht falsch.",
+      "punkte": [
+        { "titel": "Gedanken beobachten, statt sie zu sein", "text": "Wer seine Gedanken beobachten kann, kann nicht identisch mit ihnen sein. Der Wechsel in die Beobachterrolle, die Vogelperspektive, macht sichtbar: Gedanken sind Produkte des Geistes." },
+        { "titel": "Gedanken haben, statt Gedanken sein", "text": "Statt „Ich bin ein Versager“ wird daraus „Ich habe den Gedanken, dass ich ein Versager bin“, und in einer weiteren Stufe „Ich bemerke, dass ich den Gedanken habe, dass ich ein Versager bin“. Der Gedanke bleibt ein Teil des Erlebens, definiert aber nicht die ganze Person." },
+        { "titel": "Der Verstand als Azubi", "text": "Der Verstand wie ein eifriger, aber nicht immer zuverlässiger Auszubildender. Er macht ständig Vorschläge, manche nützlich wie ein Schraubenzieher, manche unbrauchbar wie ein Hammer zum Schreiben. Man hört zu, folgt aber nicht automatisch." },
+        { "titel": "Hilfreich statt wahr", "text": "Statt zu fragen, ob ein Gedanke wahr oder falsch ist, fragt man: Ist dieser Gedanke gerade hilfreich für das Leben, das ich führen möchte? Ist er es nicht, darf er da sein, ohne dass er das Handeln bestimmt." }
+      ]
+    },
+    {
+      "id": "vs_umstrukturierung",
+      "titel": "Defusion versus kognitive Umstrukturierung",
+      "kurz": "Der zentrale Unterschied zur klassischen kognitiven Umstrukturierung: Inhalt ändern versus Beziehung ändern.",
+      "text": "Kognitive Umstrukturierung, die zweite Welle der Verhaltenstherapie, geht davon aus, dass der Mensch das ist, was er denkt, und versucht, den Inhalt eines belastenden Gedankens zu verändern, etwa durch sokratischen Dialog, die ABC-Methode oder Gegenbeweise. Kognitive Defusion, dritte Welle, ACT, diskutiert weder Inhalt noch Wahrheitsgehalt. Man erkennt an: Ich habe den Gedanken, dass ich nicht wertvoll bin, ohne ihn als absolute Realität zu behandeln. Der Kampf gegen einen Gedanken verstärkt ihn oft, zusätzlich erschwert emotionale Beweisführung, das eigene Gefühl als Beleg für die Richtigkeit eines Gedankens zu nehmen, eine rationale Umstrukturierung. Statt gegen den Regen zu kämpfen, lernt man, im Regen zu tanzen, man beobachtet die Gedanken wie ein wohlwollender Beobachter auf einer Wolke, anstatt mit ihnen zu verschmelzen.",
+      "vergleich": [
+        { "merkmal": "Ziel", "umstrukturierung": "Gedankeninhalt ändern oder ersetzen", "defusion": "Beziehung zum Gedanken ändern" },
+        { "merkmal": "Fokus", "umstrukturierung": "Wahrheitsgehalt und Logik", "defusion": "Hilfreichkeit für die eigenen Werte" },
+        { "merkmal": "Vorgehen", "umstrukturierung": "Debattieren, Beweise sammeln", "defusion": "Beobachten, Distanzieren, Metaphern" },
+        { "merkmal": "Haltung", "umstrukturierung": "Ich denke das, also ist es meine Realität", "defusion": "Ich habe einen Gedanken, aber ich bin nicht dieser Gedanke" }
+      ],
+      "zusatz": "Defusion wird oft dann gewählt, wenn eine Um- oder Neubewertung der Situation als zu überfordernd empfunden wird oder nicht zum Ziel führt."
+    },
+    {
+      "id": "techniken",
+      "titel": "Techniken im Alltag",
+      "kurz": "Vier praktische Übungen, um die automatische Verschmelzung mit einem Gedanken zu unterbrechen.",
+      "punkte": [
+        { "titel": "Sprachliche Distanzierung, die Drei-Schritte-Methode", "text": "Schritt 1, der Gedanke selbst: „Ich schaffe das nicht.“ Schritt 2: „Ich habe den Gedanken, dass ich das nicht schaffe.“ Schritt 3, Vogelperspektive: „Ich bemerke, dass ich den Gedanken habe, dass ich das nicht schaffe.“" },
+        { "titel": "Die drei Ns, Wahrnehmen, Benennen, Normalisieren", "text": "Noticing, den Gedanken bemerken, sobald er auftritt. Naming, ihm einen Namen geben, etwa „Ah, da ist wieder mein Ich-bin-nicht-gut-genug-Gedanke.“ Normalizing, ihn als Produkt des Geistes akzeptieren, ohne ihn loswerden zu wollen." },
+        { "titel": "Spielerischer Umgang mit dem Verstand", "text": "Ein belastendes Wort extrem langsam oder sehr schnell aussprechen, wie Kaugummi gezogen. Es sich auf einem Bildschirm vorstellen, Schriftart und Farbe verändern, ein Karaoke-Ball hüpft darüber. Ein schmerzhaftes Wort so oft wiederholen, bis nur noch ein Klang ohne Bedeutung bleibt." },
+        { "titel": "Auf Hilfreichkeit statt Wahrheit prüfen", "text": "Nicht fragen, ob ein Gedanke wahr oder falsch ist, sondern ob er gerade hilfreich ist für das Leben, das man führen möchte. Ist er es nicht, darf er da sein, während man trotzdem nach den eigenen Werten handelt." }
+      ]
+    },
+    {
+      "id": "metaphern",
+      "titel": "Metaphern",
+      "kurz": "Bilder, die die Funktionsweise von Fusion und Defusion greifbar machen.",
+      "punkte": [
+        { "titel": "Der Angelhaken", "text": "Belastende Gedanken sind wie Angelhaken, an denen man sich verfängt und vom eigenen Weg wegziehen lässt. Defusion bedeutet das Enthaken, Unhooking, um wieder präsent zu sein." },
+        { "titel": "Hände vor dem Gesicht", "text": "Fusion ist, als hielte man sich die Hände direkt vor die Augen, man sieht nichts anderes mehr. Defusion heißt, die Hände wegzunehmen, in den Schoß zu legen und aus der Ferne zu betrachten, während man die Welt um sich herum wieder wahrnimmt." },
+        { "titel": "Buddha auf der Wolke", "text": "Die eigenen Gedanken wie Wolken am Himmel beobachten, die kommen und vorbeiziehen, ohne dass man versucht, sie festzuhalten oder zu verändern." }
+      ]
+    },
+    {
+      "id": "werte",
+      "titel": "Werte als Kompass",
+      "kurz": "Werte sind keine Ziele, die man abhakt, sondern eine Richtung, in die man sein Leben steuert.",
+      "text": "Werte definieren, welcher Mensch man sein möchte, und was im Leben wirklich wichtig ist. Anders als Ziele, konkrete Orte auf einer Landkarte, die man erreicht und abhakt, etwa eine Prüfung bestehen oder einen Marathon laufen, ist ein Wert nie abgeschlossen. Man kann nicht eines Tages sagen, heute bin ich fertig damit, ein liebevoller Mensch zu sein. Werte helfen, zwischen gesellschaftlichem Druck, einem schweren Soll, etwa „Ich muss erfolgreich sein“, und eigenen inneren Bedürfnissen zu unterscheiden.",
+      "punkte": [
+        { "titel": "Sein statt Haben", "text": "Bei Werten geht es darum, der Mensch zu sein, der man wirklich sein möchte, etwa engagiert, fürsorglich, ehrlich. Ziele konzentrieren sich dagegen auf das, was man am Ende besitzt oder vorweisen kann, einen Titel, ein Haus, eine Summe Geld." },
+        { "titel": "Typische Bereiche", "text": "Zwischenmenschliche Beziehungen und Rollen, etwa als verlässlicher Partner oder liebevolles Familienmitglied. Persönliches Engagement und Leistung, etwa als committete Sportlerin oder engagierter Gründer, mit der kritischen Frage, ob ein Ziel wirklich der eigene Wert ist oder äußerer, gesellschaftlicher Druck." }
+      ]
+    },
+    {
+      "id": "choice_point",
+      "titel": "Der Choice Point",
+      "kurz": "Der Entscheidungspunkt, an dem Defusion und Werte zusammenwirken.",
+      "text": "In einer herausfordernden Situation mit belastenden Gedanken oder Gefühlen, etwa „Ich schaffe das nicht“ oder Angst, entsteht eine Wahl. Weg-von-Verhalten, Fusion: man verschmilzt mit dem Gedanken und handelt so, dass man das unangenehme Gefühl kurzfristig vermeidet, etwa durch Rückzug oder Konsum von Substanzen, was oft von den eigenen Werten wegführt. Hin-zu-Verhalten, Defusion und Werte: man nimmt den Gedanken wahr, ohne an ihm festzuhaken, und entscheidet sich für eine Handlung, die auf die eigenen Werte einzahlt, etwa trotz Angst jemanden anzurufen. Defusion schafft die Distanz zum Gedankensturm, Werte zeigen die Richtung, in die man dennoch segeln will. Das Ziel ist nicht, belastende Gedanken loszuwerden, sie dürfen da sein wie Regen, während man lernt, im Regen zu tanzen, und trotzdem ein reiches, kraftvolles, sinnstiftendes Leben führt."
+    }
+  ]
 }
