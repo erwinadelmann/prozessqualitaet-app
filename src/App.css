@@ -155,13 +155,54 @@ main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }
 }
 .card-top{ display:flex; justify-content:space-between; align-items:baseline; gap:0.6rem; }
 .muster-name{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:0.98rem; }
-.toggle-icon{ color:var(--muted); font-size:1.1rem; }
+.toggle-icon{ color:var(--muted); font-size:1.1rem; transition:transform 0.3s cubic-bezier(.22,1,.36,1), color 0.2s ease; display:inline-block; }
 .anteil-line{
   margin-top:0.5rem; font-family:'Open Sans', sans-serif; font-size:0.86rem; color:var(--muted);
   display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;
 }
-.anteil-alt{ text-decoration:line-through; text-decoration-color:var(--terracotta); opacity:0.75; }
-.anteil-neu{ color:var(--primary); font-weight:600; }
+.anteil-alt{ text-decoration:line-through; text-decoration-color:var(--terracotta); opacity:0.75; transition:opacity 0.25s ease; }
+.anteil-neu{ color:var(--primary); font-weight:600; transition:transform 0.25s cubic-bezier(.22,1,.36,1), letter-spacing 0.25s ease; display:inline-block; }
+.anteil-arrow{ display:inline-block; color:var(--muted); transition:transform 0.3s cubic-bezier(.22,1,.36,1), color 0.25s ease; }
+
+/* Kartei: lebendige Musterkarten */
+.muster-card{ position:relative; overflow:hidden; will-change:transform; }
+.muster-card:hover, .muster-card:focus-visible{
+  transform:translateY(-5px) scale(1.012);
+  box-shadow:0 16px 34px rgba(0,20,18,0.14);
+  transition:box-shadow 0.32s cubic-bezier(.22,1,.36,1), transform 0.32s cubic-bezier(.22,1,.36,1), border-color 0.25s ease;
+}
+.muster-card:hover .toggle-icon{ transform:rotate(90deg); color:var(--terracotta); }
+.muster-card.open .toggle-icon{ transform:rotate(45deg); }
+.muster-card:hover .anteil-alt{ opacity:0.45; }
+.muster-card:hover .anteil-neu{ transform:translateX(2px); letter-spacing:0.01em; }
+.muster-card:hover .anteil-arrow{ transform:translateX(4px); color:var(--primary); }
+.muster-glow{
+  position:absolute; top:-40%; right:-25%; width:140px; height:140px; border-radius:50%;
+  background:radial-gradient(circle, var(--sage) 0%, transparent 70%);
+  opacity:0; transition:opacity 0.35s ease, transform 0.35s ease; transform:scale(0.8);
+  pointer-events:none;
+}
+.muster-card:hover .muster-glow{ opacity:0.22; transform:scale(1); }
+.muster-card.kk-beziehung .muster-glow{ background:radial-gradient(circle, var(--terracotta) 0%, transparent 70%); }
+.muster-card.kk-leistung .muster-glow{ background:radial-gradient(circle, var(--primary) 0%, transparent 70%); }
+.muster-card.kk-emotion .muster-glow{ background:radial-gradient(circle, var(--sage) 0%, transparent 70%); }
+.muster-card.kk-sucht .muster-glow{ background:radial-gradient(circle, var(--accent) 0%, transparent 70%); }
+.muster-card.kk-verantwortung .muster-glow{ background:radial-gradient(circle, var(--muted) 0%, transparent 70%); }
+
+@keyframes referenzShimmer{ 0%{ background-position:0% 50%; } 100%{ background-position:200% 50%; } }
+.muster-card.referenz{
+  background:linear-gradient(120deg, #fff 0%, #fdf8f1 45%, #fbeed9 55%, #fdf8f1 65%, #fff 100%);
+  background-size:250% 100%;
+  animation:cardFadeIn 0.35s ease both, referenzShimmer 6s linear infinite;
+}
+.muster-card.referenz:hover{ animation-play-state:running; box-shadow:0 16px 36px rgba(182,92,67,0.22); }
+
+.grid .muster-card{ animation-delay:calc(var(--i, 0) * 0.05s); }
+.grid .muster-card:nth-child(1){ --i:1; } .grid .muster-card:nth-child(2){ --i:2; }
+.grid .muster-card:nth-child(3){ --i:3; } .grid .muster-card:nth-child(4){ --i:4; }
+.grid .muster-card:nth-child(5){ --i:5; } .grid .muster-card:nth-child(6){ --i:6; }
+.grid .muster-card:nth-child(7){ --i:7; } .grid .muster-card:nth-child(8){ --i:8; }
+.grid .muster-card:nth-child(n+9){ --i:9; }
 .details{
   margin-top:1rem; padding-top:1rem; border-top:1px dashed #ccd6d4;
   display:grid; grid-template-columns:1fr; gap:1rem;
@@ -305,22 +346,29 @@ button.ghost{
 .chip.kat-chip.kat-werkzeug.active{ background:var(--muted); border-color:var(--muted); color:#fff; }
 
 /* Kartei-Kategorien */
-.kategorie-gruppe{ margin-bottom:1.8rem; }
-.kategorie-titel{
-  font-family:'Montserrat', sans-serif; font-weight:700; font-size:0.9rem;
-  letter-spacing:0.03em; color:var(--ink); margin:0 0 0.7rem;
-  display:flex; align-items:center; gap:0.5rem;
-  padding-left:0.7rem; border-left:4px solid var(--muted);
+.kategorie-gruppe{ margin-bottom:1.8rem; animation:cardFadeIn 0.4s ease both; }
+.muster-kategorie-titel{
+  font-family:'Montserrat', sans-serif; font-weight:700; font-size:0.78rem;
+  letter-spacing:0.06em; text-transform:uppercase; color:#fff; margin:0 0 0.9rem;
+  display:inline-flex; align-items:center; gap:0.45rem;
+  padding:0.4rem 0.9rem; border-radius:999px; box-shadow:0 4px 12px rgba(0,20,18,0.12);
 }
+.muster-kategorie-titel svg{ flex-shrink:0; opacity:0.9; }
 .kategorie-count{
-  font-family:'Open Sans', sans-serif; font-weight:600; font-size:0.7rem; color:var(--muted);
-  background:var(--card-bg); border:1px solid #e3e7e6; padding:0.05rem 0.5rem; border-radius:999px;
+  font-family:'Open Sans', sans-serif; font-weight:600; font-size:0.7rem; color:#fff;
+  background:rgba(255,255,255,0.28); padding:0.05rem 0.5rem; border-radius:999px;
 }
 .kk-beziehung{ border-left-color:var(--terracotta); }
 .kk-leistung{ border-left-color:var(--primary); }
 .kk-emotion{ border-left-color:var(--sage); }
 .kk-sucht{ border-left-color:var(--accent); }
 .kk-verantwortung{ border-left-color:var(--muted); }
+.muster-kategorie-titel.kk-beziehung{ background:var(--terracotta); }
+.muster-kategorie-titel.kk-leistung{ background:var(--primary); }
+.muster-kategorie-titel.kk-emotion{ background:var(--sage); }
+.muster-kategorie-titel.kk-sucht{ background:var(--accent); color:#4a3418; }
+.muster-kategorie-titel.kk-sucht .kategorie-count{ color:#4a3418; background:rgba(74,52,24,0.15); }
+.muster-kategorie-titel.kk-verantwortung{ background:var(--muted); }
 .muster-name .kat-badge.kk-beziehung{ background:var(--terracotta); }
 .muster-name .kat-badge.kk-leistung{ background:var(--primary); }
 .muster-name .kat-badge.kk-emotion{ background:var(--sage); }

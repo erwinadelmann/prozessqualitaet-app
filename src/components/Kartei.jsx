@@ -12,6 +12,14 @@ const KATEGORIE_CLASS = {
   'Verantwortung & Selbstwirksamkeit': 'kk-verantwortung'
 };
 
+const KATEGORIE_ICON = {
+  'Beziehung & Bindung': <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>,
+  'Leistung & Kontrolle': <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>,
+  'Emotionsregulation & Schutz': <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>,
+  'Süchte & Regulationsverhalten': <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>,
+  'Verantwortung & Selbstwirksamkeit': <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+};
+
 function matches(item, query){
   if(!query) return true;
   const q = query.toLowerCase();
@@ -22,13 +30,14 @@ function matches(item, query){
 function MusterCard({ item, isOpen, onOpen }){
   return (
     <div
-      className={'card' + (isOpen ? ' open' : '') + (item.referenzbeispiel ? ' referenz' : '')}
+      className={'card muster-card ' + KATEGORIE_CLASS[item.kategorie] + (isOpen ? ' open' : '') + (item.referenzbeispiel ? ' referenz' : '')}
       tabIndex={0}
       role="button"
       aria-expanded={isOpen}
       onClick={() => onOpen(item.id)}
       onKeyDown={e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); onOpen(item.id); } }}
     >
+      <span className="muster-glow" aria-hidden="true"></span>
       <div className="card-top">
         <div className="muster-name">
           {item.muster}
@@ -40,7 +49,7 @@ function MusterCard({ item, isOpen, onOpen }){
       {item.muster_untertitel && <p className="muster-untertitel">{item.muster_untertitel}</p>}
       <div className="anteil-line">
         <span className="anteil-alt">{item.anteil_alt}</span>
-        <span>→</span>
+        <span className="anteil-arrow">→</span>
         <span className="anteil-neu">{item.anteil_neu}</span>
       </div>
     </div>
@@ -221,7 +230,7 @@ export default function Kartei({ onOpenReframing }){
             )}
             {gruppen.map(([kat, items]) => (
               <div key={kat} className="kategorie-gruppe">
-                <h3 className={'kategorie-titel ' + KATEGORIE_CLASS[kat]}>{kat} <span className="kategorie-count">{items.length}</span></h3>
+                <h3 className={'muster-kategorie-titel ' + KATEGORIE_CLASS[kat]}>{KATEGORIE_ICON[kat]}{kat} <span className="kategorie-count">{items.length}</span></h3>
                 <div className="grid">
                   {items.map(item => (
                     <MusterCard key={item.id} item={item} isOpen={openId === item.id} onOpen={open} />
