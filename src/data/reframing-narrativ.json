@@ -543,6 +543,19 @@
       ],
       "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Woran würdest du merken, dass die Ressourcen, die du brauchst, längst da sind und nur aktiviert werden müssen?",
       "kernfunktion": "Selbstwertschutz durch vorsorgliches Ausweichen, ein gefühlter statt tatsächlicher Ressourcenmangel wird als Risiko behandelt."
+    },
+    {
+      "id": "verzetteln_vor_fertigstellung",
+      "titel": "Reframe: Verzetteln und Strukturverlust vor Fristen",
+      "einstieg": "\"Der Chaot\" trägt fast immer eine frühe Funktion in sich, die es wert ist, gesehen zu werden, bevor man sie bewerten will.",
+      "funktionen": [
+        "Schutz vor dem Urteil über ein fertiges Ergebnis. Solange eine Aufgabe nicht abgeschlossen ist, kann sie auch nicht als unzureichend bewertet werden.",
+        "Selbsthandicapping als stille Absicherung. Zersplitterung in Details liefert im Voraus eine Erklärung für ein mögliches Scheitern, die nicht die eigene Fähigkeit betrifft, sondern die fehlende Ordnung.",
+        "Reichtum an Aufmerksamkeit für viele Facetten als Kern. Dieselbe Fähigkeit, die in unzählige Details abwandert, kann ebenso genau erkennen, wann genug zusammengetragen ist, um zu bündeln.",
+        "Überleben im gegebenen Umfeld. In einem Umfeld, das abgeschlossene, ernsthaft angestrebte Leistungen hart beurteilte, sicherte das Unfertigbleiben eine gewisse Sicherheit, auch um den Preis erreichbarer Ergebnisse."
+      ],
+      "wofuer_frage": "Wofür war dieses Muster einmal die klügste verfügbare Lösung? Und: Wie müsstest du anders mit mir umgehen, damit ein fertiges Ergebnis sich sicher anfühlt statt riskant?",
+      "kernfunktion": "Selbstwertschutz durch Selbsthandicapping, ein fertiges, bewertbares Ergebnis wird durch Zersplitterung von vornherein vermieden."
     }
   ]
 }

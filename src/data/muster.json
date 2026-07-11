@@ -279,6 +279,7 @@
       "anteil_neu": "der Beruhigende",
       "ursprungsintention": "Schutz vor unangenehmen Gefühlen, die sonst ungefiltert ankämen.",
       "schutzfunktion": "Emotionale Regulation durch Reizersatz. Das Verhalten dient zugleich der Regulation des Nervensystems selbst, es tritt an die Stelle einer wirksamen, gesunden Regulationsform, die im Moment nicht greifbar erscheint.",
+      "erklaerung": "Suchtnah bedeutet, dass keine klinische Sucht vorliegen muss, aber derselbe Mechanismus wirkt: ein innerer Spannungszustand löst nahezu automatisch ein Verhalten aus, das kurzfristig Erleichterung verschafft, während die eigentliche Herausforderung ungelöst bleibt. Diese Erleichterung verstärkt das Verhalten, wodurch es sich mit jeder Wiederholung fester einprägt, unabhängig vom konkreten Verhalten selbst, ob Scrollen, Naschen, Shopping, Gaming oder Arbeiten. Die hypnosystemische Leitfrage lautet deshalb, welches Bedürfnis dieses Verhalten gerade zu erfüllen versucht, etwa Angst regulieren, Einsamkeit dämpfen, Überforderung reduzieren oder innere Leere füllen.",
       "schritt1": "Wahrnehmen, welches Gefühl unmittelbar vor dem Griff zur Ablenkung spürbar war.",
       "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, einer körperbezogenen Regulationsform wie Atem, Bewegung oder Ausdruck, mit der Bitte, diese stattdessen zu nutzen. Ergänzende Prozessfrage an den Beruhigenden selbst: Wie müsstest du anders mit mir umgehen, damit Regulation über den Körper genauso schnell wirkt wie die Ablenkung? Miniinterventionen einsetzen, damit der Abstand zwischen Anspannung und Regulation kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, wie sich die körperbezogene Regulation im Vergleich zur gewohnten Ablenkung tatsächlich angefühlt hat.",
@@ -603,6 +604,20 @@
       "schritt3": "Ohne Selbstkritik beobachten, was die Aktivierung der eigenen Ressourcen im Vergleich zum gewohnten Ausweichen tatsächlich bewirkt hat.",
       "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Feigling ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Schöpfende übernehmen darf, nicht deren Vorstufe.",
       "embodiment_frage": "Wie stehen Sie, wie atmen Sie, wohin geht Ihr Blick, wenn der Schöpfende aus den eigenen, längst vorhandenen Ressourcen schöpft, statt auszuweichen? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
+    },
+    {
+      "id": "verzetteln_vor_fertigstellung",
+      "muster": "Verzetteln und Strukturverlust vor Fristen",
+      "kategorie": "Leistung & Kontrolle",
+      "anteil_alt": "der Chaot",
+      "anteil_neu": "der Bündelnde",
+      "ursprungsintention": "Schutz vor dem Risiko, ein fertiges Ergebnis vorzulegen, das dann tatsächlich als unzureichend bewertet werden könnte, häufig geprägt durch frühere Erfahrungen, in denen abgeschlossene, ernsthaft angestrebte Leistungen hart beurteilt wurden.",
+      "schutzfunktion": "Selbsthandicapping durch Zersplitterung in Details und fehlende Struktur, damit ein mögliches Scheitern jederzeit auf äußere Umstände statt auf die eigene Fähigkeit zurückgeführt werden kann.",
+      "schritt1": "Wahrnehmen, in welchem Moment kurz vor einem möglichen Abschluss die Aufmerksamkeit in ein neues Detail abwandert, ohne das zu bewerten.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, davon wie eine Aufgabe bewusst als fertig erklärt und abgegeben wird, auch wenn sie nicht makellos ist, mit der Bitte, genau dieses Bild zu erfüllen. Ergänzende Prozessfrage an den Bündelnden selbst: Wie müsstest du anders mit mir umgehen, damit ein fertiges Ergebnis sich sicher anfühlt statt riskant? Miniinterventionen einsetzen, damit der Abstand zwischen Zersplitterung und Abschluss kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt3": "Ohne Selbstkritik beobachten, wie sich ein abgegebenes, fertiges Ergebnis im Vergleich zur gewohnten Zersplitterung tatsächlich angefühlt hat.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Chaot ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Bündelnde übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Bündelnde am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     }
   ]
 }

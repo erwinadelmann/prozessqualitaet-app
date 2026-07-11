@@ -109,6 +109,13 @@ function ReframingModal({ item, onClose }){
                 </ol>
               </div>
 
+              {item.erklaerung && (
+                <div className="block erklaerung-block">
+                  <h4>Zum besseren Verständnis</h4>
+                  <p>{item.erklaerung}</p>
+                </div>
+              )}
+
               <div className="block wofuer-block">
                 <h4>Die Frage, die weiterführt</h4>
                 <p>{n.wofuer_frage}</p>

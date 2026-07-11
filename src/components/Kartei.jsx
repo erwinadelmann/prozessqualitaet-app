@@ -108,6 +108,12 @@ function MusterModal({ item, onClose, onOpenReframing }){
                 <h4>Schutzfunktion</h4>
                 <p>{item.schutzfunktion}</p>
               </div>
+              {item.erklaerung && (
+                <div className="block erklaerung-block">
+                  <h4>Zum besseren Verständnis</h4>
+                  <p>{item.erklaerung}</p>
+                </div>
+              )}
               {item.wuerdigung && (
                 <div className="block wuerdigung-block">
                   <h4>Würdigung</h4>
