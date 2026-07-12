@@ -59,7 +59,7 @@ function App(){
     <>
       <header>
         <img src={heroImage} alt="Zur Startseite" className="header-hero" onClick={() => setTab('kartei')} />
-        <h1>Prozessqualität</h1>
+        <h1 className="header-title-link" onClick={() => setTab('kartei')} role="button" tabIndex={0} onKeyDown={e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); setTab('kartei'); } }}>Prozessqualität</h1>
         <p className="sub">Vorbereitung während der Sitzung · Selbstsupervision danach · Mein Fokus</p>
         <div className="drawer-label">Persönliches Nachschlage- und Prüfwerkzeug für den hypnosystemischen Utilisations-Prozess. Ausschließlich zum eigenen Gebrauch.</div>
 

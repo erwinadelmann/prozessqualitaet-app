@@ -31,6 +31,12 @@ header h1{
   font-size:2.1rem;
   margin:0 0 0.35rem;
 }
+.header-title-link{
+  cursor:pointer;
+  display:inline-block;
+  transition:opacity 0.15s ease;
+}
+.header-title-link:hover{ opacity:0.85; }
 header p.sub{
   font-family:'Montserrat', sans-serif;
   font-size:0.82rem;
