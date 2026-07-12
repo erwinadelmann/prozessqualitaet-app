@@ -1,7 +1,7 @@
 {
   "meta": {
     "titel": "Utilisationsprozess",
-    "untertitel": "Drei Modi der Steuerposition, sofort verstehbar und anwendbar",
+    "untertitel": "Drei Modi der Steuerposition, sofort greifbar und anwendbar",
     "hinweis": "Quelle: Steuerposition_Description.md. Modus 1 ist der Grundprozess, den jeder Kartei- und Reframing-Eintrag im Kern anwendet. Modus 2 und 3 sind Sondermodi für bestimmte Situationen, erkennbar an klaren Auslösemerkmalen. Die Dokumentenprüfung, im Skill dort als Modus 2 geführt, ist hier bewusst nicht als eigene Karte aufgeführt: Sie ist keine Coaching-Prozesskarte zum Durcharbeiten, sondern eine Verhaltensregel für die KI beim Bewerten hochgeladener Dokumente. Sie bleibt vollständig in Steuerposition_Description.md bestehen und wirkt dort weiter. Die App-Nummerierung 1, 2, 3 ist deshalb eine eigene, durchgehende Zählung nur für diese drei Karten, sie weicht bewusst von der Nummerierung im Skill-Dokument ab, siehe Quellenangabe jeder Karte für die Zuordnung."
   },
   "modi": [
@@ -13,8 +13,8 @@
       "wann": "Als Grundprozess, immer, wenn ein einzelner Anteil oder eine belastende Reaktion beschrieben wird.",
       "phasen": [
         { "titel": "Ankommen", "text": "Würdigende Spiegelung, ohne Einordnung, ohne Lösung. Erst weiter, wenn die Person sich vollständig verstanden fühlt." },
-        { "titel": "Den Anteil würdigen", "text": "Wofür sorgt dieser Teil von Ihnen gerade? Er tut das, was er gelernt hat und am besten kann, seine im Moment beste verfügbare Kompetenz, keine Schwäche. Diese Reaktion wird so schnell und stark aktiviert, dass selbst neue Erkenntnisse kaum eine Chance haben, sich dagegen durchzusetzen." },
-        { "titel": "Selbstbewertung erfragen, immer", "text": "Direkt danach, fester Bestandteil, nicht optional: Wie finden Sie das eigentlich von sich? Werten Sie sich dafür ab? Zeigt sich eine Abwertung, wird die Spaltung zwischen bewertendem und handelndem Anteil sichtbar gemacht, ohne sie aufzulösen." },
+        { "titel": "Selbstbewertung erfragen, immer", "text": "Bevor die Funktion erfragt wird, fester Bestandteil, nicht optional: Wie finden Sie das eigentlich von sich? Werten Sie sich dafür ab? Zeigt sich eine Abwertung, wird die Spaltung zwischen bewertendem und handelndem Anteil sichtbar gemacht, ohne sie aufzulösen, bevor die Wofür-Frage folgt." },
+        { "titel": "Den Anteil würdigen", "text": "Direkt danach die Funktion erfragen: Wofür sorgt dieser Teil von Ihnen gerade? Er tut das, was er gelernt hat und am besten kann, seine im Moment beste verfügbare Kompetenz, keine Schwäche. Diese Reaktion wird so schnell und stark aktiviert, dass selbst neue Erkenntnisse kaum eine Chance haben, sich dagegen durchzusetzen." },
         { "titel": "Sehnsuchtsfrage", "text": "Was wäre denn die Sehnsucht dahinter? Dass Sie sagen, ja genau, so ist es perfekt. Die Antwort als Zielbild festhalten, für die folgenden Phasen." },
         { "titel": "Die Steuerposition einnehmen", "text": "Der Anteil hat gerade sein Zielbild benannt, ein anderer Teil verfolgt im selben Moment ein widersprüchliches, ebenso berechtigtes Ziel. Diese Gleichzeitigkeit wird jetzt benannt, keine Seite ausgespielt.", "schritte": [
           "Meta-Position einnehmen: Ein Teil in Ihnen möchte X, um Y zu erreichen, gleichzeitig verfolgt ein anderer Teil ein anderes Ziel.",
@@ -54,7 +54,7 @@
       "leitplanke": "Nicht verhandelbar: Die Fantasie selbst darf im Prozess nicht ausgebaut, ausgemalt oder als Ventil durchgespielt werden. Wer Vergeltung gedanklich rehearst, wird nachweislich wütender und aggressiver, nicht ruhiger (Bushman 2002). Der Prozess bleibt auf dem Bedürfnis hinter der Fantasie, nie auf der Vergeltungshandlung selbst.",
       "phasen": [
         { "titel": "Ankommen", "text": "Das klingt, als wäre gerade etwas in Ihnen verletzt worden, das Ihnen wirklich wichtig ist." },
-        { "titel": "Den Anteil würdigen, dann Selbstbewertung erfragen", "text": "Wofür sorgt dieser Teil gerade? Direkt danach: Wie finden Sie das eigentlich von sich, solche Gedanken zu haben? Rache- und Machtfantasien sind oft zusätzlich mit Scham belegt." },
+        { "titel": "Selbstbewertung erfragen, dann den Anteil würdigen", "text": "Wie finden Sie das eigentlich von sich, solche Gedanken zu haben? Rache- und Machtfantasien sind oft zusätzlich mit Scham belegt. Direkt danach: Wofür sorgt dieser Teil gerade?" },
         { "titel": "Sehnsuchtsfrage", "text": "Was wäre denn die Sehnsucht dahinter? Dass Sie sagen, ja genau, so ist es perfekt." },
         { "titel": "Den eigentlichen Wunsch freilegen", "text": "Fast immer zeigt sich: gesehen werden, ernst genommen werden, Würde zurückerhalten, wieder wirksam sein, nicht die Vergeltungshandlung selbst." },
         { "titel": "Ausnahmen, Embodiment, Future Pace", "text": "Wie in Modus 1, bezogen auf Würde und Kontrolle, die ohne Vergeltung zurückgewonnen wurden." }

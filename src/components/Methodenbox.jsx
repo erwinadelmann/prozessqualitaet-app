@@ -195,6 +195,17 @@ function MethodModal({ item, onClose }){
                   ))}
                 </ol>
               )}
+              {item.alternative_erzaehlform && (
+                <div className="block alternative-block">
+                  <h4>{item.alternative_erzaehlform.titel}</h4>
+                  {item.alternative_erzaehlform.hinweis && <p className="anteil-hinweis">{item.alternative_erzaehlform.hinweis}</p>}
+                  <ol className="up-phase-schritte alternative-schritte">
+                    {item.alternative_erzaehlform.schritte.map((s, i) => (
+                      <li key={i}><strong style={{ display: 'block', fontFamily: "'Montserrat', sans-serif", fontSize: '0.82rem' }}>{s.titel}</strong>{s.text}</li>
+                    ))}
+                  </ol>
+                </div>
+              )}
               <div className="block">
                 <h4>Einsatzkontext</h4>
                 <p>{item.einsatzkontext}</p>

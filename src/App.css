@@ -928,6 +928,12 @@ button.ghost{
   background:var(--secondary); width:1.15rem; height:1.15rem; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
 }
+.alternative-block{
+  border:1px dashed rgba(182,92,67,0.35); border-radius:12px; padding:0.9rem 1rem 1rem;
+}
+.alternative-block h4{ color:var(--terracotta); }
+.alternative-schritte{ border-left-color:var(--terracotta); background:rgba(182,92,67,0.06); }
+.alternative-schritte li::before{ background:var(--terracotta); }
 .up-modus-quelle{ font-family:'Open Sans', sans-serif; font-size:0.72rem; font-style:italic; color:var(--muted); margin:0; }
 
 /* ACT Vergleichstabelle */
