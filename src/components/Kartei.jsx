@@ -117,6 +117,12 @@ function MusterModal({ item, onClose, onOpenReframing }){
                 <h4>Schutzfunktion</h4>
                 <p>{item.schutzfunktion}</p>
               </div>
+              {item.sehnsuchtsziel && (
+                <div className="block sehnsuchtsziel-block">
+                  <h4>Sehnsuchtsziel</h4>
+                  <p>{item.sehnsuchtsziel}</p>
+                </div>
+              )}
               {item.erklaerung && (
                 <div className="block erklaerung-block">
                   <h4>Zum besseren Verständnis</h4>
@@ -147,6 +153,12 @@ function MusterModal({ item, onClose, onOpenReframing }){
                 <div className="block embodiment-block">
                   <h4>Embodiment, somatische Marker</h4>
                   <p>{item.embodiment_frage}</p>
+                </div>
+              )}
+              {item.methodenverweis && (
+                <div className="block methodenverweis-block">
+                  <h4>Vertiefung, welche Methoden hier konkret helfen können</h4>
+                  <p>{item.methodenverweis}</p>
                 </div>
               )}
             </div>

@@ -526,6 +526,16 @@ button.ghost{
   border-left:4px solid var(--sage); border-radius:8px; padding:0.9rem 1.1rem;
 }
 .embodiment-block h4{ color:var(--primary); }
+.sehnsuchtsziel-block{
+  background:linear-gradient(120deg, #fff 0%, #f2f7f6 100%); border:1px solid var(--secondary);
+  border-left:4px solid var(--secondary); border-radius:8px; padding:0.9rem 1.1rem;
+}
+.sehnsuchtsziel-block h4{ color:var(--primary); }
+.methodenverweis-block{
+  background:linear-gradient(120deg, #fff 0%, #faf6f0 100%); border:1px dashed var(--terracotta);
+  border-left:4px solid var(--terracotta); border-radius:8px; padding:0.9rem 1.1rem;
+}
+.methodenverweis-block h4{ color:var(--terracotta); }
 
 /* Inner Game */
 .ig-reminder{
