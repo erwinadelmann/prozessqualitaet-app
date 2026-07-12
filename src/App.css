@@ -946,6 +946,13 @@ button.ghost{
 .alternative-schritte li::before{ background:var(--terracotta); }
 .up-modus-quelle{ font-family:'Open Sans', sans-serif; font-size:0.72rem; font-style:italic; color:var(--muted); margin:0; }
 
+/* Steuerposition üben */
+.sp-formulierung{
+  font-family:'Lora', serif; font-style:italic; font-size:0.9rem; line-height:1.55; color:var(--ink);
+  background:var(--background); border-left:3px solid var(--secondary); border-radius:0 8px 8px 0;
+  padding:0.6rem 0.9rem; margin:0.55rem 0 0;
+}
+
 /* ACT Vergleichstabelle */
 .act-vergleich{ border:1px solid #e3e7e6; border-radius:8px; overflow:hidden; }
 .act-vergleich-row{

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "titel": "Steuerposition üben",
+    "untertitel": "Vom erkannten Sehnsuchtsziel zum Handeln: Anträge annehmen, nicht Befehlen folgen",
+    "intro": "Diese Karte setzt genau an der Stelle an, die im vollen Utilisationsprozess oft zum Stolperstein wird: Ein Anteil hat sein Sehnsuchtsziel bereits benannt, das Wunschverhalten ist klar. Gleichzeitig meldet sich ein zweites, widersprechendes „Aber“, ein anderer Anteil mit einem eigenen, ebenso berechtigten Anliegen. Diese Karte übt ausschließlich diesen einen Moment: den Antrag erkennen, würdigen, entscheiden, statt automatisch zu folgen oder dagegen anzukämpfen. Die vorgelagerten Schritte, Wofür-Frage, Würdigung, Sehnsuchtsfrage, sind hier bewusst nicht enthalten, sie stehen vollständig im Tab Utilisationsprozess."
+  },
+  "rahmen": {
+    "titel": "Das Bild",
+    "text": "Ich bin der Kapitän. Alle inneren Anteile melden sich, weil sie jeweils ein wertvolles Bedürfnis anmelden. Meine Aufgabe als Kapitän ist es, das Bedürfnis hinter dem Verhalten, hinter der sich aufdrängenden Emotion, zu erkennen und bewusst selbst in die Hand zu nehmen. Diese inneren Impulse sind Angebote, Anträge von inneren Seiten, niemals ein Befehl. Ich kann Anträge verhandeln, ablehnen oder utilisieren. Ich entscheide."
+  },
+  "kernsatz": {
+    "titel": "Kernsatz der Steuerposition",
+    "text": "Ich bin verbunden mit Schutz, Sicherheit, Verbundenheit und Wirksamkeit. Ich bin der Konferenzleiter, alle Impulse sind nur Anträge. Ich kann jederzeit Anträge ablehnen oder verhandeln."
+  },
+  "schritte": [
+    {
+      "titel": "Antrag erkennen",
+      "text": "Der Anteil, der das Sehnsuchtsziel benannt hat, steht nicht allein. Ein anderer Teil verfolgt im selben Moment ein widersprüchliches, ebenso berechtigtes Ziel. Diese Gleichzeitigkeit wird jetzt benannt, keine Seite wird gegen die andere ausgespielt.",
+      "formulierung": "Ein Teil in mir möchte gerade [Verhalten], um [Bedürfnis, etwa Verbundenheit, Kompetenz, Sicherheit, Wirksamkeit oder Orientierung] zu erreichen. Gleichzeitig verfolgt ein anderer Teil gerade ein anderes, genauso berechtigtes Ziel."
+    },
+    {
+      "titel": "Zielrichtung vorgeben",
+      "text": "Aus der Steuerposition heraus wird entschieden, nicht abgewartet. Als Kapitän kann ich eine Zielrichtung vorgeben, zieldienliche Maßnahmen festlegen und meine Anteile zur aktiven Kooperation einladen.",
+      "formulierung": "Welcher der beiden Teile bekommt gerade den Vortritt? Ich entscheide mich für [Zielrichtung], weil das jetzt zieldienlich ist."
+    },
+    {
+      "titel": "Zurückstehenden Anteil würdigen",
+      "text": "Bleibt diese Würdigung aus, meldet sich der zurückgestellte Anteil erfahrungsgemäß über Umwege wieder, als Rückfall oder als Impuls zur Unzeit. Der Verzicht wird deshalb ausdrücklich anerkannt, nie stillschweigend übergangen.",
+      "formulierung": "Ich verstehe dich so gut, dass du das jetzt willst. Gerade hat aber etwas anderes Vorrang. Danke, dass du jetzt zurückstehst."
+    },
+    {
+      "titel": "Zur Kooperation einladen",
+      "text": "Die Steuerposition endet nicht mit dem Zurückstellen. Ich kann jederzeit in Kooperation mit dem zurückgestellten Anteil gehen, das Bedürfnis hinter dem Impuls erfragen und, sobald es dran ist, Maßnahmen zu seiner Befriedigung ergreifen.",
+      "formulierung": "Was genau brauchst du eigentlich? Sobald es passt, sorge ich dafür, dass du das bekommst."
+    }
+  ],
+  "quelle": "Schritte 1 bis 3: Steuerposition_Description.md, Zwischenschritt „die Steuerposition einnehmen“ (Referat von Gunther Schmidts Modell, [EVIDENZ: praxisbewährt, empirisch dünn]); Quelle des Referats: „Das kooperative Ich“, Schritt 3 und 4 (Aufbau Steuerungsinstanz, Verhandlung und Priorisierung). Schritt 4, „Zur Kooperation einladen“, ist Ihre eigene Ergänzung vom 12.07.2026, nicht Teil des bisherigen Skript-Zwischenschritts, methodisch auf derselben Evidenzebene."
+}
