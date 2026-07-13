@@ -700,6 +700,43 @@ button.ghost{
   color:var(--secondary); text-transform:uppercase;
 }
 
+/* Video-Listen-Tabs, editierbar (Buddha Oma, Boundless Movement) */
+.vlt-add{
+  display:flex; gap:0.6rem; flex-wrap:wrap; align-items:center;
+  margin:1.2rem 0 0.6rem; padding:1rem; background:var(--card-bg); border:1px solid #e3e7e6; border-radius:10px;
+}
+.vlt-add input{
+  flex:1; min-width:220px; font-family:'Lora', serif; font-size:0.9rem; padding:0.6rem 0.8rem;
+  border:1px solid #d7dedb; border-radius:8px; background:#fff; color:var(--ink);
+}
+.vlt-add input:focus{ outline:2px solid var(--primary); outline-offset:1px; }
+.vlt-fehler{
+  margin:0 0 1rem; padding:0.65rem 0.9rem; border-radius:8px;
+  background:rgba(182,92,67,0.1); border:1px solid var(--terracotta); color:var(--terracotta);
+  font-family:'Open Sans', sans-serif; font-size:0.85rem;
+}
+.vlt-card{ gap:0; }
+.vlt-broken{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  color:#fff; font-family:'Open Sans', sans-serif; font-size:0.78rem; text-align:center; padding:0.8rem;
+}
+.vlt-titel-input{
+  margin:0.7rem 0.9rem 0.5rem; font-family:'Lora', serif; font-size:0.92rem;
+  padding:0.5rem 0.7rem; border:1px solid #d7dedb; border-radius:6px; background:#fff; color:var(--ink);
+}
+.vlt-titel-input:focus{ outline:2px solid var(--primary); outline-offset:1px; }
+.vlt-card-actions{
+  display:flex; gap:0.5rem; align-items:center; margin:0 0.9rem 0.9rem;
+}
+.vlt-card-actions button{
+  font-family:'Montserrat', sans-serif; font-size:0.78rem; font-weight:600;
+  padding:0.35rem 0.6rem; border-radius:6px; border:1px solid var(--sage); background:transparent; color:var(--ink);
+}
+.vlt-card-actions button:disabled{ opacity:0.35; cursor:not-allowed; }
+.vlt-card-actions button:not(:disabled):hover{ background:var(--sage); color:#fff; }
+.vlt-del{ margin-left:auto; border-color:var(--terracotta) !important; color:var(--terracotta) !important; }
+.vlt-del:hover{ background:var(--terracotta) !important; color:#fff !important; }
+
 /* Fokus-Kompass */
 .fk-rangfolge{
   max-width:var(--content-max); margin:1.6rem auto 0; padding:1.3rem 1.5rem;
