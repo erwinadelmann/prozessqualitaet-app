@@ -93,23 +93,26 @@ header p.sub{
 .tab-bar{
   max-width:var(--tabbar-max);
   margin:1.6rem auto 0;
-  padding:0 1.5rem 1.6rem;
+  padding:0 1.5rem 1.4rem;
   display:flex;
-  gap:0.35rem;
+  gap:0.3rem;
   flex-wrap:wrap;
-  row-gap:0.55rem;
+  row-gap:0.4rem;
+}
+.tab-bar-break{
+  flex-basis:100%; width:0; height:0; margin:0; padding:0;
 }
 .tab-btn{
   font-weight:600;
-  font-size:0.82rem;
+  font-size:0.76rem;
   background:rgba(255,255,255,0.08);
   color:#dfeceb;
   border:1px solid rgba(255,255,255,0.18);
   border-bottom:none;
-  padding:0.68rem 1.05rem;
-  border-radius:8px 8px 0 0;
+  padding:0.55rem 0.8rem;
+  border-radius:7px 7px 0 0;
   transition:background 0.18s ease, color 0.18s ease, transform 0.18s ease;
-  display:inline-flex; align-items:center; gap:0.4rem;
+  display:inline-flex; align-items:center; gap:0.32rem;
   white-space:nowrap;
   flex-shrink:0;
 }
