@@ -1026,3 +1026,22 @@ button.ghost{
 }
 .ub-neu-btn:hover{ background:var(--terracotta); color:#fff; }
 .ub-neu-btn:disabled, .ub-eingabe-buttons .btn-primary:disabled{ opacity:0.5; cursor:not-allowed; }
+.ub-choices{ display:flex; flex-direction:column; gap:0.55rem; }
+.ub-choice-btn{
+  text-align:left; font-family:'Lora', serif; font-size:0.92rem; line-height:1.4;
+  padding:0.7rem 1rem; border-radius:8px; border:1px solid var(--primary); background:var(--card-bg);
+  color:var(--ink); transition:background 0.15s ease, color 0.15s ease;
+}
+.ub-choice-btn:hover{ background:var(--primary); color:#fff; }
+.ub-choice-btn:disabled{ opacity:0.5; cursor:not-allowed; }
+.ub-chips-hint{
+  font-family:'Open Sans', sans-serif; font-size:0.8rem; font-style:italic; color:var(--muted-text); margin:0;
+}
+.ub-chips{ display:flex; flex-wrap:wrap; gap:0.5rem; }
+.ub-chip{
+  font-family:'Montserrat', sans-serif; font-size:0.78rem; font-weight:600;
+  padding:0.4rem 0.75rem; border-radius:999px; border:1px solid var(--sage); background:transparent; color:var(--ink);
+  transition:background 0.15s ease, color 0.15s ease;
+}
+.ub-chip:hover{ background:var(--sage); color:#fff; }
+.ub-chip:disabled{ opacity:0.5; cursor:not-allowed; }

@@ -6,7 +6,7 @@ Interne Arbeits-App für Erwin Adelmann (mentaltraining.at). Drei Tabs in einer 
 2. **Qualitäts-Check** — Selbstsupervisions-Tool nach zehn Kriterien für saubere hypnosystemische Arbeit. Einträge werden lokal im Browser gespeichert (localStorage, kein Server).
 3. **Mein Fokus** — persönlicher Bereich mit Kernvision, eigenem Muster und vier Startpunkten.
 
-Kein Backend, kein Server-State. Alle Daten außer der Muster-Bibliothek sind statisch im Code, Nutzereinträge bleiben lokal im Browser.
+Kein Backend, kein Server-State. Alle Daten außer der Muster-Bibliothek sind statisch im Code, Nutzereinträge bleiben lokal im Browser. Das gilt inzwischen auch für den Tab "Utilisations-Begleiter", siehe eigener Abschnitt unten.
 
 ## Tech-Stack
 
@@ -63,18 +63,13 @@ Voraussetzung: GitHub-Repo mit diesem Code, Vercel-Account.
 - "Box 1" (Methodenbox: Priming, Grundhaltung, Grundannahmen aus dem Imposter-Utilisation-Dokument) als vierter Tab angedacht, noch nicht gebaut.
 - Dieses README beschreibt nur die ursprünglichen drei Tabs. Die App hat inzwischen deutlich mehr Tabs (Steuerposition üben, Utilisationsprozess, Utilisations-Begleiter, Methodenbox, Reframing, Inner Game, EMDR, ACT/Defusion, Ressourcen, Fokus-Kompass). Volle Beschreibung noch nachzuziehen.
 
-## Utilisations-Begleiter (neu, 2026-07-13)
+## Utilisations-Begleiter (2026-07-13, seit 2026-07-13 KI-frei umgebaut)
 
-Einziger Tab mit echtem Backend-Bedarf. Anders als alle anderen Tabs (statische Referenzkarten) ist das eine live Konversation: Sie schreiben ein Thema, der Begleiter antwortet über die Anthropic-API und führt Sie Schritt für Schritt durch den sechsphasigen Utilisations-Prozess (Modus 1), erkennt aber auch Anteilskonflikte (Modus 3) und bedrohtes Selbst (Modus 4) und wechselt dann automatisch.
+Läuft komplett clientseitig, kein Backend-Bedarf. Erwin wollte ausdrücklich noch keine kostenpflichtige KI-Anbindung — deshalb ist das kein Live-Gespräch mehr, sondern eine feste, in `src/data/utilisationsbegleiter-flow.js` hinterlegte Schritt-für-Schritt-Abfolge (State Machine): Sie beschreiben Ihr Thema frei, wählen danach selbst, welche der drei Situationsbeschreibungen am ehesten passt (Utilisations-Prozess / Anteilskonflikt / bedrohtes Selbst), und der Begleiter stellt dann die festen Fragen aus `Steuerposition_Description.md` der Reihe nach. Keine automatische Moduserkennung, keine Paraphrasierung Ihrer Antworten — das ist der bewusste Unterschied zur ursprünglich geplanten AI-Version.
 
-**Neue Dateien:**
-- `api/utilisationsbegleiter.js` — Vercel-Serverless-Funktion, hält den API-Key serverseitig.
-- `src/components/UtilisationsBegleiter.jsx` — Chat-Oberfläche, Konversation wird lokal im Browser gespeichert (localStorage), damit sie einen Reload übersteht. Kein Journal, keine Überführung nach `muster.json` bisher — das ist eine bewusst offene Entscheidung, erst nach einem ersten echten Testlauf zu treffen.
+**Dateien:**
+- `src/data/utilisationsbegleiter-flow.js` — die komplette Ablauflogik (Fragen, Reihenfolge, Verzweigungen) für alle drei Modi, datengetrieben.
+- `src/components/UtilisationsBegleiter.jsx` — Chat-Oberfläche, führt die State Machine aus. Konversation wird lokal im Browser gespeichert (localStorage), damit sie einen Reload übersteht. Kein Journal, keine Überführung nach `muster.json` bisher — das ist eine bewusst offene Entscheidung, erst nach einem ersten echten Testlauf zu treffen.
+- `api/utilisationsbegleiter.js` — bleibt im Repo liegen, wird vom Frontend aktuell nicht mehr aufgerufen. Enthält den vollständigen Modus-1/3/4-System-Prompt für eine spätere Live-KI-Version, falls Erwin sich dafür entscheidet. Ohne gesetzten `ANTHROPIC_API_KEY` entstehen so oder so keine Kosten.
 
-**Vor dem ersten Test nötig, in den Vercel-Projekteinstellungen (Settings → Environment Variables):**
-- `ANTHROPIC_API_KEY` — Pflicht. Aus platform.claude.com, eigener Account, getrennt vom Claude-Abo, Prepaid-Guthaben nötig.
-- `ANTHROPIC_MODEL` — optional, Standard ist `claude-sonnet-5`. Für geringere Kosten auf `claude-haiku-4-5-20251001` umstellen.
-
-Nach dem Setzen der Variable: Redeploy nötig, damit die Funktion sie sieht.
-
-Geschätzte Kosten pro Sitzung: 0,10–0,15 $ mit Sonnet, 0,03–0,05 $ mit Haiku (Stand Juli 2026, siehe Anthropic-Pricing).
+**Falls später doch eine Live-KI-Version gewünscht ist:** Frontend müsste wieder auf `fetch('/api/utilisationsbegleiter', …)` umgestellt werden, dann `ANTHROPIC_API_KEY` in den Vercel-Projekteinstellungen setzen und redeployen. Geschätzte Kosten pro Sitzung damals: 0,10–0,15 $ mit Sonnet, 0,03–0,05 $ mit Haiku (Stand Juli 2026, siehe Anthropic-Pricing).
