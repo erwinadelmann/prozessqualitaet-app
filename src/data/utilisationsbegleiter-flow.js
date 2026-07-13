@@ -258,13 +258,31 @@ const MODUS3 = {
   m3_staerkung: {
     type: 'info',
     prompt:
-      'Genau diese Seite bekommt jetzt mehr Raum — nicht, indem die andere Seite geschwächt wird, sondern indem diese schwächere Seite gestärkt wird, bis ein Gleichgewicht entsteht.',
+      'Diese Seite bekommt jetzt bewusst mehr Ihrer Aufmerksamkeit, mehr Raum. Vielleicht hilft dabei ein kleiner Sprachwechsel: innerlich von „einem Teil in mir" zu sprechen statt von „ich". Das schafft von selbst etwas Abstand und damit Raum. Beide Seiten sind Leistungen Ihres Systems, mit eigenem Sinn.',
     next: 'm3_kooperation'
   },
   m3_kooperation: {
     type: 'reflect',
-    prompt: 'Wie können beide Seiten jetzt gemeinsam zu einer neuen Lösung beitragen — eine, die kein Kompromiss der Ausgangspositionen ist?',
+    prompt: 'Wie können beide Seiten jetzt gemeinsam zu einer neuen Lösung beitragen, einer, die über beide Ausgangspositionen hinausgeht?',
     storeAs: 'kooperation',
+    next: 'm3_versoehner_bild'
+  },
+  m3_versoehner_bild: {
+    type: 'reflect',
+    prompt: 'Stellen Sie sich vor, es gäbe eine Pflanze, ein Tier oder eine Fantasiefigur, die genau die Möglichkeit hätte, diese beiden Seiten miteinander zu versöhnen. Welche wäre das?',
+    storeAs: 'versoehner',
+    next: 'm3_versoehner_merkmale'
+  },
+  m3_versoehner_merkmale: {
+    type: 'reflect',
+    prompt: 'Hat diese Figur bestimmte Farben oder Formen, einen Klang oder Song, vielleicht einen Duft, der dabei unterstützt?',
+    storeAs: 'versoehner_merkmale',
+    next: 'm3_versoehner_anker'
+  },
+  m3_versoehner_anker: {
+    type: 'reflect',
+    prompt: 'Wie bauen Sie genau diese Bewegungen, Farben, Klänge oder diesen Song, den Duft, die Körperhaltung dieser Figur in passende Alltagssituationen ein, dort wo beide Seiten häufig aufeinandertreffen? Jede kurze Erinnerung daran aktiviert erneut dieses neue Zusammenspiel.',
+    storeAs: 'versoehner_alltag',
     next: 'm3_abschluss'
   },
   m3_abschluss: {
