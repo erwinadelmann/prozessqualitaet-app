@@ -61,3 +61,20 @@ Voraussetzung: GitHub-Repo mit diesem Code, Vercel-Account.
 
 - SSI-Zwischenschritt bei Harmoniesucht, Klammern, Opferhaltung ist Claudes analoge Interpretation des People-Pleasing-Modells — von Erwin in der Praxis noch zu validieren.
 - "Box 1" (Methodenbox: Priming, Grundhaltung, Grundannahmen aus dem Imposter-Utilisation-Dokument) als vierter Tab angedacht, noch nicht gebaut.
+- Dieses README beschreibt nur die ursprünglichen drei Tabs. Die App hat inzwischen deutlich mehr Tabs (Steuerposition üben, Utilisationsprozess, Utilisations-Begleiter, Methodenbox, Reframing, Inner Game, EMDR, ACT/Defusion, Ressourcen, Fokus-Kompass). Volle Beschreibung noch nachzuziehen.
+
+## Utilisations-Begleiter (neu, 2026-07-13)
+
+Einziger Tab mit echtem Backend-Bedarf. Anders als alle anderen Tabs (statische Referenzkarten) ist das eine live Konversation: Sie schreiben ein Thema, der Begleiter antwortet über die Anthropic-API und führt Sie Schritt für Schritt durch den sechsphasigen Utilisations-Prozess (Modus 1), erkennt aber auch Anteilskonflikte (Modus 3) und bedrohtes Selbst (Modus 4) und wechselt dann automatisch.
+
+**Neue Dateien:**
+- `api/utilisationsbegleiter.js` — Vercel-Serverless-Funktion, hält den API-Key serverseitig.
+- `src/components/UtilisationsBegleiter.jsx` — Chat-Oberfläche, Konversation wird lokal im Browser gespeichert (localStorage), damit sie einen Reload übersteht. Kein Journal, keine Überführung nach `muster.json` bisher — das ist eine bewusst offene Entscheidung, erst nach einem ersten echten Testlauf zu treffen.
+
+**Vor dem ersten Test nötig, in den Vercel-Projekteinstellungen (Settings → Environment Variables):**
+- `ANTHROPIC_API_KEY` — Pflicht. Aus platform.claude.com, eigener Account, getrennt vom Claude-Abo, Prepaid-Guthaben nötig.
+- `ANTHROPIC_MODEL` — optional, Standard ist `claude-sonnet-5`. Für geringere Kosten auf `claude-haiku-4-5-20251001` umstellen.
+
+Nach dem Setzen der Variable: Redeploy nötig, damit die Funktion sie sieht.
+
+Geschätzte Kosten pro Sitzung: 0,10–0,15 $ mit Sonnet, 0,03–0,05 $ mit Haiku (Stand Juli 2026, siehe Anthropic-Pricing).

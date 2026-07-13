@@ -3,6 +3,7 @@ import './App.css';
 import Kartei from './components/Kartei.jsx';
 import UtilisationsProzess from './components/UtilisationsProzess.jsx';
 import SteuerpositionUeben from './components/SteuerpositionUeben.jsx';
+import UtilisationsBegleiter from './components/UtilisationsBegleiter.jsx';
 import QualitaetsCheck from './components/QualitaetsCheck.jsx';
 import MeinFokus from './components/MeinFokus.jsx';
 import Methodenbox from './components/Methodenbox.jsx';
@@ -30,6 +31,7 @@ const TAB_ICONS = {
   fokuskompass: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>,
   utilisationsprozess: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>,
   steuerposition: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="8"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M17.7 6.3l-2.1 2.1M8.4 15.6l-2.1 2.1"/><circle cx="12" cy="12" r="2.3"/></svg>,
+  begleiter: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="9" cy="10" r="0.8" fill="currentColor"/><circle cx="12" cy="10" r="0.8" fill="currentColor"/><circle cx="15" cy="10" r="0.8" fill="currentColor"/></svg>,
   emdr: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>,
   act: <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 3l4 4-4 4"/><path d="M21 7H9a4 4 0 0 0-4 4v1"/><path d="M7 21l-4-4 4-4"/><path d="M3 17h12a4 4 0 0 0 4-4v-1"/></svg>
 };
@@ -99,6 +101,7 @@ function App(){
         </div>
 
         <div className="tab-bar">
+          <button className={'tab-btn tab-btn-terracotta' + (tab === 'begleiter' ? ' active' : '')} onClick={() => setTab('begleiter')}>{TAB_ICONS.begleiter}Utilisations-Begleiter</button>
           <button className={'tab-btn tab-btn-prominent' + (tab === 'steuerposition' ? ' active' : '')} onClick={() => setTab('steuerposition')}>{TAB_ICONS.steuerposition}Steuerposition üben</button>
           <button className={'tab-btn tab-btn-prominent' + (tab === 'utilisationsprozess' ? ' active' : '')} onClick={() => setTab('utilisationsprozess')}>{TAB_ICONS.utilisationsprozess}Utilisationsprozess <span className="tab-count">3</span></button>
           <button className={'tab-btn' + (tab === 'kartei' ? ' active' : '')} onClick={() => setTab('kartei')}>{TAB_ICONS.kartei}Kartei <span className="tab-count">{MUSTER_DATA.muster.length}</span></button>
@@ -114,6 +117,7 @@ function App(){
         </div>
       </header>
 
+      {tab === 'begleiter' && <UtilisationsBegleiter />}
       {tab === 'steuerposition' && <SteuerpositionUeben />}
       {tab === 'utilisationsprozess' && <UtilisationsProzess key={tabKey} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
       {tab === 'kartei' && <Kartei key={tabKey} onOpenReframing={openReframing} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
