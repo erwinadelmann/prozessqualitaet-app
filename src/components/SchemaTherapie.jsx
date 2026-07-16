@@ -81,11 +81,13 @@ function ModusModellGrafik(){
   const belastetPos = [45, 175, 305];
   const bewaeltigungPos = [414, 448, 482];
   const elternPos = [414, 448];
-  const eigenschaftenPos = [40, 212, 384, 556];
+  const eigenschaftenLinks = [eigenschaften[0], eigenschaften[1]];
+  const eigenschaftenRechts = [eigenschaften[2], eigenschaften[3]];
+  const eigenschaftenY = [266, 326];
 
   return (
     <>
-      <svg viewBox="0 0 760 610" role="img" aria-label="Schema-Modus-Modell: belastete Kindmodi, gesunder Kindmodus, Bewältigungsmodi und Elternmodi um den gesunden Erwachsenenmodus, mit dessen Eigenschaften darunter. Klickbar für Details.">
+      <svg viewBox="0 0 760 540" role="img" aria-label="Schema-Modus-Modell: belastete Kindmodi, gesunder Kindmodus, Bewältigungsmodi und Elternmodi um den gesunden Erwachsenenmodus, mit dessen Eigenschaften seitlich auf gleicher Höhe. Klickbar für Details.">
         <title>Schema-Modus-Modell, interaktiv</title>
         <defs>
           <marker id="stArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -97,7 +99,12 @@ function ModusModellGrafik(){
         <line {...arrowProps('kindmodus_gesund', 'var(--sage)')} x1="560" y1="82" x2="418" y2="248" markerEnd="url(#stArrow)" />
         <line {...arrowProps('bewaeltigungsmodi', 'var(--muted)')} x1="230" y1="405" x2="332" y2="352" markerEnd="url(#stArrow)" />
         <line {...arrowProps('elternmodi', 'var(--accent)')} x1="570" y1="405" x2="430" y2="352" markerEnd="url(#stArrow)" />
-        <line className="st-arrow" stroke="var(--primary)" strokeWidth="2" strokeDasharray="3 5" opacity="0.6" x1="380" y1="364" x2="380" y2="522" />
+        {eigenschaftenY.map((y, i) => (
+          <line key={'el-' + i} {...arrowProps('gesunder_erwachsener', 'var(--primary)')} x1="316" y1="300" x2="300" y2={y + 18} />
+        ))}
+        {eigenschaftenY.map((y, i) => (
+          <line key={'er-' + i} {...arrowProps('gesunder_erwachsener', eigenschaftenRechts[i].id === 'turbo' ? 'var(--secondary)' : 'var(--primary)')} x1="444" y1="300" x2="460" y2={y + 18} />
+        ))}
 
         <g className="st-center-enter">
           <circle className="st-pulse-ring" cx="380" cy="300" r="60" />
@@ -151,17 +158,23 @@ function ModusModellGrafik(){
         </g>
 
         <g className="st-enter" style={{ animationDelay: '0.3s' }}>
-          <text x="380" y="510" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="12.5" letterSpacing="0.04em" fill="var(--secondary)">GESUNDER ERWACHSENER, GESTÄRKT DURCH</text>
-          {eigenschaften.map((e, i) => {
+          <text x="380" y="212" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="11.5" letterSpacing="0.04em" fill="var(--secondary)">GESTÄRKT DURCH</text>
+          {eigenschaftenLinks.map((e, i) => (
+            <g key={e.id} {...pillProps(e, 'gesunder_erwachsener')}>
+              <rect x="20" y={eigenschaftenY[i]} width="280" height="36" rx="18" fill="var(--primary)" opacity="0.3" stroke="var(--primary)" strokeWidth="1.5" />
+              <text x="160" y={eigenschaftenY[i] + 23} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontWeight="600" fontSize="13" fill="#fff">{e.name}</text>
+            </g>
+          ))}
+          {eigenschaftenRechts.map((e, i) => {
             const istTurbo = e.id === 'turbo';
             return (
               <g key={e.id} {...pillProps(e, 'gesunder_erwachsener')}>
                 <rect
-                  x={eigenschaftenPos[i]} y="522" width="158" height="36" rx="18"
+                  x="460" y={eigenschaftenY[i]} width="280" height="36" rx="18"
                   fill={istTurbo ? 'var(--secondary)' : 'var(--primary)'} opacity={istTurbo ? 0.4 : 0.3}
                   stroke={istTurbo ? 'var(--secondary)' : 'var(--primary)'} strokeWidth={istTurbo ? 2 : 1.5}
                 />
-                <text x={eigenschaftenPos[i] + 79} y="545" textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontWeight={istTurbo ? 700 : 600} fontSize="12" fill="#fff">
+                <text x="600" y={eigenschaftenY[i] + 23} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontWeight={istTurbo ? 700 : 600} fontSize="13" fill="#fff">
                   {istTurbo ? '✦ ' + e.name : e.name}
                 </text>
               </g>

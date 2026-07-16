@@ -1,5 +1,10 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import DATA from '../data/act-defusion.json';
+import ScrollTopButton from './ScrollTopButton.jsx';
+
+// ACT, Kognitive Defusion, sechs Abschnitte. Gleiches Muster wie Kartei/Methodenbox/
+// Schema-Therapie/EMDR: flaches Karten-Raster, Klick öffnet die bekannte bildschirmfüllende
+// Detailansicht an derselben Stelle, mit Blättern (rotierend) und Zurück-nach-oben.
 
 function Vergleich({ rows }){
   return (
@@ -20,57 +25,120 @@ function Vergleich({ rows }){
   );
 }
 
-function AbschnittCard({ abschnitt, isOpen, onToggle }){
+function AbschnittCard({ abschnitt, isOpen, onOpen }){
   return (
-    <div className={'up-modus-card' + (isOpen ? ' open' : '')}>
-      <button className="up-modus-head" onClick={() => onToggle(abschnitt.id)} aria-expanded={isOpen}>
-        <span className="up-modus-headtext">
-          <span className="up-modus-titel">{abschnitt.titel}</span>
-          <span className="up-modus-kurz">{abschnitt.kurz}</span>
-        </span>
-        <span className="toggle-icon">{isOpen ? '–' : '+'}</span>
-      </button>
+    <div
+      className={'card' + (isOpen ? ' open' : '')}
+      tabIndex={0}
+      role="button"
+      aria-expanded={isOpen}
+      onClick={() => onOpen(abschnitt.id)}
+      onKeyDown={e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); onOpen(abschnitt.id); } }}
+    >
+      <div className="card-top">
+        <div className="muster-name">{abschnitt.titel}</div>
+        <div className="toggle-icon">+</div>
+      </div>
+      <div className="anteil-line">
+        <span>{abschnitt.kurz}</span>
+      </div>
+    </div>
+  );
+}
 
-      {isOpen && (
-        <div className="up-modus-body">
-          {abschnitt.text && (
-            <div className="up-modus-wann">
-              <p>{abschnitt.text}</p>
-            </div>
-          )}
+function AbschnittModal({ abschnitt, onClose, onPrev, onNext, positionLabel }){
+  const modalRef = useRef(null);
 
-          {abschnitt.vergleich && <Vergleich rows={abschnitt.vergleich} />}
+  useEffect(() => {
+    const onKey = e => {
+      if(e.key === 'Escape') onClose();
+      if(e.key === 'ArrowLeft' && onPrev) onPrev();
+      if(e.key === 'ArrowRight' && onNext) onNext();
+    };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [onClose, onPrev, onNext]);
 
-          {abschnitt.zusatz && (
-            <div className="up-modus-abschluss">
-              <p>{abschnitt.zusatz}</p>
-            </div>
-          )}
+  if(!abschnitt) return null;
 
-          {abschnitt.punkte && (
-            <div className="up-modus-phasen">
-              {abschnitt.punkte.map((p, i) => (
-                <div className="up-phase" key={i}>
-                  <div className="up-phase-nr">{i + 1}</div>
-                  <div className="up-phase-body">
-                    <h5>{p.titel}</h5>
-                    <p>{p.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
+  return (
+    <div className="card-modal-backdrop" onClick={onClose}>
+      <div
+        className="card-modal"
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={abschnitt.titel}
+        onClick={e => e.stopPropagation()}
+      >
+        <div className="card-modal-topbar">
+          <div className="card-modal-nav">
+            <button className="card-modal-nav-btn" onClick={onPrev} aria-label="Voriger Abschnitt">‹</button>
+            {positionLabel && <span className="card-modal-position">{positionLabel}</span>}
+            <button className="card-modal-nav-btn" onClick={onNext} aria-label="Nächster Abschnitt">›</button>
+          </div>
+          <button className="card-modal-close" onClick={onClose} aria-label="Schließen">×</button>
         </div>
-      )}
+        <ScrollTopButton containerRef={modalRef} />
+
+        <div className="card-modal-inner">
+          <div className="card-modal-header">
+            <div className="muster-name">{abschnitt.titel}</div>
+            <div className="anteil-line"><span>{abschnitt.kurz}</span></div>
+          </div>
+          <div className="card-modal-body">
+            <div className="details">
+              {abschnitt.text && (
+                <div className="block">
+                  <p>{abschnitt.text}</p>
+                </div>
+              )}
+              {abschnitt.vergleich && (
+                <div className="block">
+                  <Vergleich rows={abschnitt.vergleich} />
+                </div>
+              )}
+              {abschnitt.zusatz && (
+                <div className="block">
+                  <p style={{ fontStyle: 'italic' }}>{abschnitt.zusatz}</p>
+                </div>
+              )}
+              {abschnitt.punkte && (
+                <div className="block">
+                  <ul style={{ margin: 0, paddingLeft: '1.1rem' }}>
+                    {abschnitt.punkte.map((p, i) => (
+                      <li key={i} style={{ marginBottom: '0.6rem' }}>
+                        <strong style={{ display: 'block', fontFamily: "'Montserrat', sans-serif", fontSize: '0.82rem' }}>{p.titel}</strong>
+                        {p.text}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 export default function ACTDefusion({ initialOpenId }){
-  const [openId, setOpenId] = useState(initialOpenId || DATA.abschnitte[0].id);
+  const [openId, setOpenId] = useState(initialOpenId || null);
 
-  function toggle(id){
-    setOpenId(prev => prev === id ? null : id);
+  const offenerAbschnitt = openId ? DATA.abschnitte.find(a => a.id === openId) : null;
+  const navIndex = offenerAbschnitt ? DATA.abschnitte.findIndex(a => a.id === offenerAbschnitt.id) : -1;
+
+  function open(id){ setOpenId(id); }
+  function close(){ setOpenId(null); }
+  function blaettern(richtung){
+    if(DATA.abschnitte.length === 0 || navIndex === -1) return;
+    const naechster = (navIndex + richtung + DATA.abschnitte.length) % DATA.abschnitte.length;
+    setOpenId(DATA.abschnitte[naechster].id);
   }
 
   return (
@@ -81,11 +149,22 @@ export default function ACTDefusion({ initialOpenId }){
         {DATA.meta.untertitel_klein && <p className="up-hero-sub">{DATA.meta.untertitel_klein}</p>}
       </div>
 
-      <div className="up-modi-liste">
+      <div className="grid" style={{ marginTop: '1.2rem' }}>
         {DATA.abschnitte.map(abschnitt => (
-          <AbschnittCard key={abschnitt.id} abschnitt={abschnitt} isOpen={openId === abschnitt.id} onToggle={toggle} />
+          <AbschnittCard key={abschnitt.id} abschnitt={abschnitt} isOpen={openId === abschnitt.id} onOpen={open} />
         ))}
       </div>
+
+      {offenerAbschnitt && (
+        <AbschnittModal
+          key={offenerAbschnitt.id}
+          abschnitt={offenerAbschnitt}
+          onClose={close}
+          onPrev={() => blaettern(-1)}
+          onNext={() => blaettern(1)}
+          positionLabel={navIndex !== -1 ? `${navIndex + 1} / ${DATA.abschnitte.length}` : null}
+        />
+      )}
     </main>
   );
 }
