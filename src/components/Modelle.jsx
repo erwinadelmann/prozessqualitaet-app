@@ -2,14 +2,16 @@ import { useState } from 'react';
 import EMDR from './EMDR.jsx';
 import ACTDefusion from './ACTDefusion.jsx';
 import InnerGame from './InnerGame.jsx';
+import SchemaTherapie from './SchemaTherapie.jsx';
 
-// Bündelt EMDR, ACT/Defusion und Inner Game unter einem Tab mit Themen-Umschalter, nach
-// demselben Muster wie die Videothek. Vorher drei eigene Tabs, gleiche Inhalte, jetzt ein
-// Tab weniger in der Leiste. Jedes Thema behält seine eigene Komponente/Datei unverändert,
-// nur die Tab-Ebene wird hier zusammengeführt.
+// Bündelt EMDR, ACT/Defusion, Schema-Therapie und Inner Game unter einem Tab mit
+// Themen-Umschalter, nach demselben Muster wie die Videothek. Vorher eigene Tabs, gleiche
+// Inhalte, jetzt ein Tab weniger in der Leiste. Jedes Thema behält seine eigene
+// Komponente/Datei unverändert, nur die Tab-Ebene wird hier zusammengeführt.
 const THEMEN = [
   { id: 'emdr', label: 'EMDR' },
   { id: 'act', label: 'ACT, Defusion' },
+  { id: 'schema', label: 'Schema-Therapie' },
   { id: 'innergame', label: 'Inner Game' }
 ];
 
@@ -42,6 +44,9 @@ export default function Modelle({ initialThemaId, initialOpenId, initialOpenNr }
       )}
       {aktivId === 'act' && (
         <ACTDefusion key="act" initialOpenId={initialThemaId === 'act' ? initialOpenId : undefined} />
+      )}
+      {aktivId === 'schema' && (
+        <SchemaTherapie key="schema" initialOpenId={initialThemaId === 'schema' ? initialOpenId : undefined} />
       )}
       {aktivId === 'innergame' && <InnerGame key="innergame" />}
     </>

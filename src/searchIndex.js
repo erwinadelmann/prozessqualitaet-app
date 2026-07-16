@@ -9,6 +9,7 @@ import UP_DATA from './data/utilisationsprozess.json';
 import METHODEN_DATA from './data/methodenbox.json';
 import ACT_DATA from './data/act-defusion.json';
 import EMDR_DATA from './data/emdr.json';
+import SCHEMA_DATA from './data/schema-therapie.json';
 import { BILDER_KATEGORIEN, VIDEOS } from './data/ressourcen.js';
 import { INNER_GAME } from './data/innergame.js';
 import { KRITERIEN } from './data/kriterien.js';
@@ -104,6 +105,20 @@ function buildIndex(){
       kontext: 'ACT, Kognitive Defusion',
       snippet: abschnitt.kurz,
       matchText: [abschnitt.titel, abschnitt.kurz, abschnitt.text, abschnitt.zusatz, ...(abschnitt.punkte || []).map(p => p.titel + ' ' + p.text)].filter(Boolean).join(' ')
+    });
+  });
+
+  // Schema-Therapie, 18 Schemata
+  SCHEMA_DATA.schemata.forEach(s => {
+    entries.push({
+      key: 'schema-' + s.id,
+      tab: 'modelle',
+      openThemaId: 'schema',
+      openId: s.id,
+      titel: s.name,
+      kontext: 'Schema-Therapie · ' + s.domaene,
+      snippet: s.beschreibung,
+      matchText: [s.name, s.domaene, s.beschreibung].join(' ')
     });
   });
 

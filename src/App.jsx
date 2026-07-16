@@ -101,7 +101,7 @@ function App(){
           <button className={'tab-btn' + (tab === 'kartei' ? ' active' : '')} onClick={() => setTab('kartei')}>{TAB_ICONS.kartei}Kartei <span className="tab-count">{MUSTER_DATA.muster.length}</span></button>
           <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
           <div className="tab-bar-break" aria-hidden="true"></div>
-          <button className={'tab-btn' + (tab === 'modelle' ? ' active' : '')} onClick={() => setTab('modelle')}>{TAB_ICONS.modelle}EMDR, ACT &amp; Inner Game</button>
+          <button className={'tab-btn' + (tab === 'modelle' ? ' active' : '')} onClick={() => setTab('modelle')}>{TAB_ICONS.modelle}Weitere Modelle</button>
           <button className={'tab-btn' + (tab === 'pruefung' ? ' active' : '')} onClick={() => setTab('pruefung')}>{TAB_ICONS.pruefung}Qualitäts-Check</button>
           <button className={'tab-btn' + (tab === 'ressourcen' ? ' active' : '')} onClick={() => setTab('ressourcen')}>{TAB_ICONS.ressourcen}Ressourcen <span className="tab-count">{BILDER_KATEGORIEN.reduce((a, k) => a + k.bilder.length, 0) + VIDEOS.length}</span></button>
           <button className={'tab-btn' + (tab === 'videothek' ? ' active' : '')} onClick={() => setTab('videothek')}>{TAB_ICONS.videothek}Videothek</button>

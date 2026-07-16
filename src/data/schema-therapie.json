@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "titel": "Schema-Therapie",
+    "untertitel": "18 frühe maladaptive Schemata in 5 Domänen, nach Jeffrey Young",
+    "hinweis": "Sachliche Kurzfassung zum Nachschlagen, aus Young, Klosko & Weishaar (2003), Schema Therapy: A Practitioner's Guide. Keine hypnosystemische Ursprungsintention/Schutzfunktion-Reframe-Ebene, das wäre ein bewusst getrennter, späterer Schritt.",
+    "quelle": "Young, J. E., Klosko, J. S., & Weishaar, M. E. (2003). Schema Therapy: A Practitioner's Guide. Guilford Press.",
+    "domaenen": [
+      "Abgetrenntheit & Ablehnung",
+      "Beeinträchtigte Autonomie & Leistung",
+      "Beeinträchtigte Grenzen",
+      "Fremdausrichtung",
+      "Übermäßige Wachsamkeit & Gehemmtheit"
+    ]
+  },
+  "schemata": [
+    {
+      "id": "verlassenheit_instabilitaet",
+      "name": "Verlassenheit/Instabilität",
+      "domaene": "Abgetrenntheit & Ablehnung",
+      "beschreibung": "Erwartung, dass wichtige Bezugspersonen emotional nicht verlässlich verfügbar bleiben oder einen verlassen, sei es durch Tod, Instabilität, emotionale Unzuverlässigkeit oder Bindungsabbruch."
+    },
+    {
+      "id": "misstrauen_missbrauch",
+      "name": "Misstrauen/Missbrauch",
+      "domaene": "Abgetrenntheit & Ablehnung",
+      "beschreibung": "Erwartung, dass andere einen absichtlich verletzen, demütigen, betrügen, manipulieren oder ausnutzen werden."
+    },
+    {
+      "id": "emotionale_entbehrung",
+      "name": "Emotionale Entbehrung",
+      "domaene": "Abgetrenntheit & Ablehnung",
+      "beschreibung": "Erwartung, dass das eigene Bedürfnis nach emotionaler Fürsorge, Empathie, Schutz oder Führung von anderen dauerhaft nicht ausreichend erfüllt wird."
+    },
+    {
+      "id": "mangelhaftigkeit_scham",
+      "name": "Mangelhaftigkeit/Scham",
+      "domaene": "Abgetrenntheit & Ablehnung",
+      "beschreibung": "Gefühl, im Kern fehlerhaft, schlecht, unerwünscht oder minderwertig zu sein, verbunden mit der Angst, bei näherem Hinsehen nicht liebenswert zu sein."
+    },
+    {
+      "id": "soziale_isolation_entfremdung",
+      "name": "Soziale Isolation/Entfremdung",
+      "domaene": "Abgetrenntheit & Ablehnung",
+      "beschreibung": "Gefühl, von der Welt isoliert zu sein, anders als andere Menschen zu sein, nirgends wirklich dazuzugehören."
+    },
+    {
+      "id": "abhaengigkeit_inkompetenz",
+      "name": "Abhängigkeit/Inkompetenz",
+      "domaene": "Beeinträchtigte Autonomie & Leistung",
+      "beschreibung": "Überzeugung, alltägliche Verantwortung nicht kompetent ohne erhebliche Hilfe anderer bewältigen zu können."
+    },
+    {
+      "id": "anfaelligkeit_fuer_schaedigung",
+      "name": "Anfälligkeit für Schädigung oder Krankheit",
+      "domaene": "Beeinträchtigte Autonomie & Leistung",
+      "beschreibung": "Übertriebene Angst, dass jederzeit eine Katastrophe hereinbrechen kann, medizinisch, finanziell oder durch äußere Ereignisse, die sich nicht abwenden lässt."
+    },
+    {
+      "id": "verstrickung_unentwickeltes_selbst",
+      "name": "Verstrickung/Unentwickeltes Selbst",
+      "domaene": "Beeinträchtigte Autonomie & Leistung",
+      "beschreibung": "Übermäßige emotionale Verstrickung mit einer oder mehreren nahen Bezugspersonen, auf Kosten einer eigenständigen Identität oder normaler sozialer Entwicklung."
+    },
+    {
+      "id": "versagen",
+      "name": "Versagen",
+      "domaene": "Beeinträchtigte Autonomie & Leistung",
+      "beschreibung": "Überzeugung, in Leistungsbereichen wie Ausbildung, Beruf oder Sport grundsätzlich zu versagen, im Vergleich zu Gleichaltrigen."
+    },
+    {
+      "id": "anspruchshaltung_grandiositaet",
+      "name": "Anspruchshaltung/Grandiosität",
+      "domaene": "Beeinträchtigte Grenzen",
+      "beschreibung": "Überzeugung, besondere Rechte zu haben oder besonders wichtig zu sein, ohne die üblichen Grenzen des Miteinanders und der Gegenseitigkeit zu akzeptieren."
+    },
+    {
+      "id": "unzureichende_selbstkontrolle",
+      "name": "Unzureichende Selbstkontrolle/Selbstdisziplin",
+      "domaene": "Beeinträchtigte Grenzen",
+      "beschreibung": "Schwierigkeit, Impulse und Emotionen ausreichend zu regulieren oder kurzfristige Befriedigung zugunsten langfristiger Ziele zurückzustellen."
+    },
+    {
+      "id": "unterwerfung",
+      "name": "Unterwerfung",
+      "domaene": "Fremdausrichtung",
+      "beschreibung": "Übermäßiges Aufgeben eigener Kontrolle und eigener Bedürfnisse gegenüber anderen, meist um Ärger, Vergeltung oder Verlassenwerden zu vermeiden."
+    },
+    {
+      "id": "selbstaufopferung",
+      "name": "Selbstaufopferung",
+      "domaene": "Fremdausrichtung",
+      "beschreibung": "Übermäßige, freiwillige Erfüllung der Bedürfnisse anderer im Alltag, auf Kosten der eigenen Zufriedenheit, oft verbunden mit Schuldgefühlen bei eigenen Ansprüchen."
+    },
+    {
+      "id": "streben_nach_zustimmung",
+      "name": "Streben nach Zustimmung/Anerkennung",
+      "domaene": "Fremdausrichtung",
+      "beschreibung": "Übermäßige Betonung darauf, Anerkennung, Aufmerksamkeit oder Zustimmung anderer zu gewinnen, auf Kosten eines sicheren, aus sich selbst heraus tragfähigen Selbstgefühls."
+    },
+    {
+      "id": "negativitaet_pessimismus",
+      "name": "Negativität/Pessimismus",
+      "domaene": "Übermäßige Wachsamkeit & Gehemmtheit",
+      "beschreibung": "Durchgängiger, überdauernder Fokus auf negative Aspekte des Lebens, bei gleichzeitiger Minimierung oder Übersehen positiver Aspekte."
+    },
+    {
+      "id": "emotionale_gehemmtheit",
+      "name": "Emotionale Gehemmtheit",
+      "domaene": "Übermäßige Wachsamkeit & Gehemmtheit",
+      "beschreibung": "Übermäßige Unterdrückung spontanen Handelns, Fühlens oder Kommunizierens, meist um Missbilligung, Kontrollverlust oder Scham zu vermeiden."
+    },
+    {
+      "id": "ueberhoehte_standards",
+      "name": "Überhöhte Standards/Überkritisches Verhalten",
+      "domaene": "Übermäßige Wachsamkeit & Gehemmtheit",
+      "beschreibung": "Tief verankerte Überzeugung, extrem hohe Leistungs- oder Verhaltensstandards erfüllen zu müssen, meist um Kritik zu vermeiden, oft auf Kosten von Freude, Entspannung und Beziehungen."
+    },
+    {
+      "id": "strafneigung",
+      "name": "Strafneigung",
+      "domaene": "Übermäßige Wachsamkeit & Gehemmtheit",
+      "beschreibung": "Überzeugung, dass Menschen, einschließlich der eigenen Person, für Fehler hart bestraft werden sollten, verbunden mit geringer Bereitschaft zu Nachsicht."
+    }
+  ],
+  "modusmodell": {
+    "hinweis": "Schemata aktivieren Schema-Modi, momentane innere Zustände. Ziel der Schema-Therapie ist ein gestärkter, handlungsfähiger gesunder Erwachsenenmodus.",
+    "gruppen": [
+      {
+        "id": "kindmodi",
+        "titel": "Kindmodi",
+        "modi": ["Verletzliches Kind", "Wütendes Kind", "Impulsives Kind", "Fröhliches Kind"]
+      },
+      {
+        "id": "bewaeltigungsmodi",
+        "titel": "Dysfunktionale Bewältigungsmodi",
+        "modi": ["Unterwerfung", "Vermeidung/Rückzug", "Überkompensation"]
+      },
+      {
+        "id": "elternmodi",
+        "titel": "Dysfunktionale Elternmodi",
+        "modi": ["Strafender Elternteil", "Fordernder Elternteil"]
+      },
+      {
+        "id": "gesunder_erwachsener",
+        "titel": "Gesunder Erwachsener",
+        "modi": ["Gesunder Erwachsener"]
+      }
+    ]
+  }
+}
