@@ -22,75 +22,166 @@ function matches(item, query){
   return [item.name, item.domaene, item.beschreibung].join(' ').toLowerCase().includes(q);
 }
 
-// Kreisdiagramm des Schema-Modus-Modells: Kindmodi, Bewältigungsmodi und Elternmodi als
-// drei Cluster um den gesunden Erwachsenenmodus in der Mitte, mit Pfeilen, die die
-// therapeutische Richtung andeuten (Kindanteile würdigen, Eltern-/Bewältigungsmodi
-// beruhigen bzw. begrenzen, zugunsten des gesunden Erwachsenen).
+const MM = DATA.modusmodell;
+const G = id => MM.gruppen.find(g => g.id === id);
+
+// Kreisdiagramm des Schema-Modus-Modells: belastete Kindmodi und der gesunde Kindmodus
+// deutlich getrennt (unterschiedliche Farbe, eigene Beschriftung), Bewältigungsmodi und
+// Elternmodi als weitere Cluster, alle um den gesunden Erwachsenenmodus in der Mitte, mit
+// eigenen Eigenschaften darunter. Text durchgehend hell für Lesbarkeit auf dem dunklen
+// Hero-Hintergrund. Klick auf einen Modus hebt ihn samt zugehörigem Pfeil hervor und zeigt
+// die Kurzbeschreibung darunter, alle anderen Elemente treten zurück, so werden einzelne
+// Konstellationen sofort sichtbar.
 function ModusModellGrafik(){
+  const [aktiv, setAktiv] = useState(null);
+
+  function waehle(modus, gruppeId){
+    setAktiv(prev => (prev && prev.id === modus.id) ? null : { ...modus, gruppeId });
+  }
+
+  function pillProps(modus, gruppeId){
+    const istAktiv = aktiv && aktiv.id === modus.id;
+    const gedimmt = aktiv && !istAktiv;
+    return {
+      role: 'button',
+      tabIndex: 0,
+      onClick: () => waehle(modus, gruppeId),
+      onKeyDown: e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); waehle(modus, gruppeId); } },
+      style: {
+        cursor: 'pointer',
+        opacity: gedimmt ? 0.3 : 1,
+        transform: istAktiv ? 'scale(1.06)' : 'scale(1)',
+        transformBox: 'fill-box',
+        transformOrigin: 'center',
+        transition: 'opacity 0.25s ease, transform 0.25s ease'
+      }
+    };
+  }
+
+  function arrowProps(gruppeId, farbe){
+    const istAktiv = aktiv && aktiv.gruppeId === gruppeId;
+    const gedimmt = aktiv && !istAktiv;
+    return {
+      className: 'st-arrow',
+      stroke: farbe,
+      strokeWidth: istAktiv ? 4 : 2.5,
+      opacity: gedimmt ? 0.2 : 1,
+      style: { transition: 'opacity 0.25s ease, stroke-width 0.25s ease' }
+    };
+  }
+
+  const belastet = G('kindmodi_belastet').modi;
+  const gesundKind = G('kindmodus_gesund').modi[0];
+  const bewaeltigung = G('bewaeltigungsmodi').modi;
+  const eltern = G('elternmodi').modi;
+  const erwachsenerGruppe = G('gesunder_erwachsener');
+  const erwachsener = erwachsenerGruppe.modi[0];
+  const eigenschaften = erwachsenerGruppe.eigenschaften;
+
+  const belastetPos = [45, 175, 305];
+  const bewaeltigungPos = [414, 448, 482];
+  const elternPos = [414, 448];
+  const eigenschaftenPos = [40, 212, 384, 556];
+
   return (
-    <svg viewBox="0 0 640 460" role="img" aria-label="Schema-Modus-Modell: Kindmodi, Bewältigungsmodi und Elternmodi um den gesunden Erwachsenenmodus">
-      <title>Schema-Modus-Modell</title>
-      <defs>
-        <marker id="stArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-          <path d="M0,0 L10,5 L0,10 z" fill="var(--muted-text)" />
-        </marker>
-      </defs>
+    <>
+      <svg viewBox="0 0 760 610" role="img" aria-label="Schema-Modus-Modell: belastete Kindmodi, gesunder Kindmodus, Bewältigungsmodi und Elternmodi um den gesunden Erwachsenenmodus, mit dessen Eigenschaften darunter. Klickbar für Details.">
+        <title>Schema-Modus-Modell, interaktiv</title>
+        <defs>
+          <marker id="stArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="var(--muted-text)" />
+          </marker>
+        </defs>
 
-      <line className="st-arrow" x1="320" y1="92" x2="320" y2="184" stroke="var(--terracotta)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
-      <line className="st-arrow" x1="175" y1="336" x2="272" y2="288" stroke="var(--sage)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
-      <line className="st-arrow" x1="495" y1="336" x2="392" y2="288" stroke="var(--accent)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
+        <line {...arrowProps('kindmodi_belastet', 'var(--terracotta)')} x1="220" y1="82" x2="345" y2="248" markerEnd="url(#stArrow)" />
+        <line {...arrowProps('kindmodus_gesund', 'var(--sage)')} x1="560" y1="82" x2="418" y2="248" markerEnd="url(#stArrow)" />
+        <line {...arrowProps('bewaeltigungsmodi', 'var(--muted)')} x1="230" y1="405" x2="332" y2="352" markerEnd="url(#stArrow)" />
+        <line {...arrowProps('elternmodi', 'var(--accent)')} x1="570" y1="405" x2="430" y2="352" markerEnd="url(#stArrow)" />
+        <line className="st-arrow" stroke="var(--primary)" strokeWidth="2" strokeDasharray="3 5" opacity="0.6" x1="380" y1="364" x2="380" y2="522" />
 
-      <g className="st-center-enter">
-        <circle className="st-pulse-ring" cx="320" cy="250" r="60" />
-        <circle className="st-pulse-ring st-delay-1" cx="320" cy="250" r="60" />
-        <circle className="st-pulse-ring st-delay-2" cx="320" cy="250" r="60" />
-        <circle cx="320" cy="250" r="62" fill="var(--primary)" />
-        <text x="320" y="245" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="14" fill="#fff">Gesunder</text>
-        <text x="320" y="263" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="14" fill="#fff">Erwachsener</text>
-      </g>
+        <g className="st-center-enter">
+          <circle className="st-pulse-ring" cx="380" cy="300" r="60" />
+          <circle className="st-pulse-ring st-delay-1" cx="380" cy="300" r="60" />
+          <circle className="st-pulse-ring st-delay-2" cx="380" cy="300" r="60" />
+          <circle
+            {...pillProps(erwachsener, 'gesunder_erwachsener')}
+            cx="380" cy="300" r="64" fill="var(--primary)"
+            stroke={aktiv && aktiv.id === erwachsener.id ? '#fff' : 'none'} strokeWidth="3"
+          />
+          <text x="380" y="295" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="15" fill="#fff" style={{ pointerEvents: 'none' }}>Gesunder</text>
+          <text x="380" y="314" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="15" fill="#fff" style={{ pointerEvents: 'none' }}>Erwachsener</text>
+        </g>
 
-      <g className="st-enter" style={{ animationDelay: '0.05s' }}>
-        <text x="320" y="26" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--terracotta)">KINDMODI</text>
-        {[
-          { x: 45, label: 'Verletzlich' },
-          { x: 185, label: 'Wütend' },
-          { x: 325, label: 'Impulsiv' },
-          { x: 465, label: 'Fröhlich' }
-        ].map(p => (
-          <g key={p.label}>
-            <rect x={p.x} y="46" width="130" height="32" rx="16" fill="var(--terracotta)" opacity="0.14" stroke="var(--terracotta)" />
-            <text x={p.x + 65} y="67" textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--terracotta)">{p.label}</text>
+        <g className="st-enter" style={{ animationDelay: '0.05s' }}>
+          <text x="220" y="24" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--terracotta)">BELASTETE KINDMODI</text>
+          {belastet.map((m, i) => (
+            <g key={m.id} {...pillProps(m, 'kindmodi_belastet')}>
+              <rect x={belastetPos[i]} y="40" width="120" height="34" rx="17" fill="var(--terracotta)" opacity="0.28" stroke="var(--terracotta)" strokeWidth="1.5" />
+              <text x={belastetPos[i] + 60} y="62" textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontWeight="600" fontSize="12.5" fill="#fff">{m.name}</text>
+            </g>
+          ))}
+        </g>
+
+        <g className="st-enter" style={{ animationDelay: '0.1s' }}>
+          <text x="560" y="24" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--sage)">GESUNDER KINDMODUS</text>
+          <g {...pillProps(gesundKind, 'kindmodus_gesund')}>
+            <rect x="460" y="40" width="200" height="34" rx="17" fill="var(--sage)" opacity="0.32" stroke="var(--sage)" strokeWidth="1.5" />
+            <text x="560" y="62" textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontWeight="600" fontSize="12.5" fill="#fff">{gesundKind.name}</text>
           </g>
-        ))}
-      </g>
+        </g>
 
-      <g className="st-enter" style={{ animationDelay: '0.16s' }}>
-        <text x="150" y="322" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--sage)">BEWÄLTIGUNGSMODI</text>
-        {[
-          { y: 336, label: 'Unterwerfung' },
-          { y: 371, label: 'Vermeidung / Rückzug' },
-          { y: 406, label: 'Überkompensation' }
-        ].map(p => (
-          <g key={p.label}>
-            <rect x="20" y={p.y} width="260" height="28" rx="14" fill="var(--sage)" opacity="0.18" stroke="var(--sage)" />
-            <text x="150" y={p.y + 19} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--muted-text)">{p.label}</text>
-          </g>
-        ))}
-      </g>
+        <g className="st-enter" style={{ animationDelay: '0.16s' }}>
+          <text x="175" y="400" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--muted)">BEWÄLTIGUNGSMODI</text>
+          {bewaeltigung.map((m, i) => (
+            <g key={m.id} {...pillProps(m, 'bewaeltigungsmodi')}>
+              <rect x="40" y={bewaeltigungPos[i]} width="270" height="28" rx="14" fill="var(--muted)" opacity="0.32" stroke="var(--muted)" strokeWidth="1.5" />
+              <text x="175" y={bewaeltigungPos[i] + 19} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontWeight="600" fontSize="12" fill="#fff">{m.name}</text>
+            </g>
+          ))}
+        </g>
 
-      <g className="st-enter" style={{ animationDelay: '0.26s' }}>
-        <text x="520" y="322" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--accent)">ELTERNMODI</text>
-        {[
-          { y: 336, label: 'Strafender Elternteil' },
-          { y: 371, label: 'Fordernder Elternteil' }
-        ].map(p => (
-          <g key={p.label}>
-            <rect x="390" y={p.y} width="260" height="28" rx="14" fill="var(--accent)" opacity="0.22" stroke="var(--accent)" />
-            <text x="520" y={p.y + 19} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--muted-text)">{p.label}</text>
-          </g>
-        ))}
-      </g>
-    </svg>
+        <g className="st-enter" style={{ animationDelay: '0.22s' }}>
+          <text x="585" y="400" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--accent)">ELTERNMODI</text>
+          {eltern.map((m, i) => (
+            <g key={m.id} {...pillProps(m, 'elternmodi')}>
+              <rect x="450" y={elternPos[i]} width="270" height="28" rx="14" fill="var(--accent)" opacity="0.34" stroke="var(--accent)" strokeWidth="1.5" />
+              <text x="585" y={elternPos[i] + 19} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontWeight="600" fontSize="12" fill="#fff">{m.name}</text>
+            </g>
+          ))}
+        </g>
+
+        <g className="st-enter" style={{ animationDelay: '0.3s' }}>
+          <text x="380" y="510" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="12.5" letterSpacing="0.04em" fill="var(--secondary)">GESUNDER ERWACHSENER, GESTÄRKT DURCH</text>
+          {eigenschaften.map((e, i) => {
+            const istTurbo = e.id === 'turbo';
+            return (
+              <g key={e.id} {...pillProps(e, 'gesunder_erwachsener')}>
+                <rect
+                  x={eigenschaftenPos[i]} y="522" width="158" height="36" rx="18"
+                  fill={istTurbo ? 'var(--secondary)' : 'var(--primary)'} opacity={istTurbo ? 0.4 : 0.3}
+                  stroke={istTurbo ? 'var(--secondary)' : 'var(--primary)'} strokeWidth={istTurbo ? 2 : 1.5}
+                />
+                <text x={eigenschaftenPos[i] + 79} y="545" textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontWeight={istTurbo ? 700 : 600} fontSize="12" fill="#fff">
+                  {istTurbo ? '✦ ' + e.name : e.name}
+                </text>
+              </g>
+            );
+          })}
+        </g>
+      </svg>
+
+      <div style={{ minHeight: '2.6rem', padding: '0.7rem 1rem 0', textAlign: 'center' }}>
+        {aktiv ? (
+          <p style={{ fontFamily: "'Lora', serif", fontStyle: 'italic', fontSize: '0.92rem', color: '#fff', margin: 0, maxWidth: '620px', marginLeft: 'auto', marginRight: 'auto' }}>
+            <strong style={{ fontStyle: 'normal' }}>{aktiv.name}:</strong> {aktiv.beschreibung}
+          </p>
+        ) : (
+          <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '0.76rem', color: 'rgba(255,255,255,0.75)', margin: 0 }}>
+            Auf einen Modus klicken für die Kurzbeschreibung.
+          </p>
+        )}
+      </div>
+    </>
   );
 }
 

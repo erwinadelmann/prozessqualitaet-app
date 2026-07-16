@@ -123,27 +123,59 @@
     }
   ],
   "modusmodell": {
-    "hinweis": "Schemata aktivieren Schema-Modi, momentane innere Zustände. Ziel der Schema-Therapie ist ein gestärkter, handlungsfähiger gesunder Erwachsenenmodus.",
+    "hinweis": "Schemata aktivieren Schema-Modi, momentane innere Zustände. Ziel der Schema-Therapie ist ein gestärkter, handlungsfähiger gesunder Erwachsenenmodus. Kindmodi sind hier bewusst in belastete (maladaptive) und gesunde Ausprägung getrennt, das entspricht dem Modell nach Young/Klosko/Weishaar, wird aber oft ungenau in einen Topf geworfen.",
     "gruppen": [
       {
-        "id": "kindmodi",
-        "titel": "Kindmodi",
-        "modi": ["Verletzliches Kind", "Wütendes Kind", "Impulsives Kind", "Fröhliches Kind"]
+        "id": "kindmodi_belastet",
+        "titel": "Belastete Kindmodi",
+        "art": "maladaptiv",
+        "modi": [
+          { "id": "verletzliches_kind", "name": "Verletzliches Kind", "beschreibung": "Fühlt sich zurückgewiesen, unerwünscht oder allein, oft verbunden mit Traurigkeit und dem Gefühl, dass niemand da ist." },
+          { "id": "wuetendes_kind", "name": "Wütendes Kind", "beschreibung": "Reagiert aus Ungerechtigkeit oder Verletzung heraus mit Wut, Frustration oder dem Impuls, sich zu wehren." },
+          { "id": "impulsives_kind", "name": "Impulsives Kind", "beschreibung": "Handelt spontan nach unmittelbaren Wünschen, ohne Rücksicht auf spätere Folgen." }
+        ]
+      },
+      {
+        "id": "kindmodus_gesund",
+        "titel": "Gesunder Kindmodus",
+        "art": "gesund",
+        "modi": [
+          { "id": "froehliches_kind", "name": "Fröhliches Kind", "beschreibung": "Fühlt sich sicher, geliebt und zufrieden, mit Freude, Neugier und Spielfreude an der Welt." }
+        ]
       },
       {
         "id": "bewaeltigungsmodi",
         "titel": "Dysfunktionale Bewältigungsmodi",
-        "modi": ["Unterwerfung", "Vermeidung/Rückzug", "Überkompensation"]
+        "art": "maladaptiv",
+        "modi": [
+          { "id": "unterwerfung", "name": "Unterwerfung", "beschreibung": "Erlebt das Schema als wahr, fügt sich passiv, um Konflikt oder weiteren Schaden zu vermeiden." },
+          { "id": "vermeidung_rueckzug", "name": "Vermeidung/Rückzug", "beschreibung": "Zieht sich zurück, wird taub oder distanziert sich, um sich vor Überforderung oder erwartetem Schmerz zu schützen." },
+          { "id": "ueberkompensation", "name": "Überkompensation", "beschreibung": "Kämpft aktiv und oft überzogen gegen das Schema an, dominant, kontrollierend oder fordernd." }
+        ]
       },
       {
         "id": "elternmodi",
         "titel": "Dysfunktionale Elternmodi",
-        "modi": ["Strafender Elternteil", "Fordernder Elternteil"]
+        "art": "maladaptiv",
+        "modi": [
+          { "id": "strafender_elternteil", "name": "Strafender Elternteil", "beschreibung": "Innere Stimme, die harte Strafe, Schuld oder Scham für vermeintliche Fehler fordert." },
+          { "id": "fordernder_elternteil", "name": "Fordernder Elternteil", "beschreibung": "Innere Stimme, die ständige Leistung, Perfektion oder Verzicht auf Ruhe und Freude verlangt." }
+        ]
       },
       {
         "id": "gesunder_erwachsener",
         "titel": "Gesunder Erwachsener",
-        "modi": ["Gesunder Erwachsener"]
+        "art": "gesund",
+        "modi": [
+          { "id": "gesunder_erwachsener", "name": "Gesunder Erwachsener", "beschreibung": "Trifft Entscheidungen, löst Probleme, setzt Grenzen, sorgt für sich selbst und andere, aus Verbindung statt Zwang." }
+        ],
+        "eigenschaften_quelle": "Eigene Ergänzung von Erwin Adelmann, nicht Teil des klassischen Modells nach Young.",
+        "eigenschaften": [
+          { "id": "selbstwirksam", "name": "Selbstwirksam", "beschreibung": "Vertraut der eigenen Fähigkeit, Herausforderungen aktiv zu bewältigen." },
+          { "id": "genussfaehig", "name": "Genussfähig", "beschreibung": "Kann sich Freude, Ruhe und angenehme Erfahrungen erlauben, ohne Rechtfertigung." },
+          { "id": "sicherheitszone", "name": "Sicherheitszone erweitern", "beschreibung": "Baut die eigene innere Sicherheit bewusst weiter aus, Schritt für Schritt." },
+          { "id": "turbo", "name": "Der Turbo", "beschreibung": "Die Haltung von Neugierde, Vertrauen und Freude an (Lern-)Erfahrungen." }
+        ]
       }
     ]
   }

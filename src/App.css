@@ -474,7 +474,7 @@ button.ghost{
 .st-pulse-ring.st-delay-2{ animation-delay:1.7s; }
 .st-arrow{ stroke-dasharray:6 6; animation:stFlowDash 0.9s linear infinite; }
 .st-enter{ animation:fadeSlideUp 0.7s ease both; }
-.st-center-enter{ animation:fadeSlideUp 0.6s ease 0.15s both; transform-origin:320px 250px; }
+.st-center-enter{ animation:fadeSlideUp 0.6s ease 0.15s both; transform-origin:380px 300px; }
 
 /* Karteikarte, bildschirmfüllende Ansicht */
 @keyframes modalFadeIn{ from{ opacity:0; } to{ opacity:1; } }
