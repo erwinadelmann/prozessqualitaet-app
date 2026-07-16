@@ -183,13 +183,13 @@ function ModusModellGrafik(){
         </g>
       </svg>
 
-      <div style={{ minHeight: '2.6rem', padding: '0.7rem 1rem 0', textAlign: 'center' }}>
+      <div style={{ minHeight: '3.6rem', padding: '0.9rem 1.2rem 0', textAlign: 'center' }}>
         {aktiv ? (
-          <p style={{ fontFamily: "'Lora', serif", fontStyle: 'italic', fontSize: '0.92rem', color: '#fff', margin: 0, maxWidth: '620px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <p style={{ fontFamily: "'Lora', serif", fontStyle: 'italic', fontSize: '1.18rem', lineHeight: 1.55, color: '#fff', margin: 0, maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
             <strong style={{ fontStyle: 'normal' }}>{aktiv.name}:</strong> {aktiv.beschreibung}
           </p>
         ) : (
-          <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '0.76rem', color: 'rgba(255,255,255,0.75)', margin: 0 }}>
+          <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.75)', margin: 0 }}>
             Auf einen Modus klicken für die Kurzbeschreibung.
           </p>
         )}
