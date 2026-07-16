@@ -17,16 +17,11 @@ export const BILDER_KATEGORIEN = [
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00012.jpg", "alt": "Befreit von Wertungen" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00006-1.jpg", "alt": "Befreit von Wertungen" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00007-1.jpg", "alt": "Befreit von Wertungen" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00008-1.jpg", "alt": "Befreit von Wertungen" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00011.jpg", "alt": "Befreit von Wertungen" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00009-1.jpg", "alt": "Befreit von Wertungen" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00005.jpg", "alt": "Befreit von Wertungen" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00016-1.jpg", "alt": "Befreit von Wertungen" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00008.jpg", "alt": "Befreit von Wertungen" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00010.jpg", "alt": "Befreit von Wertungen" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00013.jpg", "alt": "Befreit von Wertungen" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00015.jpg", "alt": "Befreit von Wertungen" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00014-1.jpg", "alt": "Befreit von Wertungen" }
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Befreit-von-Wertungen-00015.jpg", "alt": "Befreit von Wertungen" }
     ]
   },
   {
@@ -40,19 +35,6 @@ export const BILDER_KATEGORIEN = [
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Kind-Stragien-Orientierung-00002.jpg", "alt": "Kind – Strategien – Orientierung" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Kind-Stragien-Orientierung-00005.jpg", "alt": "Kind – Strategien – Orientierung" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Kind-Stragien-Orientierung-00006.jpg", "alt": "Kind – Strategien – Orientierung" }
-    ]
-  },
-  {
-    "kategorie": "Büro",
-    "bilder": [
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00008.jpg", "alt": "Büro" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00001.jpg", "alt": "Büro" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00002.jpg", "alt": "Büro" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00003.jpg", "alt": "Büro" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00004.jpg", "alt": "Büro" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00005.jpg", "alt": "Büro" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00006.jpg", "alt": "Büro" },
-      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00007.jpg", "alt": "Büro" }
     ]
   },
   {
@@ -86,6 +68,14 @@ export const BILDER_KATEGORIEN = [
   {
     "kategorie": "Büro – Akten – Aufgaben",
     "bilder": [
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00008.jpg", "alt": "Büro – Akten – Aufgaben" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00001.jpg", "alt": "Büro – Akten – Aufgaben" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00002.jpg", "alt": "Büro – Akten – Aufgaben" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00003.jpg", "alt": "Büro – Akten – Aufgaben" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00004.jpg", "alt": "Büro – Akten – Aufgaben" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00005.jpg", "alt": "Büro – Akten – Aufgaben" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00006.jpg", "alt": "Büro – Akten – Aufgaben" },
+      { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/12/Buero00007.jpg", "alt": "Büro – Akten – Aufgaben" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Buero-Akten-Aufgaben-00018.jpg", "alt": "Büro – Akten – Aufgaben" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Buero-Akten-Aufgaben-00001.jpg", "alt": "Büro – Akten – Aufgaben" },
       { "src": "https://i0.wp.com/mentaltraining.at/wp-content/uploads/2025/11/Buero-Akten-Aufgaben-00002.jpg", "alt": "Büro – Akten – Aufgaben" },

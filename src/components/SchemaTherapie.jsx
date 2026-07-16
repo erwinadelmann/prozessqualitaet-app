@@ -311,12 +311,12 @@ export default function SchemaTherapie({ initialOpenId }){
         <p style={{ fontFamily: "'Lora', serif", fontSize: '0.88rem', lineHeight: 1.6, margin: '0.6rem 0 0', maxWidth: '760px', opacity: 0.92 }}>
           {DATA.meta.hinweis}
         </p>
-        <div style={{ maxWidth: '1080px', width: '100%', margin: '1.4rem auto 0' }}>
-          <ModusModellGrafik />
-        </div>
-        <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '0.76rem', textAlign: 'center', margin: '0.6rem 0 0', opacity: 0.85 }}>
+        <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontStyle: 'italic', fontSize: '1.3rem', lineHeight: 1.5, textAlign: 'center', margin: '1.3rem auto 0', maxWidth: '820px', color: '#fff' }}>
           Modus-Modell, vereinfacht. Ziel ist ein gestärkter gesunder Erwachsener, der Kindanteile würdigt und Eltern-/Bewältigungsmodi beruhigt statt sie auszuspielen.
         </p>
+        <div style={{ maxWidth: '1080px', width: '100%', margin: '1.2rem auto 0' }}>
+          <ModusModellGrafik />
+        </div>
       </div>
 
       <div className="picker-wrap">
