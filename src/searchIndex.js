@@ -14,6 +14,9 @@ import { INNER_GAME } from './data/innergame.js';
 import { KRITERIEN } from './data/kriterien.js';
 import { FOKUS } from './data/fokus.js';
 import { FOCUSING_QUESTION, MOTTO_FRAGEN, THEMEN_VORSCHLAEGE } from './data/fokuskompass.js';
+import { GUNTHER_SCHMIDT_VIDEOS } from './data/gunther-schmidt-videos.js';
+import { BUDDHA_OMA_VIDEOS } from './data/buddha-oma-videos.js';
+import { BOUNDLESS_MOVEMENT_VIDEOS } from './data/boundless-movement-videos.js';
 
 function buildIndex(){
   const entries = [];
@@ -159,6 +162,35 @@ function buildIndex(){
     kontext: 'Fokus-Kompass',
     snippet: FOCUSING_QUESTION,
     matchText: [FOCUSING_QUESTION, ...MOTTO_FRAGEN, ...THEMEN_VORSCHLAEGE].join(' ')
+  });
+
+  // Videothek, drei Sammlungen, je ein Sprungpunkt (kein Deep-Link auf einzelne Videos)
+  entries.push({
+    key: 'videothek-guntherschmidt',
+    tab: 'videothek',
+    openId: 'guntherschmidt',
+    titel: 'Videothek · Dr. Gunther Schmidt',
+    kontext: 'Videothek',
+    snippet: 'Vorträge und Gespräche zur Hypnosystemik',
+    matchText: ['Dr. Gunther Schmidt', 'Hypnosystemik', 'Problemtrance', 'Wahlmöglichkeiten', 'Lösungsversuche', 'Grundkurs', 'Aufbaukurs', ...GUNTHER_SCHMIDT_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-buddhaoma',
+    tab: 'videothek',
+    openId: 'buddhaoma',
+    titel: 'Videothek · Buddha Oma',
+    kontext: 'Videothek',
+    snippet: 'Ursula Lyon, Impulse aus buddhistischer Sicht',
+    matchText: ['Buddha Oma', 'Ursula Lyon', 'Buddhismus', 'Meditation', 'Yoga'].join(' ')
+  });
+  entries.push({
+    key: 'videothek-boundlessmovement',
+    tab: 'videothek',
+    openId: 'boundlessmovement',
+    titel: 'Videothek · Boundless Movement',
+    kontext: 'Videothek',
+    snippet: 'Natürliche, bewusste Bewegung',
+    matchText: ['Boundless Movement', 'Bewegung', 'Körper', 'natürlich', 'bewusst'].join(' ')
   });
 
   return entries;

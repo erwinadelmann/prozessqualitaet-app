@@ -7,8 +7,8 @@ export default function MeinFokus(){
       <div className="fokus-hero">
         <div className="blob b1"></div>
         <div className="blob b2"></div>
-        <p className="eyebrow">Meine Sehnsucht</p>
-        <h2>{FOKUS.sehnsucht}</h2>
+        <h2 className="fokus-sehnsucht-titel">Meine Sehnsucht</h2>
+        <p className="fokus-sehnsucht-text">{FOKUS.sehnsucht}</p>
       </div>
 
       <p className="fokus-section-label">Mein eigenes Muster, utilisiert</p>

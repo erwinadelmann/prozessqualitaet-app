@@ -1,6 +1,7 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import DATA from '../data/muster.json';
 import NARRATIV_DATA from '../data/reframing-narrativ.json';
+import ScrollTopButton from './ScrollTopButton.jsx';
 
 const narrativIds = new Set(NARRATIV_DATA.reframings.map(r => r.id));
 
@@ -56,16 +57,22 @@ function MusterCard({ item, isOpen, onOpen }){
   );
 }
 
-function MusterModal({ item, onClose, onOpenReframing }){
+function MusterModal({ item, onClose, onOpenReframing, onPrev, onNext, positionLabel }){
+  const modalRef = useRef(null);
+
   useEffect(() => {
-    const onKey = e => { if(e.key === 'Escape') onClose(); };
+    const onKey = e => {
+      if(e.key === 'Escape') onClose();
+      if(e.key === 'ArrowLeft' && onPrev) onPrev();
+      if(e.key === 'ArrowRight' && onNext) onNext();
+    };
     document.addEventListener('keydown', onKey);
     document.body.style.overflow = 'hidden';
     return () => {
       document.removeEventListener('keydown', onKey);
       document.body.style.overflow = '';
     };
-  }, [onClose]);
+  }, [onClose, onPrev, onNext]);
 
   if(!item) return null;
 
@@ -73,14 +80,21 @@ function MusterModal({ item, onClose, onOpenReframing }){
     <div className="card-modal-backdrop" onClick={onClose}>
       <div
         className="card-modal"
+        ref={modalRef}
         role="dialog"
         aria-modal="true"
         aria-label={item.muster}
         onClick={e => e.stopPropagation()}
       >
         <div className="card-modal-topbar">
+          <div className="card-modal-nav">
+            <button className="card-modal-nav-btn" onClick={onPrev} aria-label="Voriger Eintrag">‹</button>
+            {positionLabel && <span className="card-modal-position">{positionLabel}</span>}
+            <button className="card-modal-nav-btn" onClick={onNext} aria-label="Nächster Eintrag">›</button>
+          </div>
           <button className="card-modal-close" onClick={onClose} aria-label="Schließen">×</button>
         </div>
+        <ScrollTopButton containerRef={modalRef} />
 
         <div className="card-modal-inner">
           <div className="card-modal-header">
@@ -193,8 +207,23 @@ export default function Kartei({ onOpenReframing, initialOpenId }){
     return [...map.entries()].filter(([, items]) => items.length > 0);
   }, [rest]);
 
+  // Flache Liste in exakt der Reihenfolge, in der die Karten sichtbar angeordnet sind
+  // (Referenz-Beispiel zuerst, danach Kategorie für Kategorie), als Grundlage für das
+  // Blättern im Detailfenster. Bezieht sich auf die aktuell gefilterte Ansicht, filtert
+  // man um, blättert man innerhalb der neuen Auswahl.
+  const navList = useMemo(
+    () => (referenz ? [referenz] : []).concat(gruppen.flatMap(([, items]) => items)),
+    [referenz, gruppen]
+  );
+  const navIndex = offenesItem ? navList.findIndex(m => m.id === offenesItem.id) : -1;
+
   function open(id){ setOpenId(id); }
   function close(){ setOpenId(null); }
+  function blaettern(richtung){
+    if(navList.length === 0 || navIndex === -1) return;
+    const naechster = (navIndex + richtung + navList.length) % navList.length;
+    setOpenId(navList[naechster].id);
+  }
 
   return (
     <>
@@ -254,7 +283,16 @@ export default function Kartei({ onOpenReframing, initialOpenId }){
         )}
       </main>
 
-      {offenesItem && <MusterModal item={offenesItem} onClose={close} onOpenReframing={onOpenReframing} />}
+      {offenesItem && (
+        <MusterModal
+          item={offenesItem}
+          onClose={close}
+          onOpenReframing={onOpenReframing}
+          onPrev={() => blaettern(-1)}
+          onNext={() => blaettern(1)}
+          positionLabel={navIndex !== -1 ? `${navIndex + 1} / ${navList.length}` : null}
+        />
+      )}
     </>
   );
 }

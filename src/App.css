@@ -347,8 +347,17 @@ button.ghost{
 .fokus-hero .blob{ position:absolute; border-radius:50%; filter:blur(2px); opacity:0.16; background:var(--secondary); }
 .fokus-hero .blob.b1{ width:180px; height:180px; top:-50px; right:-40px; animation:floatBlob 9s ease-in-out infinite; }
 .fokus-hero .blob.b2{ width:120px; height:120px; bottom:-30px; left:10%; background:var(--accent); animation:floatBlob 7s ease-in-out infinite reverse; }
-.fokus-hero .eyebrow{ font-family:'Montserrat', sans-serif; font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--secondary); position:relative; z-index:1; }
-.fokus-hero h2{ font-weight:700; font-size:1.55rem; line-height:1.35; margin:0.5rem 0 0; max-width:760px; position:relative; z-index:1; }
+/* Schriftlogik bewusst so: "Meine Sehnsucht" ist die kurze, große, fette Überschrift,
+   der lange Fließtext darunter ist bewusst dünn und kleiner gehalten (Lesetext, keine
+   Schlagzeile). Vorher war es umgekehrt, der ganze Satz stand riesig und fett da. */
+.fokus-hero .fokus-sehnsucht-titel{
+  font-family:'Playfair Display', serif; font-weight:700; font-size:1.9rem;
+  line-height:1.2; margin:0; position:relative; z-index:1;
+}
+.fokus-hero .fokus-sehnsucht-text{
+  font-family:'Lora', serif; font-weight:400; font-size:0.95rem; line-height:1.6;
+  margin:0.7rem 0 0; max-width:760px; position:relative; z-index:1; opacity:0.92;
+}
 .fokus-section-label{ font-family:'Montserrat', sans-serif; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin:0 0 0.8rem; }
 .muster-eigen{
   background:linear-gradient(120deg, #fff 0%, #faf6f0 100%); border:1px solid var(--accent);
@@ -456,21 +465,19 @@ button.ghost{
   overflow-y:auto;
   -webkit-overflow-scrolling:touch;
   animation:modalRiseIn 0.2s ease both;
+  position:relative;
 }
-@media (min-width:760px){
-  .card-modal-backdrop{ padding:2.4rem; }
-  .card-modal{
-    width:min(760px, 100%);
-    height:auto; max-height:100%;
-    border-radius:16px;
-    box-shadow:0 30px 70px rgba(0,10,9,0.4);
-  }
-}
+/* Bewusst bei jeder Breite bildschirmfüllend, kein schwebendes Kärtchen mehr ab 760px:
+   Klick soll sich anfühlen, als würde der Inhalt an genau der Stelle aufgehen, an der
+   man ihn angeklickt hat, nicht als würde ein neues Fenster in der Bildschirmmitte
+   erscheinen. Lesbarkeit auf breiten Screens kommt über die max-width von
+   .card-modal-inner (siehe unten), nicht über eine schmalere Modal-Box. */
 .card-modal-topbar{
   position:sticky; top:0; z-index:2;
   display:flex; justify-content:space-between; align-items:center;
   background:var(--card-bg);
   padding:calc(0.7rem + env(safe-area-inset-top)) 0.9rem 0;
+  max-width:900px; margin:0 auto;
 }
 .card-modal-nav{ display:flex; align-items:center; gap:0.6rem; }
 .card-modal-nav-btn{
@@ -493,8 +500,18 @@ button.ghost{
   transition:background 0.15s ease, transform 0.15s ease;
 }
 .card-modal-close:hover{ background:var(--terracotta); color:#fff; transform:rotate(90deg); }
-.card-modal-inner{ padding:0.6rem 1.5rem 3rem; }
+.card-modal-inner{ padding:0.6rem 1.5rem 3rem; max-width:900px; margin:0 auto; }
 @media (min-width:760px){ .card-modal-inner{ padding:0.4rem 2.4rem 3rem; } }
+.card-modal-top-btn{
+  position:fixed; right:1.3rem; bottom:1.3rem; z-index:1001;
+  width:2.6rem; height:2.6rem; border-radius:50%; border:none;
+  background:var(--primary); color:#fff; font-size:1.3rem; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 8px 20px rgba(0,10,9,0.28);
+  animation:modalFadeIn 0.16s ease both;
+  transition:background 0.15s ease, transform 0.15s ease;
+}
+.card-modal-top-btn:hover{ background:var(--terracotta); transform:translateY(-2px); }
 .card-modal-header{ border-bottom:1px dashed #ccd6d4; padding-bottom:1.1rem; margin-bottom:1.2rem; }
 .card-modal-header .muster-name{ font-size:1.35rem; display:block; margin-bottom:0.5rem; }
 .card-modal-header .anteil-line{ font-size:0.98rem; }
@@ -703,7 +720,8 @@ button.ghost{
   color:var(--secondary); text-transform:uppercase;
 }
 
-/* Video-Listen-Tabs, editierbar (Buddha Oma, Boundless Movement) */
+/* Video-Listen-Tabs, Videothek (Dr. Gunther Schmidt editierbar; Buddha Oma und
+   Boundless Movement synced/fest, siehe VideoListTab.jsx) */
 .vlt-add{
   display:flex; gap:0.6rem; flex-wrap:wrap; align-items:center;
   margin:1.2rem 0 0.6rem; padding:1rem; background:var(--card-bg); border:1px solid #e3e7e6; border-radius:10px;
@@ -728,6 +746,10 @@ button.ghost{
   padding:0.5rem 0.7rem; border:1px solid #d7dedb; border-radius:6px; background:#fff; color:var(--ink);
 }
 .vlt-titel-input:focus{ outline:2px solid var(--primary); outline-offset:1px; }
+.vlt-titel-fest{
+  margin:0.7rem 0.9rem 0.9rem; font-family:'Lora', serif; font-size:0.92rem; line-height:1.4;
+  color:var(--ink);
+}
 .vlt-card-actions{
   display:flex; gap:0.5rem; align-items:center; margin:0 0.9rem 0.9rem;
 }
@@ -909,6 +931,9 @@ button.ghost{
   padding:0.6rem 1.1rem; cursor:pointer; transition:background 0.15s ease;
 }
 .btn-primary:hover{ background:#004a46; }
+
+/* Videothek: Umschalter zwischen den drei Video-Sammlungen */
+.videothek-switch{ margin:0 0 1.3rem; }
 
 /* Utilisationsprozess */
 .up-main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }

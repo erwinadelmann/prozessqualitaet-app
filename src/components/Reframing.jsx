@@ -1,6 +1,7 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import MUSTER_DATA from '../data/muster.json';
 import NARRATIV_DATA from '../data/reframing-narrativ.json';
+import ScrollTopButton from './ScrollTopButton.jsx';
 
 const KATEGORIE_CLASS = {
   'Beziehung & Bindung': 'kk-beziehung',
@@ -51,16 +52,22 @@ function ReframingCard({ item, isOpen, onOpen }){
   );
 }
 
-function ReframingModal({ item, onClose }){
+function ReframingModal({ item, onClose, onPrev, onNext, positionLabel }){
+  const modalRef = useRef(null);
+
   useEffect(() => {
-    const onKey = e => { if(e.key === 'Escape') onClose(); };
+    const onKey = e => {
+      if(e.key === 'Escape') onClose();
+      if(e.key === 'ArrowLeft' && onPrev) onPrev();
+      if(e.key === 'ArrowRight' && onNext) onNext();
+    };
     document.addEventListener('keydown', onKey);
     document.body.style.overflow = 'hidden';
     return () => {
       document.removeEventListener('keydown', onKey);
       document.body.style.overflow = '';
     };
-  }, [onClose]);
+  }, [onClose, onPrev, onNext]);
 
   if(!item) return null;
   const n = item.narrativ;
@@ -69,14 +76,21 @@ function ReframingModal({ item, onClose }){
     <div className="card-modal-backdrop" onClick={onClose}>
       <div
         className="card-modal"
+        ref={modalRef}
         role="dialog"
         aria-modal="true"
         aria-label={item.muster}
         onClick={e => e.stopPropagation()}
       >
         <div className="card-modal-topbar">
+          <div className="card-modal-nav">
+            <button className="card-modal-nav-btn" onClick={onPrev} aria-label="Voriger Eintrag">‹</button>
+            {positionLabel && <span className="card-modal-position">{positionLabel}</span>}
+            <button className="card-modal-nav-btn" onClick={onNext} aria-label="Nächster Eintrag">›</button>
+          </div>
           <button className="card-modal-close" onClick={onClose} aria-label="Schließen">×</button>
         </div>
+        <ScrollTopButton containerRef={modalRef} />
 
         <div className="card-modal-inner">
           <div className="card-modal-header">
@@ -159,8 +173,16 @@ export default function Reframing({ initialOpenId }){
     return [...map.entries()].filter(([, items]) => items.length > 0);
   }, [gefiltert]);
 
+  const navList = useMemo(() => gruppen.flatMap(([, items]) => items), [gruppen]);
+  const navIndex = offenesItem ? navList.findIndex(m => m.id === offenesItem.id) : -1;
+
   function open(id){ setOpenId(id); }
   function close(){ setOpenId(null); }
+  function blaettern(richtung){
+    if(navList.length === 0 || navIndex === -1) return;
+    const naechster = (navIndex + richtung + navList.length) % navList.length;
+    setOpenId(navList[naechster].id);
+  }
 
   return (
     <>
@@ -212,7 +234,15 @@ export default function Reframing({ initialOpenId }){
         )}
       </main>
 
-      {offenesItem && <ReframingModal item={offenesItem} onClose={close} />}
+      {offenesItem && (
+        <ReframingModal
+          item={offenesItem}
+          onClose={close}
+          onPrev={() => blaettern(-1)}
+          onNext={() => blaettern(1)}
+          positionLabel={navIndex !== -1 ? `${navIndex + 1} / ${navList.length}` : null}
+        />
+      )}
     </>
   );
 }

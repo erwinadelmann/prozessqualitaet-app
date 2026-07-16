@@ -1,6 +1,7 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import DATA from '../data/methodenbox.json';
 import UP_DATA from '../data/utilisationsprozess.json';
+import ScrollTopButton from './ScrollTopButton.jsx';
 
 const KATEGORIE_CLASS = {
   'Grundannahme': 'kat-grundannahme',
@@ -64,16 +65,22 @@ function KernprozessCard({ modus, onOpen }){
   );
 }
 
-function KernprozessModal({ modus, onClose }){
+function KernprozessModal({ modus, onClose, onPrev, onNext, positionLabel }){
+  const modalRef = useRef(null);
+
   useEffect(() => {
-    const onKey = e => { if(e.key === 'Escape') onClose(); };
+    const onKey = e => {
+      if(e.key === 'Escape') onClose();
+      if(e.key === 'ArrowLeft' && onPrev) onPrev();
+      if(e.key === 'ArrowRight' && onNext) onNext();
+    };
     document.addEventListener('keydown', onKey);
     document.body.style.overflow = 'hidden';
     return () => {
       document.removeEventListener('keydown', onKey);
       document.body.style.overflow = '';
     };
-  }, [onClose]);
+  }, [onClose, onPrev, onNext]);
 
   if(!modus) return null;
 
@@ -81,14 +88,21 @@ function KernprozessModal({ modus, onClose }){
     <div className="card-modal-backdrop" onClick={onClose}>
       <div
         className="card-modal"
+        ref={modalRef}
         role="dialog"
         aria-modal="true"
         aria-label={modus.titel}
         onClick={e => e.stopPropagation()}
       >
         <div className="card-modal-topbar">
+          <div className="card-modal-nav">
+            <button className="card-modal-nav-btn" onClick={onPrev} aria-label="Voriger Modus">‹</button>
+            {positionLabel && <span className="card-modal-position">{positionLabel}</span>}
+            <button className="card-modal-nav-btn" onClick={onNext} aria-label="Nächster Modus">›</button>
+          </div>
           <button className="card-modal-close" onClick={onClose} aria-label="Schließen">×</button>
         </div>
+        <ScrollTopButton containerRef={modalRef} />
 
         <div className="card-modal-inner">
           <div className="card-modal-header">
@@ -143,16 +157,22 @@ function KernprozessModal({ modus, onClose }){
   );
 }
 
-function MethodModal({ item, onClose }){
+function MethodModal({ item, onClose, onPrev, onNext, positionLabel }){
+  const modalRef = useRef(null);
+
   useEffect(() => {
-    const onKey = e => { if(e.key === 'Escape') onClose(); };
+    const onKey = e => {
+      if(e.key === 'Escape') onClose();
+      if(e.key === 'ArrowLeft' && onPrev) onPrev();
+      if(e.key === 'ArrowRight' && onNext) onNext();
+    };
     document.addEventListener('keydown', onKey);
     document.body.style.overflow = 'hidden';
     return () => {
       document.removeEventListener('keydown', onKey);
       document.body.style.overflow = '';
     };
-  }, [onClose]);
+  }, [onClose, onPrev, onNext]);
 
   if(!item) return null;
 
@@ -160,14 +180,21 @@ function MethodModal({ item, onClose }){
     <div className="card-modal-backdrop" onClick={onClose}>
       <div
         className="card-modal"
+        ref={modalRef}
         role="dialog"
         aria-modal="true"
         aria-label={item.titel}
         onClick={e => e.stopPropagation()}
       >
         <div className="card-modal-topbar">
+          <div className="card-modal-nav">
+            <button className="card-modal-nav-btn" onClick={onPrev} aria-label="Voriges Element">‹</button>
+            {positionLabel && <span className="card-modal-position">{positionLabel}</span>}
+            <button className="card-modal-nav-btn" onClick={onNext} aria-label="Nächstes Element">›</button>
+          </div>
           <button className="card-modal-close" onClick={onClose} aria-label="Schließen">×</button>
         </div>
+        <ScrollTopButton containerRef={modalRef} />
 
         <div className="card-modal-inner">
           <div className="card-modal-header">
@@ -245,8 +272,21 @@ export default function Methodenbox({ initialOpenId }){
   const offenesItem = openId ? DATA.elemente.find(i => i.id === openId) : null;
   const offenerModus = openModusId ? UP_DATA.modi.find(m => m.id === openModusId) : null;
 
+  const itemIndex = offenesItem ? list.findIndex(i => i.id === offenesItem.id) : -1;
+  const modusIndex = offenerModus ? UP_DATA.modi.findIndex(m => m.id === offenerModus.id) : -1;
+
   function open(id){ setOpenId(id); }
   function close(){ setOpenId(null); }
+  function itemBlaettern(richtung){
+    if(list.length === 0 || itemIndex === -1) return;
+    const naechster = (itemIndex + richtung + list.length) % list.length;
+    setOpenId(list[naechster].id);
+  }
+  function modusBlaettern(richtung){
+    if(UP_DATA.modi.length === 0 || modusIndex === -1) return;
+    const naechster = (modusIndex + richtung + UP_DATA.modi.length) % UP_DATA.modi.length;
+    setOpenModusId(UP_DATA.modi[naechster].id);
+  }
 
   return (
     <>
@@ -304,8 +344,24 @@ export default function Methodenbox({ initialOpenId }){
         )}
       </main>
 
-      {offenesItem && <MethodModal item={offenesItem} onClose={close} />}
-      {offenerModus && <KernprozessModal modus={offenerModus} onClose={() => setOpenModusId(null)} />}
+      {offenesItem && (
+        <MethodModal
+          item={offenesItem}
+          onClose={close}
+          onPrev={() => itemBlaettern(-1)}
+          onNext={() => itemBlaettern(1)}
+          positionLabel={itemIndex !== -1 ? `${itemIndex + 1} / ${list.length}` : null}
+        />
+      )}
+      {offenerModus && (
+        <KernprozessModal
+          modus={offenerModus}
+          onClose={() => setOpenModusId(null)}
+          onPrev={() => modusBlaettern(-1)}
+          onNext={() => modusBlaettern(1)}
+          positionLabel={modusIndex !== -1 ? `${modusIndex + 1} / ${UP_DATA.modi.length}` : null}
+        />
+      )}
     </>
   );
 }

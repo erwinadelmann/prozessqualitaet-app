@@ -13,13 +13,11 @@ import Ressourcen from './components/Ressourcen.jsx';
 import FokusKompass from './components/FokusKompass.jsx';
 import EMDR from './components/EMDR.jsx';
 import ACTDefusion from './components/ACTDefusion.jsx';
-import VideoListTab from './components/VideoListTab.jsx';
+import Videothek from './components/Videothek.jsx';
 import MUSTER_DATA from './data/muster.json';
 import METHODEN_DATA from './data/methodenbox.json';
 import NARRATIV_DATA from './data/reframing-narrativ.json';
 import { BILDER_KATEGORIEN, VIDEOS } from './data/ressourcen.js';
-import { BUDDHA_OMA_VIDEOS } from './data/buddha-oma-videos.js';
-import { BOUNDLESS_MOVEMENT_VIDEOS } from './data/boundless-movement-videos.js';
 import { searchGlobal } from './searchIndex.js';
 import heroImage from './assets/logo_mental.png';
 
@@ -37,8 +35,7 @@ const TAB_ICONS = {
   begleiter: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="9" cy="10" r="0.8" fill="currentColor"/><circle cx="12" cy="10" r="0.8" fill="currentColor"/><circle cx="15" cy="10" r="0.8" fill="currentColor"/></svg>,
   emdr: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>,
   act: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 3l4 4-4 4"/><path d="M21 7H9a4 4 0 0 0-4 4v1"/><path d="M7 21l-4-4 4-4"/><path d="M3 17h12a4 4 0 0 0 4-4v-1"/></svg>,
-  buddhaoma: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="10 8 16 12 10 16 10 8"/><circle cx="12" cy="12" r="9"/></svg>,
-  boundlessmovement: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="10 8 16 12 10 16 10 8"/><circle cx="12" cy="12" r="9"/></svg>
+  videothek: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="10 8 16 12 10 16 10 8"/><circle cx="12" cy="12" r="9"/></svg>
 };
 
 function App(){
@@ -118,8 +115,7 @@ function App(){
           <button className={'tab-btn' + (tab === 'act' ? ' active' : '')} onClick={() => setTab('act')}>{TAB_ICONS.act}ACT, Defusion</button>
           <button className={'tab-btn' + (tab === 'pruefung' ? ' active' : '')} onClick={() => setTab('pruefung')}>{TAB_ICONS.pruefung}Qualitäts-Check</button>
           <button className={'tab-btn' + (tab === 'ressourcen' ? ' active' : '')} onClick={() => setTab('ressourcen')}>{TAB_ICONS.ressourcen}Ressourcen <span className="tab-count">{BILDER_KATEGORIEN.reduce((a, k) => a + k.bilder.length, 0) + VIDEOS.length}</span></button>
-          <button className={'tab-btn' + (tab === 'buddhaoma' ? ' active' : '')} onClick={() => setTab('buddhaoma')}>{TAB_ICONS.buddhaoma}Buddha Oma</button>
-          <button className={'tab-btn' + (tab === 'boundlessmovement' ? ' active' : '')} onClick={() => setTab('boundlessmovement')}>{TAB_ICONS.boundlessmovement}Boundless Movement</button>
+          <button className={'tab-btn' + (tab === 'videothek' ? ' active' : '')} onClick={() => setTab('videothek')}>{TAB_ICONS.videothek}Videothek</button>
           <button className={'tab-btn' + (tab === 'fokus' ? ' active' : '')} onClick={() => setTab('fokus')}>{TAB_ICONS.fokus}Mein Fokus</button>
           <button className={'tab-btn' + (tab === 'fokuskompass' ? ' active' : '')} onClick={() => setTab('fokuskompass')}>{TAB_ICONS.fokuskompass}Fokus-Kompass</button>
         </div>
@@ -136,23 +132,8 @@ function App(){
       {tab === 'pruefung' && <QualitaetsCheck />}
       {tab === 'methodenbox' && <Methodenbox key={tabKey} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
       {tab === 'ressourcen' && <Ressourcen />}
-      {tab === 'buddhaoma' && (
-        <VideoListTab
-          storageKey="buddha_oma_videos_v1"
-          seed={BUDDHA_OMA_VIDEOS}
-          eyebrow="Buddha Oma"
-          titel="Ursula Lyon, Impulse aus buddhistischer Sicht"
-          hinweis="Kurze, alltagsnahe Impulse der buddhistischen Yoga- und Meditationslehrerin Ursula Lyon. Reihenfolge, Titel und Auswahl sind hier frei editierbar, alles wird automatisch gespeichert."
-        />
-      )}
-      {tab === 'boundlessmovement' && (
-        <VideoListTab
-          storageKey="boundless_movement_videos_v1"
-          seed={BOUNDLESS_MOVEMENT_VIDEOS}
-          eyebrow="Boundless Movement"
-          titel="Natürliche, bewusste Bewegung"
-          hinweis="Videos zur Boundless-Movement-Methode. Reihenfolge, Titel und Auswahl sind hier frei editierbar, alles wird automatisch gespeichert."
-        />
+      {tab === 'videothek' && (
+        <Videothek key={tabKey} initialSammlungId={jumpForTab ? jumpForTab.openId : undefined} />
       )}
       {tab === 'fokus' && <MeinFokus />}
       {tab === 'fokuskompass' && <FokusKompass />}
