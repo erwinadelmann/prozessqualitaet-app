@@ -36,49 +36,60 @@ function ModusModellGrafik(){
         </marker>
       </defs>
 
-      <line x1="320" y1="92" x2="320" y2="184" stroke="var(--terracotta)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
-      <line x1="175" y1="336" x2="272" y2="288" stroke="var(--sage)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
-      <line x1="495" y1="336" x2="392" y2="288" stroke="var(--accent)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
+      <line className="st-arrow" x1="320" y1="92" x2="320" y2="184" stroke="var(--terracotta)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
+      <line className="st-arrow" x1="175" y1="336" x2="272" y2="288" stroke="var(--sage)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
+      <line className="st-arrow" x1="495" y1="336" x2="392" y2="288" stroke="var(--accent)" strokeWidth="2.5" markerEnd="url(#stArrow)" />
 
-      <circle cx="320" cy="250" r="62" fill="var(--primary)" />
-      <text x="320" y="245" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="14" fill="#fff">Gesunder</text>
-      <text x="320" y="263" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="14" fill="#fff">Erwachsener</text>
+      <g className="st-center-enter">
+        <circle className="st-pulse-ring" cx="320" cy="250" r="60" />
+        <circle className="st-pulse-ring st-delay-1" cx="320" cy="250" r="60" />
+        <circle className="st-pulse-ring st-delay-2" cx="320" cy="250" r="60" />
+        <circle cx="320" cy="250" r="62" fill="var(--primary)" />
+        <text x="320" y="245" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="14" fill="#fff">Gesunder</text>
+        <text x="320" y="263" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="14" fill="#fff">Erwachsener</text>
+      </g>
 
-      <text x="320" y="26" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--terracotta)">KINDMODI</text>
-      {[
-        { x: 45, label: 'Verletzlich' },
-        { x: 185, label: 'Wütend' },
-        { x: 325, label: 'Impulsiv' },
-        { x: 465, label: 'Fröhlich' }
-      ].map(p => (
-        <g key={p.label}>
-          <rect x={p.x} y="46" width="130" height="32" rx="16" fill="var(--terracotta)" opacity="0.14" stroke="var(--terracotta)" />
-          <text x={p.x + 65} y="67" textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--terracotta)">{p.label}</text>
-        </g>
-      ))}
+      <g className="st-enter" style={{ animationDelay: '0.05s' }}>
+        <text x="320" y="26" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--terracotta)">KINDMODI</text>
+        {[
+          { x: 45, label: 'Verletzlich' },
+          { x: 185, label: 'Wütend' },
+          { x: 325, label: 'Impulsiv' },
+          { x: 465, label: 'Fröhlich' }
+        ].map(p => (
+          <g key={p.label}>
+            <rect x={p.x} y="46" width="130" height="32" rx="16" fill="var(--terracotta)" opacity="0.14" stroke="var(--terracotta)" />
+            <text x={p.x + 65} y="67" textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--terracotta)">{p.label}</text>
+          </g>
+        ))}
+      </g>
 
-      <text x="150" y="322" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--sage)">BEWÄLTIGUNGSMODI</text>
-      {[
-        { y: 336, label: 'Unterwerfung' },
-        { y: 371, label: 'Vermeidung / Rückzug' },
-        { y: 406, label: 'Überkompensation' }
-      ].map(p => (
-        <g key={p.label}>
-          <rect x="20" y={p.y} width="260" height="28" rx="14" fill="var(--sage)" opacity="0.18" stroke="var(--sage)" />
-          <text x="150" y={p.y + 19} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--muted-text)">{p.label}</text>
-        </g>
-      ))}
+      <g className="st-enter" style={{ animationDelay: '0.16s' }}>
+        <text x="150" y="322" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--sage)">BEWÄLTIGUNGSMODI</text>
+        {[
+          { y: 336, label: 'Unterwerfung' },
+          { y: 371, label: 'Vermeidung / Rückzug' },
+          { y: 406, label: 'Überkompensation' }
+        ].map(p => (
+          <g key={p.label}>
+            <rect x="20" y={p.y} width="260" height="28" rx="14" fill="var(--sage)" opacity="0.18" stroke="var(--sage)" />
+            <text x="150" y={p.y + 19} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--muted-text)">{p.label}</text>
+          </g>
+        ))}
+      </g>
 
-      <text x="520" y="322" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--accent)">ELTERNMODI</text>
-      {[
-        { y: 336, label: 'Strafender Elternteil' },
-        { y: 371, label: 'Fordernder Elternteil' }
-      ].map(p => (
-        <g key={p.label}>
-          <rect x="390" y={p.y} width="260" height="28" rx="14" fill="var(--accent)" opacity="0.22" stroke="var(--accent)" />
-          <text x="520" y={p.y + 19} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--muted-text)">{p.label}</text>
-        </g>
-      ))}
+      <g className="st-enter" style={{ animationDelay: '0.26s' }}>
+        <text x="520" y="322" textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="600" fontSize="13" letterSpacing="0.04em" fill="var(--accent)">ELTERNMODI</text>
+        {[
+          { y: 336, label: 'Strafender Elternteil' },
+          { y: 371, label: 'Fordernder Elternteil' }
+        ].map(p => (
+          <g key={p.label}>
+            <rect x="390" y={p.y} width="260" height="28" rx="14" fill="var(--accent)" opacity="0.22" stroke="var(--accent)" />
+            <text x="520" y={p.y + 19} textAnchor="middle" fontFamily="'Open Sans', sans-serif" fontSize="12" fill="var(--muted-text)">{p.label}</text>
+          </g>
+        ))}
+      </g>
     </svg>
   );
 }
@@ -196,7 +207,7 @@ export default function SchemaTherapie({ initialOpenId }){
         <p style={{ fontFamily: "'Lora', serif", fontSize: '0.88rem', lineHeight: 1.6, margin: '0.6rem 0 0', maxWidth: '760px', opacity: 0.92 }}>
           {DATA.meta.hinweis}
         </p>
-        <div style={{ maxWidth: '640px', margin: '1.2rem auto 0' }}>
+        <div style={{ maxWidth: '1080px', width: '100%', margin: '1.4rem auto 0' }}>
           <ModusModellGrafik />
         </div>
         <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '0.76rem', textAlign: 'center', margin: '0.6rem 0 0', opacity: 0.85 }}>

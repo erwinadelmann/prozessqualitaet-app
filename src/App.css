@@ -466,6 +466,16 @@ button.ghost{
 .chip.kat-chip.st-domain-4.active{ background:var(--accent); border-color:var(--accent); color:#4a3418; }
 .chip.kat-chip.st-domain-5.active{ background:var(--muted); border-color:var(--muted); color:#fff; }
 
+/* Modus-Modell-Grafik, Animation */
+@keyframes stPulseRing{ 0%{ r:60; opacity:0.55; } 100%{ r:104; opacity:0; } }
+@keyframes stFlowDash{ to{ stroke-dashoffset:-24; } }
+.st-pulse-ring{ fill:none; stroke:var(--secondary); stroke-width:2; animation:stPulseRing 2.6s ease-out infinite; }
+.st-pulse-ring.st-delay-1{ animation-delay:0.9s; }
+.st-pulse-ring.st-delay-2{ animation-delay:1.7s; }
+.st-arrow{ stroke-dasharray:6 6; animation:stFlowDash 0.9s linear infinite; }
+.st-enter{ animation:fadeSlideUp 0.7s ease both; }
+.st-center-enter{ animation:fadeSlideUp 0.6s ease 0.15s both; transform-origin:320px 250px; }
+
 /* Karteikarte, bildschirmfüllende Ansicht */
 @keyframes modalFadeIn{ from{ opacity:0; } to{ opacity:1; } }
 @keyframes modalRiseIn{ from{ opacity:0; transform:translateY(14px) scale(0.99); } to{ opacity:1; transform:translateY(0) scale(1); } }
