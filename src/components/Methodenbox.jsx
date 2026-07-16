@@ -262,8 +262,15 @@ function MethodModal({ item, onClose, onPrev, onNext, positionLabel }){
 export default function Methodenbox({ initialOpenId }){
   const [query, setQuery] = useState('');
   const [kategorie, setKategorie] = useState(null);
-  const [openId, setOpenId] = useState(initialOpenId || null);
-  const [openModusId, setOpenModusId] = useState(null);
+  // initialOpenId kann sich auf ein Methodenbox-Element ODER (seit die Kernprozess-Kacheln
+  // den ehemaligen eigenen Tab "Utilisationsprozess" ersetzen) auf einen Modus beziehen.
+  // Sprungziele aus der globalen Suche funktionieren dadurch für beide unverändert weiter.
+  const [openId, setOpenId] = useState(() =>
+    initialOpenId && DATA.elemente.some(e => e.id === initialOpenId) ? initialOpenId : null
+  );
+  const [openModusId, setOpenModusId] = useState(() =>
+    initialOpenId && UP_DATA.modi.some(m => m.id === initialOpenId) ? initialOpenId : null
+  );
 
   const list = useMemo(() => DATA.elemente.filter(item =>
     matches(item, query) && (!kategorie || item.kategorie === kategorie)
@@ -346,6 +353,7 @@ export default function Methodenbox({ initialOpenId }){
 
       {offenesItem && (
         <MethodModal
+          key={offenesItem.id}
           item={offenesItem}
           onClose={close}
           onPrev={() => itemBlaettern(-1)}
@@ -355,6 +363,7 @@ export default function Methodenbox({ initialOpenId }){
       )}
       {offenerModus && (
         <KernprozessModal
+          key={offenerModus.id}
           modus={offenerModus}
           onClose={() => setOpenModusId(null)}
           onPrev={() => modusBlaettern(-1)}

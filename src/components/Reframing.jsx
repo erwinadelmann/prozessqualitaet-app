@@ -236,6 +236,7 @@ export default function Reframing({ initialOpenId }){
 
       {offenesItem && (
         <ReframingModal
+          key={offenesItem.id}
           item={offenesItem}
           onClose={close}
           onPrev={() => blaettern(-1)}

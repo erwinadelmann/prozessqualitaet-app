@@ -34,15 +34,18 @@ function buildIndex(){
     });
   });
 
-  // Reframing
+  // Reframing, Erzählform. Kein eigener Tab mehr, liegt als Umschalter direkt in der
+  // Kartei-Detailansicht desselben Musters (gleiche id), springt dorthin und öffnet
+  // gleich die Erzählform statt der sachlichen Ansicht.
   NARRATIV_DATA.reframings.forEach(r => {
     const m = MUSTER_DATA.muster.find(x => x.id === r.id);
     entries.push({
       key: 'reframing-' + r.id,
-      tab: 'reframing',
+      tab: 'kartei',
       openId: r.id,
+      openView: 'erzaehlform',
       titel: r.titel,
-      kontext: m ? m.kategorie : 'Reframing',
+      kontext: m ? m.kategorie + ' · Erzählform' : 'Kartei · Erzählform',
       snippet: r.einstieg,
       matchText: [r.titel, r.einstieg, r.kernfunktion, ...(r.funktionen || [])].join(' ')
     });
@@ -61,24 +64,27 @@ function buildIndex(){
     });
   });
 
-  // Utilisationsprozess, die drei Modi
+  // Utilisationsprozess, die Kernprozess-Modi. Kein eigener Tab mehr, liegen jetzt als
+  // Kacheln oben in der Methodenbox (dieselbe Datenquelle, siehe Methodenbox.jsx).
   UP_DATA.modi.forEach(modus => {
     entries.push({
       key: 'utilisationsprozess-' + modus.id,
-      tab: 'utilisationsprozess',
+      tab: 'methodenbox',
       openId: modus.id,
       titel: 'Modus ' + modus.nr + ' · ' + modus.titel,
-      kontext: 'Utilisationsprozess',
+      kontext: 'Methodenbox · Kernprozess',
       snippet: modus.kurz,
       matchText: [modus.titel, modus.kurz, modus.wann, ...(modus.phasen || []).map(p => p.titel + ' ' + p.text)].join(' ')
     });
   });
 
-  // EMDR, acht Phasen
+  // EMDR, acht Phasen. Kein eigener Tab mehr, liegt zusammen mit ACT und Inner Game
+  // unter dem Tab "Modelle" (Themen-Umschalter), siehe Modelle.jsx.
   EMDR_DATA.phasen.forEach(phase => {
     entries.push({
       key: 'emdr-' + phase.nr,
-      tab: 'emdr',
+      tab: 'modelle',
+      openThemaId: 'emdr',
       openNr: phase.nr,
       titel: 'EMDR, Phase ' + phase.nr + ' · ' + phase.titel,
       kontext: 'EMDR',
@@ -91,7 +97,8 @@ function buildIndex(){
   ACT_DATA.abschnitte.forEach(abschnitt => {
     entries.push({
       key: 'act-' + abschnitt.id,
-      tab: 'act',
+      tab: 'modelle',
+      openThemaId: 'act',
       openId: abschnitt.id,
       titel: abschnitt.titel,
       kontext: 'ACT, Kognitive Defusion',
@@ -103,7 +110,8 @@ function buildIndex(){
   // Inner Game, ein Eintrag, kein Deep-Link, springt nur auf den Tab
   entries.push({
     key: 'innergame',
-    tab: 'innergame',
+    tab: 'modelle',
+    openThemaId: 'innergame',
     titel: 'Inner Game, Umlenkung in drei Schritten',
     kontext: 'Inner Game',
     snippet: INNER_GAME.reminder,

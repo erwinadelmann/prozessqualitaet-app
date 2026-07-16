@@ -3,7 +3,7 @@ import DATA from '../data/muster.json';
 import NARRATIV_DATA from '../data/reframing-narrativ.json';
 import ScrollTopButton from './ScrollTopButton.jsx';
 
-const narrativIds = new Set(NARRATIV_DATA.reframings.map(r => r.id));
+const narrativById = new Map(NARRATIV_DATA.reframings.map(r => [r.id, r]));
 
 const KATEGORIE_CLASS = {
   'Beziehung & Bindung': 'kk-beziehung',
@@ -57,8 +57,10 @@ function MusterCard({ item, isOpen, onOpen }){
   );
 }
 
-function MusterModal({ item, onClose, onOpenReframing, onPrev, onNext, positionLabel }){
+function MusterModal({ item, onClose, onPrev, onNext, positionLabel, initialAnsicht }){
   const modalRef = useRef(null);
+  const n = narrativById.get(item.id);
+  const [ansicht, setAnsicht] = useState(initialAnsicht === 'erzaehlform' && n ? 'erzaehlform' : 'sachlich');
 
   useEffect(() => {
     const onKey = e => {
@@ -110,72 +112,109 @@ function MusterModal({ item, onClose, onOpenReframing, onPrev, onNext, positionL
               <span className="anteil-neu">{item.anteil_neu}</span>
             </div>
             <p className="anteil-hinweis">Vorschlag, kein feststehender Begriff. Prüfen Sie, ob ein anderes Bild für Sie stimmiger ist.</p>
-            {onOpenReframing && narrativIds.has(item.id) && (
-              <button
-                className="reframing-link"
-                onClick={() => onOpenReframing(item.id)}
-              >
-                Zum Reframing „{item.anteil_alt}" lesen
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
+            {n && (
+              <div className="chip-grid" style={{ marginTop: '0.8rem' }}>
+                <button className={'chip' + (ansicht === 'sachlich' ? ' active' : '')} onClick={() => setAnsicht('sachlich')}>Sachlich</button>
+                <button className={'chip' + (ansicht === 'erzaehlform' ? ' active' : '')} onClick={() => setAnsicht('erzaehlform')}>Erzählform</button>
+              </div>
             )}
           </div>
 
           <div className="card-modal-body">
-            <div className="details">
-              <div className="block">
-                <h4>Ursprungsintention</h4>
-                <p>{item.ursprungsintention}</p>
+            {ansicht === 'erzaehlform' && n ? (
+              <div className="details">
+                <p className="narrativ-untertitel">{NARRATIV_DATA.meta.untertitel_standard}</p>
+                <p className="narrativ-einstieg">{n.einstieg}</p>
+
+                <div className="block kernfunktion-block">
+                  <h4>Kernfunktion</h4>
+                  <p>{n.kernfunktion}</p>
+                </div>
+
+                <div className="block">
+                  <h4>Was sich dahinter verbirgt</h4>
+                  <ol className="funktionen-list">
+                    {n.funktionen.map((f, i) => <li key={i}>{f}</li>)}
+                  </ol>
+                </div>
+
+                {item.erklaerung && (
+                  <div className="block erklaerung-block">
+                    <h4>Zum besseren Verständnis</h4>
+                    <p>{item.erklaerung}</p>
+                  </div>
+                )}
+
+                <div className="block wofuer-block">
+                  <h4>Die Frage, die weiterführt</h4>
+                  <p>{n.wofuer_frage}</p>
+                </div>
+
+                <div className="block einladung-block">
+                  <p className="einladung-frage">{NARRATIV_DATA.meta.einladung_frage}</p>
+                  <ol className="einladung-schritte">
+                    {NARRATIV_DATA.meta.einladung_schritte.map((s, i) => (
+                      <li key={i}><strong>{i + 1} · </strong>{s}</li>
+                    ))}
+                  </ol>
+                </div>
               </div>
-              <div className="block">
-                <h4>Schutzfunktion</h4>
-                <p>{item.schutzfunktion}</p>
-              </div>
-              {item.sehnsuchtsziel && (
-                <div className="block sehnsuchtsziel-block">
-                  <h4>Sehnsuchtsziel</h4>
-                  <p>{item.sehnsuchtsziel}</p>
+            ) : (
+              <div className="details">
+                <div className="block">
+                  <h4>Ursprungsintention</h4>
+                  <p>{item.ursprungsintention}</p>
                 </div>
-              )}
-              {item.erklaerung && (
-                <div className="block erklaerung-block">
-                  <h4>Zum besseren Verständnis</h4>
-                  <p>{item.erklaerung}</p>
+                <div className="block">
+                  <h4>Schutzfunktion</h4>
+                  <p>{item.schutzfunktion}</p>
                 </div>
-              )}
-              {item.wuerdigung && (
-                <div className="block wuerdigung-block">
-                  <h4>Würdigung</h4>
-                  <p>{item.wuerdigung}</p>
-                </div>
-              )}
-              {item.ssi_zwischenschritt && (
+                {item.sehnsuchtsziel && (
+                  <div className="block sehnsuchtsziel-block">
+                    <h4>Sehnsuchtsziel</h4>
+                    <p>{item.sehnsuchtsziel}</p>
+                  </div>
+                )}
+                {item.erklaerung && (
+                  <div className="block erklaerung-block">
+                    <h4>Zum besseren Verständnis</h4>
+                    <p>{item.erklaerung}</p>
+                  </div>
+                )}
+                {item.wuerdigung && (
+                  <div className="block wuerdigung-block">
+                    <h4>Würdigung</h4>
+                    <p>{item.wuerdigung}</p>
+                  </div>
+                )}
+                {item.ssi_zwischenschritt && (
+                  <div className="block steps">
+                    <h4>Zwischenschritt, Systemische Selbstintegration nach Langlotz</h4>
+                    <p>{item.ssi_zwischenschritt}</p>
+                  </div>
+                )}
                 <div className="block steps">
-                  <h4>Zwischenschritt, Systemische Selbstintegration nach Langlotz</h4>
-                  <p>{item.ssi_zwischenschritt}</p>
+                  <h4>Umlenkung als {item.anteil_neu}, Inner Game in drei Schritten</h4>
+                  <ol>
+                    <li><strong>1 · Wahrnehmen</strong>{item.schritt1}</li>
+                    <li><strong>2 · Dem wahren Selbst anvertrauen, mit der Bitte, es zu erfüllen</strong>{item.schritt2}</li>
+                    <li><strong>3 · Lernen ohne Selbstkritik</strong>{item.schritt3}</li>
+                  </ol>
                 </div>
-              )}
-              <div className="block steps">
-                <h4>Umlenkung als {item.anteil_neu}, Inner Game in drei Schritten</h4>
-                <ol>
-                  <li><strong>1 · Wahrnehmen</strong>{item.schritt1}</li>
-                  <li><strong>2 · Dem wahren Selbst anvertrauen, mit der Bitte, es zu erfüllen</strong>{item.schritt2}</li>
-                  <li><strong>3 · Lernen ohne Selbstkritik</strong>{item.schritt3}</li>
-                </ol>
+                {item.embodiment_frage && (
+                  <div className="block embodiment-block">
+                    <h4>Embodiment, somatische Marker</h4>
+                    <p>{item.embodiment_frage}</p>
+                  </div>
+                )}
+                {item.methodenverweis && (
+                  <div className="block methodenverweis-block">
+                    <h4>Vertiefung, welche Methoden hier konkret helfen können</h4>
+                    <p>{item.methodenverweis}</p>
+                  </div>
+                )}
               </div>
-              {item.embodiment_frage && (
-                <div className="block embodiment-block">
-                  <h4>Embodiment, somatische Marker</h4>
-                  <p>{item.embodiment_frage}</p>
-                </div>
-              )}
-              {item.methodenverweis && (
-                <div className="block methodenverweis-block">
-                  <h4>Vertiefung, welche Methoden hier konkret helfen können</h4>
-                  <p>{item.methodenverweis}</p>
-                </div>
-              )}
-            </div>
+            )}
           </div>
         </div>
       </div>
@@ -183,7 +222,7 @@ function MusterModal({ item, onClose, onOpenReframing, onPrev, onNext, positionL
   );
 }
 
-export default function Kartei({ onOpenReframing, initialOpenId }){
+export default function Kartei({ initialOpenId, initialAnsicht }){
   const [query, setQuery] = useState('');
   const [kategorie, setKategorie] = useState(null);
   const [openId, setOpenId] = useState(initialOpenId || null);
@@ -285,12 +324,13 @@ export default function Kartei({ onOpenReframing, initialOpenId }){
 
       {offenesItem && (
         <MusterModal
+          key={offenesItem.id}
           item={offenesItem}
           onClose={close}
-          onOpenReframing={onOpenReframing}
           onPrev={() => blaettern(-1)}
           onNext={() => blaettern(1)}
           positionLabel={navIndex !== -1 ? `${navIndex + 1} / ${navList.length}` : null}
+          initialAnsicht={offenesItem.id === initialOpenId ? initialAnsicht : undefined}
         />
       )}
     </>
