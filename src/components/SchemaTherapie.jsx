@@ -24,6 +24,121 @@ function matches(item, query){
 
 const MM = DATA.modusmodell;
 const G = id => MM.gruppen.find(g => g.id === id);
+const UE = DATA.uebersicht;
+
+// Einfache, robuste Strich-Icons für die Prozessleiste, bewusst ohne komplexe
+// Bezier-Pfade (Lupe, Glühbirne mit Herz, Baum, Ziel, zwei Zahnräder via
+// strokeDasharray). 24x24-Raster, weiß, passend zum dunklen Hero-Hintergrund.
+function StepIcon({ type }){
+  const stroke = { stroke: '#fff', strokeWidth: 1.7, fill: 'none', strokeLinecap: 'round', strokeLinejoin: 'round' };
+  switch(type){
+    case 'lupe':
+      return (
+        <g {...stroke}>
+          <circle cx="10" cy="10" r="6.4" />
+          <ellipse cx="10" cy="10" rx="3.1" ry="1.7" />
+          <circle cx="10" cy="10" r="0.9" fill="#fff" stroke="none" />
+          <line x1="14.7" y1="14.7" x2="20.4" y2="20.4" />
+        </g>
+      );
+    case 'gluehbirne':
+      return (
+        <g>
+          <g {...stroke}>
+            <circle cx="12" cy="9.5" r="5.4" />
+            <path d="M9.6,17.3 h4.8" />
+            <path d="M10.1,19.6 h3.8" />
+            <line x1="12" y1="1.8" x2="12" y2="3.4" />
+            <line x1="4.4" y1="9.5" x2="6" y2="9.5" />
+            <line x1="18" y1="9.5" x2="19.6" y2="9.5" />
+            <line x1="6.3" y1="3.7" x2="7.5" y2="4.9" />
+            <line x1="17.7" y1="3.7" x2="16.5" y2="4.9" />
+          </g>
+          <text x="12" y="12" textAnchor="middle" fontSize="6.5" fill="#fff">♥</text>
+        </g>
+      );
+    case 'baum':
+      return (
+        <g {...stroke}>
+          <circle cx="12" cy="7.6" r="4.6" />
+          <circle cx="8.2" cy="10.3" r="3.3" />
+          <circle cx="15.8" cy="10.3" r="3.3" />
+          <line x1="12" y1="13.6" x2="12" y2="21" />
+        </g>
+      );
+    case 'ziel':
+      return (
+        <g {...stroke}>
+          <circle cx="12" cy="12" r="7.6" />
+          <circle cx="12" cy="12" r="4.2" />
+          <polyline points="8.4,12.4 11,15.4 16.2,9" />
+        </g>
+      );
+    case 'zahnraeder':
+      return (
+        <g fill="none" strokeLinecap="round" stroke="#fff">
+          <circle cx="8.6" cy="9" r="4.6" strokeWidth="2.2" strokeDasharray="2 1.7" />
+          <circle cx="8.6" cy="9" r="1.6" strokeWidth="1.4" />
+          <circle cx="16.2" cy="16" r="3.6" strokeWidth="2" strokeDasharray="1.7 1.4" />
+          <circle cx="16.2" cy="16" r="1.2" strokeWidth="1.2" />
+        </g>
+      );
+    default:
+      return null;
+  }
+}
+
+const PL_FARBEN = ['var(--secondary)', 'var(--sage)', 'var(--accent)', 'var(--muted)', 'var(--terracotta)'];
+
+// Attraktive Pfeilleiste für die Header-Leiste: fünf eigenständige Pfeil-Segmente
+// (kein Bild, native SVG, bleibt bei jeder Bildschirmgröße gestochen scharf),
+// Marken-Farbverlauf von Secondary bis Terracotta, halbtransparent wie die
+// übrigen Pillen im Modus-Modell darüber, damit es sich in den dunklen Hero einfügt.
+function ProzessLeiste(){
+  const schritte = DATA.prozessleiste.schritte;
+  const segW = 168, gap = 20, tip = 22, h = 46, y = 90;
+  const startX = 20;
+  const viewW = startX * 2 + schritte.length * segW + (schritte.length - 1) * gap + tip;
+
+  return (
+    <div style={{ margin: '1.5rem auto 0', maxWidth: '1080px', width: '100%' }}>
+      <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--secondary)', textAlign: 'center', margin: '0 0 0.6rem' }}>
+        {DATA.prozessleiste.hinweis}
+      </p>
+      <svg viewBox={`0 0 ${viewW} 148`} role="img" aria-label={'Fünf Schritte: ' + schritte.map(s => s.name).join(', ')} style={{ width: '100%', height: 'auto' }}>
+        <title>Prozessleiste, fünf Schritte</title>
+        {schritte.map((s, i) => {
+          const x = startX + i * (segW + gap);
+          const cx = x + segW / 2;
+          const farbe = PL_FARBEN[i % PL_FARBEN.length];
+          const points = [
+            [x, y], [x + segW, y], [x + segW + tip, y + h / 2],
+            [x + segW, y + h], [x, y + h]
+          ].map(p => p.join(',')).join(' ');
+          const zweizeilig = s.name.length > 14 && s.name.includes(' ');
+          const teile = zweizeilig ? s.name.split(' ') : [s.name];
+          return (
+            <g key={s.id}>
+              <title>{s.name}: {s.beschreibung}</title>
+              <g transform={`translate(${cx - 12}, 8)`}>
+                <StepIcon type={s.icon} />
+              </g>
+              <polygon points={points} fill={farbe} opacity="0.4" stroke={farbe} strokeWidth="1.5" />
+              {zweizeilig ? (
+                <>
+                  <text x={cx} y={y + h / 2 - 2} textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="12.5" fill="#fff">{teile[0]}</text>
+                  <text x={cx} y={y + h / 2 + 13} textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="12.5" fill="#fff">{teile.slice(1).join(' ')}</text>
+                </>
+              ) : (
+                <text x={cx} y={y + h / 2 + 5} textAnchor="middle" fontFamily="'Montserrat', sans-serif" fontWeight="700" fontSize="13" fill="#fff">{s.name}</text>
+              )}
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}
 
 // Kreisdiagramm des Schema-Modus-Modells: belastete Kindmodi und der gesunde Kindmodus
 // deutlich getrennt (unterschiedliche Farbe, eigene Beschriftung), Bewältigungsmodi und
@@ -198,6 +313,135 @@ function ModusModellGrafik(){
   );
 }
 
+// Kleine, wiederverwendete Karte für die Übersicht: weißer Hintergrund, dünner
+// Rahmen, wie die übrigen Karten der App, hier bewusst inline gestylt statt
+// neuer globaler CSS-Klassen, gleiche Konvention wie der Hero oben in dieser Datei.
+function UeCard({ titel, text, farbe }){
+  return (
+    <div style={{
+      background: 'var(--card-bg)', border: '1px solid #e3e7e6',
+      borderLeft: '4px solid ' + (farbe || 'var(--sage)'), borderRadius: '8px',
+      padding: '0.9rem 1.05rem', minHeight: '100%'
+    }}>
+      <p style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: '0.92rem', color: 'var(--ink)', margin: '0 0 0.3rem' }}>{titel}</p>
+      {text && <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '0.82rem', lineHeight: 1.5, color: 'var(--muted-text)', margin: 0 }}>{text}</p>}
+    </div>
+  );
+}
+
+function UeGrid({ children, min }){
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: `repeat(auto-fit, minmax(${min || 190}px, 1fr))`, gap: '0.8rem' }}>
+      {children}
+    </div>
+  );
+}
+
+// Native Nachbildung der hochgeladenen Infografik, unterhalb des interaktiven
+// Modus-Modells: Ziel, Grundbedürfnisse, Bewältigungsstile, therapeutische
+// Haltung, zentrale Interventionen, hypnosystemische Ergänzungen, Weg der
+// Veränderung, Leitgedanken. Bewusst getrennt von der Pfeilleiste im Header
+// (andere fünf Schritte, siehe prozessleiste vs. weg_der_veraenderung in
+// schema-therapie.json), keine Vermischung der beiden Fünf-Schritte-Modelle.
+function SchemaUebersicht(){
+  return (
+    <div style={{ maxWidth: 'var(--content-max)', margin: '0 auto', padding: '0 1.5rem 0.6rem' }}>
+
+      <div style={{
+        background: 'linear-gradient(120deg, #fff 0%, #f2f7f6 100%)', border: '1px solid var(--sage)',
+        borderLeft: '5px solid var(--primary)', borderRadius: '10px', padding: '1.2rem 1.4rem', marginBottom: '1.6rem'
+      }}>
+        <p className="fokus-section-label" style={{ margin: '0 0 0.4rem' }}>Ziel</p>
+        <p style={{ fontFamily: "'Lora', serif", fontSize: '1rem', lineHeight: 1.6, margin: 0, color: 'var(--ink)' }}>{UE.ziel}</p>
+      </div>
+
+      <p className="fokus-section-label">Grundbedürfnisse</p>
+      <div style={{ marginBottom: '1.8rem' }}>
+        <UeGrid>
+          {UE.grundbeduerfnisse.map(g => <UeCard key={g.id} titel={g.name} text={g.beschreibung} farbe="var(--primary)" />)}
+        </UeGrid>
+      </div>
+
+      <p className="fokus-section-label">3 Bewältigungsstile</p>
+      <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '0.78rem', color: 'var(--muted-text)', margin: '-0.4rem 0 0.7rem' }}>{UE.bewaeltigungsstile_hinweis}</p>
+      <div style={{ marginBottom: '1.8rem' }}>
+        <UeGrid min={220}>
+          {UE.bewaeltigungsstile.map(b => <UeCard key={b.id} titel={b.name} text={b.beschreibung} farbe="var(--muted)" />)}
+        </UeGrid>
+      </div>
+
+      <p className="fokus-section-label">Therapeutische Haltung</p>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.55rem', marginBottom: '1.8rem' }}>
+        {UE.therapeutische_haltung.map(t => (
+          <span key={t.id} style={{
+            fontFamily: "'Montserrat', sans-serif", fontWeight: 600, fontSize: '0.85rem',
+            color: '#fff', background: 'var(--sage)', borderRadius: '999px', padding: '0.4rem 0.95rem'
+          }}>{t.name}</span>
+        ))}
+      </div>
+
+      <p className="fokus-section-label">Zentrale Interventionen</p>
+      <div style={{ marginBottom: '1.8rem' }}>
+        <UeGrid>
+          {UE.zentrale_interventionen.map(z => <UeCard key={z.id} titel={z.name} text={z.beschreibung} farbe="var(--accent)" />)}
+        </UeGrid>
+      </div>
+
+      <p className="fokus-section-label">Hypnosystemische Ergänzungen</p>
+      <div style={{ marginBottom: '1.8rem' }}>
+        <UeGrid>
+          {UE.hypnosystemische_ergaenzungen.map(h => <UeCard key={h.id} titel={h.name} text={h.beschreibung} farbe="var(--terracotta)" />)}
+        </UeGrid>
+      </div>
+
+      <p className="fokus-section-label">Der Weg der Veränderung</p>
+      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'stretch', gap: '0.5rem', marginBottom: '1.8rem' }}>
+        {UE.weg_der_veraenderung.map((w, i) => (
+          <div key={w.id} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <div style={{
+              background: 'var(--card-bg)', border: '1px solid #e3e7e6', borderRadius: '8px',
+              padding: '0.7rem 0.9rem', minWidth: '150px'
+            }}>
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                width: '1.5rem', height: '1.5rem', borderRadius: '50%', background: 'var(--primary)',
+                color: '#fff', fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: '0.78rem', marginRight: '0.5rem'
+              }}>{i + 1}</span>
+              <strong style={{ fontFamily: "'Montserrat', sans-serif", fontSize: '0.88rem', color: 'var(--ink)' }}>{w.name}</strong>
+              <p style={{ fontFamily: "'Open Sans', sans-serif", fontSize: '0.78rem', color: 'var(--muted-text)', margin: '0.25rem 0 0 2rem' }}>{w.beschreibung}</p>
+            </div>
+            {i < UE.weg_der_veraenderung.length - 1 && (
+              <span style={{ color: 'var(--sage)', fontSize: '1.3rem', lineHeight: 1 }}>→</span>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <p className="fokus-section-label">Leitgedanken</p>
+      <ul style={{ listStyle: 'none', margin: '0 0 1.8rem', padding: 0, display: 'grid', gap: '0.5rem' }}>
+        {UE.leitgedanken.map((l, i) => (
+          <li key={i} style={{
+            fontFamily: "'Lora', serif", fontStyle: 'italic', fontSize: '0.95rem', color: 'var(--ink)',
+            paddingLeft: '1.4rem', position: 'relative'
+          }}>
+            <span style={{ position: 'absolute', left: 0, color: 'var(--terracotta)' }}>♥</span>
+            {l}
+          </li>
+        ))}
+      </ul>
+
+      <div style={{
+        background: 'linear-gradient(135deg, var(--sage) 0%, var(--primary) 130%)', borderRadius: '14px',
+        padding: '1.4rem 1.6rem', textAlign: 'center'
+      }}>
+        <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontWeight: 700, fontSize: '1.15rem', lineHeight: 1.5, color: '#fff', margin: 0 }}>
+          {UE.schlusssatz}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function SchemaCard({ item, isOpen, onOpen }){
   return (
     <div
@@ -314,10 +558,13 @@ export default function SchemaTherapie({ initialOpenId }){
         <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontStyle: 'italic', fontSize: '1.3rem', lineHeight: 1.5, textAlign: 'center', margin: '1.3rem auto 0', maxWidth: '820px', color: '#fff' }}>
           Modus-Modell, vereinfacht. Ziel ist ein gestärkter gesunder Erwachsener, der Kindanteile würdigt und Eltern-/Bewältigungsmodi beruhigt statt sie auszuspielen.
         </p>
+        <ProzessLeiste />
         <div style={{ maxWidth: '1080px', width: '100%', margin: '1.2rem auto 0' }}>
           <ModusModellGrafik />
         </div>
       </div>
+
+      <SchemaUebersicht />
 
       <div className="picker-wrap">
         <p className="picker-label">Schema-Therapie · nach Domäne filtern</p>

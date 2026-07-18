@@ -122,6 +122,69 @@
       "beschreibung": "Überzeugung, dass Menschen, einschließlich der eigenen Person, für Fehler hart bestraft werden sollten, verbunden mit geringer Bereitschaft zu Nachsicht."
     }
   ],
+  "prozessleiste": {
+    "hinweis": "Der Ablauf einer Schema-Modus-Arbeit in fünf Schritten.",
+    "quelle": "Eigene Ergänzung von Erwin Adelmann, orientiert am Inner-Game-Dreischritt und der hypnosystemischen Utilisation.",
+    "schritte": [
+      { "id": "wahrnehmen", "name": "Wahrnehmen", "icon": "lupe", "beschreibung": "Den gerade aktiven Modus erkennen, ohne ihn sofort zu bewerten." },
+      { "id": "verstehen", "name": "Verstehen", "icon": "gluehbirne", "beschreibung": "Die Ursprungsintention und Schutzfunktion des Modus würdigen." },
+      { "id": "ressourcen_aktivieren", "name": "Ressourcen aktivieren", "icon": "baum", "beschreibung": "Körper, Sinne und innere Bilder als Kraftquellen nutzen." },
+      { "id": "entscheiden", "name": "Entscheiden", "icon": "ziel", "beschreibung": "Dem wahren Selbst eine neue Verhaltenswahl anvertrauen." },
+      { "id": "integrieren", "name": "Integrieren", "icon": "zahnraeder", "beschreibung": "Den gesunden Erwachsenen stärken, ohne Selbstkritik aus dem Ergebnis lernen." }
+    ]
+  },
+  "uebersicht": {
+    "ziel": "Ein erfülltes Leben mit Lebendigkeit, Verbindung und Selbstwirksamkeit. Der gesunde Erwachsene führt, unterstützt von mitfühlenden inneren Anteilen.",
+    "grundbeduerfnisse": [
+      { "id": "bindung", "name": "Sichere Bindung", "beschreibung": "Stabile, verlässliche Beziehungen erleben." },
+      { "id": "autonomie_kompetenz", "name": "Autonomie & Kompetenz", "beschreibung": "Selbst bestimmen und wirksam sein." },
+      { "id": "freiheit_grenzen", "name": "Freiheit & Grenzen", "beschreibung": "Eigene Grenzen spüren und wahren." },
+      { "id": "spontaneitaet_spiel", "name": "Spontaneität & Spiel", "beschreibung": "Lebendigkeit, Freude und Leichtigkeit." },
+      { "id": "realistische_grenzen", "name": "Realistische Grenzen", "beschreibung": "Angemessene Grenzen und Struktur." },
+      { "id": "selbstwert_akzeptanz", "name": "Selbstwert & Akzeptanz", "beschreibung": "Sich selbst annehmen und wertschätzen." }
+    ],
+    "bewaeltigungsstile_hinweis": "Dieselben drei dysfunktionalen Bewältigungsmodi aus dem Modell oben, hier als übergeordnete Strategie-Familien betrachtet, nicht als vierte Klassifikation.",
+    "bewaeltigungsstile": [
+      { "id": "ergebung", "modus_id": "unterwerfung", "name": "Ergebung", "beschreibung": "Anpassung an Schemata und Bedürfnisse anderer, Unterdrückung eigener Bedürfnisse." },
+      { "id": "vermeidung", "modus_id": "vermeidung_rueckzug", "name": "Vermeidung", "beschreibung": "Vermeidung von Gefühlen, Erinnerungen und Verantwortung." },
+      { "id": "ueberkompensation_stil", "modus_id": "ueberkompensation", "name": "Überkompensation", "beschreibung": "Übertriebene Kontrolle und Leistung, um Schwäche und Bedürfnisse zu überspielen." }
+    ],
+    "therapeutische_haltung": [
+      { "id": "begrenzen", "name": "Begrenzen" },
+      { "id": "mitgefuehl", "name": "Mitgefühl" },
+      { "id": "validieren", "name": "Validieren" },
+      { "id": "konfrontieren", "name": "Konfrontieren" },
+      { "id": "ermutigen", "name": "Ermutigen" }
+    ],
+    "zentrale_interventionen": [
+      { "id": "modus_fokussierung", "name": "Modus-Fokussierung", "beschreibung": "Erkennen und verstehen, welcher Modus gerade aktiv ist." },
+      { "id": "beduerfnisse_entwickeln", "name": "Bedürfnisse entwickeln", "beschreibung": "Unerfüllte Bedürfnisse erkennen und versorgen." },
+      { "id": "neue_erfahrungen_schaffen", "name": "Neue Erfahrungen schaffen", "beschreibung": "Heilsame Beziehung und korrigierende Erfahrungen." },
+      { "id": "verhalten_aendern", "name": "Verhalten ändern", "beschreibung": "Neue, gesunde Strategien einüben." },
+      { "id": "integration_intervention", "name": "Integration", "beschreibung": "Stärkung des gesunden Erwachsenen und innere Balance." }
+    ],
+    "hypnosystemische_ergaenzungen": [
+      { "id": "aufmerksamkeitslenkung", "name": "Aufmerksamkeitslenkung", "beschreibung": "Wohin die Aufmerksamkeit geht, dort entsteht Erfahrung." },
+      { "id": "utilisation_ergaenzung", "name": "Utilisation", "beschreibung": "Alte Muster würdigen, Schutz und positive Absicht verstehen und für Veränderung nutzen." },
+      { "id": "ressourcen_aktivieren_ergaenzung", "name": "Ressourcen aktivieren", "beschreibung": "Körper, Sinne und innere Bilder als Kraftquellen nutzen." },
+      { "id": "selbstfuehrung_staerken", "name": "Selbstführung stärken", "beschreibung": "Der gesunde Erwachsene übernimmt Schritt für Schritt die Führung." }
+    ],
+    "weg_der_veraenderung": [
+      { "id": "verstehen_weg", "name": "Verstehen", "beschreibung": "Muster und Modi erkennen." },
+      { "id": "fuehlen_weg", "name": "Fühlen", "beschreibung": "Gefühle zulassen und annehmen." },
+      { "id": "versorgen_weg", "name": "Versorgen", "beschreibung": "Bedürfnisse erfüllen und schützen." },
+      { "id": "veraendern_weg", "name": "Verändern", "beschreibung": "Neue Erfahrungen und Entscheidungen." },
+      { "id": "wachsen_weg", "name": "Wachsen", "beschreibung": "Ein selbstbestimmtes, erfülltes Leben führen." }
+    ],
+    "leitgedanken": [
+      "Sie sind nicht Ihre Modi. Sie sind viel mehr.",
+      "Jeder Modus hat eine positive Absicht.",
+      "Mit Mitgefühl entsteht Veränderung.",
+      "Kleine Schritte führen zu großer Veränderung.",
+      "Heilung ist ein Prozess. Seien Sie geduldig mit sich."
+    ],
+    "schlusssatz": "Heilung ist, sich selbst die Liebe zu geben, die man als Kind gebraucht hätte."
+  },
   "modusmodell": {
     "hinweis": "Schemata aktivieren Schema-Modi, momentane innere Zustände. Ziel der Schema-Therapie ist ein gestärkter, handlungsfähiger gesunder Erwachsenenmodus. Kindmodi sind hier bewusst in belastete (maladaptive) und gesunde Ausprägung getrennt, das entspricht dem Modell nach Young/Klosko/Weishaar, wird aber oft ungenau in einen Topf geworfen.",
     "gruppen": [
