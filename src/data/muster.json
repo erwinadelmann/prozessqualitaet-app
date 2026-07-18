@@ -145,6 +145,20 @@
       "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Aufrechte am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
+      "id": "groll_nachtragendes_verhalten",
+      "muster": "Groll und nachtragendes Verhalten",
+      "kategorie": "Emotionsregulation & Schutz",
+      "anteil_alt": "der Grollende",
+      "anteil_neu": "der Glimmende",
+      "ursprungsintention": "Eine erlittene Ungerechtigkeit oder Kränkung, die im Moment nicht offen angesprochen oder abgewehrt werden konnte, weil das zu riskant, aussichtslos oder gar nicht möglich war.",
+      "schutzfunktion": "Wachhalten der Kränkung, damit sie nicht stillschweigend als in Ordnung hingenommen wird, ein verzögerter, innerer Protest, wo der offene ausblieb.",
+      "schritt1": "Wahrnehmen, an welcher Stelle im Körper der Groll gerade spürbar ist und welche konkrete Erinnerung er festhält, ohne das sofort auflösen zu wollen.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, die Kränkung einmal offen auszusprechen oder auf andere Weise wirksam zu bearbeiten, statt sie nur innerlich weiterzutragen, mit der Bitte, es zu erfüllen. Ergänzende Prozessfrage an den Glimmenden selbst: Wie müsstest du anders mit mir umgehen, damit die Kränkung ausgesprochen werden kann, statt nur gehalten zu werden? Miniinterventionen einsetzen, damit der Abstand zwischen Schwelen und Aussprechen kleiner wird, bis beide zusammenarbeiten können. Danach loslassen, wie die Kränkung tatsächlich verarbeitet wird.",
+      "schritt3": "Ohne Selbstkritik beobachten, was sich verändert, wenn die gehaltene Glut einmal ausgesprochen statt nur weitergetragen wird.",
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird der Grollende ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Glimmende übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Glimmende am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
+    },
+    {
       "id": "erstarren_dissoziation",
       "muster": "Erstarren und Dissoziation",
       "kategorie": "Emotionsregulation & Schutz",
@@ -205,15 +219,15 @@
       "muster": "Opferhaltung",
       "kategorie": "Verantwortung & Selbstwirksamkeit",
       "anteil_alt": "das Opfer",
-      "anteil_neu": "der Anpassungsprofi",
+      "anteil_neu": "der Bewegliche",
       "ursprungsintention": "Kindliche Prägung in einem Umfeld, in dem eigenes Handeln wenig bewirkte oder Eigenverantwortung mit Schuldzuweisung beantwortet wurde. Die Position der Ohnmacht war die ehrlichste und zugleich sicherste verfügbare Position.",
       "schutzfunktion": "Ein falsches Selbst entsteht, das eigene Handlungsspielräume dauerhaft übersieht, um sich nicht erneut der Last der Verantwortung oder der Schuldzuweisung auszusetzen. Bis heute wirkt diese Übersicht als unwillkürlicher Reflex, stärker als jede bewusste Absicht zur Wirksamkeit.",
       "schritt1": "Wahrnehmen, an welcher Stelle die Ursache gerade ganz nach außen verlegt wird, ohne das zu bewerten.",
-      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, tatsächlich verfügbaren Handlungsspielraums, mit der Bitte, genau diesen zu nutzen. Ergänzende Prozessfrage an den Anpassungsprofi selbst: Wie müsstest du anders mit mir umgehen, damit ein kleiner Spielraum bereits als Wirksamkeit zählt? Miniinterventionen einsetzen, damit der Abstand zwischen Ohnmacht und Handlungsspielraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
+      "schritt2": "Dem wahren Selbst ein mehrkanaliges Bild anvertrauen, mit allen Sinneskanälen, Embodiment eingeschlossen, eines kleinen, tatsächlich verfügbaren Handlungsspielraums, mit der Bitte, genau diesen zu nutzen. Ergänzende Prozessfrage an den Beweglichen selbst: Wie müsstest du anders mit mir umgehen, damit ein kleiner Spielraum bereits als Wirksamkeit zählt? Miniinterventionen einsetzen, damit der Abstand zwischen Ohnmacht und Handlungsspielraum kleiner wird, bis beide zusammenarbeiten können. Danach loslassen.",
       "schritt3": "Ohne Selbstkritik beobachten, was die Nutzung dieses kleinen Spielraums bewirkt hat.",
       "ssi_zwischenschritt": "Zwischenschritt, Systemische Selbstintegration nach Langlotz, \"Klar Schiff machen\". Vor der Umlenkung über Inner Game zuerst Kontakt zum wahren Selbst herstellen und eine erste Abgrenzungsfähigkeit gegenüber der verinnerlichten Überzeugung aufbauen, dass Handeln ohnehin nichts bewirkt oder bestraft wird. Als körperlicher Ausdruck dieses Übergangs eignet sich eine bewusste, symbolische Verbeugung vor dem eigenen wahren Selbst, anstelle der bisherigen unwillkürlichen Verbeugung vor dem Bewältigungsmuster. Erst wenn dieser Kontakt und diese Abgrenzung tragfähig sind, folgt der Inner-Game-Schritt.",
-      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird das Opfer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Anpassungsprofi übernehmen darf, nicht deren Vorstufe.",
-      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Anpassungsprofi am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
+      "wuerdigung": "Bevor eine neue Verhaltenswahl beginnt, wird das Opfer ausdrücklich für seine Funktion gewürdigt, als beste verfügbare Lösung angesichts der Ursprungsintention und der Schutzfunktion, seines Beitrags zur Bedürfniserfüllung und Regulation. Diese Würdigung ist die Voraussetzung dafür, dass der Bewegliche übernehmen darf, nicht deren Vorstufe.",
+      "embodiment_frage": "Wie gehen Sie, wie stehen Sie, wie atmen Sie, wie bewegen Sie sich, wenn der Bewegliche am Steuer ist? Im eigenen Erfahrungsrepertoire eine Ausnahme suchen, in der das schon einmal, und sei es kurz, spürbar war, und genau diese Körperhaltung jetzt bewusst einnehmen."
     },
     {
       "id": "gruebeln_rumination",
