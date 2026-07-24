@@ -118,6 +118,10 @@ function LanglotzModal({ item, onClose, onPrev, onNext, positionLabel }){
                     {block.titel && <p className="langlotz-kasten-titel">{block.titel}</p>}
                     <p>{block.text}</p>
                   </div>
+                ) : block.typ === 'vers' ? (
+                  <div className="block langlotz-vers" key={i}>
+                    <p>{block.text}</p>
+                  </div>
                 ) : (
                   <div className="block" key={i}>
                     <p>{block.text}</p>

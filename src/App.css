@@ -583,6 +583,11 @@ button.ghost{
   border-radius:8px; padding:0.9rem 1.1rem; margin:0.9rem 0; font-style:italic;
 }
 .langlotz-kasten-titel{ font-style:normal; font-weight:600; margin:0 0 0.4rem; color:var(--ink); }
+.langlotz-kasten p{ white-space:pre-line; }
+.langlotz-vers p{
+  white-space:pre-line; font-family:'Playfair Display', serif; font-style:italic;
+  line-height:1.7; color:var(--ink);
+}
 
 /* Modus-Modell-Grafik, Animation */
 @keyframes stPulseRing{ 0%{ r:60; opacity:0.55; } 100%{ r:104; opacity:0; } }

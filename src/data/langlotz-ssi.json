@@ -64,6 +64,20 @@
       ],
       "kernaussage": "Ein früh verinnerlichtes Trauma-Introjekt ist kein bleibender Teil der Identität, sondern lässt sich rückgängig machen. Das war für Langlotz selbst eine neue Erkenntnis und die Voraussetzung für ein selbstbestimmtes, kongruentes Leben.",
       "quelle": "Ero Langlotz, „Leid in Glück verwandeln durch Perspektivwechsel“, S. 19"
+    },
+    {
+      "id": "deine_seele_ist_wie_eine_rose",
+      "titel": "Deine Seele ist wie eine Rose",
+      "kapitel": "Gedicht",
+      "textbloecke": [
+        { "typ": "vers", "text": "Deine Seele ist wie eine Rose….\nDer Sinn der Rose liegt darin, zu erblühen\nund ihre Schönheit und ihren Duft zu verschwenden.\nDie Rose öffnet sich,\nwenn die drangvolle Enge der Knospe schmerzhafter ist als das Risiko, sich zu öffnen…\nDeine Seele ist wie eine Rose…" },
+        { "typ": "vers", "text": "Sie möchte sich öffnen,\nLiebe empfangen…\nLiebe geben…" },
+        { "typ": "kasten", "titel": "Um sich zu öffnen, braucht sie vier Gewissheiten:", "text": "Ich darf da sein…\nIch bin richtig, so wie ich bin…\nIch bin es wert, geliebt zu werden…\nIch darf mich schützen… (die Dornen!)" },
+        { "typ": "vers", "text": "Das hat ihr die Natur mitgegeben, wie vier Kelchblätter, welche die Blüte schützen.\nBisweilen jedoch wagt sie nicht, sich zu öffnen,\nvielleicht hat ihr einmal jemand gesagt,\nsie habe nicht das Recht, da zu sein…\nsie sei falsch, dürfe nicht eine Rose sein….\nsie habe nicht das Recht, gesehen, bewundert, geliebt zu werden…\nsie dürfe sich nicht wehren, ihre Dornen nicht zeigen…" },
+        { "typ": "vers", "text": "Um erblühen zu können, braucht sie dann jemanden,\nder sie an das erinnert, was sie im Innersten schon immer wusste." }
+      ],
+      "kernaussage": "Die vier Gewissheiten, die eine Rose zum Erblühen braucht, entsprechen den vier Kelchblättern, die die Knospe schützen: Daseinsrecht, Richtigsein, Wert und das Recht auf eigene Grenzen (die Dornen). Fehlt eine davon, bleibt die Öffnung riskanter als das Verschlossenbleiben. [Kernaussage ist eigene Verdichtung, kein Zitat.]",
+      "quelle": "Ero Langlotz, 21.5.2007"
     }
   ]
 }
