@@ -561,6 +561,29 @@ button.ghost{
 .card.chakren-card .kat-badge{ color:#fff; }
 @media (max-width:640px){ .chakren-visual-wrap{ justify-content:center; } .chakren-figur-svg{ width:120px; height:192px; } }
 
+/* Ero Langlotz, SSI-Aufstellungen */
+.langlotz-kernsaetze-wrap{ max-width:var(--content-max); margin:1.2rem auto 0; padding:0 1.5rem; }
+.langlotz-kernsaetze-grid{
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:1rem; margin-top:0.6rem;
+}
+.langlotz-kernsatz-card{
+  background:var(--card-bg); border-left:4px solid var(--terracotta);
+  border-radius:10px; padding:1.1rem 1.3rem; box-shadow:0 1px 4px rgba(0,20,18,0.06);
+}
+.langlotz-kernsatz-text{
+  font-family:'Playfair Display', serif; font-style:italic; font-size:1.15rem;
+  color:var(--ink); line-height:1.5; margin:0 0 0.5rem;
+}
+.langlotz-kernsatz-quelle{ font-family:'Open Sans', sans-serif; font-size:0.76rem; color:var(--muted); margin:0; }
+.langlotz-kapitel-badge{ background:var(--terracotta); color:#fff; }
+.langlotz-kapitel-icon{ color:var(--terracotta); }
+.langlotz-kasten{
+  background:rgba(209,178,138,0.2); border-left:3px solid var(--accent);
+  border-radius:8px; padding:0.9rem 1.1rem; margin:0.9rem 0; font-style:italic;
+}
+.langlotz-kasten-titel{ font-style:normal; font-weight:600; margin:0 0 0.4rem; color:var(--ink); }
+
 /* Modus-Modell-Grafik, Animation */
 @keyframes stPulseRing{ 0%{ r:60; opacity:0.55; } 100%{ r:104; opacity:0; } }
 @keyframes stFlowDash{ to{ stroke-dashoffset:-24; } }

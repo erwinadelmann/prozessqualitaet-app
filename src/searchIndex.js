@@ -9,6 +9,7 @@ import UP_DATA from './data/utilisationsprozess.json';
 import METHODEN_DATA from './data/methodenbox.json';
 import NLP_DATA from './data/nlp-glossar.json';
 import CHAKREN_DATA from './data/chakren-affirmationen.json';
+import LANGLOTZ_DATA from './data/langlotz-ssi.json';
 import ACT_DATA from './data/act-defusion.json';
 import EMDR_DATA from './data/emdr.json';
 import SCHEMA_DATA from './data/schema-therapie.json';
@@ -100,6 +101,29 @@ function buildIndex(){
       kontext: 'Chakren-Affirmationen',
       snippet: c.affirmation_de + ' · „' + c.affirmation_en + '"',
       matchText: [c.name_deutsch, c.name_sanskrit, c.koerperregion, c.affirmation_en, c.affirmation_de, c.kurzbeschreibung].join(' ')
+    });
+  });
+
+  // Ero Langlotz, SSI-Aufstellungen, Kernsätze und Buchauszüge
+  LANGLOTZ_DATA.kernsaetze.forEach(k => {
+    entries.push({
+      key: 'langlotz-kernsatz-' + k.id,
+      tab: 'langlotz',
+      titel: k.text,
+      kontext: 'Ero Langlotz · SSI · Kernsatz',
+      snippet: k.quelle,
+      matchText: [k.text, k.quelle].join(' ')
+    });
+  });
+  LANGLOTZ_DATA.elemente.forEach(e => {
+    entries.push({
+      key: 'langlotz-' + e.id,
+      tab: 'langlotz',
+      openId: e.id,
+      titel: e.titel,
+      kontext: 'Ero Langlotz · SSI · ' + e.kapitel,
+      snippet: e.kernaussage,
+      matchText: [e.titel, e.kapitel, e.kernaussage, ...(e.textbloecke || []).map(b => (b.titel || '') + ' ' + b.text)].join(' ')
     });
   });
 
