@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "titel": "Die besten NLP-Techniken",
+    "version": "0.1-draft",
+    "hinweis": "Glossar-Rubrik für NLP-Techniken, aus von Erwin eingereichtem Quellmaterial (Fotos aus Büchern, Foliensätzen o. ä.) transkribiert und nach Autor:in gegliedert. Das Feld 'kernaussage' ist jeweils eine eigene Verdichtung als Ein-Satz-Zusammenfassung, keine wörtliche Buchstelle. Alle anderen Felder außer 'grundbegriffe' folgen so eng wie möglich dem transkribierten Original. Fachlich zu prüfen, insbesondere die Grundbegriffe-Erklärungen, die allgemeines NLP-Fachwissen sind und nicht aus dem Quellmaterial selbst stammen.",
+    "autoren": ["Gundl Kutschera"]
+  },
+  "grundbegriffe": [
+    {
+      "id": "submodalitaeten",
+      "begriff": "Submodalitäten",
+      "erklaerung": "Die feineren sinnlichen Eigenschaften einer inneren Vorstellung, unabhängig von deren Inhalt: bei Bildern etwa Helligkeit, Farbe, Nähe, Größe, Schärfe; bei Tönen Lautstärke, Tempo, Klangfarbe; bei Körperempfindungen Ort, Druck, Temperatur, Bewegung. Werden diese Qualitäten verändert, verändert sich meist auch die emotionale Wirkung der Erinnerung oder Vorstellung, ohne dass der Inhalt selbst verändert werden muss.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "future_pace",
+      "begriff": "Future-Pace",
+      "erklaerung": "Der Schritt am Ende einer Veränderungsarbeit, bei dem eine neu gefundene Fähigkeit oder Reaktion gedanklich in mehreren konkreten zukünftigen Situationen durchgespielt wird. Dient dazu, den Transfer der Veränderung in den Alltag zu testen und zu festigen, bevor die Sitzung endet.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "oekologieueberpruefung",
+      "begriff": "Ökologieüberprüfung",
+      "erklaerung": "Prüfung, ob eine angestrebte Veränderung mit dem gesamten inneren System und dem sozialen Umfeld einer Person verträglich ist, das heißt ob dadurch an anderer Stelle neue Probleme oder Widerstände entstehen. Ziel ist eine Veränderung, die für das ganze System stimmig ist, nicht nur für den unmittelbar betroffenen Ausschnitt.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "zeitlinie",
+      "begriff": "Zeitlinie",
+      "erklaerung": "Die innere, meist räumlich erlebte Anordnung vergangener, gegenwärtiger und zukünftiger Erfahrungen, entlang derer in der NLP-Arbeit gezielt zu bestimmten Zeitpunkten gegangen wird, um dort Ressourcen zu finden, Erfahrungen zu integrieren oder Veränderungen in die Zukunft zu übertragen.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "vakog",
+      "begriff": "VAKOG",
+      "erklaerung": "Die fünf sinnlichen Wahrnehmungskanäle, mit denen Erfahrung kodiert wird: Visuell (Bilder), Auditiv (Töne, Klänge), Kinästhetisch (Körperempfindungen, Gefühle), Olfaktorisch (Gerüche) und Gustatorisch (Geschmack). NLP-Techniken arbeiten gezielt mit diesen Kanälen, etwa um zu identifizieren, über welchen Kanal ein blockierendes Gefühl oder ein Beliefsatz am stärksten kodiert ist.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "anker",
+      "begriff": "Anker, Ankern",
+      "erklaerung": "Eine gezielt gesetzte Verknüpfung zwischen einem äußeren Reiz, etwa einer Berührung, einem Wort oder einer Geste, und einem inneren Zustand. Wird der Reiz später erneut gesetzt, ruft er den verknüpften Zustand wieder hervor. Ankern nutzt diesen Mechanismus bewusst, um Ressourcenzustände gezielt abrufbar zu machen. Ein Kollaps-Anker verbindet zwei gegensätzliche Anker, um den unerwünschten Zustand zu neutralisieren.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "assoziiert_dissoziiert",
+      "begriff": "Assoziiert, Dissoziiert",
+      "erklaerung": "Zwei Grundperspektiven, aus denen eine Erfahrung erlebt werden kann. Assoziiert bedeutet, mitten in der eigenen Erfahrung zu sein, mit den eigenen Augen zu sehen und im eigenen Körper zu fühlen. Dissoziiert bedeutet, sich selbst von außen zu beobachten, etwa wie auf einer Leinwand oder Bühne, mit entsprechend mehr emotionalem Abstand. Viele Techniken wechseln gezielt zwischen beiden Perspektiven, etwa um belastende Erinnerungen distanzierter zu bearbeiten oder Ressourcenzustände intensiver zu erleben.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "rapport",
+      "begriff": "Rapport",
+      "erklaerung": "Ein Zustand von Vertrauen und stimmigem Kontakt zwischen zwei Menschen, oft durch behutsames Angleichen von Körperhaltung, Tempo, Tonfall oder Sprache entstanden (siehe Pacing). Gilt in der NLP-Arbeit als Grundvoraussetzung, bevor mit einer Übung oder Intervention begonnen wird.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "pacing_leading",
+      "begriff": "Pacing, Leading",
+      "erklaerung": "Pacing bedeutet, sich zunächst an den aktuellen Zustand, das Tempo oder die Ausdrucksweise einer anderen Person anzugleichen, um Rapport herzustellen. Leading bedeutet, von dort aus behutsam eine Richtungsänderung anzubieten, der die andere Person folgen kann. Die Reihenfolge ist wichtig, ohne ausreichendes Pacing verpufft Leading meist wirkungslos oder erzeugt Widerstand.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "zielkette_chaining",
+      "begriff": "Zielkette (Chaining)",
+      "erklaerung": "Eine Technik, bei der ausgehend von einem konkreten Ziel oder Wert immer wieder gefragt wird: 'Wenn ich das erreicht habe, was möchte ich dann, das noch wichtiger ist?' Jede Antwort wird zum nächsten Glied der Kette, bis eine letzte, umfassende Ebene erreicht ist, im vorliegenden Quellmaterial 'Seins-Zustand' oder 'Resonanz-Zustand' genannt. Die Kette kann auch rückwärts durchlaufen werden, um diesen umfassenden Zustand in alle Zwischenziele zurückzubringen.",
+      "quelle": "Im Quellmaterial selbst benannt und mit dem englischen Originalbegriff 'outcome chain' versehen, Buchseite 267, Übung 'Chaining zum Resonanz/Seins-Zustand'. Damit ist der zuvor offene Begriff aus der Übung 'Einwände zu Freunden machen', Buchseite 270, geklärt."
+    },
+    {
+      "id": "milton_modell",
+      "begriff": "Milton-Modell",
+      "erklaerung": "Eine Sammlung bewusst vager, offener Sprachmuster, benannt nach dem Hypnotherapeuten Milton Erickson und im NLP systematisiert. Ziel ist, mit unpräziser, mehrdeutiger Sprache Raum für die eigenen inneren Bilder und Bedeutungen des Gegenübers zu lassen, etwa in Trance-Anleitungen oder offenen Fragen. Gilt als Gegenstück zum sehr präzisen Meta-Modell der Sprache.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    },
+    {
+      "id": "kalibrieren",
+      "begriff": "Kalibrieren",
+      "erklaerung": "Das genaue, wiederholte Beobachten der nonverbalen Signale einer Person, etwa Atmung, Hautfarbe, Muskeltonus oder Augenbewegungen, um einen bestimmten inneren Zustand zuverlässig von außen wiederzuerkennen, auch ohne dass die Person etwas sagt.",
+      "quelle": "Allgemeiner NLP-Fachbegriff, im vorliegenden Quellmaterial verwendet, aber nicht selbst definiert. Erklärung von mir ergänzt, fachlich gegenzuprüfen."
+    }
+  ],
+  "elemente": [
+    {
+      "id": "von_der_quelle_heilen_lassen",
+      "titel": "Von der Quelle heilen lassen",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Eine belastende Problemsituation wird als rückwärts laufender Film neu kodiert und von einer inneren Ressourcenquelle aus geheilt, bevor die neue Erfahrung in mehrere zukünftige Situationen übertragen wird.",
+      "erklaerung": "Historische/allgemeine Metapher aus der Quelle: In alten Kulturen war die Definition eines integrierten, heilen Menschen dann gegeben, wenn man selbst für die eigenen Gedanken und Gefühle verantwortlich war. Die Übung nutzt diese Idee der Selbstverantwortung: eine Situation, in der jemand nicht den eigenen Werten gemäß mit sich oder anderen umgehen konnte, wird von einer Ressourcenquelle aus rückwirkend heilen gelassen, statt bekämpft oder verdrängt zu werden.",
+      "ziel": "Den Tanz von Bewußt-sein und Unbewußt-sein leben, das Unbewusste macht nur das, was ihm gesagt wird. Verdecktes Zusatzziel laut Quelle: Integration von allem bisher Gelernten.",
+      "einsatzkontext": "Für sich selbst oder für Personen, die sehr rational denken und gewohnt sind, möglichst alles allein zu machen.",
+      "schritte": [
+        { "text": "Eine Situation wählen, in der man steckt und nicht so respektvoll, den eigenen Werten gemäß, mit sich und/oder anderen umgehen kann, wie gewünscht." },
+        { "text": "Es sich bequem machen, eine halbe Stunde Ungestörtheit sichern, sich zum eigenen Platz der Ruhe mitnehmen lassen und ihn mit allen Sinnen genießen. Wahrnehmen, wie die Submodalitäten der Quelle mit dabei sind, bis der ganze Körper durchflutet ist. Dazu eigene Meditationserfahrung nutzen oder sich führen lassen." },
+        { "text": "Sich auf einer Bühne vor sich selbst in der Problemsituation sehen. Diesen Film genau ansehen, vom Beginn, wo es noch gut geht, bis zum Ende, wo man nicht mehr ressourcevoll ist." },
+        { "text": "Diesen Film ein paar Mal rückwärts laufen lassen. Die Kodierung wird umgedreht: bisher vom Gutgehen zum Schlechtgehen, künftig vom Schlechtgehen zum Gutgehen." },
+        { "text": "Fragen: Was fehlt mir und den anderen in dieser Situation?" },
+        { "text": "Den Vorhang auf der Bühne zugehen lassen und die Situation von der Quelle heilen lassen, so dass es allen Beteiligten gut geht und alle das haben, was sie brauchen. Erst dann geht der Vorhang wieder auf, die neue Situation mit allen Einzelheiten wahrnehmen." },
+        { "text": "Das Neue in den Körper integrieren, so dass jede Zelle und jedes Atom die neue Kodierung kennenlernt." },
+        { "text": "Future-Pace: Das Gefundene in die Zukunft gleiten lassen, mindestens drei zukünftige Situationen mit den neuen Möglichkeiten erleben." },
+        { "text": "Testen, was anstelle des alten negativen Gefühls jetzt im Körper spürbar ist." }
+      ],
+      "uebungsdauer": "15–20 Minuten",
+      "gruppengroesse": "1–3 Personen",
+      "auswertung": "Was habe ich gelernt? Austausch der unterschiedlichen Erfahrungen: Was heißt heilen lassen? Was sind die neuen Gefühle? Was waren die Lösungen?",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, Titelseite nicht mitfotografiert, von mir nicht selbst verifiziert), Buchseiten 208–209, Kapitel 'Tanz zwischen Bewußt-sein und Unbewußt-sein', Übung 'Von der Quelle heilen lassen', per Foto am 2026-07-24 eingereicht und transkribiert. Feld 'Persönliche Metapher' im Original als leeres Ausfüllfeld angelegt, hier nicht übernommen, da ohne Inhalt."
+    },
+    {
+      "id": "einwaende_zu_freunden_machen",
+      "titel": "Einwände zu Freunden machen",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Ein hartnäckig blockierender innerer Anteil wird nicht bekämpft, sondern über eine Zielketten-Umkehrung, eine Ökologieüberprüfung und eine Zeitlinien-Generalisierung bis zur eigenen Zeugung zurück in einen versöhnten, integrierten Teil verwandelt.",
+      "erklaerung": "Historische/allgemeine Metapher aus der Quelle: Partnerbeziehungen, in denen es häufig um „besser/schlechter\" geht.",
+      "ziel": "Einwände annehmen, zu Freunden machen und von ihnen lernen, Versöhnung. Verdecktes Zusatzziel laut Quelle: innere Ordnung (Landkarte) erkennen und neue, wünschenswertere Ordnungen finden.",
+      "einsatzkontext": "Für Konfliktlösungen.",
+      "schritte": [
+        { "text": "Beginnen mit dem Teil, der einen am intensivsten zurückhält, oder einem unerwünschten Verhalten und Gefühl." },
+        { "text": "Die Zielkette (Chain) zum Seins-Zustand evozieren und die Umkehrung der Zielkette machen." },
+        { "text": "Ökologieüberprüfung: Teile finden, die Einwände haben, und mit jedem einzelnen die Zielkette und die Umkehrung machen, den Teil heranwachsen lassen (siehe die beiden vorangegangenen Übungen)." },
+        { "text": "Generalisierung auf der Zeitlinie: mit all den Reichtümern auf der Zeitlinie bis zur Zeugung zurückgehen, alles integrieren und mit den neuen Schätzen heranwachsen, in die Zukunft bringen. Falls noch Angleichungen nötig sind, diese machen lassen." }
+      ],
+      "uebungsdauer": "Je nach Zahl der Einwände sehr unterschiedlich.",
+      "gruppengroesse": "2–3 Personen",
+      "auswertung": "Vergleichen, wie der Versöhnungsprozeß bei den Teilnehmern unterschiedlich stattgefunden hat. Erfahrungen austauschen, was noch alles gelernt und erlebt wurde.",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, nicht selbst verifiziert), Buchseite 270, Kapitel 'Tanz zwischen Bewußt-sein und Unbewußt-sein', Übung 'Einwände zu Freunden machen', per Foto am 2026-07-24 eingereicht und transkribiert. Der Begriff 'Zielkette (Chain)' ist geklärt, siehe Grundbegriff 'Zielkette (Chaining)'. Beide hier gemeinten 'vorangegangenen Übungen' liegen jetzt vor: 'Chaining zum Resonanz/Seins-Zustand' (Buchseite 266–267) und 'Einen Teil heranwachsen lassen' (Buchseite 268–269), direkt davor im Buch. Feld 'Persönliche Metapher' im Original leer, nicht übernommen."
+    },
+    {
+      "id": "erfolgs_strategie",
+      "titel": "Erfolgs-Strategie",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Die eigene, meist unbewusst ablaufende Erfolgsstrategie wird anhand einer erinnerten Erfolgssituation Schritt für Schritt sichtbar gemacht, einschließlich des inneren Bildes, das als Auslöser für die Erfolgsgewissheit dient.",
+      "erklaerung": "Historische/allgemeine Metapher aus der Quelle: der Erfolg von Ralph Emerson (im Original ohne weitere Angabe, vermutlich Ralph Waldo Emerson gemeint, von mir nicht verifiziert).",
+      "ziel": "Herausfinden, welche Strategie man anwendet, wenn man erfolgreich ist. Verdecktes Zusatzziel laut Quelle: zum Nachdenken anregen, was Erfolg überhaupt ist und welche unterschiedlichen Kriterien verschiedene Personen dafür haben.",
+      "einsatzkontext": "Als Möglichkeit, wenn sich jemand an keinen Erfolg erinnern kann.",
+      "schritte": [
+        { "text": "Sich eine Situation vorstellen, in der man erfolgreich war. Um in diesen inneren Zustand zu kommen, zuerst entspannen: Womit beginnt die Entspannung, Atmung, bestimmte Bewegungen, strahlende Augen? Nachspüren, wie das eine, worauf man sich konzentriert, automatisch zum anderen führt und den Prozess unterstützt. Eventuell einen Ton verändern (schneller/langsamer, rhythmisch) oder ein Naturgeräusch, Wind, Wasser, Meeresrauschen, hinzunehmen. Herausfinden, was die schnellsten Schritte sind. Die erfolgreiche Situation mit allen 5 Sinnen wahrnehmen." },
+        { "text": "Im Geist zu den eigenen Erfolgen gehen, größere und kleinere. Für 10 Minuten hinaus ins Freie gehen und sich von der Natur einen Gegenstand als Symbol für den größten Erfolg schenken lassen." },
+        { "text": "Die Strategie für diese Situation finden: die einzelnen Schritte finden und herausfinden, wo der Auslöser liegt." },
+        { "text": "Neugierig sein, denn viele Schritte laufen unbewusst ab. Bei jeder gleichen Frage läuft die Strategie erneut ab. Die Schablone, meist ein kraftvolles inneres Bild, das oft aus der frühen Kindheit stammt, ist der auslösende Moment für Erfolg. Der Erfolgsauslöser ist der Zeitpunkt, der die Gewissheit gibt, das Ziel zu erreichen." },
+        { "text": "Test." },
+        { "text": "Future-Pace." }
+      ],
+      "uebungsdauer": "20–30 Minuten pro Person",
+      "gruppengroesse": "3–5 Personen (3 Beobachter)",
+      "auswertung": "„Schablone\" (Auslöser) vergleichen.",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, nicht selbst verifiziert), Buchseiten 300–301, Übung 'Erfolgs-Strategie', per Foto am 2026-07-24 eingereicht und transkribiert. Feld 'Persönliche Metapher' im Original leer, nicht übernommen."
+    },
+    {
+      "id": "re_imprint",
+      "titel": "Re-Imprint (Neuprägung)",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Ein blockierendes Gefühl wird bis zu seiner frühesten Prägungssituation zurückverfolgt, dort dissoziiert neu bearbeitet und mit den Submodalitäten einer stabilen Ressourcenquelle überschrieben, bevor die Veränderung in Gegenwart und Zukunft integriert wird.",
+      "erklaerung": "Untertitel laut Quelle: 'Zurück zur Prägung in die Vergangenheit gehen und mit Hilfe von SM neu prägen'. Historische/allgemeine Metapher aus der Quelle: Saulus-Paulus, sinngemäß eine grundlegende, radikale innere Umkehr. 'SM' im Untertitel steht laut Kontext für Submodalitäten, von mir erschlossen und von Erwin bestätigt, im Buch selbst nicht ausgeschrieben.",
+      "ziel": "Entkoppeln eines negativen Kollaps-Ankers und Integrieren einer neuen, positiven Assoziation. Verdeckte Zusatzziele laut Quelle: assoziiert in der eigenen Ressourcenquelle sein, bewusst in die 1. und 2. Position hinein- und heraussteigen, Dissoziation und Assoziation üben.",
+      "einsatzkontext": "Bei traumatischen Ereignissen, bei Phobien, bei Eltern- und Familienkonflikten.",
+      "schritte": [
+        { "text": "Sicherheit und Rapport aufbauen." },
+        { "text": "Einen starken, stabilen Ressource-Anker (Quelle) aufbauen und ankern. Dazu eine Metapher für die Quelle und die Dissoziation finden, z. B. Lichtstrahl als Schutz, ein Projektorraum im Kino oder eine Raumkapsel." },
+        { "text": "Das alte Gefühl bzw. den alten Beliefsatz identifizieren, der das Ziel blockiert (VAKOG) – ankern." },
+        { "text": "Mit dem eben gesetzten Anker zur frühesten Situation zurückgehen, in der dieses Gefühl bzw. dieser Belief da war (Prägung)." },
+        { "text": "Dissoziieren, z. B. im Kino: vom Projektorraum aus den Film auf der Leinwand steuern (Eigenverantwortung aufbauen). Zuerst nur ein Foto von der Prägungssituation betrachten, dann Einzelheiten im Film erkennen, Beginn und Ende der Situation finden, den Film rückwärts laufen lassen (das Gehirn programmiert dadurch: was vorher schlecht war, wird gut)." },
+        { "text": "Alle Beliefs finden, die in dieser frühen Prägungssituation entstanden sind." },
+        { "text": "In den anfangs aufgebauten Ressource-Zustand gehen und die Submodalitäten der Quelle in den Film fließen lassen, wodurch sich die alte Situation verändert, bis es allen Beteiligten gut geht. Sich nacheinander in jede beteiligte Person hineinversetzen und nachspüren, was sich verändert hat und ob jede Person das hat, was sie braucht. Bei den Eltern insbesondere darauf achten, dass beide Ebenen, Vater/Mutter und Mann/Frau, da sind." },
+        { "text": "In leichter oder tiefer Trance den neuen Film integrieren, die Gefühle im ganzen Körper 'verteilen' und auf diese Weise alle dazugehörigen Situationen bis zur Gegenwart entmachten und transformieren." },
+        { "text": "Future-Pace: in zukünftige Situationen gehen, in denen das ursprünglich gewählte negative Gefühl wieder vorhanden sein müsste, und sich dort drei neue Möglichkeiten schenken, dabei feststellen, was anders ist." },
+        { "text": "Test: Das ursprünglich gewählte negative Gefühl ist nicht mehr möglich." }
+      ],
+      "uebungsdauer": "40–60 Minuten",
+      "gruppengroesse": "2 Personen",
+      "auswertung": "Austausch über die neuen Beliefs und über die wesentlichen Erfahrungen, die gemacht wurden.",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, nicht selbst verifiziert), Buchseiten 264–265, Kapitel 'Tanz zwischen Bewußt-sein und Unbewußt-sein', Übung 'Re-Imprint (Neuprägung)', per Foto am 2026-07-24 eingereicht und transkribiert. Feld 'Persönliche Metapher' im Original leer, nicht übernommen."
+    },
+    {
+      "id": "bilderklatschen_visueller_squash",
+      "titel": "Bilderklatschen – visueller Squash",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Ein blockierendes negatives Bild wird Schritt für Schritt mit den Submodalitäten eines ressourcenreichen Zielbildes überlagert und am Ende kinästhetisch fixiert, ohne etwas aus der inneren Landkarte zu entfernen, sondern indem etwas Neues hinzugefügt wird.",
+      "erklaerung": "Untertitel laut Quelle: 'Realitäten zusammenführen'. Historische/allgemeine Metapher aus der Quelle: eine Werbe-Reklame mit 'Kindern mit Uhren im Gesicht', keine Überstunde sei so viel wert wie die Zeit mit den eigenen Kindern. 'SM' im Ziel-Satz steht laut Kontext für Submodalitäten, von mir erschlossen und von Erwin bestätigt. 'I.Z.' im Übungsablauf steht laut Erwin für Ist-Zustand, im Buchtext selbst nicht ausgeschrieben.",
+      "ziel": "Mit Zielbild und Submodalitäten eine negative Situation verändern. Verdecktes Zusatzziel laut Quelle: Submodalitäten und innere Ordnung finden und in die gewünschte Richtung transformieren.",
+      "einsatzkontext": "Besonders geeignet für visuell orientierte Menschen.",
+      "schritte": [
+        { "text": "Sicherheit aufbauen und Rapport herstellen." },
+        { "text": "Die negative Situation identifizieren, die Strategie des Problems erfassen: welcher Ist-Zustand (Wert, Ressource) fehlt. Die Submodalitäten der Problemsituation finden." },
+        { "text": "Einen Ressourcezustand finden (aus der Vergangenheit oder über ein 'Als-ob'-Modell) und ein Zielbild aufbauen." },
+        { "text": "Die Submodalitäten des Zielbildes Schritt für Schritt ins negative Bild bringen und zum Abschluss das Zielbild kinästhetisch auf das negative Bild 'klatschen'." },
+        { "text": "Test: Das blockierende Gefühl sollte nun nicht mehr möglich sein (eventuell versuchen, ganz ins negative Bild hineinzugehen)." },
+        { "text": "Future-Pace: mindestens drei Möglichkeiten in zukünftigen Situationen finden." }
+      ],
+      "uebungsdauer": "20–30 Minuten",
+      "gruppengroesse": "2 Personen oder Großgruppe",
+      "auswertung": "Der Ort des negativen Bildes ist wichtig. Die Intervention ist ein Kollaps-Anker: Es wird nichts weggenommen, nur etwas hinzugefügt.",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, nicht selbst verifiziert), Buchseite 190, Übung 'Bilderklatschen – visueller Squash', per Foto am 2026-07-24 eingereicht und transkribiert, Foto um 90° gedreht und in kleinerem Druck, Lesbarkeit etwas geringer als bei den übrigen Einträgen. Feld 'Persönliche Metapher' im Original leer, nicht übernommen."
+    },
+    {
+      "id": "zielbild_ueberziehen",
+      "titel": "Zielbild überziehen",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Ein bereits aufgebautes, ressourcenreiches Zielbild wird sich vorgestellt wie ein Kleidungsstück über den eigenen Körper gezogen, so dass die Zielerfahrung vollständig assoziiert und körperlich erlebt wird.",
+      "erklaerung": "Untertitel laut Quelle: 'Realitäten zusammenführen'. Historische/allgemeine Metapher aus der Quelle: traurig in den Sonnenuntergang wandern, die warmen Sonnenstrahlen füllen einen ganz aus.",
+      "ziel": "Einen unerwünschten inneren Zustand durch Veränderung der inneren Repräsentation und der Physiologie verändern. Verdeckte Zusatzziele laut Quelle: assoziieren/dissoziieren üben, Anker zusammenführen, 'Schutz' aufbauen und bewusst machen.",
+      "einsatzkontext": "Für Kinästheten, die kaum visualisieren, sowie wenn jemand zu sehr in der 2. Position feststeckt und die 1. Position wieder stärken möchte. Dieser letzte Halbsatz ist die unsicherste Stelle der gesamten Transkription dieser Foto-Serie, Druck sehr klein und im Buchfalz, von mir nicht mit letzter Sicherheit entziffert.",
+      "schritte": [
+        { "text": "Ein stabiles Zielbild mit vielen Ressourcen aufbauen." },
+        { "text": "Eine Situation identifizieren, in der das Ziel noch nicht erreicht ist und die verändert werden soll, das dazugehörige Gefühl im Körper lokalisieren." },
+        { "text": "Sich vorstellen, das Zielbild sei über dem eigenen Kopf, und es wie einen Pullover über den Körper ziehen, so dass man ganz im Zielbild assoziiert ist." },
+        { "text": "Future-Pace: mindestens drei Möglichkeiten in zukünftigen Situationen finden." }
+      ],
+      "uebungsdauer": "60 Minuten",
+      "gruppengroesse": "beliebig viele Personen",
+      "auswertung": "Zusammenhang von innerer Repräsentation, Physiologie und Verhalten deutlich machen.",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, nicht selbst verifiziert), Buchseite 191, Übung 'Zielbild überziehen', per Foto am 2026-07-24 eingereicht und transkribiert, Foto um 90° gedreht. Ein Halbsatz bei den Anwendungsmöglichkeiten nicht mit letzter Sicherheit lesbar, siehe Feld 'einsatzkontext'. Feld 'Persönliche Metapher' im Original leer, nicht übernommen."
+    },
+    {
+      "id": "drei_positionen",
+      "titel": "Drei Positionen",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Ein Konflikt wird nacheinander aus der eigenen Position, aus der Position der anderen beteiligten Person und aus einer geschützten, ressourcenvollen Beobachterposition erlebt, um von dort aus fehlende Ressourcen für beide Seiten zu finden und einzubringen.",
+      "erklaerung": "Historische/allgemeine Metapher aus der Quelle: Theater, Rollenspiele.",
+      "ziel": "Entmachten von Filtern, Konfliktlösung, Referenzwechsel, negative Assoziationen entmachten. Verdeckte Zusatzziele laut Quelle: Pacing, Leading, Ankern, Rapport, Assoziieren/Dissoziieren, Assoziiert-Sein in der eigenen Quelle, bewusstes Ein- und Aussteigen aus den Positionen.",
+      "einsatzkontext": "Bei privaten und beruflichen Konflikten, für Personen, die in einer Position feststecken oder die Privat- und Arbeitsbereich schlecht trennen können.",
+      "schritte": [
+        { "text": "Eine negative Situation wählen, die mit einer anderen Person erlebt wurde." },
+        { "text": "Für die Positionen 1, 2 und 3 drei Plätze auf dem Boden festlegen." },
+        { "text": "1. Position: sich selbst in der Konfliktsituation spüren (assoziiert)." },
+        { "text": "2. Position: die andere am Konflikt beteiligte Person spüren (assoziiert)." },
+        { "text": "3. Position: assoziiert in der eigenen Ressourcenquelle sein, dabei eine Metapher für den geschützten, dissoziierten Zustand nutzen, z. B. eine Glaswand oder einen Vorhang. Von dort geschützt die Szene ansehen, wie sich beide Personen in der Konfliktsituation bemühen, die Szene rückwärts laufen lassen, bis dem eigenen Zustand und dem der anderen Person ein guter Zustand vorausging." },
+        { "text": "In der 1. Position sammeln, welche Informationen und Ressourcen jetzt gebraucht werden, welche inneren Zustände und Werte, zum Beispiel Liebe, Vertrauen, Respekt." },
+        { "text": "In der 2. Position: was braucht die andere Person, welche inneren Zustände und Werte, oft dieselben wie in der 1. Position." },
+        { "text": "Auf einem neutralen Platz: wo hat man diese inneren Zustände und Werte schon einmal gehabt, eigener Anker." },
+        { "text": "Von diesem neutralen Platz aus diese Ressourcen aus der Vergangenheit in die Positionen 1 und 2 bringen, bis beide Personen das haben, was sie brauchen, keine 'halbherzigen' Versuche." },
+        { "text": "In der 3. Position überprüfen, wie sich Ziel und Verhaltensmöglichkeiten verändert haben." },
+        { "text": "Future-Pace: wie ist es, dieser Person das nächste Mal zu begegnen." },
+        { "text": "Test: Das negative Gefühl ist nicht mehr möglich." }
+      ],
+      "uebungsdauer": "20–30 Minuten",
+      "gruppengroesse": "2–3 Personen",
+      "auswertung": "Welche Rolle war bekannt, welche fremd, welche Strategien und Möglichkeiten haben andere Teilnehmer kennengelernt.",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, nicht selbst verifiziert), Buchseiten 192–193, Übung 'Drei Positionen', per Foto am 2026-07-24 eingereicht und transkribiert, Fotos um 90° gedreht. Feld 'Persönliche Metapher' im Original leer, nicht übernommen."
+    },
+    {
+      "id": "chaining_zum_resonanz_seins_zustand",
+      "titel": "Chaining zum Resonanz/Seins-Zustand",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Ein störendes Gefühl wird nicht direkt verändert, sondern über eine Kette immer bedeutsamerer Werte bis zu einem umfassenden Seins-Zustand (Resonanz) hinaufgeführt, der anschließend in alle Zwischenschritte zurückgebracht wird.",
+      "erklaerung": "Einleitender Text der Quelle: Oft öffnet eine Intervention eine Tür zum nächsten Ziel, ein Ziel führt zum nächsten, bis die eigene 'Sehnsucht', das eigene Potential (Herzenswunsch), erreicht ist. Dieser Prozess lässt sich meist nicht überspringen und braucht leichte oder tiefe Trance. Historische/allgemeine Metapher aus der Quelle: Süchte, die uns vorgaukeln, uns zu unseren tiefen Gefühlen zu bringen.",
+      "ziel": "Chaining von Zielen (Werten) bis hin zum Seins-Zustand, unbewusste Ziele finden und integrieren, Resonanz erleben. Verdeckte Zusatzziele laut Quelle: Kalibrieren, Gebrauch der Sprache (Milton-Modell), Ganzheit der Persönlichkeit erfassen.",
+      "einsatzkontext": "Für Personen, die den Sinn des Lebens verloren haben. Für alle, die mehr und bessere Resonanz in der Gegenwart mit anderen leben wollen.",
+      "schritte": [
+        { "text": "Teil I, die Ziel- bzw. Ergebnisfolge finden (Chaining): eine Emotion oder ein Gefühl identifizieren, das verändert werden soll. Wann, wo und mit wem wird dieses Gefühl bzw. Verhalten erlebt?" },
+        { "text": "Den Teil erleben: an eine bestimmte Zeit denken, als dieses Verhalten auftrat. Da man dieses Verhalten nicht bewusst inszeniert hat, kommt es einem vor, als ob ein anderer Teil von einem dieses Verhalten verursacht hat. Spüren, wo dieser Teil im Körper ist, feststellen, welches Bild, welche Klänge und Gefühle zu diesem Teil gehören." },
+        { "text": "Den Teil willkommen heißen, die positive Absicht finden. Die Zielkette (outcome chain) evozieren, bis der Seins-Zustand erreicht ist. Den Teil fragen: 'Wenn ich Z erreicht habe, was möchtest du dann für mich, das sogar noch wichtiger, intensiver und positiver ist?'" },
+        { "text": "Den Seins-Zustand integrieren, mit allen Submodalitäten, ein Ankommen bei sich selbst und ein ganzheitliches Verbundensein. Die Quelle verweist zusätzlich auf 'Kriterien für den Resonanz-Zustand' in Kapitel 3.1 des Buches, dieses Kapitel wurde nicht mitfotografiert." },
+        { "text": "Teil II, Umkehrung des Seins-/Resonanz-Zustandes (Chaining zurückgehen): mit dem Seins-Zustand beginnen und ihn voll erleben." },
+        { "text": "Den Seins-Zustand in alle Zwischenziele bringen und erleben, wie sich die Erfahrung dadurch bereichert." },
+        { "text": "Der Seins-Zustand transformiert den ursprünglich negativ empfundenen Zustand." }
+      ],
+      "uebungsdauer": "30 Minuten pro Person",
+      "gruppengroesse": "2–3 Personen",
+      "auswertung": "Wie viele Schritte waren bis zum Resonanz-Zustand notwendig? Was waren die Erfahrungen und was wurde für sich gelernt?",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, nicht selbst verifiziert), Buchseiten 266–267, Kapitel 'Tanz zwischen Bewußt-sein und Unbewußt-sein', Übung 'Chaining zum Resonanz/Seins-Zustand', per Foto am 2026-07-24 eingereicht und transkribiert. Diese Übung ist die erste der beiden 'vorangegangenen Übungen', auf die 'Einwände zu Freunden machen' (Buchseite 270) verweist, die zweite ist 'Einen Teil heranwachsen lassen' (Buchseite 268–269). Feld 'Persönliche Metapher' im Original leer, nicht übernommen. Verweis der Quelle auf 'Kriterien für den Resonanz-Zustand, Kap. 3.1' nicht mitfotografiert, daher hier nicht ausgeführt."
+    },
+    {
+      "id": "einen_teil_heranwachsen_lassen",
+      "titel": "Einen Teil heranwachsen lassen",
+      "autor": "Gundl Kutschera",
+      "kernaussage": "Ein blockierender innerer Teil, der einen bei bestimmten Signalen 'klein werden' lässt, wird mit Hilfe des zuvor erreichten Seins-Zustands nach seinem Alter gefragt und behutsam bis zur Erwachsenenreife heranwachsen und integrieren gelassen.",
+      "erklaerung": "Historische/allgemeine Metapher aus der Quelle: Geschichten von bekannten Persönlichkeiten, die plötzlich ins Kleinkindstadium regredieren und in diesen Momenten keinen Zugang zu ihren erwachsenen Ressourcen haben. Baut unmittelbar auf der vorangegangenen Übung 'Chaining zum Resonanz/Seins-Zustand' auf, deren Seins-Zustand und Zielumkehrung hier wiederverwendet werden.",
+      "ziel": "Teilpersönlichkeiten annehmen und von ihnen lernen. Neue Assoziationen im Gehirn herstellen, so dass äußere Signale einen frei und nicht länger unfrei machen können. Verdeckte Zusatzziele laut Quelle: Versöhnungsprozess und Erleben von Selbstwert und Selbstliebe.",
+      "einsatzkontext": "Für Personen, die Selbstwert und Selbstliebe brauchen und sich entweder schuldig für etwas fühlen oder sich furchtbar über jemanden ärgern. Einwände erkennen, versöhnen und integrieren. Die Quelle verweist hier ausdrücklich auf die nachfolgende Übung 'Einwände zu Freunden machen'.",
+      "schritte": [
+        { "text": "Ein Verhalten wählen, das einen 'klein werden' lässt, so als ob man plötzlich nur ein paar Jahre alt ist. Zuerst den Seins-/Resonanz-Zustand evozieren, mit Hilfe der vorher angeführten Übung." },
+        { "text": "Das Alter des Teils erfragen. Der Teil kann ganz jung oder manchmal auch ganz alt sein." },
+        { "text": "Den Teil heranwachsen lassen: Die Arbeit ist für den Teil zu groß (Arbeiten aufzählen), fragen, ob er es leichter haben möchte, er behält alles und bekommt noch vieles dazu." },
+        { "text": "Erfragen, ob er heranwachsen möchte. Mit dem Seins-Zustand den Teil erwachsen werden lassen." },
+        { "text": "Kurz die 'Zielumkehrung' der vorangegangenen Übung 'Chaining zum Seins-/Resonanz-Zustand' wiederholen." },
+        { "text": "Den Teil integrieren. Wenn er außerhalb vom Körper ist, ihn hereinholen. Wenn er drinnen ist, ganz im Körper ausdehnen lassen." }
+      ],
+      "uebungsdauer": "20 Minuten",
+      "gruppengroesse": "2–3 Personen, mit oder ohne Beobachter",
+      "auswertung": "Was habe ich von diesem Teil gelernt und was kann ich in Zukunft noch von ihm lernen?",
+      "quelle": "Gundl Kutschera (Autorenangabe von Erwin, nicht selbst verifiziert), Buchseiten 268–269, Kapitel 'Tanz zwischen Bewußt-sein und Unbewußt-sein', Übung 'Einen Teil heranwachsen lassen', per Foto am 2026-07-24 eingereicht und transkribiert. Dies ist die zweite der beiden 'vorangegangenen Übungen', auf die 'Einwände zu Freunden machen' (Buchseite 270) verweist, direkt im Anschluss an 'Chaining zum Resonanz/Seins-Zustand' (Buchseite 266–267). Damit sind beide dort referenzierten Vorgänger-Übungen erfasst. Feld 'Persönliche Metapher' im Original leer, nicht übernommen."
+    }
+  ]
+}

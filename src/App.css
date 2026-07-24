@@ -466,6 +466,74 @@ button.ghost{
 .chip.kat-chip.st-domain-4.active{ background:var(--accent); border-color:var(--accent); color:#4a3418; }
 .chip.kat-chip.st-domain-5.active{ background:var(--muted); border-color:var(--muted); color:#fff; }
 
+/* NLP-Glossar, Autoren-Farben, zyklisch für bis zu 5 Autor:innen, danach wiederholt */
+.muster-name .kat-badge.nlp-autor-1{ background:var(--primary); }
+.muster-name .kat-badge.nlp-autor-2{ background:var(--terracotta); }
+.muster-name .kat-badge.nlp-autor-3{ background:var(--sage); }
+.muster-name .kat-badge.nlp-autor-4{ background:var(--accent); color:#4a3418; }
+.muster-name .kat-badge.nlp-autor-5{ background:var(--muted); }
+.chip.kat-chip.nlp-autor-1.active{ background:var(--primary); border-color:var(--primary); color:#fff; }
+.chip.kat-chip.nlp-autor-2.active{ background:var(--terracotta); border-color:var(--terracotta); color:#fff; }
+.chip.kat-chip.nlp-autor-3.active{ background:var(--sage); border-color:var(--sage); color:#fff; }
+.chip.kat-chip.nlp-autor-4.active{ background:var(--accent); border-color:var(--accent); color:#4a3418; }
+.chip.kat-chip.nlp-autor-5.active{ background:var(--muted); border-color:var(--muted); color:#fff; }
+
+/* NLP-Glossar, Kopf-Illustration */
+.nlp-hero-wrap{
+  max-width:var(--content-max); margin:1.6rem auto 0; padding:0 1.5rem;
+  display:flex; flex-direction:column; gap:0.2rem; position:relative;
+}
+.nlp-hero-svg{ width:100%; height:64px; display:block; }
+.nlp-hero-text{ margin-top:-0.6rem; }
+.nlp-hero-kicker{
+  font-family:'Montserrat', sans-serif; font-size:0.72rem; letter-spacing:0.1em;
+  text-transform:uppercase; color:var(--secondary); margin:0 0 0.15rem; font-weight:600;
+}
+.nlp-hero-titel{
+  font-family:'Playfair Display', serif; font-weight:600; font-size:1.7rem;
+  color:var(--ink); margin:0 0 0.35rem;
+}
+.nlp-hero-sub{
+  font-family:'Lora', serif; font-size:0.95rem; color:var(--muted); margin:0; max-width:52ch;
+}
+@media (max-width:640px){ .nlp-hero-titel{ font-size:1.35rem; } .nlp-hero-svg{ height:44px; } }
+
+/* NLP-Glossar, Grundbegriffe-Karten mit Icon */
+.nlp-grundbegriffe-grid{ grid-template-columns:repeat(3, 1fr); }
+@media (max-width:980px){ .nlp-grundbegriffe-grid{ grid-template-columns:repeat(2, 1fr); } }
+@media (max-width:560px){ .nlp-grundbegriffe-grid{ grid-template-columns:1fr; } }
+.card.nlp-grundbegriff-card{ display:flex; gap:0.8rem; align-items:flex-start; cursor:default; }
+.card.nlp-grundbegriff-card:hover{ transform:none; }
+.nlp-grundbegriff-icon{
+  flex-shrink:0; width:2.3rem; height:2.3rem; border-radius:50%; color:#fff;
+  display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(0,20,18,0.14);
+}
+.nlp-grundbegriff-icon svg{ width:1.15rem; height:1.15rem; }
+.nlp-grundbegriff-icon.nlp-autor-1{ background:var(--primary); }
+.nlp-grundbegriff-icon.nlp-autor-2{ background:var(--terracotta); }
+.nlp-grundbegriff-icon.nlp-autor-3{ background:var(--sage); }
+.nlp-grundbegriff-icon.nlp-autor-4{ background:var(--accent); color:#4a3418; }
+.nlp-grundbegriff-icon.nlp-autor-5{ background:var(--muted); }
+.nlp-grundbegriff-body{ flex:1; min-width:0; }
+
+/* NLP-Glossar, Technik-Karten */
+.nlp-technik-titelzeile{ display:flex; align-items:center; gap:0.55rem; min-width:0; }
+.nlp-technik-icon{
+  flex-shrink:0; width:1.7rem; height:1.7rem; border-radius:50%;
+  background:var(--background); color:var(--primary); border:1px solid #d7e0de;
+  display:flex; align-items:center; justify-content:center;
+}
+.nlp-technik-icon svg{ width:1rem; height:1rem; }
+.nlp-technik-card.open .nlp-technik-icon{ background:var(--terracotta); color:#fff; border-color:var(--terracotta); }
+.nlp-meta-row{ display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:0.65rem; }
+.nlp-meta-row-modal{ margin-top:0.7rem; }
+.nlp-meta-chip{
+  display:inline-flex; align-items:center; gap:0.3rem; font-family:'Open Sans', sans-serif;
+  font-size:0.72rem; color:var(--primary); background:rgba(0,111,106,0.08);
+  border-radius:999px; padding:0.2rem 0.6rem 0.2rem 0.45rem;
+}
+.nlp-meta-chip svg{ width:0.85rem; height:0.85rem; flex-shrink:0; }
+
 /* Modus-Modell-Grafik, Animation */
 @keyframes stPulseRing{ 0%{ r:60; opacity:0.55; } 100%{ r:104; opacity:0; } }
 @keyframes stFlowDash{ to{ stroke-dashoffset:-24; } }
@@ -583,6 +651,12 @@ button.ghost{
   border-left:4px solid var(--secondary); border-radius:8px; padding:0.9rem 1.1rem;
 }
 .sehnsuchtsziel-block h4{ color:var(--primary); }
+.formulierungshinweis-block{
+  background:linear-gradient(120deg, #fff 0%, #f0f2f5 100%); border:1px dashed var(--muted);
+  border-left:4px solid var(--muted); border-radius:8px; padding:0.9rem 1.1rem;
+}
+.formulierungshinweis-block h4{ color:var(--muted-text); }
+.formulierungshinweis-block p{ font-style:italic; }
 .methodenverweis-block{
   background:linear-gradient(120deg, #fff 0%, #faf6f0 100%); border:1px dashed var(--terracotta);
   border-left:4px solid var(--terracotta); border-radius:8px; padding:0.9rem 1.1rem;

@@ -169,6 +169,12 @@ function MusterModal({ item, onClose, onPrev, onNext, positionLabel, initialAnsi
                   <h4>Schutzfunktion</h4>
                   <p>{item.schutzfunktion}</p>
                 </div>
+                {item.formulierungshinweis && (
+                  <div className="block formulierungshinweis-block">
+                    <h4>Hinweis zur Formulierung</h4>
+                    <p>{item.formulierungshinweis}</p>
+                  </div>
+                )}
                 {item.sehnsuchtsziel && (
                   <div className="block sehnsuchtsziel-block">
                     <h4>Sehnsuchtsziel</h4>

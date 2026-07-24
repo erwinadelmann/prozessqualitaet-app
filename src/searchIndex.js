@@ -7,6 +7,7 @@ import MUSTER_DATA from './data/muster.json';
 import NARRATIV_DATA from './data/reframing-narrativ.json';
 import UP_DATA from './data/utilisationsprozess.json';
 import METHODEN_DATA from './data/methodenbox.json';
+import NLP_DATA from './data/nlp-glossar.json';
 import ACT_DATA from './data/act-defusion.json';
 import EMDR_DATA from './data/emdr.json';
 import SCHEMA_DATA from './data/schema-therapie.json';
@@ -62,6 +63,30 @@ function buildIndex(){
       kontext: e.kategorie,
       snippet: e.kernaussage,
       matchText: [e.titel, e.kernaussage, e.erklaerung, e.einsatzkontext, e.ziel, e.zitat].filter(Boolean).join(' ')
+    });
+  });
+
+  // Die besten NLP-Techniken, Glossar-Einträge nach Autor:in
+  NLP_DATA.elemente.forEach(e => {
+    entries.push({
+      key: 'nlp-' + e.id,
+      tab: 'nlp',
+      openId: e.id,
+      titel: e.titel,
+      kontext: 'NLP-Techniken · ' + e.autor,
+      snippet: e.kernaussage,
+      matchText: [e.titel, e.autor, e.kernaussage, e.erklaerung, e.ziel, e.einsatzkontext, ...(e.schritte || []).map(s => s.text)].filter(Boolean).join(' ')
+    });
+  });
+  // Grundbegriffe der NLP-Techniken, kein Deep-Link, springt nur auf den Tab
+  (NLP_DATA.grundbegriffe || []).forEach(g => {
+    entries.push({
+      key: 'nlp-grundbegriff-' + g.id,
+      tab: 'nlp',
+      titel: g.begriff,
+      kontext: 'NLP-Techniken · Grundbegriff',
+      snippet: g.erklaerung,
+      matchText: [g.begriff, g.erklaerung].join(' ')
     });
   });
 
