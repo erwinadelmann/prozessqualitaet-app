@@ -542,6 +542,25 @@ button.ghost{
 }
 .nlp-meta-chip svg{ width:0.85rem; height:0.85rem; flex-shrink:0; }
 
+/* Chakren-Affirmationen */
+.chakren-hero-wrap{ max-width:var(--content-max); margin:1.6rem auto 0; padding:0 1.5rem; }
+.chakren-visual-wrap{
+  max-width:var(--content-max); margin:1.4rem auto 0; padding:0 1.5rem;
+  display:flex; align-items:center; gap:2.2rem; flex-wrap:wrap;
+}
+.chakren-figur-svg{ width:150px; height:240px; flex-shrink:0; }
+.chakren-liste{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.85rem; flex:1; min-width:220px; }
+.chakren-liste-item{ display:flex; align-items:center; gap:0.7rem; }
+.chakren-punkt{ width:1.05rem; height:1.05rem; border-radius:50%; flex-shrink:0; box-shadow:0 0 0 3px rgba(255,255,255,0.6), 0 2px 6px rgba(0,20,18,0.12); }
+.chakren-liste-text{ display:flex; align-items:baseline; gap:0.6rem; flex-wrap:wrap; }
+.chakren-affirmation-en{ font-family:'Playfair Display', serif; font-style:italic; font-size:1.1rem; color:var(--ink); }
+.chakren-affirmation-de{ font-family:'Open Sans', sans-serif; font-size:0.82rem; color:var(--muted); }
+.chakren-wirkaussage{ border-left-color:var(--secondary); font-style:italic; }
+.card.chakren-card{ border-left-width:5px; cursor:default; }
+.card.chakren-card:hover{ transform:none; }
+.card.chakren-card .kat-badge{ color:#fff; }
+@media (max-width:640px){ .chakren-visual-wrap{ justify-content:center; } .chakren-figur-svg{ width:120px; height:192px; } }
+
 /* Modus-Modell-Grafik, Animation */
 @keyframes stPulseRing{ 0%{ r:60; opacity:0.55; } 100%{ r:104; opacity:0; } }
 @keyframes stFlowDash{ to{ stroke-dashoffset:-24; } }

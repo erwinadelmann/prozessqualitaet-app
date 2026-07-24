@@ -7,6 +7,7 @@ import QualitaetsCheck from './components/QualitaetsCheck.jsx';
 import MeinFokus from './components/MeinFokus.jsx';
 import Methodenbox from './components/Methodenbox.jsx';
 import NLPGlossar from './components/NLPGlossar.jsx';
+import ChakrenAffirmationen from './components/ChakrenAffirmationen.jsx';
 import Modelle from './components/Modelle.jsx';
 import Ressourcen from './components/Ressourcen.jsx';
 import FokusKompass from './components/FokusKompass.jsx';
@@ -14,6 +15,7 @@ import Videothek from './components/Videothek.jsx';
 import MUSTER_DATA from './data/muster.json';
 import METHODEN_DATA from './data/methodenbox.json';
 import NLP_DATA from './data/nlp-glossar.json';
+import CHAKREN_DATA from './data/chakren-affirmationen.json';
 import { BILDER_KATEGORIEN, VIDEOS } from './data/ressourcen.js';
 import { searchGlobal } from './searchIndex.js';
 import heroImage from './assets/logo_mental.png';
@@ -30,6 +32,7 @@ const TAB_ICONS = {
   begleiter: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="9" cy="10" r="0.8" fill="currentColor"/><circle cx="12" cy="10" r="0.8" fill="currentColor"/><circle cx="15" cy="10" r="0.8" fill="currentColor"/></svg>,
   modelle: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>,
   nlp: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>,
+  chakren: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="4" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="20" r="1.6" fill="currentColor" stroke="none"/><circle cx="4" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="20" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="6.5" cy="6.5" r="1.6" fill="currentColor" stroke="none"/><circle cx="17.5" cy="17.5" r="1.6" fill="currentColor" stroke="none"/><circle cx="6.5" cy="17.5" r="1.6" fill="currentColor" stroke="none"/></svg>,
   videothek: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="10 8 16 12 10 16 10 8"/><circle cx="12" cy="12" r="9"/></svg>
 };
 
@@ -104,6 +107,7 @@ function App(){
           <button className={'tab-btn' + (tab === 'kartei' ? ' active' : '')} onClick={() => setTab('kartei')}>{TAB_ICONS.kartei}Kartei <span className="tab-count">{MUSTER_DATA.muster.length}</span></button>
           <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
           <button className={'tab-btn' + (tab === 'nlp' ? ' active' : '')} onClick={() => setTab('nlp')}>{TAB_ICONS.nlp}Die besten NLP-Techniken <span className="tab-count">{NLP_DATA.elemente.length}</span></button>
+          <button className={'tab-btn' + (tab === 'chakren' ? ' active' : '')} onClick={() => setTab('chakren')}>{TAB_ICONS.chakren}Chakren-Affirmationen <span className="tab-count">{CHAKREN_DATA.chakren.length}</span></button>
           <div className="tab-bar-break" aria-hidden="true"></div>
           <button className={'tab-btn' + (tab === 'modelle' ? ' active' : '')} onClick={() => setTab('modelle')}>{TAB_ICONS.modelle}Weitere Modelle</button>
           <button className={'tab-btn' + (tab === 'pruefung' ? ' active' : '')} onClick={() => setTab('pruefung')}>{TAB_ICONS.pruefung}Qualitäts-Check</button>
@@ -126,6 +130,7 @@ function App(){
       {tab === 'pruefung' && <QualitaetsCheck />}
       {tab === 'methodenbox' && <Methodenbox key={tabKey} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
       {tab === 'nlp' && <NLPGlossar key={tabKey} initialOpenId={jumpForTab ? jumpForTab.openId : undefined} />}
+      {tab === 'chakren' && <ChakrenAffirmationen />}
       {tab === 'modelle' && (
         <Modelle
           key={tabKey}

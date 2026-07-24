@@ -8,6 +8,7 @@ import NARRATIV_DATA from './data/reframing-narrativ.json';
 import UP_DATA from './data/utilisationsprozess.json';
 import METHODEN_DATA from './data/methodenbox.json';
 import NLP_DATA from './data/nlp-glossar.json';
+import CHAKREN_DATA from './data/chakren-affirmationen.json';
 import ACT_DATA from './data/act-defusion.json';
 import EMDR_DATA from './data/emdr.json';
 import SCHEMA_DATA from './data/schema-therapie.json';
@@ -87,6 +88,18 @@ function buildIndex(){
       kontext: 'NLP-Techniken · Grundbegriff',
       snippet: g.erklaerung,
       matchText: [g.begriff, g.erklaerung].join(' ')
+    });
+  });
+
+  // Chakren-Affirmationen, sieben Energiezentren
+  CHAKREN_DATA.chakren.forEach(c => {
+    entries.push({
+      key: 'chakren-' + c.id,
+      tab: 'chakren',
+      titel: c.name_deutsch + ' · ' + c.name_sanskrit,
+      kontext: 'Chakren-Affirmationen',
+      snippet: c.affirmation_de + ' · „' + c.affirmation_en + '"',
+      matchText: [c.name_deutsch, c.name_sanskrit, c.koerperregion, c.affirmation_en, c.affirmation_de, c.kurzbeschreibung].join(' ')
     });
   });
 
