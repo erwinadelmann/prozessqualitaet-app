@@ -101,20 +101,24 @@ const PEOPLE_ICON = (
   </svg>
 );
 
-// Dekorative Kopf-Illustration für den Tab: ein ruhiger, abstrakter Pfad mit Wegpunkten
-// in den Markenfarben, sinnbildlich für den Weg durch eine Übung. Bewusst zurückhaltend
-// gehalten, kein Icon-Klischee, passt zum übrigen, nüchternen Nachschlage-Charakter der App.
+// Dekorative Kopf-Illustration für den Tab: ein ruhiges Kompass-Motiv, das dasselbe
+// Formprinzip wie das Kompass-Icon auf jeder Technik-Karte aufgreift (Wiedererkennung
+// statt neuer Bildsprache). Klassische Kompassnadel, zwei Ringe, vier Himmelsrichtungs-
+// Striche, in Markenfarben, bewusst ruhig statt verspielt.
 function NLPHero(){
   return (
-    <svg className="nlp-hero-svg" viewBox="0 0 640 120" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M10 95 C 120 30, 220 150, 330 55 S 520 20, 630 30" fill="none" stroke="var(--primary)" strokeWidth="2" opacity="0.38"/>
-      <circle cx="10" cy="95" r="5.5" fill="var(--terracotta)" opacity="0.85"/>
-      <circle cx="205" cy="98" r="4.5" fill="var(--accent)" opacity="0.85"/>
-      <circle cx="330" cy="55" r="5.5" fill="var(--secondary)" opacity="0.9"/>
-      <circle cx="470" cy="27" r="4.5" fill="var(--sage)" opacity="0.85"/>
-      <circle cx="630" cy="30" r="6" fill="var(--primary)" opacity="0.9"/>
-      <circle cx="330" cy="55" r="16" fill="none" stroke="var(--secondary)" strokeWidth="1" opacity="0.35"/>
-      <circle cx="630" cy="30" r="18" fill="none" stroke="var(--primary)" strokeWidth="1" opacity="0.3"/>
+    <svg className="nlp-hero-svg" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="44" fill="none" stroke="var(--primary)" strokeWidth="1" opacity="0.32"/>
+      <circle cx="50" cy="50" r="33" fill="none" stroke="var(--secondary)" strokeWidth="1" opacity="0.35"/>
+      <line x1="50" y1="4" x2="50" y2="13" stroke="var(--muted)" strokeWidth="1.4" opacity="0.55"/>
+      <line x1="50" y1="87" x2="50" y2="96" stroke="var(--muted)" strokeWidth="1.4" opacity="0.55"/>
+      <line x1="4" y1="50" x2="13" y2="50" stroke="var(--muted)" strokeWidth="1.4" opacity="0.55"/>
+      <line x1="87" y1="50" x2="96" y2="50" stroke="var(--muted)" strokeWidth="1.4" opacity="0.55"/>
+      <polygon points="50,21 58,50 50,50" fill="var(--terracotta)"/>
+      <polygon points="50,21 42,50 50,50" fill="var(--terracotta)" opacity="0.55"/>
+      <polygon points="50,79 58,50 50,50" fill="var(--sage)" opacity="0.55"/>
+      <polygon points="50,79 42,50 50,50" fill="var(--sage)"/>
+      <circle cx="50" cy="50" r="3.4" fill="var(--primary)"/>
     </svg>
   );
 }
@@ -295,7 +299,7 @@ export default function NLPGlossar({ initialOpenId }){
   return (
     <>
       <div className="nlp-hero-wrap">
-        <NLPHero />
+        <span className="nlp-hero-icon-wrap"><NLPHero /></span>
         <div className="nlp-hero-text">
           <p className="nlp-hero-kicker">Glossar · Nachschlagewerk</p>
           <h2 className="nlp-hero-titel">{DATA.meta.titel}</h2>

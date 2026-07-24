@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "titel": "Chakren-Affirmationen",
+    "untertitel": "Sieben Energiezentren, sieben Sätze",
+    "hinweis": "Das Chakren-Modell stammt aus der yogischen Tradition, nicht aus der Hypnosystemik oder dem NLP. Die sieben Chakren, ihre Zuordnung zu Körperregionen und Farben, sind über Jahrhunderte gewachsene Lehrinhalte dieser Tradition, keine wissenschaftlich nachgewiesenen körperlichen Strukturen. Die Aussage, dass das Durchlaufen aller sieben Affirmationen 'das gesamte Energiefeld aktiviert', ist eine Aussage innerhalb der Chakren-Lehre selbst, hier bewusst als solche gekennzeichnet und nicht als belegte Tatsache dargestellt.",
+    "wirkaussage": "In der Chakren-Lehre wird angenommen, dass jedes der sieben Chakren einem bestimmten Lebensbereich entspricht und dass das bewusste, der Reihe nach erfolgende Aussprechen aller sieben Affirmationen, von der Basis bis zum Scheitel, das gesamte Energiefeld des Menschen aktiviert und in Fluss bringt."
+  },
+  "chakren": [
+    {
+      "id": "krone",
+      "reihenfolge": 1,
+      "name_deutsch": "Kronenchakra",
+      "name_sanskrit": "Sahasrara",
+      "koerperregion": "Scheitel, oberster Punkt des Kopfes",
+      "farbe": "#8f7fd6",
+      "affirmation_en": "I understand",
+      "affirmation_de": "Ich verstehe",
+      "kurzbeschreibung": "Steht in der Tradition für Verbindung zu einem größeren Ganzen, für Einsicht und spirituelles Verstehen."
+    },
+    {
+      "id": "drittes_auge",
+      "reihenfolge": 2,
+      "name_deutsch": "Stirnchakra, Drittes Auge",
+      "name_sanskrit": "Ajna",
+      "koerperregion": "Zwischen den Augenbrauen",
+      "farbe": "#5b6fb0",
+      "affirmation_en": "I see",
+      "affirmation_de": "Ich sehe",
+      "kurzbeschreibung": "Steht in der Tradition für Klarheit, Intuition und inneres Sehen, über das rein optische Wahrnehmen hinaus."
+    },
+    {
+      "id": "hals",
+      "reihenfolge": 3,
+      "name_deutsch": "Halschakra",
+      "name_sanskrit": "Vishuddha",
+      "koerperregion": "Hals, Kehlkopf",
+      "farbe": "#3fb6c4",
+      "affirmation_en": "I talk",
+      "affirmation_de": "Ich spreche",
+      "kurzbeschreibung": "Steht in der Tradition für Ausdruck, Wahrhaftigkeit und die eigene Stimme, hörbar und stimmig nach außen bringen."
+    },
+    {
+      "id": "herz",
+      "reihenfolge": 4,
+      "name_deutsch": "Herzchakra",
+      "name_sanskrit": "Anahata",
+      "koerperregion": "Brustmitte",
+      "farbe": "#5a9b5a",
+      "affirmation_en": "I love",
+      "affirmation_de": "Ich liebe",
+      "kurzbeschreibung": "Steht in der Tradition für Verbindung, Mitgefühl und die Fähigkeit, zu geben und anzunehmen."
+    },
+    {
+      "id": "solarplexus",
+      "reihenfolge": 5,
+      "name_deutsch": "Solarplexuschakra",
+      "name_sanskrit": "Manipura",
+      "koerperregion": "Oberbauch, unterhalb des Brustbeins",
+      "farbe": "#e0b83a",
+      "affirmation_en": "I do",
+      "affirmation_de": "Ich handle",
+      "kurzbeschreibung": "Steht in der Tradition für Willenskraft, Selbstwert und die Fähigkeit, Vorhaben in die Tat umzusetzen."
+    },
+    {
+      "id": "sakral",
+      "reihenfolge": 6,
+      "name_deutsch": "Sakralchakra",
+      "name_sanskrit": "Svadhisthana",
+      "koerperregion": "Unterbauch, etwa zwei Fingerbreit unterhalb des Bauchnabels",
+      "farbe": "#d97d2e",
+      "affirmation_en": "I feel",
+      "affirmation_de": "Ich fühle",
+      "kurzbeschreibung": "Steht in der Tradition für Emotion, Lebensfreude, Sinnlichkeit und Wandlungsfähigkeit."
+    },
+    {
+      "id": "wurzel",
+      "reihenfolge": 7,
+      "name_deutsch": "Wurzelchakra",
+      "name_sanskrit": "Muladhara",
+      "koerperregion": "Basis der Wirbelsäule, Steißbein",
+      "farbe": "#b6473f",
+      "affirmation_en": "I am",
+      "affirmation_de": "Ich bin",
+      "kurzbeschreibung": "Steht in der Tradition für Erdung, Sicherheit und das grundlegende Recht, da zu sein."
+    }
+  ]
+}
