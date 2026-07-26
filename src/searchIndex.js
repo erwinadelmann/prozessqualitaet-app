@@ -21,6 +21,10 @@ import { FOCUSING_QUESTION, MOTTO_FRAGEN, THEMEN_VORSCHLAEGE } from './data/foku
 import { GUNTHER_SCHMIDT_VIDEOS } from './data/gunther-schmidt-videos.js';
 import { BUDDHA_OMA_VIDEOS } from './data/buddha-oma-videos.js';
 import { BOUNDLESS_MOVEMENT_VIDEOS } from './data/boundless-movement-videos.js';
+import { ERO_LANGLOTZ_VIDEOS } from './data/ero-langlotz-videos.js';
+import { JULIA_BELKE_VIDEOS } from './data/julia-belke-videos.js';
+import { ALEXANDER_HARTMANN_VIDEOS } from './data/alexander-hartmann-videos.js';
+import { VERENA_KOENIG_VIDEOS } from './data/verena-koenig-videos.js';
 
 function buildIndex(){
   const entries = [];
@@ -249,7 +253,7 @@ function buildIndex(){
     matchText: [FOCUSING_QUESTION, ...MOTTO_FRAGEN, ...THEMEN_VORSCHLAEGE].join(' ')
   });
 
-  // Videothek, drei Sammlungen, je ein Sprungpunkt (kein Deep-Link auf einzelne Videos)
+  // Videothek, sieben Sammlungen, je ein Sprungpunkt (kein Deep-Link auf einzelne Videos)
   entries.push({
     key: 'videothek-guntherschmidt',
     tab: 'videothek',
@@ -276,6 +280,42 @@ function buildIndex(){
     kontext: 'Videothek',
     snippet: 'Natürliche, bewusste Bewegung',
     matchText: ['Boundless Movement', 'Bewegung', 'Körper', 'natürlich', 'bewusst'].join(' ')
+  });
+  entries.push({
+    key: 'videothek-erolanglotz',
+    tab: 'videothek',
+    openId: 'erolanglotz',
+    titel: 'Videothek · Dr. Ero Langlotz',
+    kontext: 'Videothek',
+    snippet: 'Autonomie, Resilienz und Beziehungsklärung',
+    matchText: ['Dr. Ero Langlotz', 'Ero Langlotz', 'Autonomie', 'Resilienz', 'Beziehungsklärung', 'Selbstermächtigung', 'Trauma', ...ERO_LANGLOTZ_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-juliabelke',
+    tab: 'videothek',
+    openId: 'juliabelke',
+    titel: 'Videothek · Dr. Julia Belke',
+    kontext: 'Videothek',
+    snippet: 'Traumatherapie, Aufstellungen und Beziehungsmuster',
+    matchText: ['Dr. Julia Belke', 'Julia Belke', 'Traumatherapie', 'Aufstellungen', 'Beziehungsmuster', 'Überverantwortung', 'Veränderung', ...JULIA_BELKE_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-alexanderhartmann',
+    tab: 'videothek',
+    openId: 'alexanderhartmann',
+    titel: 'Videothek · Alexander Hartmann',
+    kontext: 'Videothek',
+    snippet: 'Hypnose und Trancearbeit',
+    matchText: ['Alexander Hartmann', 'Hypnose', 'Trance', 'HypnoTV', ...ALEXANDER_HARTMANN_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-verenakoenig',
+    tab: 'videothek',
+    openId: 'verenakoenig',
+    titel: 'Videothek · Verena König',
+    kontext: 'Videothek',
+    snippet: 'Entwicklungstrauma und Abgrenzung',
+    matchText: ['Verena König', 'Entwicklungstrauma', 'Abgrenzung', 'Podcast', ...VERENA_KOENIG_VIDEOS.map(v => v.title)].join(' ')
   });
 
   return entries;

@@ -877,8 +877,9 @@ button.ghost{
   color:var(--secondary); text-transform:uppercase;
 }
 
-/* Video-Listen-Tabs, Videothek (Dr. Gunther Schmidt editierbar; Buddha Oma und
-   Boundless Movement synced/fest, siehe VideoListTab.jsx) */
+/* Video-Listen-Tabs, Videothek (Dr. Gunther Schmidt editierbar; Buddha Oma,
+   Boundless Movement, Dr. Ero Langlotz, Dr. Julia Belke, Alexander Hartmann und
+   Verena König synced/fest, siehe VideoListTab.jsx) */
 .vlt-add{
   display:flex; gap:0.6rem; flex-wrap:wrap; align-items:center;
   margin:1.2rem 0 0.6rem; padding:1rem; background:var(--card-bg); border:1px solid #e3e7e6; border-radius:10px;
