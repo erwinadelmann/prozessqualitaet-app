@@ -11,6 +11,7 @@ import NLP_DATA from './data/nlp-glossar.json';
 import CHAKREN_DATA from './data/chakren-affirmationen.json';
 import LANGLOTZ_DATA from './data/langlotz-ssi.json';
 import ACT_DATA from './data/act-defusion.json';
+import GRUNDLAGEN_DATA from './data/theoretische-grundlagen.json';
 import EMDR_DATA from './data/emdr.json';
 import SCHEMA_DATA from './data/schema-therapie.json';
 import { BILDER_KATEGORIEN, VIDEOS } from './data/ressourcen.js';
@@ -157,6 +158,20 @@ function buildIndex(){
       kontext: 'EMDR',
       snippet: phase.kurz,
       matchText: [phase.titel, phase.kurz, phase.inhalt, phase.funktion].join(' ')
+    });
+  });
+
+  // Wirkprinzipien, wie Erleben entsteht, Schmidt, Erickson
+  GRUNDLAGEN_DATA.abschnitte.forEach(abschnitt => {
+    entries.push({
+      key: 'wirkprinzipien-' + abschnitt.id,
+      tab: 'wirkprinzipien',
+      openThemaId: 'grundlagen',
+      openId: abschnitt.id,
+      titel: abschnitt.titel,
+      kontext: 'Wirkprinzipien',
+      snippet: abschnitt.kurz,
+      matchText: [abschnitt.titel, abschnitt.kurz, abschnitt.text, abschnitt.praxis, abschnitt.zusatz, abschnitt.quelle, ...(abschnitt.punkte || []).map(p => p.titel + ' ' + p.text + ' ' + (p.praxis || ''))].filter(Boolean).join(' ')
     });
   });
 

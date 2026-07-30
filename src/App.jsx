@@ -10,6 +10,7 @@ import NLPGlossar from './components/NLPGlossar.jsx';
 import ChakrenAffirmationen from './components/ChakrenAffirmationen.jsx';
 import LanglotzSSI from './components/LanglotzSSI.jsx';
 import Modelle from './components/Modelle.jsx';
+import Wirkprinzipien from './components/Wirkprinzipien.jsx';
 import Ressourcen from './components/Ressourcen.jsx';
 import FokusKompass from './components/FokusKompass.jsx';
 import Videothek from './components/Videothek.jsx';
@@ -33,6 +34,7 @@ const TAB_ICONS = {
   steuerposition: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="8"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M17.7 6.3l-2.1 2.1M8.4 15.6l-2.1 2.1"/><circle cx="12" cy="12" r="2.3"/></svg>,
   begleiter: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="9" cy="10" r="0.8" fill="currentColor"/><circle cx="12" cy="10" r="0.8" fill="currentColor"/><circle cx="15" cy="10" r="0.8" fill="currentColor"/></svg>,
   modelle: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>,
+  wirkprinzipien: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>,
   nlp: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>,
   chakren: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="4" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="20" r="1.6" fill="currentColor" stroke="none"/><circle cx="4" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="20" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="6.5" cy="6.5" r="1.6" fill="currentColor" stroke="none"/><circle cx="17.5" cy="17.5" r="1.6" fill="currentColor" stroke="none"/><circle cx="6.5" cy="17.5" r="1.6" fill="currentColor" stroke="none"/></svg>,
   langlotz: <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4.5c3-1.2 6-1.2 8 0v15c-2-1.2-5-1.2-8 0z"/><path d="M20 4.5c-3-1.2-6-1.2-8 0v15c2-1.2 5-1.2 8 0z"/></svg>,
@@ -108,6 +110,7 @@ function App(){
           <button className={'tab-btn tab-btn-terracotta' + (tab === 'begleiter' ? ' active' : '')} onClick={() => setTab('begleiter')}>{TAB_ICONS.begleiter}Utilisations-Begleiter</button>
           <button className={'tab-btn tab-btn-prominent' + (tab === 'steuerposition' ? ' active' : '')} onClick={() => setTab('steuerposition')}>{TAB_ICONS.steuerposition}Steuerposition üben</button>
           <button className={'tab-btn' + (tab === 'kartei' ? ' active' : '')} onClick={() => setTab('kartei')}>{TAB_ICONS.kartei}Kartei <span className="tab-count">{MUSTER_DATA.muster.length}</span></button>
+          <button className={'tab-btn' + (tab === 'wirkprinzipien' ? ' active' : '')} onClick={() => setTab('wirkprinzipien')}>{TAB_ICONS.wirkprinzipien}Wirkprinzipien</button>
           <button className={'tab-btn' + (tab === 'methodenbox' ? ' active' : '')} onClick={() => setTab('methodenbox')}>{TAB_ICONS.methodenbox}Methodenbox <span className="tab-count">{METHODEN_DATA.elemente.length}</span></button>
           <button className={'tab-btn' + (tab === 'nlp' ? ' active' : '')} onClick={() => setTab('nlp')}>{TAB_ICONS.nlp}Die besten NLP-Techniken <span className="tab-count">{NLP_DATA.elemente.length}</span></button>
           <button className={'tab-btn' + (tab === 'chakren' ? ' active' : '')} onClick={() => setTab('chakren')}>{TAB_ICONS.chakren}Chakren-Affirmationen <span className="tab-count">{CHAKREN_DATA.chakren.length}</span></button>
@@ -129,6 +132,14 @@ function App(){
           key={tabKey}
           initialOpenId={jumpForTab ? jumpForTab.openId : undefined}
           initialAnsicht={jumpForTab ? jumpForTab.openView : undefined}
+        />
+      )}
+      {tab === 'wirkprinzipien' && (
+        <Wirkprinzipien
+          key={tabKey}
+          initialThemaId={jumpForTab ? jumpForTab.openThemaId : undefined}
+          initialOpenId={jumpForTab ? jumpForTab.openId : undefined}
+          initialOpenNr={jumpForTab ? jumpForTab.openNr : undefined}
         />
       )}
       {tab === 'pruefung' && <QualitaetsCheck />}

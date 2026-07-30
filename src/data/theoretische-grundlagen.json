@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "titel": "Wirkprinzipien",
+    "untertitel": "Wie Erleben entsteht, und wie es sich wirksam beeinflussen lässt",
+    "untertitel_klein": "Wissenschaftliche Einordnung, dazu die Modelle von Gunther Schmidt und Milton Erickson, auf denen die Methodik dieses Programms aufbaut. Jeder Abschnitt trennt drei Ebenen sauber voneinander: den wissenschaftlichen Stand, die Einordnung seiner Belastbarkeit, und die alltagsbewährte Coaching-Formulierung, mit der sich das Prinzip in einer Sitzung tatsächlich nutzen lässt."
+  },
+  "abschnitte": [
+    {
+      "id": "konstruktion",
+      "titel": "Erleben ist Konstruktion, keine Abbildung",
+      "kurz": "Warum das Gehirn nicht registriert, sondern vorhersagt, und aus diesem Abgleich das Erleben selbst entsteht.",
+      "text": "Die in Kognitionswissenschaft und Neurowissenschaft aktuell vorherrschende Sicht beschreibt Wahrnehmung nicht als passive Abbildung äußerer Reize, sondern als aktiven Konstruktionsprozess. Das Gehirn erzeugt fortlaufend Vorhersagemodelle über die Situation und gleicht sie mit eintreffenden Sinnessignalen ab. Erlebt wird das Ergebnis dieses Abgleichs, nicht der Reiz selbst. Dieses Grundprinzip wird meist als prädiktive Verarbeitung oder prädiktive Kodierung bezeichnet, maßgeblich ausgearbeitet von Karl Friston und Andy Clark.\n\nZwei Menschen in derselben Situation erleben dadurch nicht dasselbe. Was jemand erlebt, ist bereits das Ergebnis von Vorwissen, Erwartung und aktuellem Fokus, keine neutrale Aufzeichnung der Wirklichkeit.",
+      "praxis": "'Zwei Menschen erleben dieselbe Situation nie ganz gleich, weil jede und jeder etwas anderes daraus macht. Das ist keine Ausrede, das ist ein Ansatzpunkt: Wenn Erleben gemacht wird, kann es auch anders gemacht werden.' Dieser Satz eignet sich, um den Konstruktionscharakter von Erleben früh in einer Sitzung erfahrbar zu machen, ohne die Situation der Person kleinzureden oder ihr die Verantwortung für äußere Umstände zuzuschieben.",
+      "zusatz": "Predictive Processing gilt als das derzeit einflussreichste Rahmenmodell für Wahrnehmung und wird durch vielfältige Befunde gestützt, etwa Aufmerksamkeitsmodulation, Bistabilität, Wiederholungsunterdrückung. Es ist kein abgeschlossen bewiesenes Faktum. Kritiker weisen darauf hin, dass Teile des Modells, insbesondere Fristons Freie-Energie-Prinzip, eher mathematische Tautologie als empirisch falsifizierbare Aussage seien, und dass der Vergleich zu einfacheren Modellen der Wahrnehmung noch nicht abschließend entschieden ist.",
+      "quelle": "Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behavioral and Brain Sciences. Friston, K. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience. Kritische Einordnung u. a. bei Walsh, McGovern, Clark & O'Connell (2020), Evaluating the neurophysiological evidence for predictive processing as a model of perception, PMC."
+    },
+    {
+      "id": "kopplung",
+      "titel": "Vier Elemente, an die Erleben gekoppelt ist",
+      "kurz": "Aufmerksamkeit, gespeicherte Muster, Körperzustand und sozialer Kontext, unterschiedlich gut belegt.",
+      "text": "Wenn Erleben konstruiert wird, stellt sich die Frage, wodurch diese Konstruktion gesteuert wird. Vier Faktoren gelten als die am besten untersuchten Stellschrauben, mit deutlich unterschiedlicher Beweislage.",
+      "punkte": [
+        {
+          "titel": "Aufmerksamkeitsfokus",
+          "text": "Worauf jemand achtet, bestimmt maßgeblich, was erlebt wird. Aufmerksamkeit moduliert nachweislich neuronale Verarbeitung, einer der am besten replizierten Befunde der kognitiven Neurowissenschaft.",
+          "praxis": "'Wenn Sie jetzt für einen Moment ganz bewusst woanders hinschauen, was verändert sich dann in dem, was Sie spüren?' Eine einfache Frage, um den Aufmerksamkeitsfokus im Gespräch direkt erfahrbar zu machen, statt ihn nur zu erklären."
+        },
+        {
+          "titel": "Gespeicherte Muster und Priming",
+          "text": "Frühere Erfahrungen bahnen aktuelle Wahrnehmung vor. Perzeptuelles und semantisches Priming, etwa dass ein Wort die Verarbeitung eines verwandten Wortes beschleunigt, ist gut repliziert. Klassisches soziales Verhaltenspriming dagegen, etwa Bargh, Chen und Burrows' vielzitierte Studie von 1996, in der altersassoziierte Wörter angeblich die Gehgeschwindigkeit verlangsamten, gilt seit einer methodisch strengeren Wiederholung durch Doyen und Kollegen 2012 als schwer erschüttert. Daniel Kahneman warnte 2012 in einem offenen Brief an die Priming-Forschung selbst vor einem herannahenden 'Zugunglück'. Bei jeder Priming-Berufung lohnt sich deshalb die Nachfrage, um welche Art von Priming es geht.",
+          "praxis": "'Dieses Muster ist nicht zufällig da. Es wurde einmal gebraucht. Wofür war es gut?' Die Wofür-Frage, ausführlich in Kartei und Methodenbox, ist die praktische Übersetzung dieses Prinzips in diesem Programm, unabhängig davon, wie belastbar einzelne Priming-Studien im Detail sind."
+        },
+        {
+          "titel": "Körperzustand und Embodiment",
+          "text": "Der physiologische Zustand färbt Kognition und Emotion, etwa über Atmung, Muskeltonus und Herzratenvariabilität. Dass Körperzustand nicht nur Ausdruck, sondern Mitverursacher von Erleben ist, ist in der Embodiment- und Interozeptionsforschung solide verankert. Einzelne plakative Effekte, etwa dass das Halten einer warmen Tasse Kaffee Menschen als charakterlich 'wärmer' beurteilen lässt, teilen dieselben Replikationsprobleme wie das klassische soziale Priming und sollten nicht mit dem allgemeinen Prinzip gleichgesetzt werden.",
+          "praxis": "'Wie atmen Sie gerade? Wie stehen Sie gerade?' Der Körperzustand wird nicht nebenbei erfragt, sondern als eigener Zugang zum Erleben genutzt, siehe die Embodiment-Arbeit in Phase 5 der Steuerposition."
+        },
+        {
+          "titel": "Sozialer und sprachlicher Kontext",
+          "text": "Bedeutung entsteht in Interaktion, nicht isoliert im Individuum. Sprache, Beziehung und Situation formen mit, was als Erleben zugänglich wird. Dieser Punkt ist in Sozialpsychologie und Linguistik breit abgesichert und deutlich weniger umstritten als die Priming-Debatte.",
+          "praxis": "'In welchem Gespräch, auch innerlich, befinden Sie sich gerade?' Eine Formulierung im Gespräch mitzudenken heißt, sie immer auch als Rahmung zu verstehen, nicht nur als Beschreibung."
+        }
+      ]
+    },
+    {
+      "id": "schmidt",
+      "titel": "Gunther Schmidt: Hypnosystemik",
+      "kurz": "Fokussierung entscheidet, welches Erleben aktiviert wird. Muster gelten als nutzbare Kopplung, nicht als Gegner.",
+      "text": "Gunther Schmidt entwickelt die Hypnosystemik seit den frühen 1980er-Jahren als Weiterentwicklung von Milton Ericksons Hypnotherapie, verbunden mit systemischen und konstruktivistischen Modellen. Sein Kernsatz: Erleben ist das Ergebnis von Fokussierung. Wohin die Aufmerksamkeit gelenkt wird, entscheidet, welches Erleben aktiviert wird. Die 'Realität', die jemand erlebt, ist ein emotionaler Konstruktionsprozess, gekoppelt an biologische und intrapsychische Wahrnehmung ebenso wie an soziale Interaktion.\n\nMuster versteht Schmidt als Kopplung, Assoziation und Vernetzung unterschiedlicher Erlebenselemente. Problem und Lösung sind für ihn beides selbstgemachte Musterbildungen, keine gegensätzlichen Kategorien. Daraus folgt seine zentrale Beeinflussungslogik: das Muster nicht bekämpfen, sondern über gezielte Fokuslenkung den darin enthaltenen positiven Ursprungsintent nutzbar machen. Das ist Utilisation, der methodische Kern, auf dem auch die Wofür-Frage in diesem Programm aufbaut.",
+      "praxis": "Die Wofür-Frage ist die direkte Übersetzung von Schmidts Fokussierungs-Prinzip in eine einzige, immer wieder einsetzbare Frage: 'Wofür sorgt dieser Teil in Ihrem System gerade?' Findet die Person keine Antwort, als Angebot, nie als Vorgabe: 'Vielleicht geht es um Schutz Ihres Selbstwerts, um Sicherheit, um Verbundenheit, um rasche Regulation von Anspannung, oder um Wirksamkeit. Was davon trifft es am ehesten, oder ist es etwas ganz anderes?' Vollständige Ausformulierung und alle Varianten siehe Methodenbox und Utilisations-Begleiter.",
+      "zusatz": "Schmidt stützt sich auf reale Forschungsfelder, Gedächtnis-, Priming- und Embodimentforschung, siehe oben. Das hypnosystemische Gesamtmodell selbst ist ein klinisch-theoretisches Integrationsmodell, keine durch kontrollierte Studien geprüfte Einzeltheorie. Wirksamkeitsnachweise existieren vor allem für hypnotherapeutische Verfahren im Allgemeinen, weniger für die hypnosystemische Theoriebildung im Speziellen.",
+      "quelle": "Schmidt, G. (2004). Liebesaffären zwischen Problem und Lösung. Hypnosystemisches Arbeiten in schwierigen Kontexten. Carl-Auer. Einführungstexte und Leseproben u. a. unter carl-auer.de und hager-katharina.at."
+    },
+    {
+      "id": "erickson",
+      "titel": "Milton Erickson: Utilisation und indirekte Kommunikation",
+      "kurz": "Das Unbewusste als Ressourcen-Speicher aller Lebenserfahrung, nicht als Ort verdrängter Triebe.",
+      "text": "Milton Erickson (1901 bis 1980) bricht mit der freudianischen Sicht des Unbewussten als Ort verdrängter, potenziell gefährlicher Triebe. Für ihn ist das Unbewusste ein Speicher aller Lebenserfahrung und aller bisherigen Lernprozesse, kreativ und von sich aus lösungsorientiert, mit einer eigenen Wahrnehmung, getrennt vom Bewusstsein.\n\nBeeinflussung geschieht bei Erickson über zwei Wege. Utilisation heißt: alles, was eine Person mitbringt, Symptom, Widerstand, Eigenart, Sprache, Vorgeschichte, wird genutzt statt bekämpft. Ericksons eigene Position dazu, sinngemäß: Nicht das, was die Therapeutin oder der Therapeut sagt, sondern das, was die Person subjektiv daraus macht, ist der eigentliche Wirkfaktor jeder Suggestion. Der zweite Weg ist Trance beziehungsweise indirekte Kommunikation, über Metapher, Geschichte und mehrdeutige Sprache, mit dem Ziel, das kritische, bewertende Bewusstsein zu umgehen und direkter mit den vorhandenen unbewussten Ressourcen zu arbeiten.",
+      "praxis": "Utilisation heißt konkret, einen Einwand, ein Zögern oder einen Widerstand nicht zu entkräften, sondern anzuerkennen und einzubauen, etwa: 'Genau dieses Zögern zeigt, wie sorgfältig ein Teil von Ihnen das prüft, bevor er sich entscheidet.' Indirekte Kommunikation heißt, eine Veränderungsidee in ein Beispiel oder eine Beobachtung einzubetten statt sie direkt zu fordern, etwa: '... und manche Menschen bemerken dann, ganz nebenbei, wie leicht es plötzlich geht ...'",
+      "zusatz": "Ericksons Modell stützt sich vor allem auf umfangreiche Fallarbeit, nicht auf systematische Wirksamkeitsstudien im heutigen Sinn. Akademische Kritik bemängelt seit Jahrzehnten die dünne empirische Absicherung seiner Methodik, unabhängig von der klinischen Wirkung, die viele seiner Schüler, darunter auch Schmidt, beschreiben.",
+      "quelle": "Erickson, M. H. & Rossi, E. L. (1979). Hypnotherapy: An Exploratory Casebook. Irvington. Übersichten zu Utilisation und Kritik u. a. bei ericksonianhypnosis.com und in Fallstudien-Überblicken auf ResearchGate."
+    },
+    {
+      "id": "vergleich",
+      "titel": "Schmidt und Erickson im Vergleich",
+      "kurz": "Derselbe Hebel, mit rund fünfzig Jahren Abstand unterschiedlich systematisiert.",
+      "vergleich": {
+        "spalten": ["Merkmal", "Gunther Schmidt / Hypnosystemik", "Milton Erickson"],
+        "zeilen": [
+          { "merkmal": "Zeitlicher Ausgangspunkt", "werte": ["Systematisierung seit den frühen 1980er-Jahren", "Klinische Einzelfallarbeit, 1930er- bis 1980er-Jahre"] },
+          { "merkmal": "Theorierahmen", "werte": ["Bewusst verbunden mit Systemtheorie, Konstruktivismus und moderner Hirnforschung", "Keine geschlossene Theorie zu Lebzeiten, vor allem Fallbeschreibungen und Prinzipien"] },
+          { "merkmal": "Blick auf Muster / Unbewusstes", "werte": ["Muster als Kopplung von Erlebenselementen, veränderbar über Fokuslenkung", "Unbewusstes als kreativer Ressourcen-Speicher aller Lebenserfahrung"] },
+          { "merkmal": "Zentrales Werkzeug", "werte": ["Utilisation über gezielte Fragen und Fokussierung, Wofür-Logik", "Utilisation über indirekte Kommunikation, Metapher, Trance"] },
+          { "merkmal": "Evidenzlage", "werte": ["Klinisch-theoretisches Integrationsmodell, keine RCT-geprüfte Einzeltheorie", "Fallarbeit, akademisch verbreitet als empirisch dünn kritisiert"] }
+        ]
+      },
+      "praxis": "In der Sitzung braucht es diese Unterscheidung selten, beide Wege laufen auf dieselbe Frage hinaus: Wofür ist das gut, und was wird jetzt bewusst daraus gemacht?",
+      "zusatz": "Der Unterschied zwischen beiden ist eher graduell und historisch. Schmidt systematisiert Ericksons klinische Ursprungsintuition und verbindet sie mit heutiger Hirnforschung."
+    },
+    {
+      "id": "hebel",
+      "titel": "Der gemeinsame Hebel: Fokus, Körper und Kontext statt Musterkampf",
+      "kurz": "Warum Utilisation wirkt, wo der direkte Kampf gegen ein Muster meist scheitert.",
+      "text": "Beide Modelle laufen, gestützt durch die allgemeine Forschung zu Aufmerksamkeit, Embodiment und Kontext, auf denselben Hebel hinaus: Erleben ändert sich zuverlässiger über eine Verschiebung von Fokus, Körperzustand oder Kontext als über einen direkten Kampf gegen ein bestehendes Muster. Das ist die wissenschaftliche und klinische Grundlage der Wert-, Würde- und Wirksamkeits-Achsen dieses Programms: Ein Muster wird nicht abgewertet oder bekämpft, sondern nach seinem positiven Ursprungsintent befragt und von dort aus in eine neue Richtung gelenkt.",
+      "praxis": "Die drei Hebel lassen sich als feste Reihenfolge in jeder Sitzung nutzen: zuerst die Wofür-Frage, das ist der Fokus. Dann eine kurze Embodiment-Sequenz, das ist der Körper. Zuletzt eine bewusste Umformulierung der Situation in Sprache, das ist der Kontext. Alle drei gemeinsam, nicht nur einer davon, entscheiden über die Qualität einer Utilisation. Vollständige Schritt-für-Schritt-Anleitung siehe Steuerposition üben und Utilisations-Begleiter."
+    }
+  ]
+}
