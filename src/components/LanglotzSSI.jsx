@@ -1,21 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import DATA from '../data/langlotz-ssi.json';
 import ScrollTopButton from './ScrollTopButton.jsx';
-
-// Eigens gezeichnetes, ruhiges Segel-Motiv als Kopf-Illustration. Kein fremdes Bild,
-// keine Nachbildung des Buchcovers. Aufgegriffen aus dem Kernsatz "Kapitän auf meinem
-// Schiff": ein Segel plus Horizontlinie, in Markenfarben, bewusst schlicht.
-function LanglotzHero(){
-  return (
-    <svg className="nlp-hero-svg" viewBox="0 0 100 100" aria-hidden="true">
-      <line x1="10" y1="78" x2="90" y2="78" stroke="var(--muted)" strokeWidth="1.4" opacity="0.5"/>
-      <line x1="50" y1="14" x2="50" y2="78" stroke="var(--ink)" strokeWidth="2.2" opacity="0.75"/>
-      <path d="M50 18 C 32 30, 28 52, 50 68 Z" fill="var(--primary)" opacity="0.85"/>
-      <path d="M50 26 C 62 36, 64 54, 50 68 Z" fill="var(--terracotta)" opacity="0.8"/>
-      <path d="M28 78 C 40 84, 60 84, 72 78" fill="none" stroke="var(--secondary)" strokeWidth="2" opacity="0.8"/>
-    </svg>
-  );
-}
+import buchcover from '../assets/langlotz-buchcover.webp';
 
 const KAPITEL_ICON = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
@@ -160,8 +146,10 @@ export default function LanglotzSSI({ initialOpenId }){
 
   return (
     <>
-      <div className="nlp-hero-wrap">
-        <span className="nlp-hero-icon-wrap"><LanglotzHero /></span>
+      <div className="nlp-hero-wrap langlotz-hero-wrap">
+        <span className="langlotz-cover-wrap">
+          <img src={buchcover} alt={'Buchcover: ' + DATA.meta.buchquelle} className="langlotz-cover-img" />
+        </span>
         <div className="nlp-hero-text">
           <p className="nlp-hero-kicker">Rubrik · {DATA.meta.institut}</p>
           <h2 className="nlp-hero-titel">{DATA.meta.titel}</h2>

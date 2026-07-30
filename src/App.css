@@ -506,10 +506,19 @@ button.ghost{
 .nlp-hero-sub{
   font-family:'Lora', serif; font-size:0.95rem; color:var(--muted); margin:0; max-width:52ch;
 }
+/* Ero Langlotz, echtes Buchcover statt kleinem Rund-Icon, bewusst größer als die
+   sonstigen Hero-Icons, darf optisch mehr Raum einnehmen als der übrige Kopfbereich. */
+.langlotz-hero-wrap{ align-items:flex-start; gap:1.8rem; }
+.langlotz-cover-wrap{
+  flex-shrink:0; width:11rem; border-radius:10px; overflow:hidden;
+  box-shadow:0 14px 32px rgba(0,20,18,0.18); background:transparent;
+}
+.langlotz-cover-img{ width:100%; height:auto; display:block; }
 @media (max-width:640px){
   .nlp-hero-titel{ font-size:1.3rem; }
   .nlp-hero-icon-wrap{ width:3.4rem; height:3.4rem; padding:0.4rem; }
   .nlp-hero-wrap{ gap:0.8rem; }
+  .langlotz-cover-wrap{ width:7.5rem; }
 }
 
 /* NLP-Glossar, Grundbegriffe-Karten mit Icon */
