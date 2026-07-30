@@ -32,9 +32,25 @@ function matches(item, query){
   if(!query) return true;
   const q = query.toLowerCase();
   return [
-    item.titel, item.kapitel, item.kernaussage,
+    item.titel, item.kapitel, item.kernaussage, item.teil,
     ...(item.textbloecke || []).map(b => (b.titel || '') + ' ' + b.text)
   ].filter(Boolean).join(' ').toLowerCase().includes(q);
+}
+
+// Gruppiert die (bereits gefilterte) Liste nach Buchteil (A/B/I/II/III), in der Reihenfolge,
+// in der die Teile zuerst auftreten – nicht alphabetisch, damit die Buch-Chronologie erhalten bleibt.
+function gruppiereNachTeil(list){
+  const gruppen = [];
+  const index = new Map();
+  list.forEach(item => {
+    const teil = item.teil || 'Weitere Auszüge';
+    if(!index.has(teil)){
+      index.set(teil, gruppen.length);
+      gruppen.push([teil, []]);
+    }
+    gruppen[index.get(teil)][1].push(item);
+  });
+  return gruppen;
 }
 
 function LanglotzCard({ item, isOpen, onOpen }){
@@ -247,11 +263,16 @@ export default function LanglotzSSI({ initialOpenId }){
               : 'Keine Treffer. Anderen Begriff versuchen.'}
           </div>
         ) : (
-          <div className="grid">
-            {list.map(item => (
-              <LanglotzCard key={item.id} item={item} isOpen={openId === item.id} onOpen={open} />
-            ))}
-          </div>
+          gruppiereNachTeil(list).map(([teil, items]) => (
+            <div key={teil} className="kategorie-gruppe">
+              <h3 className="muster-kategorie-titel langlotz-teil-titel">{teil}</h3>
+              <div className="grid">
+                {items.map(item => (
+                  <LanglotzCard key={item.id} item={item} isOpen={openId === item.id} onOpen={open} />
+                ))}
+              </div>
+            </div>
+          ))
         )}
       </main>
 
