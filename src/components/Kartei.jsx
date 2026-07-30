@@ -309,18 +309,21 @@ export default function Kartei({ initialOpenId, initialAnsicht }){
           <div className="empty">Keine Treffer. Anderen Begriff versuchen, etwa den Auslöser der Situation statt des Musternamens.</div>
         ) : (
           <>
-            {referenz && !gruppen.some(([kat]) => kat === referenz.kategorie) && (
-              <div className="grid" style={{ marginBottom: '1.4rem' }}>
-                <MusterCard item={referenz} isOpen={openId === referenz.id} onOpen={open} />
+            {referenz && (
+              <div className="kategorie-gruppe">
+                <h3 className="muster-kategorie-titel kk-referenz">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l2.6 6.6L21 10l-5 4.4L17.4 21 12 17.3 6.6 21 8 14.4 3 10l6.4-1.4z"/></svg>
+                  Referenzbeispiel
+                </h3>
+                <div className="grid">
+                  <MusterCard item={referenz} isOpen={openId === referenz.id} onOpen={open} />
+                </div>
               </div>
             )}
             {gruppen.map(([kat, items]) => (
               <div key={kat} className="kategorie-gruppe">
                 <h3 className={'muster-kategorie-titel ' + KATEGORIE_CLASS[kat]}>{KATEGORIE_ICON[kat]}{kat} <span className="kategorie-count">{items.length}</span></h3>
                 <div className="grid">
-                  {referenz && referenz.kategorie === kat && (
-                    <MusterCard item={referenz} isOpen={openId === referenz.id} onOpen={open} />
-                  )}
                   {items.map(item => (
                     <MusterCard key={item.id} item={item} isOpen={openId === item.id} onOpen={open} />
                   ))}
