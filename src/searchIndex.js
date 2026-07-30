@@ -128,7 +128,11 @@ function buildIndex(){
       titel: e.titel,
       kontext: 'Ero Langlotz · SSI · ' + e.kapitel,
       snippet: e.kernaussage,
-      matchText: [e.titel, e.kapitel, e.kernaussage, ...(e.textbloecke || []).map(b => (b.titel || '') + ' ' + b.text)].join(' ')
+      matchText: [e.titel, e.kapitel, e.kernaussage, e.quelle, e.zusatz, ...(e.textbloecke || []).map(b => {
+        if(b.typ === 'liste') return [b.intro, ...(b.punkte || [])].filter(Boolean).join(' ');
+        if(b.typ === 'bild') return [b.alt, b.caption].filter(Boolean).join(' ');
+        return [b.titel, b.text].filter(Boolean).join(' ');
+      })].join(' ')
     });
   });
 
