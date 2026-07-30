@@ -179,8 +179,13 @@ main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }
 .card:hover{ box-shadow:0 10px 24px rgba(0,20,18,0.1); transform:translateY(-2px); }
 .card.open{ border-left-color:var(--terracotta); }
 .card.open:hover{ transform:none; }
-.card.referenz{ border-left-color:var(--accent); background:linear-gradient(120deg, #fff 0%, #fdf8f1 100%); }
-.card.referenz.open{ border-left-color:var(--terracotta); }
+.card.referenz{
+  border-color:var(--accent); border-left-color:var(--accent);
+  background:linear-gradient(120deg, #fff 0%, #fdf3e2 100%);
+  box-shadow:0 6px 20px rgba(209,178,138,0.4);
+}
+.card.referenz:hover{ box-shadow:0 14px 30px rgba(209,178,138,0.5); }
+.card.referenz.open{ border-color:var(--terracotta); border-left-color:var(--terracotta); }
 .kernprozess-wrap{ max-width:var(--content-max); margin:1.8rem auto 0; padding:0 1.5rem; }
 .card.kernprozess-card{
   border:2px solid var(--primary); border-left:6px solid var(--primary);
