@@ -124,6 +124,13 @@ function LanglotzModal({ item, onClose, onPrev, onNext, positionLabel }){
                     {block.titel && <p className="langlotz-kasten-titel">{block.titel}</p>}
                     <p>{block.text}</p>
                   </div>
+                ) : block.typ === 'liste' ? (
+                  <div className="block" key={i}>
+                    {block.intro && <p>{block.intro}</p>}
+                    <ol className="langlotz-liste">
+                      {(block.punkte || []).map((p, j) => <li key={j}>{p}</li>)}
+                    </ol>
+                  </div>
                 ) : block.typ === 'vers' ? (
                   <div className="block langlotz-vers" key={i}>
                     <p>{block.text}</p>

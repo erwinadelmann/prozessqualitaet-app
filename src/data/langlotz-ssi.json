@@ -10,16 +10,20 @@
   "kernsaetze": [],
   "elemente": [
     {
-      "id": "beispiel_formatierung",
-      "titel": "BEISPIEL, bitte noch nicht als echten Inhalt werten",
-      "kapitel": "Muster",
+      "id": "praeludium_fruehe_bindungstraumata",
+      "titel": "Präludium: Frühe Bindungstraumata",
+      "kapitel": "A.1",
       "textbloecke": [
+        { "typ": "absatz", "text": "A. Präludium oder „Darf Traumatherapie fröhlich sein?“" },
         { "typ": "absatz", "text": "Es ist bekannt, dass frühe Bindungstraumata und die damals entstandenen Überlebensstrategien zusammen in der Amygdala so gespeichert werden, als wären diese Themen heute noch präsent. Da dieser archaische Hirnanteil dem rationalen Bewusstsein nicht zugänglich ist und durch unsere Alltagssprache nicht erreicht werden kann, wird er auch als emotionales Gedächtnis bezeichnet. Er steuert unser Erleben und Verhalten, am Bewusstsein vorbei, über Körpergefühle (eng oder frei, erlaubt oder verboten, schwer oder leicht). Daher wird er auch als Körpergedächtnis bezeichnet." },
-        { "typ": "kasten", "titel": "Warum ist dieses Stressprogramm dennoch so schwer zu lösen?", "text": "Einmal, weil es im emotionalen Gedächtnis (den Mandelkernen des Hirnstamms) gespeichert ist. Die Mandelkerne speichern auch instinktives Verhalten. Daher bestimmen sie ähnlich zwingend Gefühl und Verhalten wie ein Instinkt." },
-        { "typ": "bild", "src": "/beispiel-bild-langlotz.webp", "alt": "Platzhalter, hier steht später ein Foto der Buchseite oder eine passende Abbildung", "caption": "Beispielhafte Bild-Einbindung, hier nur zur Formatprobe das Buchcover wiederverwendet. So würde ein von Ihnen geschicktes Foto hier erscheinen, anklickbar für die Großansicht." }
+        { "typ": "liste", "intro": "Dieses Verhaltensprogramm ist für eine erwachsene Person unangemessen („Anpassungsstörung“), da", "punkte": [
+          "das Trauma von damals längst vorbei ist, und",
+          "dieses Programm zwar damals dem Kind das Überleben ermöglicht hat, aber heute für den Erwachsenen nicht angemessen ist. Im Gegenteil, es führt zu Problemen, Stress und Verwirrung."
+        ] },
+        { "typ": "kasten", "titel": "Warum ist dieses Stressprogramm dennoch so schwer zu lösen?", "text": "Einmal, weil es im emotionalen Gedächtnis (den Mandelkernen des Hirnstamms) gespeichert ist. Die Mandelkerne speichern auch instinktives Verhalten. Daher bestimmen sie ähnlich zwingend Gefühl und Verhalten wie ein Instinkt. Durch den „Verstand“ kann dieses Verhalten zwar abgemildert werden, durch ein antrainiertes „Gegenprogramm“. Das kann jedoch mentalen Stress erhöhen, und das ungelöschte Überlebensprogramm macht sich immer wieder bemerkbar.\n\nZweitens haben die meisten Betroffenen unbewusst das Gefühl, das Trauma und das Programm wären die – vielleicht einzige? – Verbindung zu den beteiligten Bezugspersonen. So, als wäre es egoistisch oder wie Verrat, wenn sie sich von Trauma und Programm verabschieden. Diese Illusion von „Loyalität“ wird für sie zur Falle." }
       ],
-      "kernaussage": "So sieht ein fertig formatierter Eintrag aus: Fließtext, ein hervorgehobener Kasten für Zwischenfragen, und ein Bild mit Bildunterschrift, anklickbar für die Großansicht.",
-      "quelle": "Beispieltext aus Ero Langlotz, „Leid in Glück verwandeln durch Perspektivwechsel“, nur zur Format-Ansicht"
+      "kernaussage": "Frühe Bindungstraumata bleiben als Überlebensprogramm im emotionalen Gedächtnis gespeichert, auch wenn das Trauma selbst lange vorbei ist. Das Festhalten daran erlebt sich unbewusst oft als letzte Verbindung zu wichtigen Bezugspersonen.",
+      "quelle": "Ero Langlotz, „Leid in Glück verwandeln durch Perspektivwechsel“, Kapitel A.1 „Frühe Bindungstraumata“. Literaturhinweis im Original: Thomas Hensel, „Stressorbasierte Psychotherapie“."
     }
   ]
 }
