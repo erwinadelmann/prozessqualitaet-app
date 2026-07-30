@@ -514,6 +514,22 @@ button.ghost{
   box-shadow:0 14px 32px rgba(0,20,18,0.18); background:transparent;
 }
 .langlotz-cover-img{ width:100%; height:auto; display:block; }
+.langlotz-cover-wrap{ cursor:pointer; transition:transform 0.2s ease, box-shadow 0.2s ease; }
+.langlotz-cover-wrap:hover{ transform:translateY(-3px); box-shadow:0 18px 38px rgba(0,20,18,0.24); }
+.langlotz-bild-block img{ cursor:pointer; }
+.lightbox-backdrop{
+  position:fixed; inset:0; z-index:1100;
+  background:rgba(10,22,20,0.82);
+  display:flex; align-items:center; justify-content:center;
+  padding:2.5rem; animation:modalFadeIn 0.16s ease both;
+}
+.lightbox-img{
+  max-width:min(92vw, 900px); max-height:88vh; width:auto; height:auto;
+  border-radius:10px; box-shadow:0 20px 50px rgba(0,0,0,0.4); cursor:default;
+}
+.lightbox-close{
+  position:absolute; top:1.4rem; right:1.4rem; background:#fff;
+}
 @media (max-width:640px){
   .nlp-hero-titel{ font-size:1.3rem; }
   .nlp-hero-icon-wrap{ width:3.4rem; height:3.4rem; padding:0.4rem; }
@@ -602,6 +618,17 @@ button.ghost{
 .langlotz-vers p{
   white-space:pre-line; font-family:'Playfair Display', serif; font-style:italic;
   line-height:1.7; color:var(--ink);
+}
+.langlotz-bild-block{
+  margin:1rem 0; padding:0; text-align:center;
+}
+.langlotz-bild-block img{
+  max-width:100%; max-height:420px; width:auto; border-radius:8px;
+  box-shadow:0 8px 22px rgba(0,20,18,0.14);
+}
+.langlotz-bild-block figcaption{
+  margin-top:0.5rem; font-family:'Open Sans', sans-serif; font-size:0.76rem;
+  color:var(--muted); font-style:italic;
 }
 
 /* Modus-Modell-Grafik, Animation */

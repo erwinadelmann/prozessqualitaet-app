@@ -10,6 +10,24 @@ const KAPITEL_ICON = (
   </svg>
 );
 
+// Einfache Lightbox: Klick auf ein Bild (Cover oder eingebettetes Foto) vergrößert es
+// bildschirmfüllend, Klick daneben oder Escape schließt wieder. Eigenständig von den
+// Karten-Modalen, damit sie sich nicht gegenseitig blockieren.
+function Lightbox({ src, alt, onClose }){
+  useEffect(() => {
+    const onKey = e => { if(e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
+  return (
+    <div className="lightbox-backdrop" onClick={onClose}>
+      <button className="card-modal-close lightbox-close" onClick={onClose} aria-label="Schließen">×</button>
+      <img src={src} alt={alt || ''} className="lightbox-img" onClick={e => e.stopPropagation()} />
+    </div>
+  );
+}
+
 function matches(item, query){
   if(!query) return true;
   const q = query.toLowerCase();
@@ -48,10 +66,12 @@ function LanglotzCard({ item, isOpen, onOpen }){
 
 function LanglotzModal({ item, onClose, onPrev, onNext, positionLabel }){
   const modalRef = useRef(null);
+  const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {
     const onKey = e => {
-      if(e.key === 'Escape') onClose();
+      if(e.key === 'Escape'){ if(lightbox){ setLightbox(null); } else { onClose(); } return; }
+      if(lightbox) return;
       if(e.key === 'ArrowLeft' && onPrev) onPrev();
       if(e.key === 'ArrowRight' && onNext) onNext();
     };
@@ -61,7 +81,7 @@ function LanglotzModal({ item, onClose, onPrev, onNext, positionLabel }){
       document.removeEventListener('keydown', onKey);
       document.body.style.overflow = '';
     };
-  }, [onClose, onPrev, onNext]);
+  }, [onClose, onPrev, onNext, lightbox]);
 
   if(!item) return null;
 
@@ -108,6 +128,19 @@ function LanglotzModal({ item, onClose, onPrev, onNext, positionLabel }){
                   <div className="block langlotz-vers" key={i}>
                     <p>{block.text}</p>
                   </div>
+                ) : block.typ === 'bild' ? (
+                  <figure className="langlotz-bild-block" key={i}>
+                    <img
+                      src={block.src}
+                      alt={block.alt || ''}
+                      tabIndex={0}
+                      role="button"
+                      aria-label="Bild vergrößern"
+                      onClick={() => setLightbox({ src: block.src, alt: block.alt })}
+                      onKeyDown={e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); setLightbox({ src: block.src, alt: block.alt }); } }}
+                    />
+                    {block.caption && <figcaption>{block.caption}</figcaption>}
+                  </figure>
                 ) : (
                   <div className="block" key={i}>
                     <p>{block.text}</p>
@@ -122,6 +155,9 @@ function LanglotzModal({ item, onClose, onPrev, onNext, positionLabel }){
           </div>
         </div>
       </div>
+      {lightbox && (
+        <Lightbox src={lightbox.src} alt={lightbox.alt} onClose={() => setLightbox(null)} />
+      )}
     </div>
   );
 }
@@ -131,6 +167,7 @@ export default function LanglotzSSI({ initialOpenId }){
   const [openId, setOpenId] = useState(() =>
     initialOpenId && DATA.elemente.some(e => e.id === initialOpenId) ? initialOpenId : null
   );
+  const [coverLightbox, setCoverLightbox] = useState(false);
 
   const list = DATA.elemente.filter(item => matches(item, query));
   const offenesItem = openId ? DATA.elemente.find(i => i.id === openId) : null;
@@ -147,7 +184,14 @@ export default function LanglotzSSI({ initialOpenId }){
   return (
     <>
       <div className="nlp-hero-wrap langlotz-hero-wrap">
-        <span className="langlotz-cover-wrap">
+        <span
+          className="langlotz-cover-wrap"
+          tabIndex={0}
+          role="button"
+          aria-label="Buchcover vergrößern"
+          onClick={() => setCoverLightbox(true)}
+          onKeyDown={e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); setCoverLightbox(true); } }}
+        >
           <img src={buchcover} alt={'Buchcover: ' + DATA.meta.buchquelle} className="langlotz-cover-img" />
         </span>
         <div className="nlp-hero-text">
@@ -213,6 +257,10 @@ export default function LanglotzSSI({ initialOpenId }){
           onNext={() => itemBlaettern(1)}
           positionLabel={itemIndex !== -1 ? `${itemIndex + 1} / ${list.length}` : null}
         />
+      )}
+
+      {coverLightbox && (
+        <Lightbox src={buchcover} alt={'Buchcover: ' + DATA.meta.buchquelle} onClose={() => setCoverLightbox(false)} />
       )}
     </>
   );
