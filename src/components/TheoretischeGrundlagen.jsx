@@ -112,7 +112,9 @@ function AbschnittModal({ abschnitt, onClose, onPrev, onNext, positionLabel }){
                         {p.praxis && (
                           <div style={{ marginTop: '0.4rem', paddingLeft: '0.7rem', borderLeft: '2px solid var(--terracotta, #b65c43)' }}>
                             <span style={{ display: 'block', fontFamily: "'Montserrat', sans-serif", fontSize: '0.68rem', letterSpacing: '0.04em', textTransform: 'uppercase', color: 'var(--terracotta, #b65c43)', fontWeight: 700, marginBottom: '0.15rem' }}>Für die Praxis</span>
-                            {p.praxis}
+                            {p.praxis.split('\n\n').map((absatz, j) => (
+                              <p key={j} style={{ margin: j === 0 ? '0 0 0.4rem' : 0, fontStyle: j === 0 ? 'italic' : 'normal', fontSize: j === 0 ? undefined : '0.9em', opacity: j === 0 ? 1 : 0.85 }}>{absatz}</p>
+                            ))}
                           </div>
                         )}
                       </li>
@@ -128,7 +130,9 @@ function AbschnittModal({ abschnitt, onClose, onPrev, onNext, positionLabel }){
               {abschnitt.praxis && (
                 <div className="block" style={{ paddingLeft: '0.9rem', borderLeft: '2px solid var(--terracotta, #b65c43)' }}>
                   <span style={{ display: 'block', fontFamily: "'Montserrat', sans-serif", fontSize: '0.7rem', letterSpacing: '0.04em', textTransform: 'uppercase', color: 'var(--terracotta, #b65c43)', fontWeight: 700, marginBottom: '0.3rem' }}>Für die Praxis</span>
-                  <p>{abschnitt.praxis}</p>
+                  {abschnitt.praxis.split('\n\n').map((absatz, j) => (
+                    <p key={j} style={{ margin: j === 0 ? '0 0 0.4rem' : 0, fontStyle: j === 0 ? 'italic' : 'normal', fontSize: j === 0 ? undefined : '0.9em', opacity: j === 0 ? 1 : 0.85 }}>{absatz}</p>
+                  ))}
                 </div>
               )}
               {abschnitt.zusatz && (
