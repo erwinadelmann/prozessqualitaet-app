@@ -69,7 +69,7 @@ header p.sub{
   overflow:hidden; max-height:min(60vh, 480px); overflow-y:auto;
 }
 .global-search-empty{
-  font-family:'Open Sans', sans-serif; font-size:0.85rem; color:var(--muted-text);
+  font-family:'Open Sans', sans-serif; font-size:0.85rem; color:var(--muted);
   padding:1rem 1.2rem;
 }
 .global-search-result{
@@ -148,12 +148,12 @@ header p.sub{
   font-family:'Montserrat', sans-serif; font-size:1rem;
   background:transparent; color:var(--ink);
 }
-.count{ font-family:'Open Sans', sans-serif; font-size:0.75rem; color:var(--muted-text); white-space:nowrap; }
+.count{ font-family:'Open Sans', sans-serif; font-size:0.75rem; color:var(--muted); white-space:nowrap; }
 
 .picker-wrap{ max-width:var(--content-max); margin:0 auto; padding:1.4rem 1.5rem 0; }
 .picker-label{
   font-family:'Montserrat', sans-serif; font-size:0.72rem; letter-spacing:0.08em;
-  text-transform:uppercase; color:var(--muted-text); margin:0 0 0.6rem;
+  text-transform:uppercase; color:var(--muted); margin:0 0 0.6rem;
 }
 .chip-grid{ display:flex; flex-wrap:wrap; gap:0.5rem; }
 .chip{
@@ -210,14 +210,14 @@ main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }
 }
 .card-top{ display:flex; justify-content:space-between; align-items:baseline; gap:0.6rem; }
 .muster-name{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:0.98rem; }
-.toggle-icon{ color:var(--muted-text); font-size:1.1rem; transition:transform 0.3s cubic-bezier(.22,1,.36,1), color 0.2s ease; display:inline-block; }
+.toggle-icon{ color:var(--muted); font-size:1.1rem; transition:transform 0.3s cubic-bezier(.22,1,.36,1), color 0.2s ease; display:inline-block; }
 .anteil-line{
-  margin-top:0.5rem; font-family:'Open Sans', sans-serif; font-size:0.86rem; color:var(--muted-text);
+  margin-top:0.5rem; font-family:'Open Sans', sans-serif; font-size:0.86rem; color:var(--muted);
   display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;
 }
 .anteil-alt{ text-decoration:line-through; text-decoration-color:var(--terracotta); opacity:0.75; transition:opacity 0.25s ease; }
 .anteil-neu{ color:var(--primary); font-weight:600; transition:transform 0.25s cubic-bezier(.22,1,.36,1), letter-spacing 0.25s ease; display:inline-block; }
-.anteil-arrow{ display:inline-block; color:var(--muted-text); transition:transform 0.3s cubic-bezier(.22,1,.36,1), color 0.25s ease; }
+.anteil-arrow{ display:inline-block; color:var(--muted); transition:transform 0.3s cubic-bezier(.22,1,.36,1), color 0.25s ease; }
 
 /* Kartei: lebendige Musterkarten */
 .muster-card{ position:relative; overflow:hidden; will-change:transform; }
@@ -283,10 +283,10 @@ main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }
   display:block; font-family:'Montserrat', sans-serif; font-size:0.78rem;
   color:var(--terracotta); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.15rem;
 }
-.empty{ text-align:center; color:var(--muted-text); font-family:'Open Sans', sans-serif; padding:3rem 1rem; }
+.empty{ text-align:center; color:var(--muted); font-family:'Open Sans', sans-serif; padding:3rem 1rem; }
 footer{
   text-align:center; font-family:'Open Sans', sans-serif; font-size:0.75rem;
-  color:var(--muted-text); padding:1.5rem 0 2.5rem;
+  color:var(--muted); padding:1.5rem 0 2.5rem;
 }
 
 /* Qualitäts-Check */
@@ -299,7 +299,7 @@ footer{
 @media (max-width:640px){ .pruef-meta{ grid-template-columns:1fr; } }
 .field label{
   display:block; font-family:'Montserrat', sans-serif; font-size:0.72rem; letter-spacing:0.06em;
-  text-transform:uppercase; color:var(--muted-text); margin-bottom:0.35rem;
+  text-transform:uppercase; color:var(--muted); margin-bottom:0.35rem;
 }
 .field input, .field textarea{
   width:100%; font-family:'Lora', serif; font-size:0.95rem; padding:0.55rem 0.7rem;
@@ -310,7 +310,7 @@ footer{
 .criterion-nr{ font-family:'Playfair Display', serif; font-weight:700; font-size:1.3rem; color:var(--sage); min-width:1.8rem; }
 .criterion-titel{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:0.94rem; margin:0 0 0.2rem; }
 .criterion-frage{ font-family:'Lora', serif; font-style:italic; font-size:0.88rem; color:var(--terracotta); margin:0 0 0.35rem; }
-.criterion-hinweis{ font-family:'Open Sans', sans-serif; font-size:0.8rem; color:var(--muted-text); line-height:1.5; margin:0 0 0.6rem; }
+.criterion-hinweis{ font-family:'Open Sans', sans-serif; font-size:0.8rem; color:var(--muted); line-height:1.5; margin:0 0 0.6rem; }
 .radio-row{ display:flex; gap:1.2rem; flex-wrap:wrap; }
 .radio-opt{ font-family:'Montserrat', sans-serif; font-size:0.82rem; display:flex; align-items:center; gap:0.35rem; }
 .radio-opt input{ accent-color:var(--primary); }
@@ -320,7 +320,7 @@ button.primary{
   border:none; padding:0.7rem 1.5rem; border-radius:6px;
 }
 button.ghost{
-  font-weight:600; font-size:0.85rem; background:transparent; color:var(--muted-text);
+  font-weight:600; font-size:0.85rem; background:transparent; color:var(--muted);
   border:1px solid #d7e0de; padding:0.7rem 1.2rem; border-radius:6px;
 }
 .section-title{ font-family:'Playfair Display', serif; font-weight:700; font-size:1.3rem; color:var(--primary); margin:0 0 0.9rem; }
@@ -332,14 +332,14 @@ button.ghost{
 .verlauf-item{ background:var(--card-bg); border:1px solid #e3e7e6; border-radius:8px; padding:0.9rem 1.1rem; margin-bottom:0.7rem; }
 .verlauf-top{ display:flex; justify-content:space-between; align-items:center; gap:0.6rem; flex-wrap:wrap; }
 .verlauf-datum{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:0.88rem; }
-.verlauf-kuerzel{ font-family:'Open Sans', sans-serif; font-size:0.82rem; color:var(--muted-text); }
+.verlauf-kuerzel{ font-family:'Open Sans', sans-serif; font-size:0.82rem; color:var(--muted); }
 .dots{ display:flex; gap:0.25rem; margin-top:0.5rem; flex-wrap:wrap; }
 .dot{ width:11px; height:11px; border-radius:50%; display:inline-block; }
 .dot.ja{ background:var(--primary); }
 .dot.teilweise{ background:var(--accent); }
 .dot.nein{ background:var(--terracotta); }
 .verlauf-notiz{ font-family:'Lora', serif; font-size:0.86rem; margin-top:0.55rem; }
-.verlauf-del{ background:none; border:none; color:var(--muted-text); cursor:pointer; font-family:'Open Sans', sans-serif; font-size:0.78rem; text-decoration:underline; }
+.verlauf-del{ background:none; border:none; color:var(--muted); cursor:pointer; font-family:'Open Sans', sans-serif; font-size:0.78rem; text-decoration:underline; }
 
 /* Mein Fokus */
 @keyframes floatBlob{ 0%,100%{ transform:translate(0,0) scale(1); } 50%{ transform:translate(-14px,10px) scale(1.06); } }
@@ -363,7 +363,7 @@ button.ghost{
   font-family:'Lora', serif; font-weight:400; font-size:0.95rem; line-height:1.6;
   margin:0.7rem 0 0; max-width:760px; position:relative; z-index:1; opacity:0.92;
 }
-.fokus-section-label{ font-family:'Montserrat', sans-serif; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted-text); margin:0 0 0.8rem; }
+.fokus-section-label{ font-family:'Montserrat', sans-serif; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin:0 0 0.8rem; }
 .muster-eigen{
   background:linear-gradient(120deg, #fff 0%, #faf6f0 100%); border:1px solid var(--accent);
   border-left:5px solid var(--terracotta); border-radius:10px; padding:1.3rem 1.5rem; margin-bottom:2rem;
@@ -390,17 +390,17 @@ button.ghost{
 .sp-farbe-2{ background:linear-gradient(135deg, var(--terracotta), #8a3f2b); }
 .sp-farbe-3{ background:linear-gradient(135deg, var(--sage), #5c7a63); }
 .sp-farbe-4{ background:linear-gradient(135deg, #4b7f7c, var(--primary)); }
-.fokus-add-hint{ font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted-text); text-align:center; padding:0.6rem 0 2rem; }
+.fokus-add-hint{ font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted); text-align:center; padding:0.6rem 0 2rem; }
 
 /* Methodenbox */
 .methodenbox-hinweis{
   max-width:var(--content-max); margin:1.2rem auto 0; padding:0 1.5rem;
-  font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted-text); line-height:1.5;
+  font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted); line-height:1.5;
 }
 .method-card{ border-left-color:var(--muted); }
 .method-card .anteil-line{ display:block; }
 .method-zitat{ font-family:'Lora', serif; font-style:italic; color:var(--terracotta); }
-.method-quelle{ font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted-text); }
+.method-quelle{ font-family:'Open Sans', sans-serif; font-size:0.78rem; color:var(--muted); }
 .kat-badge{
   display:inline-block; font-family:'Montserrat', sans-serif; font-size:0.6rem;
   letter-spacing:0.05em; text-transform:uppercase; color:#fff;
@@ -509,7 +509,7 @@ button.ghost{
   color:var(--ink); margin:0 0 0.3rem;
 }
 .nlp-hero-sub{
-  font-family:'Lora', serif; font-size:0.95rem; color:var(--muted-text); margin:0; max-width:52ch;
+  font-family:'Lora', serif; font-size:0.95rem; color:var(--muted); margin:0; max-width:52ch;
 }
 /* Ero Langlotz, echtes Buchcover statt kleinem Rund-Icon, bewusst größer als die
    sonstigen Hero-Icons, darf optisch mehr Raum einnehmen als der übrige Kopfbereich. */
@@ -590,7 +590,7 @@ button.ghost{
 .chakren-punkt{ width:1.05rem; height:1.05rem; border-radius:50%; flex-shrink:0; box-shadow:0 0 0 3px rgba(255,255,255,0.6), 0 2px 6px rgba(0,20,18,0.12); }
 .chakren-liste-text{ display:flex; align-items:baseline; gap:0.6rem; flex-wrap:wrap; }
 .chakren-affirmation-en{ font-family:'Playfair Display', serif; font-style:italic; font-size:1.1rem; color:var(--ink); }
-.chakren-affirmation-de{ font-family:'Open Sans', sans-serif; font-size:0.82rem; color:var(--muted-text); }
+.chakren-affirmation-de{ font-family:'Open Sans', sans-serif; font-size:0.82rem; color:var(--muted); }
 .chakren-wirkaussage{ border-left-color:var(--secondary); font-style:italic; }
 .card.chakren-card{ border-left-width:5px; cursor:default; }
 .card.chakren-card:hover{ transform:none; }
@@ -611,7 +611,7 @@ button.ghost{
   font-family:'Playfair Display', serif; font-style:italic; font-size:1.15rem;
   color:var(--ink); line-height:1.5; margin:0 0 0.5rem;
 }
-.langlotz-kernsatz-quelle{ font-family:'Open Sans', sans-serif; font-size:0.76rem; color:var(--muted-text); margin:0; }
+.langlotz-kernsatz-quelle{ font-family:'Open Sans', sans-serif; font-size:0.76rem; color:var(--muted); margin:0; }
 .langlotz-kapitel-badge{ background:var(--terracotta); color:#fff; }
 .langlotz-kapitel-icon{ color:var(--terracotta); }
 .langlotz-kasten{
@@ -633,12 +633,9 @@ button.ghost{
   max-width:100%; max-height:420px; width:auto; border-radius:8px;
   box-shadow:0 8px 22px rgba(0,20,18,0.14);
 }
-.langlotz-bild-block--gross img{
-  max-height:760px;
-}
 .langlotz-bild-block figcaption{
   margin-top:0.5rem; font-family:'Open Sans', sans-serif; font-size:0.76rem;
-  color:var(--muted-text); font-style:italic;
+  color:var(--muted); font-style:italic;
 }
 
 /* Modus-Modell-Grafik, Animation */
@@ -694,7 +691,7 @@ button.ghost{
 .card-modal-nav-btn:disabled:hover{ background:var(--bg); color:var(--ink); }
 .card-modal-position{
   font-family:'Montserrat', sans-serif; font-size:0.74rem; font-weight:600;
-  color:var(--muted-text); white-space:nowrap;
+  color:var(--muted); white-space:nowrap;
 }
 .card-modal-close{
   width:2.2rem; height:2.2rem; border-radius:50%;
@@ -720,12 +717,12 @@ button.ghost{
 .card-modal-header .anteil-line{ font-size:0.98rem; }
 .muster-untertitel{
   margin:0.2rem 0 0.7rem; font-family:'Lora', serif; font-style:italic; font-size:0.85rem;
-  color:var(--muted-text); line-height:1.4;
+  color:var(--muted); line-height:1.4;
 }
 .card-modal-header .muster-untertitel{ font-size:0.92rem; margin-top:0.3rem; }
 .anteil-hinweis{
   margin-top:0.4rem; font-family:'Open Sans', sans-serif; font-size:0.76rem;
-  font-style:italic; color:var(--muted-text);
+  font-style:italic; color:var(--muted);
 }
 .reframing-link{
   display:inline-flex; align-items:center; gap:0.4rem; margin-top:0.7rem;
@@ -789,7 +786,7 @@ button.ghost{
 }
 @media (min-width:990px){ .ig-abwertung{ margin-left:auto; margin-right:auto; } }
 .ig-abwertung h3{ font-size:1.1rem; margin:0.3rem 0 0.5rem; color:var(--primary); }
-.ig-abwertung-hinweis{ font-family:'Open Sans', sans-serif; font-size:0.8rem; font-style:italic; color:var(--muted-text); margin:0 0 0.6rem; }
+.ig-abwertung-hinweis{ font-family:'Open Sans', sans-serif; font-size:0.8rem; font-style:italic; color:var(--muted); margin:0 0 0.6rem; }
 .ig-abwertung-text{ font-family:'Lora', serif; font-size:0.95rem; line-height:1.6; margin:0; color:var(--ink); }
 .ig-hero{ max-width:var(--content-max); margin-left:auto; margin-right:auto; margin-top:1.4rem; }
 .ig-methode{
@@ -830,11 +827,11 @@ button.ghost{
 /* Reframing */
 .narrativ-teaser{
   margin-top:0.6rem; font-family:'Lora', serif; font-style:italic; font-size:0.85rem;
-  color:var(--muted-text); line-height:1.5;
+  color:var(--muted); line-height:1.5;
 }
 .narrativ-untertitel{
   margin-top:0.4rem; font-family:'Open Sans', sans-serif; font-size:0.78rem;
-  color:var(--muted-text); font-style:italic;
+  color:var(--muted); font-style:italic;
 }
 .narrativ-einstieg{
   font-family:'Lora', serif; font-size:1.05rem; font-style:italic;
@@ -896,7 +893,7 @@ button.ghost{
   margin:0; padding:0.7rem 1.2rem; font-family:'Open Sans', sans-serif; font-size:0.9rem;
   color:var(--muted-text); text-align:center;
 }
-.lightbox-zaehler{ color:var(--muted-text); }
+.lightbox-zaehler{ color:var(--muted); }
 .lightbox-inner .card-modal-close.lightbox-close{ position:absolute; top:0.6rem; right:0.6rem; z-index:2; }
 .lightbox-nav{
   position:absolute; top:50%; transform:translateY(-50%); z-index:2;
@@ -990,7 +987,7 @@ button.ghost{
 .fk-rang-item.top-1 .fk-rang-nr{ color:var(--terracotta); }
 .fk-rang-text{ flex:1; font-size:0.95rem; }
 .fk-rang-kat{
-  font-size:0.68rem; color:var(--muted-text); text-transform:uppercase; letter-spacing:0.03em;
+  font-size:0.68rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.03em;
   display:block; margin-top:0.15rem; font-family:'Montserrat', sans-serif;
 }
 .fk-rang-erklaerung{
@@ -1050,17 +1047,6 @@ button.ghost{
 .fk-steuerposition-frage{
   font-family:'Playfair Display', serif; font-style:italic; font-size:1.15rem; color:var(--terracotta);
   text-align:center; margin:1.5rem 0 0.2rem; padding-top:1.2rem; border-top:1px solid #e3e7e6;
-}
-
-/* Fokus-Kompass: Ressourcenbild pro Kategorie */
-.fk-kategorie-bild{ margin:0.6rem 0 1rem; text-align:center; }
-.fk-kategorie-bild img{
-  max-width:260px; width:100%; height:auto; border-radius:10px;
-  box-shadow:0 8px 22px rgba(0,20,18,0.14);
-}
-.fk-kategorie-bild figcaption{
-  margin-top:0.5rem; font-family:'Open Sans', sans-serif; font-size:0.76rem;
-  color:var(--muted-text); font-style:italic;
 }
 
 /* Fokus-Kompass: Elemente anklicken */
@@ -1234,7 +1220,7 @@ button.ghost{
 .alternative-block h4{ color:var(--terracotta); }
 .alternative-schritte{ border-left-color:var(--terracotta); background:rgba(182,92,67,0.06); }
 .alternative-schritte li::before{ background:var(--terracotta); }
-.up-modus-quelle{ font-family:'Open Sans', sans-serif; font-size:0.72rem; font-style:italic; color:var(--muted-text); margin:0; }
+.up-modus-quelle{ font-family:'Open Sans', sans-serif; font-size:0.72rem; font-style:italic; color:var(--muted); margin:0; }
 
 /* Steuerposition üben */
 .sp-formulierung{

@@ -1,9 +1,14 @@
 import { useState, useMemo, useEffect } from 'react';
 import {
   FOCUSING_QUESTION, METHODIK_QUELLE, MOTTO_FRAGEN, THEMEN_VORSCHLAEGE, KARTEI_KATEGORIE_MAPPING,
-  DEFAULT_KATEGORIEN, FOKUS_SEED, STEUERPOSITION
+  DEFAULT_KATEGORIEN, FOKUS_SEED, STEUERPOSITION, KATEGORIE_RESSOURCENBILD
 } from '../data/fokuskompass.js';
 import MUSTER_DATA from '../data/muster.json';
+import tigerBild from '../assets/tiger-abgrenzung.webp';
+
+const RESSOURCENBILDER = {
+  "Würde & Grenzen": tigerBild
+};
 
 const STORAGE_KEY = 'fokuskompass-manuell-v1';
 
@@ -169,9 +174,17 @@ export default function FokusKompass(){
         {kategorien.map(kat => {
           const katItems = FOKUS_SEED.filter(i => i.kategorie === kat);
           if(katItems.length === 0) return null;
+          const ressourcenbild = RESSOURCENBILDER[kat];
+          const bildMeta = KATEGORIE_RESSOURCENBILD[kat];
           return (
             <div className="kategorie-block" key={kat}>
               <span className="kategorie-titel">{kat}</span>
+              {ressourcenbild && (
+                <figure className="fk-kategorie-bild">
+                  <img src={ressourcenbild} alt={bildMeta ? bildMeta.alt : ''} />
+                  {bildMeta && bildMeta.caption && <figcaption>{bildMeta.caption}</figcaption>}
+                </figure>
+              )}
               <div className="fk-auswahl-grid">
                 {katItems.map(item => (
                   <button

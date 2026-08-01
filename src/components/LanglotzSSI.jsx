@@ -152,7 +152,7 @@ function LanglotzModal({ item, onClose, onPrev, onNext, positionLabel }){
                     <p>{block.text}</p>
                   </div>
                 ) : block.typ === 'bild' ? (
-                  <figure className="langlotz-bild-block" key={i}>
+                  <figure className={'langlotz-bild-block' + (block.gross ? ' langlotz-bild-block--gross' : '')} key={i}>
                     <img
                       src={block.src}
                       alt={block.alt || ''}

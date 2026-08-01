@@ -542,14 +542,11 @@
           "text": "Gelber Quader"
         },
         {
-          "typ": "absatz",
-          "text": "Das wahre Selbst („WS“), das sich seiner Zugehörigkeit zu einem größeren Ganzen (Erde, Kosmos, „göttlicher Funke“) bewusst ist, besitzt daher seine innere Würde und seinen Selbstwert, unabhängig von Leistung oder Anerkennung durch andere. „So wie eine Rose ihren Wert dadurch hat, dass sie eine Rose ist.“ (Bild 3)"
-        },
-        {
           "typ": "bild",
           "src": "/langlotz/bild03.webp",
-          "alt": "Das wahre Selbst – gelber Quader vor rosa Blüte",
-          "caption": "Bild 3: Das wahre Selbst"
+          "alt": "Gedicht „Deine Seele ist wie eine Rose“ von Ero Langlotz",
+          "caption": "Bild 3: „Deine Seele ist wie eine Rose“ – Ero Langlotz, 21.5.2007",
+          "gross": true
         },
         {
           "typ": "absatz",

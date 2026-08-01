@@ -43,6 +43,15 @@ export const KARTEI_KATEGORIE_MAPPING = {
   "Wirksamkeit: Denken & Handeln": "Verantwortung & Selbstwirksamkeit"
 };
 
+// Ressourcenbild pro Kategorie, optional. Bisher nur für "Würde & Grenzen" hinterlegt
+// (Tiger-Bild von Erwin, 2026-08-01, als Ressourcenbild für Präsenz/Grenze ergänzt).
+export const KATEGORIE_RESSOURCENBILD = {
+  "Würde & Grenzen": {
+    alt: "Tiger – ruhige Präsenz und klare Grenze",
+    caption: "Ressourcenbild: Präsenz und Grenze"
+  }
+};
+
 // Kategorien neu geordnet (statt einer überfüllten Sammelkategorie "Inneres Wachstum"):
 // die vier inneren Kategorien folgen deinen eigenen thematischen Achsen Wert, Würde, Wirksamkeit.
 // Diese Zuordnung ist meine Einordnung zur besseren Übersicht, keine von dir vorgegebene Struktur.
