@@ -10,6 +10,23 @@
   "kernsaetze": [],
   "elemente": [
     {
+      "id": "widmung_rosengedicht",
+      "titel": "Deine Seele ist wie eine Rose",
+      "kapitel": "S. 1",
+      "textbloecke": [
+        {
+          "typ": "bild",
+          "src": "/langlotz/widmung-rose.webp",
+          "alt": "Widmungsgedicht „Deine Seele ist wie eine Rose“",
+          "caption": "Ero Langlotz, 21.5.2007",
+          "gross": true
+        }
+      ],
+      "kernaussage": "Widmung zu Beginn des Buchs: die eigene Seele im Bild der Rose, die sich erst öffnen kann, wenn sie sich ihres Werts sicher ist.",
+      "quelle": "Ero Langlotz, „Leid in Glück verwandeln durch Perspektivwechsel“, Seite 1 (Widmung).",
+      "teil": "Widmung"
+    },
+    {
       "id": "praeludium_fruehe_bindungstraumata",
       "titel": "Präludium: Frühe Bindungstraumata",
       "kapitel": "A.1",
@@ -542,11 +559,14 @@
           "text": "Gelber Quader"
         },
         {
+          "typ": "absatz",
+          "text": "Das wahre Selbst („WS“), das sich seiner Zugehörigkeit zu einem größeren Ganzen (Erde, Kosmos, „göttlicher Funke“) bewusst ist, besitzt daher seine innere Würde und seinen Selbstwert, unabhängig von Leistung oder Anerkennung durch andere. „So wie eine Rose ihren Wert dadurch hat, dass sie eine Rose ist.“ (Bild 3)"
+        },
+        {
           "typ": "bild",
           "src": "/langlotz/bild03.webp",
-          "alt": "Gedicht „Deine Seele ist wie eine Rose“ von Ero Langlotz",
-          "caption": "Bild 3: „Deine Seele ist wie eine Rose“ – Ero Langlotz, 21.5.2007",
-          "gross": true
+          "alt": "Das wahre Selbst – gelber Quader vor rosa Blüte",
+          "caption": "Bild 3: Das wahre Selbst"
         },
         {
           "typ": "absatz",
