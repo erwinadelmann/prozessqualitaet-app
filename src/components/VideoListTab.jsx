@@ -11,6 +11,12 @@ import { useState, useEffect } from 'react';
 // localStorage wird hier bewusst nicht verwendet. So zeigen alle Geräte garantiert denselben
 // Stand. Änderungswunsch: Titel/Reihenfolge/Auswahl in der jeweiligen Seed-Datei anpassen
 // lassen, das geht anschließend über den normalen Deploy live.
+//
+// Klick auf ein Video öffnet es bildschirmfüllend (Lightbox, gleiches Muster wie die
+// Bilder-Lightbox in Ressourcen.jsx). Innerhalb der Lightbox kann per Pfeil-Buttons,
+// Pfeiltasten links/rechts oder Klick auf den Rand zu jedem anderen Video derselben Liste
+// geblättert werden (mit Umlauf vom letzten zum ersten Video), Escape oder Klick auf den
+// abgedunkelten Hintergrund schließt sie wieder.
 
 function parseYouTubeId(url){
   if(!url) return null;
@@ -31,11 +37,70 @@ function ladeVideos(storageKey, seed){
   return ladeSeed(seed);
 }
 
+function VideoLightbox({ videos, index, onClose, onNavigate }){
+  useEffect(() => {
+    const onKey = e => {
+      if(e.key === 'Escape') onClose();
+      if(e.key === 'ArrowRight') onNavigate((index + 1) % videos.length);
+      if(e.key === 'ArrowLeft') onNavigate((index - 1 + videos.length) % videos.length);
+    };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [onClose, onNavigate, index, videos.length]);
+
+  const v = videos[index];
+  if(!v) return null;
+  const videoId = parseYouTubeId(v.url);
+
+  return (
+    <div className="card-modal-backdrop lightbox-backdrop" onClick={onClose}>
+      <div className="lightbox-inner vlt-lightbox-inner" onClick={e => e.stopPropagation()}>
+        <button className="card-modal-close lightbox-close" onClick={onClose} aria-label="Schließen">×</button>
+        {videos.length > 1 && (
+          <>
+            <button
+              className="lightbox-nav lightbox-nav-prev"
+              onClick={() => onNavigate((index - 1 + videos.length) % videos.length)}
+              aria-label="Vorheriges Video"
+            >‹</button>
+            <button
+              className="lightbox-nav lightbox-nav-next"
+              onClick={() => onNavigate((index + 1) % videos.length)}
+              aria-label="Nächstes Video"
+            >›</button>
+          </>
+        )}
+        <div className="lightbox-video-frame">
+          {videoId ? (
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`}
+              title={v.title || v.url}
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          ) : (
+            <div className="vlt-broken">Link nicht erkannt: {v.url}</div>
+          )}
+        </div>
+        <p className="lightbox-caption">
+          {v.title || 'Ohne Titel'}
+          {videos.length > 1 && <span className="lightbox-zaehler"> · {index + 1} / {videos.length}</span>}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function VideoListTab({ storageKey, seed, synced, eyebrow, titel, hinweis, extraTop }){
   const [videos, setVideos] = useState(() => synced ? ladeSeed(seed) : ladeVideos(storageKey, seed));
   const [neuUrl, setNeuUrl] = useState('');
   const [neuTitel, setNeuTitel] = useState('');
   const [fehler, setFehler] = useState(null);
+  const [vollbildIndex, setVollbildIndex] = useState(null);
 
   useEffect(() => {
     if(synced) return;
@@ -119,15 +184,22 @@ export default function VideoListTab({ storageKey, seed, synced, eyebrow, titel,
             const videoId = parseYouTubeId(v.url);
             return (
               <div className="video-card vlt-card" key={v.id}>
-                <div className="video-frame">
+                <div
+                  className="video-frame vlt-frame"
+                  onClick={() => videoId && setVollbildIndex(i)}
+                  role={videoId ? 'button' : undefined}
+                  tabIndex={videoId ? 0 : undefined}
+                  onKeyDown={e => {
+                    if(!videoId) return;
+                    if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); setVollbildIndex(i); }
+                  }}
+                  aria-label={videoId ? `${v.title || 'Video'} bildschirmfüllend öffnen` : undefined}
+                >
                   {videoId ? (
-                    <iframe
-                      src={`https://www.youtube-nocookie.com/embed/${videoId}`}
-                      title={v.title || v.url}
-                      loading="lazy"
-                      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
+                    <>
+                      <img className="vlt-thumb" src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`} alt="" loading="lazy" />
+                      <span className="vlt-play-btn" aria-hidden="true">▶</span>
+                    </>
                   ) : (
                     <div className="vlt-broken">Link nicht erkannt: {v.url}</div>
                   )}
@@ -154,6 +226,15 @@ export default function VideoListTab({ storageKey, seed, synced, eyebrow, titel,
             );
           })}
         </div>
+      )}
+
+      {vollbildIndex !== null && (
+        <VideoLightbox
+          videos={videos}
+          index={vollbildIndex}
+          onClose={() => setVollbildIndex(null)}
+          onNavigate={setVollbildIndex}
+        />
       )}
     </main>
   );
