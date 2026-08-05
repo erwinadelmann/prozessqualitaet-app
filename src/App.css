@@ -167,6 +167,28 @@ header p.sub{
 .chip.reset{ color:var(--terracotta); border-color:var(--terracotta); background:transparent; }
 .chip.reset.active{ background:var(--terracotta); border-color:var(--terracotta); color:#fff; }
 
+/* Videothek-Sammlungen: jede Sammlung bekommt eine eigene, feste Farbe, sichtbar bereits
+   im Ruhezustand (nicht erst nach Klick), damit die sieben Tabs auf einen Blick
+   unterscheidbar sind. 7 Sammlungen bei 6 Markenfarben im engeren Sinn (Background zählt
+   nicht mit, zu hell für ein Farbfeld auf hellem Grund) - Verena König bekommt daher einen
+   dunkleren Primary-Ton (#004a46), der schon im Header-Gradient der App verwendet wird,
+   keine neu erfundene Farbe außerhalb der bestehenden Palette. */
+.videothek-switch .chip{ border-width:1.5px; font-weight:600; }
+.videothek-switch .chip.vs-guntherschmidt{ border-color:var(--primary); color:var(--primary); background:rgba(0,111,106,0.08); }
+.videothek-switch .chip.vs-guntherschmidt.active{ background:var(--primary); border-color:var(--primary); color:#fff; }
+.videothek-switch .chip.vs-buddhaoma{ border-color:var(--terracotta); color:var(--terracotta); background:rgba(182,92,67,0.08); }
+.videothek-switch .chip.vs-buddhaoma.active{ background:var(--terracotta); border-color:var(--terracotta); color:#fff; }
+.videothek-switch .chip.vs-boundlessmovement{ border-color:var(--sage); color:#5c6b57; background:rgba(163,178,156,0.2); }
+.videothek-switch .chip.vs-boundlessmovement.active{ background:var(--sage); border-color:var(--sage); color:#fff; }
+.videothek-switch .chip.vs-erolanglotz{ border-color:var(--accent); color:#8a6a3f; background:rgba(209,178,138,0.22); }
+.videothek-switch .chip.vs-erolanglotz.active{ background:var(--accent); border-color:var(--accent); color:#4a3418; }
+.videothek-switch .chip.vs-juliabelke{ border-color:var(--muted); color:#5c6663; background:rgba(142,157,154,0.18); }
+.videothek-switch .chip.vs-juliabelke.active{ background:var(--muted); border-color:var(--muted); color:#fff; }
+.videothek-switch .chip.vs-alexanderhartmann{ border-color:var(--secondary); color:#0a6d67; background:rgba(78,218,217,0.18); }
+.videothek-switch .chip.vs-alexanderhartmann.active{ background:var(--secondary); border-color:var(--secondary); color:#04302d; }
+.videothek-switch .chip.vs-verenakoenig{ border-color:#004a46; color:#004a46; background:rgba(0,74,70,0.08); }
+.videothek-switch .chip.vs-verenakoenig.active{ background:#004a46; border-color:#004a46; color:#fff; }
+
 main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }
 .grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:0.9rem; }
 @keyframes cardFadeIn{ from{ opacity:0; transform:translateY(8px); } to{ opacity:1; transform:translateY(0); } }

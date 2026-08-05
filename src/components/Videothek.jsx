@@ -105,7 +105,7 @@ export default function Videothek({ initialSammlungId }){
       {SAMMLUNGEN.map(s => (
         <button
           key={s.id}
-          className={'chip' + (s.id === aktivId ? ' active' : '')}
+          className={'chip vs-' + s.id + (s.id === aktivId ? ' active' : '')}
           onClick={() => setAktivId(s.id)}
         >
           {s.label}
