@@ -11,5 +11,6 @@ export const BOUNDLESS_MOVEMENT_VIDEOS = [
   { url: 'https://youtu.be/UBIOq4Sv3Xg', title: '20 Minuten Movement' },
   { url: 'https://youtu.be/dKlYuOyIJOY', title: '30 Minuten Movement' },
   { url: 'https://youtu.be/M0xucDHRAFk', title: 'Drei Übungen die besser sind als Hanteltraining' },
-  { url: 'https://youtu.be/czKbCi7lcGg', title: 'Inner Peace, eine Session für die Verbindung von Körper, Geist und Seele' }
+  { url: 'https://youtu.be/czKbCi7lcGg', title: 'Inner Peace, eine Session für die Verbindung von Körper, Geist und Seele' },
+  { url: 'https://youtu.be/hnPYzi-JOjQ', title: '13 min Morgen Routine für mehr Beweglichkeit' }
 ];
