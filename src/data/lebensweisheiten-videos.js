@@ -16,8 +16,6 @@ export const LEBENSWEISHEITEN_VIDEOS = [
   { url: 'https://youtu.be/yYFu-XtL_XQ', title: 'Gefangen durch Regeln, so machen Dich Werte unfrei' },
   { url: 'https://youtu.be/GRmlwH7KgDQ', title: 'Innere Haltung' },
   { url: 'https://youtu.be/AvAigzGWOQ0', title: 'Befreiung der männlichen Energie, um den Fokus zu halten und Vorhaben tatsächlich umzusetzen' },
-  { url: 'https://youtu.be/YsIFES1v_vQ', title: 'Das Recht auf eine eigene Lebensperspektive, 15.6.25' },
-  { url: 'https://youtu.be/apCOWgrYCkE', title: 'Normopathisch verwirrte Gesellschaft, Deviantes Verhalten und die eigene Lebensperspektive, 17.6.25' },
   { url: 'https://youtu.be/YkPTspJjJRg', title: 'The Paradox Of Conscious Manifestation, Eckhart Tolle' },
   { url: 'https://youtu.be/kuOcqKJO5zw', title: 'You have to become vibrationally what you want to have' }
 ];
