@@ -30,11 +30,11 @@ import { AKRAM_VIGNAN_VIDEOS } from './data/akram-vignan-videos.js';
 import { ACT_VIDEOS } from './data/act-videos.js';
 import { SCHEMATHERAPIE_VIDEOS } from './data/schematherapie-videos.js';
 import { NLP_VIDEOS } from './data/nlp-videos.js';
-import { SCHAM_VIDEOS } from './data/scham-videos.js';
 import { TEPPERWEIN_VIDEOS } from './data/tepperwein-videos.js';
 import { HOTEL_MATZE_VIDEOS } from './data/hotel-matze-videos.js';
 import { EFT_VIDEOS } from './data/eft-videos.js';
 import { LEBENSWEISHEITEN_VIDEOS } from './data/lebensweisheiten-videos.js';
+import { ECKHART_TOLLE_VIDEOS } from './data/eckhart-tolle-videos.js';
 
 function buildIndex(){
   const entries = [];
@@ -382,15 +382,6 @@ function buildIndex(){
     matchText: ['NLP', 'Ziele', 'Magischer Kreis', 'Ankern', 'Systemisches Arbeiten', 'Ressourcen', ...NLP_VIDEOS.map(v => v.title)].join(' ')
   });
   entries.push({
-    key: 'videothek-scham',
-    tab: 'videothek',
-    openId: 'scham',
-    titel: 'Videothek · Scham',
-    kontext: 'Videothek',
-    snippet: 'Stephan Marks über Scham',
-    matchText: ['Scham', 'Stephan Marks', 'Beschämung', ...SCHAM_VIDEOS.map(v => v.title)].join(' ')
-  });
-  entries.push({
     key: 'videothek-tepperwein',
     tab: 'videothek',
     openId: 'tepperwein',
@@ -424,7 +415,16 @@ function buildIndex(){
     titel: 'Videothek · Lebensweisheiten',
     kontext: 'Videothek',
     snippet: 'Haltung, Werte, Lebensperspektive',
-    matchText: ['Lebensweisheiten', 'Haltung', 'Werte', 'Lebensperspektive', 'Manifestation', 'Eckhart Tolle', ...LEBENSWEISHEITEN_VIDEOS.map(v => v.title)].join(' ')
+    matchText: ['Lebensweisheiten', 'Haltung', 'Werte', 'Lebensperspektive', ...LEBENSWEISHEITEN_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-eckharttolle',
+    tab: 'videothek',
+    openId: 'eckharttolle',
+    titel: 'Videothek · Eckhart Tolle',
+    kontext: 'Videothek',
+    snippet: 'Präsenz, Bewusstsein, Gegenwärtigkeit',
+    matchText: ['Eckhart Tolle', 'Präsenz', 'Bewusstsein', 'Gegenwart', 'Manifestation', ...ECKHART_TOLLE_VIDEOS.map(v => v.title)].join(' ')
   });
 
   return entries;

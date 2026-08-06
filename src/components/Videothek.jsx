@@ -11,36 +11,36 @@ import { AKRAM_VIGNAN_VIDEOS } from '../data/akram-vignan-videos.js';
 import { ACT_VIDEOS } from '../data/act-videos.js';
 import { SCHEMATHERAPIE_VIDEOS } from '../data/schematherapie-videos.js';
 import { NLP_VIDEOS } from '../data/nlp-videos.js';
-import { SCHAM_VIDEOS } from '../data/scham-videos.js';
 import { TEPPERWEIN_VIDEOS } from '../data/tepperwein-videos.js';
 import { HOTEL_MATZE_VIDEOS } from '../data/hotel-matze-videos.js';
 import { EFT_VIDEOS } from '../data/eft-videos.js';
 import { LEBENSWEISHEITEN_VIDEOS } from '../data/lebensweisheiten-videos.js';
+import { ECKHART_TOLLE_VIDEOS } from '../data/eckhart-tolle-videos.js';
 
 // Bündelt die Video-Sammlungen unter einem Tab, damit die Tab-Leiste bei zwei
 // übersichtlichen Zeilen bleibt statt mit jeder neuen Sammlung eine weitere Spalte zu
 // beanspruchen.
 //
-// Buddha Oma, Boundless Movement, Dr. Ero Langlotz, Dr. Julia Belke, Alexander Hartmann,
-// Verena König, Akram Vignan, ACT, Schematherapie, NLP, Scham, Tepperwein, Hotel Matze,
-// EFT und Lebensweisheiten sind "synced": true,
-// laden also ausschließlich aus der jeweiligen Seed-Datei (fest im Code, gleich auf jedem
-// Gerät) statt aus localStorage. So bleiben Titel und Reihenfolge auf allen Endgeräten
-// identisch und stabil, bis die Seed-Datei geändert und neu deployt wird. Grund:
-// localStorage ist pro Browser/Gerät, zwei Geräte würden sonst unterschiedliche Stände
-// zeigen (siehe VideoListTab.jsx).
-// Dr. Gunther Schmidt ist bewusst weiterhin frei editierbar/lokal gespeichert, da diese
-// Sammlung noch nicht befüllt und nicht von der Sync-Anforderung betroffen war.
+// ALLE Sammlungen sind "synced": true, laden also ausschließlich aus der jeweiligen
+// Seed-Datei (fest im Code, gleich auf jedem Gerät) statt aus localStorage. So bleiben
+// Titel und Reihenfolge auf allen Endgeräten identisch und stabil, bis die Seed-Datei
+// geändert und neu deployt wird. Grund: localStorage ist pro Browser/Gerät, zwei Geräte
+// würden sonst unterschiedliche Stände zeigen (siehe VideoListTab.jsx).
+//
+// Dr. Gunther Schmidt war bis 2026-08-05 als einzige Sammlung frei editierbar/lokal
+// gespeichert und wurde auf Wunsch ebenfalls auf synced umgestellt. Damit entfällt dort
+// das manuelle Hinzufügen, Umsortieren und Löschen von Videos in der App; Änderungen
+// laufen jetzt wie überall über src/data/gunther-schmidt-videos.js und einen Deploy.
 const SAMMLUNGEN = [
   {
     id: 'guntherschmidt',
     label: 'Dr. Gunther Schmidt',
     storageKey: 'gunther_schmidt_videos_v1',
     seed: GUNTHER_SCHMIDT_VIDEOS,
-    synced: false,
+    synced: true,
     eyebrow: 'Videothek · Hypnosystemik',
     titel: 'Dr. Gunther Schmidt',
-    hinweis: 'Vorträge und Gespräche von und mit Dr. Gunther Schmidt zur Hypnosystemik. Reihenfolge, Titel und Auswahl sind hier frei editierbar, alles wird automatisch auf diesem Gerät gespeichert.'
+    hinweis: 'Vorträge und Gespräche von und mit Dr. Gunther Schmidt zur Hypnosystemik. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   },
   {
     id: 'buddhaoma',
@@ -143,16 +143,6 @@ const SAMMLUNGEN = [
     hinweis: 'Eigene Videos zu NLP-Techniken: Zielarbeit, Ankern, systemisches Coaching, Ressourcenarbeit. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   },
   {
-    id: 'scham',
-    label: 'Scham',
-    storageKey: 'scham_videos_v1',
-    seed: SCHAM_VIDEOS,
-    synced: true,
-    eyebrow: 'Videothek · Scham',
-    titel: 'Scham',
-    hinweis: 'Gespräche und Impulse zum Thema Scham, u. a. mit Scham-Experte Stephan Marks. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
-  },
-  {
     id: 'tepperwein',
     label: 'Tepperwein',
     storageKey: 'tepperwein_videos_v1',
@@ -191,6 +181,16 @@ const SAMMLUNGEN = [
     eyebrow: 'Videothek · Lebensweisheiten',
     titel: 'Lebensweisheiten',
     hinweis: 'Reflexionen zu Haltung, Werten und Lebensperspektive. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'eckharttolle',
+    label: 'Eckhart Tolle',
+    storageKey: 'eckhart_tolle_videos_v1',
+    seed: ECKHART_TOLLE_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Eckhart Tolle',
+    titel: 'Eckhart Tolle',
+    hinweis: 'Impulse von Eckhart Tolle zu Präsenz, Bewusstsein und Gegenwärtigkeit. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   }
 ];
 
