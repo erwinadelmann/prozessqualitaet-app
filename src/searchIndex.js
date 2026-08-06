@@ -35,6 +35,8 @@ import { HOTEL_MATZE_VIDEOS } from './data/hotel-matze-videos.js';
 import { EFT_VIDEOS } from './data/eft-videos.js';
 import { LEBENSWEISHEITEN_VIDEOS } from './data/lebensweisheiten-videos.js';
 import { ECKHART_TOLLE_VIDEOS } from './data/eckhart-tolle-videos.js';
+import { BUDDHISMUS_VIDEOS } from './data/buddhismus-videos.js';
+import { COACHING_GRUNDLAGEN_VIDEOS } from './data/coaching-grundlagen-videos.js';
 
 function buildIndex(){
   const entries = [];
@@ -425,6 +427,24 @@ function buildIndex(){
     kontext: 'Videothek',
     snippet: 'Präsenz, Bewusstsein, Gegenwärtigkeit',
     matchText: ['Eckhart Tolle', 'Präsenz', 'Bewusstsein', 'Gegenwart', 'Manifestation', ...ECKHART_TOLLE_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-buddhismus',
+    tab: 'videothek',
+    openId: 'buddhismus',
+    titel: 'Videothek · Buddhismus',
+    kontext: 'Videothek',
+    snippet: 'Achtfacher Pfad, Lama Ole Nydahl',
+    matchText: ['Buddhismus', 'achtfacher Pfad', 'Tiefsinnige Fragen', 'Lama Ole Nydahl', 'Tugend', ...BUDDHISMUS_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-coachinggrundlagen',
+    tab: 'videothek',
+    openId: 'coachinggrundlagen',
+    titel: 'Videothek · Coaching-Grundlagen',
+    kontext: 'Videothek',
+    snippet: 'Rollenklärung, Modelle, lösungsorientierte Haltung',
+    matchText: ['Coaching', 'Beratung', 'OK-OK-Modell', 'Seitenmodell', 'Ulrich Clement', 'Trauma trifft Bühne', ...COACHING_GRUNDLAGEN_VIDEOS.map(v => v.title)].join(' ')
   });
 
   return entries;

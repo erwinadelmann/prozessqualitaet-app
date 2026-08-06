@@ -16,6 +16,8 @@ import { HOTEL_MATZE_VIDEOS } from '../data/hotel-matze-videos.js';
 import { EFT_VIDEOS } from '../data/eft-videos.js';
 import { LEBENSWEISHEITEN_VIDEOS } from '../data/lebensweisheiten-videos.js';
 import { ECKHART_TOLLE_VIDEOS } from '../data/eckhart-tolle-videos.js';
+import { BUDDHISMUS_VIDEOS } from '../data/buddhismus-videos.js';
+import { COACHING_GRUNDLAGEN_VIDEOS } from '../data/coaching-grundlagen-videos.js';
 
 // Bündelt die Video-Sammlungen unter einem Tab, damit die Tab-Leiste bei zwei
 // übersichtlichen Zeilen bleibt statt mit jeder neuen Sammlung eine weitere Spalte zu
@@ -191,6 +193,26 @@ const SAMMLUNGEN = [
     eyebrow: 'Videothek · Eckhart Tolle',
     titel: 'Eckhart Tolle',
     hinweis: 'Impulse von Eckhart Tolle zu Präsenz, Bewusstsein und Gegenwärtigkeit. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'buddhismus',
+    label: 'Buddhismus',
+    storageKey: 'buddhismus_videos_v1',
+    seed: BUDDHISMUS_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Buddhismus',
+    titel: 'Buddhismus',
+    hinweis: 'Die Reihe „Tiefsinnige Fragen" zum edlen achtfachen Pfad sowie Vorträge von Lama Ole Nydahl. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'coachinggrundlagen',
+    label: 'Coaching-Grundlagen',
+    storageKey: 'coaching_grundlagen_videos_v1',
+    seed: COACHING_GRUNDLAGEN_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Coaching-Grundlagen',
+    titel: 'Coaching-Grundlagen',
+    hinweis: 'Methodenübergreifende Grundlagen: Rollenklärung, Modelle und lösungsorientierte Haltung. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   }
 ];
 

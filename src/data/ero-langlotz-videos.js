@@ -17,5 +17,6 @@ export const ERO_LANGLOTZ_VIDEOS = [
   { url: 'https://youtu.be/1jONv6MmIrc', title: 'Autonomie Training für gelungene Partnerschaft' },
   { url: 'https://youtu.be/y-q3peB0g7Q', title: 'Glaubenssatz, Langlotz, Struktur, Aufstellung' },
   { url: 'https://youtu.be/YsIFES1v_vQ', title: 'Das Recht auf eine eigene Lebensperspektive, 15.6.25' },
-  { url: 'https://youtu.be/apCOWgrYCkE', title: 'Normopathisch verwirrte Gesellschaft, Deviantes Verhalten und die eigene Lebensperspektive, 17.6.25' }
+  { url: 'https://youtu.be/apCOWgrYCkE', title: 'Normopathisch verwirrte Gesellschaft, Deviantes Verhalten und die eigene Lebensperspektive, 17.6.25' },
+  { url: 'https://youtu.be/vxGdKLeknQY', title: 'Selbstermächtigung durch Perspektivenwechsel, 17.11.25' }
 ];

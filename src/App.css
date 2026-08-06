@@ -206,6 +206,10 @@ header p.sub{
 .videothek-switch .chip.vs-lebensweisheiten.active{ background:#7a8f6b; border-color:#7a8f6b; color:#fff; }
 .videothek-switch .chip.vs-eckharttolle{ border-color:#9b7fa8; color:#7d6389; background:rgba(155,127,168,0.12); }
 .videothek-switch .chip.vs-eckharttolle.active{ background:#9b7fa8; border-color:#9b7fa8; color:#fff; }
+.videothek-switch .chip.vs-buddhismus{ border-color:#c2703d; color:#a35a2e; background:rgba(194,112,61,0.12); }
+.videothek-switch .chip.vs-buddhismus.active{ background:#c2703d; border-color:#c2703d; color:#fff; }
+.videothek-switch .chip.vs-coachinggrundlagen{ border-color:#3f7d85; color:#3f7d85; background:rgba(63,125,133,0.1); }
+.videothek-switch .chip.vs-coachinggrundlagen.active{ background:#3f7d85; border-color:#3f7d85; color:#fff; }
 
 main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }
 .grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:0.9rem; }

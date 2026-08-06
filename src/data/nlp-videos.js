@@ -17,5 +17,6 @@ export const NLP_VIDEOS = [
   { url: 'https://youtu.be/QrxuZInNhAE', title: '6 Step Reframing 2' },
   { url: 'https://youtu.be/WIyEJz1OwTU', title: 'Was tun, wenn wir grundlos beleidigt werden, Luftballon-Technik' },
   { url: 'https://youtu.be/CZI2c8NFTaY', title: 'Glaubenssätze 2' },
-  { url: 'https://youtu.be/G4-p4La3HfA', title: 'Das Innere Team, Persönlichkeitsanteile im Gespräch' }
+  { url: 'https://youtu.be/G4-p4La3HfA', title: 'Das Innere Team, Persönlichkeitsanteile im Gespräch' },
+  { url: 'https://youtu.be/U3iaXeAaXL4', title: 'Lösungsorientiertes Fragen, Die Zielkriterien, NLP Coaching Institut Kassel' }
 ];

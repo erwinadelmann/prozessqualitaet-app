@@ -6,5 +6,7 @@
 // übertragen. Kanal ist Erwin Adelmanns eigener YouTube-Kanal (@ErwinAdelmann).
 // Stand: 2026-08-05.
 export const ECKHART_TOLLE_VIDEOS = [
-  { url: 'https://youtu.be/YkPTspJjJRg', title: 'Das Paradoxon der bewussten Manifestation, Eckhart Tolle' }
+  { url: 'https://youtu.be/YkPTspJjJRg', title: 'Das Paradoxon der bewussten Manifestation, Eckhart Tolle' },
+  { url: 'https://youtu.be/FsqOGv8HOkg', title: 'Wie man mit negativen Emotionen umgeht, Eckhart Tolle' },
+  { url: 'https://youtu.be/rc7SsNmBeR0', title: 'Stress und Angst beenden, Frieden, Präsenz und innere Freiheit, Eckhart Tolle, Teil 3' }
 ];

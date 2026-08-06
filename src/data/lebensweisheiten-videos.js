@@ -16,5 +16,9 @@ export const LEBENSWEISHEITEN_VIDEOS = [
   { url: 'https://youtu.be/yYFu-XtL_XQ', title: 'Gefangen durch Regeln, so machen Dich Werte unfrei' },
   { url: 'https://youtu.be/GRmlwH7KgDQ', title: 'Innere Haltung' },
   { url: 'https://youtu.be/AvAigzGWOQ0', title: 'Befreiung der männlichen Energie, um den Fokus zu halten und Vorhaben tatsächlich umzusetzen' },
-  { url: 'https://youtu.be/kuOcqKJO5zw', title: 'You have to become vibrationally what you want to have' }
+  { url: 'https://youtu.be/kuOcqKJO5zw', title: 'You have to become vibrationally what you want to have' },
+  { url: 'https://youtu.be/47LqriSB1iY', title: 'Warum du dich nicht zeigst, obwohl du mutig bist' },
+  { url: 'https://youtu.be/gLyfjyad-K4', title: 'Verletztes Selbstwertgefühl, Ursachen und Auswirkungen' },
+  { url: 'https://youtu.be/0ztYMP-YmHg', title: 'Die Sache mit den guten Vorsätzen' },
+  { url: 'https://youtu.be/_NRqX_rXYsk', title: 'Die 10 wichtigsten Regeln fürs Leben, aus 5 Jahren Psychologiestudium' }
 ];
