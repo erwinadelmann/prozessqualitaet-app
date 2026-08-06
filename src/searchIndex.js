@@ -26,6 +26,15 @@ import { ERO_LANGLOTZ_VIDEOS } from './data/ero-langlotz-videos.js';
 import { JULIA_BELKE_VIDEOS } from './data/julia-belke-videos.js';
 import { ALEXANDER_HARTMANN_VIDEOS } from './data/alexander-hartmann-videos.js';
 import { VERENA_KOENIG_VIDEOS } from './data/verena-koenig-videos.js';
+import { AKRAM_VIGNAN_VIDEOS } from './data/akram-vignan-videos.js';
+import { ACT_VIDEOS } from './data/act-videos.js';
+import { SCHEMATHERAPIE_VIDEOS } from './data/schematherapie-videos.js';
+import { NLP_VIDEOS } from './data/nlp-videos.js';
+import { SCHAM_VIDEOS } from './data/scham-videos.js';
+import { TEPPERWEIN_VIDEOS } from './data/tepperwein-videos.js';
+import { HOTEL_MATZE_VIDEOS } from './data/hotel-matze-videos.js';
+import { EFT_VIDEOS } from './data/eft-videos.js';
+import { LEBENSWEISHEITEN_VIDEOS } from './data/lebensweisheiten-videos.js';
 
 function buildIndex(){
   const entries = [];
@@ -272,7 +281,7 @@ function buildIndex(){
     matchText: [FOCUSING_QUESTION, ...MOTTO_FRAGEN, ...THEMEN_VORSCHLAEGE].join(' ')
   });
 
-  // Videothek, sieben Sammlungen, je ein Sprungpunkt (kein Deep-Link auf einzelne Videos)
+  // Videothek, je ein Sprungpunkt pro Sammlung (kein Deep-Link auf einzelne Videos)
   entries.push({
     key: 'videothek-guntherschmidt',
     tab: 'videothek',
@@ -335,6 +344,87 @@ function buildIndex(){
     kontext: 'Videothek',
     snippet: 'Entwicklungstrauma und Abgrenzung',
     matchText: ['Verena König', 'Entwicklungstrauma', 'Abgrenzung', 'Podcast', ...VERENA_KOENIG_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-akramvignan',
+    tab: 'videothek',
+    openId: 'akramvignan',
+    titel: 'Videothek · Akram Vignan',
+    kontext: 'Videothek',
+    snippet: 'Spirituelle Lehre des Akram Vignan',
+    matchText: ['Akram Vignan', 'Atma Gnani', 'Deepakbhai', 'Spiritualität', 'Gebet', 'Hingabe', ...AKRAM_VIGNAN_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-act',
+    tab: 'videothek',
+    openId: 'act',
+    titel: 'Videothek · ACT',
+    kontext: 'Videothek',
+    snippet: 'Akzeptanz- und Commitment-Therapie',
+    matchText: ['ACT', 'Akzeptanz', 'Commitment', 'Defusion', 'Werteklärung', 'Achtsamkeit', ...ACT_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-schematherapie',
+    tab: 'videothek',
+    openId: 'schematherapie',
+    titel: 'Videothek · Schematherapie',
+    kontext: 'Videothek',
+    snippet: 'Schematherapie und Modusarbeit',
+    matchText: ['Schematherapie', 'Modusarbeit', 'Schema', 'Modell', 'innere Anteile', ...SCHEMATHERAPIE_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-nlp',
+    tab: 'videothek',
+    openId: 'nlp',
+    titel: 'Videothek · NLP',
+    kontext: 'Videothek',
+    snippet: 'Zielarbeit, Ankern, systemisches Coaching, Ressourcenarbeit',
+    matchText: ['NLP', 'Ziele', 'Magischer Kreis', 'Ankern', 'Systemisches Arbeiten', 'Ressourcen', ...NLP_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-scham',
+    tab: 'videothek',
+    openId: 'scham',
+    titel: 'Videothek · Scham',
+    kontext: 'Videothek',
+    snippet: 'Stephan Marks über Scham',
+    matchText: ['Scham', 'Stephan Marks', 'Beschämung', ...SCHAM_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-tepperwein',
+    tab: 'videothek',
+    openId: 'tepperwein',
+    titel: 'Videothek · Tepperwein',
+    kontext: 'Videothek',
+    snippet: 'Tepperwein-Lebensseminar',
+    matchText: ['Tepperwein', 'Lebensseminar', 'Kurt Tepperwein', ...TEPPERWEIN_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-hotelmatze',
+    tab: 'videothek',
+    openId: 'hotelmatze',
+    titel: 'Videothek · Hotel Matze',
+    kontext: 'Videothek',
+    snippet: 'Podcast Hotel Matze',
+    matchText: ['Hotel Matze', 'Matze Hielscher', 'Podcast', ...HOTEL_MATZE_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-eft',
+    tab: 'videothek',
+    openId: 'eft',
+    titel: 'Videothek · EFT',
+    kontext: 'Videothek',
+    snippet: 'Emotionsfokussierte Therapie',
+    matchText: ['EFT', 'Emotionsfokussierte Therapie', 'Emotionen', ...EFT_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-lebensweisheiten',
+    tab: 'videothek',
+    openId: 'lebensweisheiten',
+    titel: 'Videothek · Lebensweisheiten',
+    kontext: 'Videothek',
+    snippet: 'Haltung, Werte, Lebensperspektive',
+    matchText: ['Lebensweisheiten', 'Haltung', 'Werte', 'Lebensperspektive', 'Manifestation', 'Eckhart Tolle', ...LEBENSWEISHEITEN_VIDEOS.map(v => v.title)].join(' ')
   });
 
   return entries;

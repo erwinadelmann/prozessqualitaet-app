@@ -7,13 +7,23 @@ import { ERO_LANGLOTZ_VIDEOS } from '../data/ero-langlotz-videos.js';
 import { JULIA_BELKE_VIDEOS } from '../data/julia-belke-videos.js';
 import { ALEXANDER_HARTMANN_VIDEOS } from '../data/alexander-hartmann-videos.js';
 import { VERENA_KOENIG_VIDEOS } from '../data/verena-koenig-videos.js';
+import { AKRAM_VIGNAN_VIDEOS } from '../data/akram-vignan-videos.js';
+import { ACT_VIDEOS } from '../data/act-videos.js';
+import { SCHEMATHERAPIE_VIDEOS } from '../data/schematherapie-videos.js';
+import { NLP_VIDEOS } from '../data/nlp-videos.js';
+import { SCHAM_VIDEOS } from '../data/scham-videos.js';
+import { TEPPERWEIN_VIDEOS } from '../data/tepperwein-videos.js';
+import { HOTEL_MATZE_VIDEOS } from '../data/hotel-matze-videos.js';
+import { EFT_VIDEOS } from '../data/eft-videos.js';
+import { LEBENSWEISHEITEN_VIDEOS } from '../data/lebensweisheiten-videos.js';
 
 // Bündelt die Video-Sammlungen unter einem Tab, damit die Tab-Leiste bei zwei
 // übersichtlichen Zeilen bleibt statt mit jeder neuen Sammlung eine weitere Spalte zu
 // beanspruchen.
 //
-// Buddha Oma, Boundless Movement, Dr. Ero Langlotz, Dr. Julia Belke, Alexander Hartmann
-// und Verena König sind "synced": true,
+// Buddha Oma, Boundless Movement, Dr. Ero Langlotz, Dr. Julia Belke, Alexander Hartmann,
+// Verena König, Akram Vignan, ACT, Schematherapie, NLP, Scham, Tepperwein, Hotel Matze,
+// EFT und Lebensweisheiten sind "synced": true,
 // laden also ausschließlich aus der jeweiligen Seed-Datei (fest im Code, gleich auf jedem
 // Gerät) statt aus localStorage. So bleiben Titel und Reihenfolge auf allen Endgeräten
 // identisch und stabil, bis die Seed-Datei geändert und neu deployt wird. Grund:
@@ -91,6 +101,96 @@ const SAMMLUNGEN = [
     eyebrow: 'Videothek · Verena König',
     titel: 'Verena König',
     hinweis: 'Podcast-Folgen von Verena König zu Entwicklungstrauma und Abgrenzung. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'akramvignan',
+    label: 'Akram Vignan',
+    storageKey: 'akram_vignan_videos_v1',
+    seed: AKRAM_VIGNAN_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Akram Vignan',
+    titel: 'Akram Vignan',
+    hinweis: 'Videos zur spirituellen Lehre des Akram Vignan. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'act',
+    label: 'ACT',
+    storageKey: 'act_videos_v1',
+    seed: ACT_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · ACT',
+    titel: 'Akzeptanz- und Commitment-Therapie',
+    hinweis: 'Videos zu ACT, Defusion und Werteklärung. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'schematherapie',
+    label: 'Schematherapie',
+    storageKey: 'schematherapie_videos_v1',
+    seed: SCHEMATHERAPIE_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Schematherapie',
+    titel: 'Schematherapie',
+    hinweis: 'Videos zu Schematherapie und Modusarbeit. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'nlp',
+    label: 'NLP',
+    storageKey: 'nlp_videos_v1',
+    seed: NLP_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · NLP',
+    titel: 'NLP',
+    hinweis: 'Eigene Videos zu NLP-Techniken: Zielarbeit, Ankern, systemisches Coaching, Ressourcenarbeit. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'scham',
+    label: 'Scham',
+    storageKey: 'scham_videos_v1',
+    seed: SCHAM_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Scham',
+    titel: 'Scham',
+    hinweis: 'Gespräche und Impulse zum Thema Scham, u. a. mit Scham-Experte Stephan Marks. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'tepperwein',
+    label: 'Tepperwein',
+    storageKey: 'tepperwein_videos_v1',
+    seed: TEPPERWEIN_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Tepperwein',
+    titel: 'Tepperwein Lebensseminar',
+    hinweis: 'Mitschnitte des Tepperwein-Lebensseminars (Kurt Tepperwein). Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'hotelmatze',
+    label: 'Hotel Matze',
+    storageKey: 'hotel_matze_videos_v1',
+    seed: HOTEL_MATZE_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Hotel Matze',
+    titel: 'Hotel Matze',
+    hinweis: 'Folgen des Podcasts Hotel Matze (Matze Hielscher). Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'eft',
+    label: 'EFT',
+    storageKey: 'eft_videos_v1',
+    seed: EFT_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · EFT',
+    titel: 'Emotionsfokussierte Therapie (EFT)',
+    hinweis: 'Videos zur Emotionsfokussierten Therapie (EFT). Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'lebensweisheiten',
+    label: 'Lebensweisheiten',
+    storageKey: 'lebensweisheiten_videos_v1',
+    seed: LEBENSWEISHEITEN_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Lebensweisheiten',
+    titel: 'Lebensweisheiten',
+    hinweis: 'Reflexionen zu Haltung, Werten und Lebensperspektive. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   }
 ];
 

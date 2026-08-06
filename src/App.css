@@ -188,6 +188,24 @@ header p.sub{
 .videothek-switch .chip.vs-alexanderhartmann.active{ background:var(--secondary); border-color:var(--secondary); color:#04302d; }
 .videothek-switch .chip.vs-verenakoenig{ border-color:#004a46; color:#004a46; background:rgba(0,74,70,0.08); }
 .videothek-switch .chip.vs-verenakoenig.active{ background:#004a46; border-color:#004a46; color:#fff; }
+.videothek-switch .chip.vs-akramvignan{ border-color:#a67c3d; color:#a67c3d; background:rgba(166,124,61,0.1); }
+.videothek-switch .chip.vs-akramvignan.active{ background:#a67c3d; border-color:#a67c3d; color:#fff; }
+.videothek-switch .chip.vs-act{ border-color:#d68b73; color:#a85c42; background:rgba(214,139,115,0.14); }
+.videothek-switch .chip.vs-act.active{ background:#d68b73; border-color:#d68b73; color:#fff; }
+.videothek-switch .chip.vs-schematherapie{ border-color:#5c7a5a; color:#5c7a5a; background:rgba(92,122,90,0.12); }
+.videothek-switch .chip.vs-schematherapie.active{ background:#5c7a5a; border-color:#5c7a5a; color:#fff; }
+.videothek-switch .chip.vs-nlp{ border-color:#6b5b95; color:#6b5b95; background:rgba(107,91,149,0.1); }
+.videothek-switch .chip.vs-nlp.active{ background:#6b5b95; border-color:#6b5b95; color:#fff; }
+.videothek-switch .chip.vs-scham{ border-color:#8c4a5c; color:#8c4a5c; background:rgba(140,74,92,0.1); }
+.videothek-switch .chip.vs-scham.active{ background:#8c4a5c; border-color:#8c4a5c; color:#fff; }
+.videothek-switch .chip.vs-tepperwein{ border-color:#5b7a99; color:#5b7a99; background:rgba(91,122,153,0.1); }
+.videothek-switch .chip.vs-tepperwein.active{ background:#5b7a99; border-color:#5b7a99; color:#fff; }
+.videothek-switch .chip.vs-hotelmatze{ border-color:#4a4a4a; color:#4a4a4a; background:rgba(74,74,74,0.08); }
+.videothek-switch .chip.vs-hotelmatze.active{ background:#4a4a4a; border-color:#4a4a4a; color:#fff; }
+.videothek-switch .chip.vs-eft{ border-color:#c98a3e; color:#c98a3e; background:rgba(201,138,62,0.1); }
+.videothek-switch .chip.vs-eft.active{ background:#c98a3e; border-color:#c98a3e; color:#fff; }
+.videothek-switch .chip.vs-lebensweisheiten{ border-color:#7a8f6b; color:#5f7053; background:rgba(122,143,107,0.14); }
+.videothek-switch .chip.vs-lebensweisheiten.active{ background:#7a8f6b; border-color:#7a8f6b; color:#fff; }
 
 main{ max-width:var(--content-max); margin:0 auto; padding:1.8rem 1.5rem 4rem; }
 .grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(270px, 1fr)); gap:0.9rem; }

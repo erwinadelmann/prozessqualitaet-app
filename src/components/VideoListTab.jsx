@@ -177,7 +177,11 @@ export default function VideoListTab({ storageKey, seed, synced, eyebrow, titel,
       )}
 
       {videos.length === 0 ? (
-        <div className="empty">Noch keine Videos. Oben einen YouTube-Link einfügen.</div>
+        <div className="empty">
+          {synced
+            ? 'Noch keine Videos in dieser Sammlung.'
+            : 'Noch keine Videos. Oben einen YouTube-Link einfügen.'}
+        </div>
       ) : (
         <div className="video-grid">
           {videos.map((v, i) => {

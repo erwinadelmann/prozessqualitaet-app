@@ -5,6 +5,9 @@
 // aus dem localStorage des Mac-Browsers übernommen, 2026-07-16 (2 Videos waren dort
 // bereits gelöscht worden, die Reihenfolge war bereits umsortiert).
 export const BUDDHA_OMA_VIDEOS = [
+  { url: 'https://youtu.be/_PbrrJYRUGw', title: 'Zu seinen Extremitäten finden, Die Buddha Oma zeigt vor' },
+  { url: 'https://youtu.be/OT7erhClOkg', title: 'Wie geht verzeihen, Die Buddha Oma Ursula Lyon erklärt' },
+  { url: 'https://youtu.be/jYcpUhUla3Y', title: 'Angst vor Entscheidungen, Buddha Oma Ursula Lyon beleuchtet das Thema' },
   { url: 'https://youtu.be/Vi9R1d22eAY', title: 'Die 5 guten Kräfte' },
   { url: 'https://youtu.be/JpDA4PYL6Ac?si=TqMoH-J9-let_OaU', title: 'Die fünf Hemmungen' },
   { url: 'https://youtu.be/QJO0WCSZRd8', title: 'Die 4 edlen Wahrheiten' },

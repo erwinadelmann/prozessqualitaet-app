@@ -25,5 +25,13 @@ export const GUNTHER_SCHMIDT_VIDEOS = [
   { url: 'https://youtu.be/SH7ROd-auN4', title: 'Was bedeutet Hypnosystemik? Im Gespräch mit Danny Herzog-Braune' },
   { url: 'https://youtu.be/AY38RoPe-Gk', title: 'Entscheidungen – ein hypnosystemischer Blick' },
   { url: 'https://youtu.be/s615OrloMuc', title: 'Gunther Schmidts wahrscheinlich bestes "Demo Coaching" – Analyse von Timo Schlage' },
-  { url: 'https://youtu.be/c-nvqEqPlhA', title: 'Was gute Coaching-Ausbildungen wirklich auszeichnet (10 Punkte)' }
+  { url: 'https://youtu.be/c-nvqEqPlhA', title: 'Was gute Coaching-Ausbildungen wirklich auszeichnet (10 Punkte)' },
+  { url: 'https://youtu.be/3xi_soJdMRA', title: 'Die Funktion eines Ziels ist Bewegung, Folge 324' },
+  { url: 'https://youtu.be/wXQlBiPJFIU', title: 'Wie können wir uns selbst steuern, Was bedeutet Reden reicht nicht, Gunther Schmidt exklusiv Teil 1' },
+  { url: 'https://youtu.be/GEEIletcO6U', title: 'Problemtrance entkommen durch hypnosystemische Fragetechniken' },
+  { url: 'https://youtu.be/I2dvzbHueOg', title: 'Alpha Tiere, Wie man dominante Menschen als Trainingspartner nutzen kann, ohne unterzugehen' },
+  { url: 'https://youtu.be/V3thdnhMpbI', title: 'Dr. Gunther Schmidt bei der noesis OE Werkstatt 2024' },
+  { url: 'https://youtu.be/DUFpz0DcCDg', title: 'Paradoxe Intervention im Coaching' },
+  { url: 'https://youtu.be/eYcWOjf0K0E', title: 'Gunther Schmidt fragt Maja Storch, Kollegiales Fallgespräch, lifelessons.de' },
+  { url: 'https://youtu.be/Uf09aq5fOVY', title: 'Maja Storch fragt Gunther Schmidt, Kollegiales Fallgespräch, lifelessons.de' }
 ];
