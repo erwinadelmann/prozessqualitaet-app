@@ -8,5 +8,9 @@
 export const EFT_VIDEOS = [
   { url: 'https://youtu.be/Lu5meWI20-U', title: 'Primäre oder maladaptive Emotionen, Emotionsfokussierte Therapie EFT verstehen' },
   { url: 'https://youtu.be/bVOK2l2F9SU', title: 'EFT, moderne Verhaltenstherapie, Emotionsfokussierte Therapie EFT verstehen' },
-  { url: 'https://youtu.be/H0_3t3OTNJ4', title: 'Heilung im zwischenmenschlichen Kontext, Emotionsfokussierte Therapie EFT verstehen' }
+  { url: 'https://youtu.be/H0_3t3OTNJ4', title: 'Heilung im zwischenmenschlichen Kontext, Emotionsfokussierte Therapie EFT verstehen' },
+  // YouTube-Titel lautet nur "Infoabend GAS". Wofür GAS steht, ließ sich nicht belegen
+  // (Recherche 2026-08-05 ergab keine passende österreichische Organisation dieses Namens).
+  // Von Erwin ausdrücklich der EFT-Sammlung zugeordnet.
+  { url: 'https://youtu.be/OipdiW7uTVc', title: 'Infoabend, Psychotherapie-Ausbildung (GAS)' }
 ];
