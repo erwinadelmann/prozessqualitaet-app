@@ -2,17 +2,14 @@
 // Titel und Reihenfolge sind absichtlich fest im Code hinterlegt statt in localStorage,
 // damit sie auf jedem Gerät identisch sind und stabil bleiben, bis diese Datei geändert
 // und neu deployt wird (siehe VideoListTab.jsx, Prop "synced"). Titel stammen aus den
-// echten YouTube-Video-Titeln (Quelle: YouTube-oEmbed-API). Kanal ist Erwin Adelmanns
-// eigener YouTube-Kanal (@ErwinAdelmann).
+// echten YouTube-Video-Titeln (Quelle: YouTube-oEmbed-API).
 //
-// Abgrenzung zur Sammlung "Buddha Oma": dort ausschließlich Ursula Lyon. Hier die Reihe
-// "Tiefsinnige Fragen" zum edlen achtfachen Pfad sowie Vorträge von Lama Ole Nydahl.
-// Reihenfolge der Pfad-Reihe inhaltlich gesetzt: erst der Überblick, dann die einzelnen
-// Pfadglieder. Stand: 2026-08-05.
+// Stand: 2026-08-07. Die vier Mitschnitte der Reihe "Tiefsinnige Fragen" wurden auf
+// Erwins Wunsch in die Sammlung "Buddhismus · Ayya Khema" verschoben, da sie inhaltlich
+// dorthin gehören (siehe ayya-khema-videos.js). Hier verbleibt damit nur Lama Ole Nydahl.
+//
+// Abgrenzung zu den benachbarten Sammlungen: "Buddha Oma" enthält ausschließlich
+// Ursula Lyon, "Buddhismus · Ayya Khema" ausschließlich Ayya Khema.
 export const BUDDHISMUS_VIDEOS = [
-  { url: 'https://youtu.be/zLHqX2p_f3w', title: 'Der edle achtfache Pfad, Tiefsinnige Fragen' },
-  { url: 'https://youtu.be/DT1YfBGn_wQ', title: 'Achtfacher Pfad, Tugend, Tiefsinnige Fragen' },
-  { url: 'https://youtu.be/qsGivFvxTI4', title: 'Rechte Rede, rechter Lebenserwerb, Tiefsinnige Fragen' },
-  { url: 'https://youtu.be/Si8TLApX8vQ', title: 'Bewusstsein regiert die Welt, Tiefsinnige Fragen' },
   { url: 'https://youtu.be/E898ohN7drI', title: 'Kraft der Gefühle, Lama Ole Nydahl' }
 ];

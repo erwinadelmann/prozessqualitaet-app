@@ -445,8 +445,8 @@ function buildIndex(){
     openId: 'buddhismus',
     titel: 'Videothek · Buddhismus',
     kontext: 'Videothek',
-    snippet: 'Achtfacher Pfad, Lama Ole Nydahl',
-    matchText: ['Buddhismus', 'achtfacher Pfad', 'Tiefsinnige Fragen', 'Lama Ole Nydahl', 'Tugend', ...BUDDHISMUS_VIDEOS.map(v => v.title)].join(' ')
+    snippet: 'Lama Ole Nydahl',
+    matchText: ['Buddhismus', 'Lama Ole Nydahl', 'Gefühle', ...BUDDHISMUS_VIDEOS.map(v => v.title)].join(' ')
   });
   entries.push({
     key: 'videothek-ayyakhema',

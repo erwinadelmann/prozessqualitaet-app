@@ -13,10 +13,12 @@
 // wurden zu Kommata normalisiert, wie in den übrigen Sammlungen dieser App. Inhaltlich
 // wurde nichts verändert.
 //
-// Abgrenzung: Die Sammlung "Buddhismus" enthält die Reihe "Tiefsinnige Fragen" in
-// Erwin Adelmanns eigenen Mitschnitten sowie Lama Ole Nydahl. Hier liegen die Aufnahmen
-// des Kanals "Buddhas Lehre", teils mit inhaltlich gleichen Themen, aber anderen
-// Video-Kennungen, also andere Aufnahmen derselben Reihe.
+// Am 2026-08-07 wurden auf Erwins Wunsch zusätzlich die vier Mitschnitte der Reihe
+// "Tiefsinnige Fragen" von seinem eigenen Kanal (@ErwinAdelmann) aus der Sammlung
+// "Buddhismus" hierher verschoben, siehe Block am Ende der Liste. Sie behandeln dieselben
+// Themen wie die Aufnahmen von "Buddhas Lehre" weiter oben, tragen aber eigene
+// Video-Kennungen, sind also andere Aufnahmen. In der Sammlung "Buddhismus" verbleibt
+// damit nur Lama Ole Nydahl.
 export const AYYA_KHEMA_VIDEOS = [
   { url: 'https://youtu.be/scdUcDWeMJE', title: 'Die drei guten und die drei bösen Wurzeln' },
   { url: 'https://youtu.be/_CEbZkQ_FV8', title: 'Karma und Gebefreudigkeit' },
@@ -98,5 +100,11 @@ export const AYYA_KHEMA_VIDEOS = [
   { url: 'https://youtu.be/bj_5s3eebSs', title: 'Die erste Vertiefung in der Meditation' },
   { url: 'https://youtu.be/RjVAL_XTbXc', title: 'Tiefsinnige Fragen 5, Rechte Rede, rechter Lebenserwerb' },
   { url: 'https://youtu.be/c5aCLSmiaJA', title: 'Karma für Leben und Tod' },
-  { url: 'https://youtu.be/cX1JCKCOIRg', title: 'Gönne dich dir selbst, Teil 1' }
+  { url: 'https://youtu.be/cX1JCKCOIRg', title: 'Gönne dich dir selbst, Teil 1' },
+  // Am 2026-08-07 aus der Sammlung "Buddhismus" hierher verschoben: eigene Mitschnitte
+  // der Reihe "Tiefsinnige Fragen" vom Kanal @ErwinAdelmann.
+  { url: 'https://youtu.be/zLHqX2p_f3w', title: 'Der edle achtfache Pfad, Tiefsinnige Fragen, eigener Mitschnitt' },
+  { url: 'https://youtu.be/DT1YfBGn_wQ', title: 'Achtfacher Pfad, Tugend, Tiefsinnige Fragen, eigener Mitschnitt' },
+  { url: 'https://youtu.be/qsGivFvxTI4', title: 'Rechte Rede, rechter Lebenserwerb, Tiefsinnige Fragen, eigener Mitschnitt' },
+  { url: 'https://youtu.be/Si8TLApX8vQ', title: 'Bewusstsein regiert die Welt, Tiefsinnige Fragen, eigener Mitschnitt' }
 ];

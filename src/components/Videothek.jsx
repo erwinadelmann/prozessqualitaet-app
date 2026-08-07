@@ -214,7 +214,7 @@ const SAMMLUNGEN = [
     synced: true,
     eyebrow: 'Videothek · Buddhismus',
     titel: 'Buddhismus',
-    hinweis: 'Die Reihe „Tiefsinnige Fragen" zum edlen achtfachen Pfad sowie Vorträge von Lama Ole Nydahl. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+    hinweis: 'Vorträge von Lama Ole Nydahl. Die Reihe „Tiefsinnige Fragen" liegt jetzt vollständig in der Sammlung „Buddhismus · Ayya Khema". Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   },
   {
     id: 'ayyakhema',
@@ -224,7 +224,7 @@ const SAMMLUNGEN = [
     synced: true,
     eyebrow: 'Videothek · Buddhismus, Ayya Khema',
     titel: 'Ayya Khema, Vorträge und geleitete Meditationen',
-    hinweis: 'Unterkategorie zu Buddhismus. Vollständige deutschsprachige Vortragsreihe von Ayya Khema, Quelle ist die Playlist des Kanals „Buddhas Lehre". Enthält die Reihe „Tiefsinnige Fragen" in anderen Aufnahmen als der Tab Buddhismus. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+    hinweis: 'Unterkategorie zu Buddhismus. Vollständige deutschsprachige Vortragsreihe von Ayya Khema, Quelle ist die Playlist des Kanals „Buddhas Lehre", am Ende ergänzt um die eigenen Mitschnitte der Reihe „Tiefsinnige Fragen". Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   },
   {
     id: 'coachinggrundlagen',
