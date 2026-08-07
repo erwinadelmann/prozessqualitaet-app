@@ -210,11 +210,12 @@ header p.sub{
 .videothek-switch .chip.vs-eckharttollemember.active{ background:#7d6389; border-color:#7d6389; color:#fff; border-style:solid; }
 .videothek-switch .chip.vs-buddhismus{ border-color:#c2703d; color:#a35a2e; background:rgba(194,112,61,0.12); }
 .videothek-switch .chip.vs-buddhismus.active{ background:#c2703d; border-color:#c2703d; color:#fff; }
-/* Ayya Khema ist Unterkategorie zu Buddhismus, deshalb dieselbe Farbfamilie wie
-   vs-buddhismus, aber heller und mit gepunktetem Rand als Zugehörigkeitsmarker,
-   analog zur Lösung bei Eckhart Tolle und Eckhart Tolle · Member. */
-.videothek-switch .chip.vs-ayyakhema{ border-color:#c2703d; color:#a35a2e; background:rgba(194,112,61,0.05); border-style:dotted; }
-.videothek-switch .chip.vs-ayyakhema.active{ background:#a35a2e; border-color:#a35a2e; color:#fff; border-style:solid; }
+/* Ayya Khema war zunächst als Unterkategorie zu "Buddhismus" angelegt (gepunkteter Rand,
+   gleiche Farbfamilie). Seit der Umbenennung dieses Tabs in "Lama Ole Nydahl" am
+   2026-08-07 sind beide gleichrangige Lehrer-Sammlungen, deshalb hier ein eigener,
+   dunkler Braunton und ein durchgezogener Rand wie bei allen übrigen Chips. */
+.videothek-switch .chip.vs-ayyakhema{ border-color:#6b4f3a; color:#6b4f3a; background:rgba(107,79,58,0.1); }
+.videothek-switch .chip.vs-ayyakhema.active{ background:#6b4f3a; border-color:#6b4f3a; color:#fff; }
 /* Silvana Schmitt: gedämpftes Beere als 21. Sammlungsfarbe. Die Markenpalette ist damit
    längst verlassen, siehe Kommentar oben; der Ton ist bewusst so gewählt, dass er mit
    keinem der bestehenden Chips verwechselbar ist. */

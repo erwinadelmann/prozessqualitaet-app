@@ -208,24 +208,27 @@ const SAMMLUNGEN = [
     hinweis: 'Videos, die ohne Anmeldung bei YouTube nicht abrufbar sind, sehr wahrscheinlich Inhalte aus dem Mitgliederbereich des Kanals. Sie lassen sich hier voraussichtlich nicht abspielen und dienen vorerst als Merkliste. Die echten Titel liegen noch nicht vor, angezeigt wird die Video-Kennung.'
   },
   {
+    // id, storageKey und CSS-Klasse heißen weiterhin "buddhismus", damit bestehende
+    // Sprungpunkte und gespeicherte Zustände gültig bleiben. Nur die sichtbaren
+    // Bezeichnungen wurden am 2026-08-07 auf "Lama Ole Nydahl" umgestellt.
     id: 'buddhismus',
-    label: 'Buddhismus',
+    label: 'Lama Ole Nydahl',
     storageKey: 'buddhismus_videos_v1',
     seed: BUDDHISMUS_VIDEOS,
     synced: true,
-    eyebrow: 'Videothek · Buddhismus',
-    titel: 'Buddhismus',
-    hinweis: 'Vorträge von Lama Ole Nydahl zu Meditation, Geist, Wirklichkeit und Partnerschaft, überwiegend vom Kanal „Diamond Way Buddhism". Die Reihe „Tiefsinnige Fragen" liegt in der Sammlung „Buddhismus · Ayya Khema". Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+    eyebrow: 'Videothek · Lama Ole Nydahl',
+    titel: 'Lama Ole Nydahl, Diamantweg-Buddhismus',
+    hinweis: 'Vorträge zu Meditation, Geist, Wirklichkeit und Partnerschaft, überwiegend vom Kanal „Diamond Way Buddhism". Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   },
   {
     id: 'ayyakhema',
-    label: 'Buddhismus · Ayya Khema',
+    label: 'Ayya Khema',
     storageKey: 'ayya_khema_videos_v1',
     seed: AYYA_KHEMA_VIDEOS,
     synced: true,
-    eyebrow: 'Videothek · Buddhismus, Ayya Khema',
+    eyebrow: 'Videothek · Ayya Khema',
     titel: 'Ayya Khema, Vorträge und geleitete Meditationen',
-    hinweis: 'Unterkategorie zu Buddhismus. Vollständige deutschsprachige Vortragsreihe von Ayya Khema, Quelle ist die Playlist des Kanals „Buddhas Lehre", am Ende ergänzt um die eigenen Mitschnitte der Reihe „Tiefsinnige Fragen". Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+    hinweis: 'Vollständige deutschsprachige Vortragsreihe, Quelle ist die Playlist des Kanals „Buddhas Lehre", am Ende ergänzt um die eigenen Mitschnitte der Reihe „Tiefsinnige Fragen". Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   },
   {
     id: 'coachinggrundlagen',

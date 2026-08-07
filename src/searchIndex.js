@@ -444,16 +444,16 @@ function buildIndex(){
     key: 'videothek-buddhismus',
     tab: 'videothek',
     openId: 'buddhismus',
-    titel: 'Videothek · Buddhismus',
+    titel: 'Videothek · Lama Ole Nydahl',
     kontext: 'Videothek',
-    snippet: 'Lama Ole Nydahl, Diamantweg',
+    snippet: 'Diamantweg-Buddhismus, Meditation, Geist',
     matchText: ['Buddhismus', 'Lama Ole Nydahl', 'Diamantweg', 'Diamond Way', 'Meditation', 'Geist', 'Wirklichkeit', 'Partnerschaft', ...BUDDHISMUS_VIDEOS.map(v => v.title)].join(' ')
   });
   entries.push({
     key: 'videothek-ayyakhema',
     tab: 'videothek',
     openId: 'ayyakhema',
-    titel: 'Videothek · Buddhismus, Ayya Khema',
+    titel: 'Videothek · Ayya Khema',
     kontext: 'Videothek',
     snippet: 'Vorträge, Kontemplationen und geleitete Meditationen',
     matchText: ['Ayya Khema', 'Buddhismus', 'Metta', 'Kontemplation', 'Meditation', 'Dukkha', 'Anicca', 'achtfacher Pfad', 'Tiefsinnige Fragen', 'Vertiefung', 'Daseinsmerkmale', ...AYYA_KHEMA_VIDEOS.map(v => v.title)].join(' ')

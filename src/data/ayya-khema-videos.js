@@ -1,4 +1,4 @@
-// Feste, geräteübergreifend synchronisierte Liste für den Tab "Buddhismus · Ayya Khema".
+// Feste, geräteübergreifend synchronisierte Liste für den Tab "Ayya Khema".
 // Titel und Reihenfolge sind absichtlich fest im Code hinterlegt statt in localStorage,
 // damit sie auf jedem Gerät identisch sind und stabil bleiben, bis diese Datei geändert
 // und neu deployt wird (siehe VideoListTab.jsx, Prop "synced").

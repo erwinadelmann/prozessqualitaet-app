@@ -1,4 +1,6 @@
-// Feste, geräteübergreifend synchronisierte Liste für den Tab "Buddhismus".
+// Feste, geräteübergreifend synchronisierte Liste für den Tab "Lama Ole Nydahl".
+// Der Tab hieß bis 2026-08-07 "Buddhismus"; Dateiname, Export-Name und storageKey bleiben
+// unverändert, damit bestehende Sprungpunkte und gespeicherte Zustände gültig bleiben.
 // Titel und Reihenfolge sind absichtlich fest im Code hinterlegt statt in localStorage,
 // damit sie auf jedem Gerät identisch sind und stabil bleiben, bis diese Datei geändert
 // und neu deployt wird (siehe VideoListTab.jsx, Prop "synced"). Titel stammen aus den
