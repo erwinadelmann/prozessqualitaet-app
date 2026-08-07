@@ -215,6 +215,11 @@ header p.sub{
    analog zur Lösung bei Eckhart Tolle und Eckhart Tolle · Member. */
 .videothek-switch .chip.vs-ayyakhema{ border-color:#c2703d; color:#a35a2e; background:rgba(194,112,61,0.05); border-style:dotted; }
 .videothek-switch .chip.vs-ayyakhema.active{ background:#a35a2e; border-color:#a35a2e; color:#fff; border-style:solid; }
+/* Silvana Schmitt: gedämpftes Beere als 21. Sammlungsfarbe. Die Markenpalette ist damit
+   längst verlassen, siehe Kommentar oben; der Ton ist bewusst so gewählt, dass er mit
+   keinem der bestehenden Chips verwechselbar ist. */
+.videothek-switch .chip.vs-silvanaschmitt{ border-color:#a05a72; color:#a05a72; background:rgba(160,90,114,0.1); }
+.videothek-switch .chip.vs-silvanaschmitt.active{ background:#a05a72; border-color:#a05a72; color:#fff; }
 .videothek-switch .chip.vs-coachinggrundlagen{ border-color:#3f7d85; color:#3f7d85; background:rgba(63,125,133,0.1); }
 .videothek-switch .chip.vs-coachinggrundlagen.active{ background:#3f7d85; border-color:#3f7d85; color:#fff; }
 

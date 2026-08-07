@@ -39,6 +39,7 @@ import { ECKHART_TOLLE_MEMBER_VIDEOS } from './data/eckhart-tolle-member-videos.
 import { BUDDHISMUS_VIDEOS } from './data/buddhismus-videos.js';
 import { AYYA_KHEMA_VIDEOS } from './data/ayya-khema-videos.js';
 import { COACHING_GRUNDLAGEN_VIDEOS } from './data/coaching-grundlagen-videos.js';
+import { SILVANA_SCHMITT_VIDEOS } from './data/silvana-schmitt-videos.js';
 
 function buildIndex(){
   const entries = [];
@@ -464,7 +465,16 @@ function buildIndex(){
     titel: 'Videothek · Coaching-Grundlagen',
     kontext: 'Videothek',
     snippet: 'Rollenklärung, Modelle, lösungsorientierte Haltung',
-    matchText: ['Coaching', 'Beratung', 'OK-OK-Modell', 'Seitenmodell', 'Ulrich Clement', 'Trauma trifft Bühne', ...COACHING_GRUNDLAGEN_VIDEOS.map(v => v.title)].join(' ')
+    matchText: ['Coaching', 'Beratung', 'OK-OK-Modell', 'Seitenmodell', 'Ulrich Clement', ...COACHING_GRUNDLAGEN_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-silvanaschmitt',
+    tab: 'videothek',
+    openId: 'silvanaschmitt',
+    titel: 'Videothek · Silvana Schmitt',
+    kontext: 'Videothek',
+    snippet: 'Trauma trifft Bühne, Präsenz, Stimme, Ausdruck',
+    matchText: ['Silvana Schmitt', 'Trauma trifft Bühne', 'Bühnenpräsenz', 'Präsenz', 'Stimme', 'Ausdruck', 'Regulation', 'Autonomie', 'Blockaden', ...SILVANA_SCHMITT_VIDEOS.map(v => v.title)].join(' ')
   });
 
   return entries;

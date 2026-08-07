@@ -20,6 +20,7 @@ import { ECKHART_TOLLE_MEMBER_VIDEOS } from '../data/eckhart-tolle-member-videos
 import { BUDDHISMUS_VIDEOS } from '../data/buddhismus-videos.js';
 import { AYYA_KHEMA_VIDEOS } from '../data/ayya-khema-videos.js';
 import { COACHING_GRUNDLAGEN_VIDEOS } from '../data/coaching-grundlagen-videos.js';
+import { SILVANA_SCHMITT_VIDEOS } from '../data/silvana-schmitt-videos.js';
 
 // Bündelt die Video-Sammlungen unter einem Tab, damit die Tab-Leiste bei zwei
 // übersichtlichen Zeilen bleibt statt mit jeder neuen Sammlung eine weitere Spalte zu
@@ -235,6 +236,16 @@ const SAMMLUNGEN = [
     eyebrow: 'Videothek · Coaching-Grundlagen',
     titel: 'Coaching-Grundlagen',
     hinweis: 'Methodenübergreifende Grundlagen: Rollenklärung, Modelle und lösungsorientierte Haltung. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'silvanaschmitt',
+    label: 'Silvana Schmitt',
+    storageKey: 'silvana_schmitt_videos_v1',
+    seed: SILVANA_SCHMITT_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Silvana Schmitt',
+    titel: 'Silvana Schmitt, Trauma und Bühnenpräsenz',
+    hinweis: 'Die vollständige Podcast-Reihe „Trauma trifft Bühne" zu Sicherheit, Körper, Präsenz, Stimme und Ausdruck, aufsteigend nach Folgennummer sortiert. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   }
 ];
 
