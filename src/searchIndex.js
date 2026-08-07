@@ -37,6 +37,7 @@ import { LEBENSWEISHEITEN_VIDEOS } from './data/lebensweisheiten-videos.js';
 import { ECKHART_TOLLE_VIDEOS } from './data/eckhart-tolle-videos.js';
 import { ECKHART_TOLLE_MEMBER_VIDEOS } from './data/eckhart-tolle-member-videos.js';
 import { BUDDHISMUS_VIDEOS } from './data/buddhismus-videos.js';
+import { AYYA_KHEMA_VIDEOS } from './data/ayya-khema-videos.js';
 import { COACHING_GRUNDLAGEN_VIDEOS } from './data/coaching-grundlagen-videos.js';
 
 function buildIndex(){
@@ -446,6 +447,15 @@ function buildIndex(){
     kontext: 'Videothek',
     snippet: 'Achtfacher Pfad, Lama Ole Nydahl',
     matchText: ['Buddhismus', 'achtfacher Pfad', 'Tiefsinnige Fragen', 'Lama Ole Nydahl', 'Tugend', ...BUDDHISMUS_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-ayyakhema',
+    tab: 'videothek',
+    openId: 'ayyakhema',
+    titel: 'Videothek · Buddhismus, Ayya Khema',
+    kontext: 'Videothek',
+    snippet: 'Vorträge, Kontemplationen und geleitete Meditationen',
+    matchText: ['Ayya Khema', 'Buddhismus', 'Metta', 'Kontemplation', 'Meditation', 'Dukkha', 'Anicca', 'achtfacher Pfad', 'Tiefsinnige Fragen', 'Vertiefung', 'Daseinsmerkmale', ...AYYA_KHEMA_VIDEOS.map(v => v.title)].join(' ')
   });
   entries.push({
     key: 'videothek-coachinggrundlagen',

@@ -5,7 +5,10 @@
 // echten YouTube-Video-Titeln (Quelle: YouTube-oEmbed-API), hier ins Deutsche übertragen,
 // da die Originaltitel durchgehend englisch sind. Die ersten drei Videos liegen als
 // Mitschnitte auf Erwin Adelmanns eigenem Kanal (@ErwinAdelmann), die übrigen stammen vom
-// offiziellen Kanal @EckhartTolle. Stand: 2026-08-05.
+// offiziellen Kanal @EckhartTolle. Das zuletzt ergänzte Gespräch zu "A New Earth"
+// stammt vom Kanal @Oprah (Oprah's Book Club), inhaltlich eindeutig Eckhart Tolle,
+// am 2026-08-07 von Erwin ausdrücklich für diese Sammlung bestätigt.
+// Stand: 2026-08-07.
 export const ECKHART_TOLLE_VIDEOS = [
   { url: 'https://youtu.be/YkPTspJjJRg', title: 'Das Paradoxon der bewussten Manifestation' },
   { url: 'https://youtu.be/FsqOGv8HOkg', title: 'Wie man mit negativen Emotionen umgeht' },
@@ -41,5 +44,6 @@ export const ECKHART_TOLLE_VIDEOS = [
   { url: 'https://youtu.be/QOo_TWXENKY', title: 'Den Verstand missbrauchen' },
   { url: 'https://youtu.be/v9FJq2u2V9g', title: 'Für das Ego ist Drama gut' },
   { url: 'https://youtu.be/UHpyLZXN8Y8', title: 'Die Last loslassen' },
-  { url: 'https://youtu.be/RFZ2kdCD1jw', title: 'Warum menschliches Bewusstsein nichts mit künstlicher Intelligenz zu tun hat' }
+  { url: 'https://youtu.be/RFZ2kdCD1jw', title: 'Warum menschliches Bewusstsein nichts mit künstlicher Intelligenz zu tun hat' },
+  { url: 'https://youtu.be/EFyMXM398YI', title: 'Eckhart Tolle, „Eine neue Erde", Oprahs Buchclub' }
 ];

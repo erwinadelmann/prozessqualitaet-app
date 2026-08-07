@@ -18,6 +18,7 @@ import { LEBENSWEISHEITEN_VIDEOS } from '../data/lebensweisheiten-videos.js';
 import { ECKHART_TOLLE_VIDEOS } from '../data/eckhart-tolle-videos.js';
 import { ECKHART_TOLLE_MEMBER_VIDEOS } from '../data/eckhart-tolle-member-videos.js';
 import { BUDDHISMUS_VIDEOS } from '../data/buddhismus-videos.js';
+import { AYYA_KHEMA_VIDEOS } from '../data/ayya-khema-videos.js';
 import { COACHING_GRUNDLAGEN_VIDEOS } from '../data/coaching-grundlagen-videos.js';
 
 // Bündelt die Video-Sammlungen unter einem Tab, damit die Tab-Leiste bei zwei
@@ -214,6 +215,16 @@ const SAMMLUNGEN = [
     eyebrow: 'Videothek · Buddhismus',
     titel: 'Buddhismus',
     hinweis: 'Die Reihe „Tiefsinnige Fragen" zum edlen achtfachen Pfad sowie Vorträge von Lama Ole Nydahl. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'ayyakhema',
+    label: 'Buddhismus · Ayya Khema',
+    storageKey: 'ayya_khema_videos_v1',
+    seed: AYYA_KHEMA_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Buddhismus, Ayya Khema',
+    titel: 'Ayya Khema, Vorträge und geleitete Meditationen',
+    hinweis: 'Unterkategorie zu Buddhismus. Vollständige deutschsprachige Vortragsreihe von Ayya Khema, Quelle ist die Playlist des Kanals „Buddhas Lehre". Enthält die Reihe „Tiefsinnige Fragen" in anderen Aufnahmen als der Tab Buddhismus. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   },
   {
     id: 'coachinggrundlagen',
