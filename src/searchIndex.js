@@ -35,6 +35,7 @@ import { HOTEL_MATZE_VIDEOS } from './data/hotel-matze-videos.js';
 import { EFT_VIDEOS } from './data/eft-videos.js';
 import { LEBENSWEISHEITEN_VIDEOS } from './data/lebensweisheiten-videos.js';
 import { ECKHART_TOLLE_VIDEOS } from './data/eckhart-tolle-videos.js';
+import { ECKHART_TOLLE_MEMBER_VIDEOS } from './data/eckhart-tolle-member-videos.js';
 import { BUDDHISMUS_VIDEOS } from './data/buddhismus-videos.js';
 import { COACHING_GRUNDLAGEN_VIDEOS } from './data/coaching-grundlagen-videos.js';
 
@@ -427,6 +428,15 @@ function buildIndex(){
     kontext: 'Videothek',
     snippet: 'Präsenz, Bewusstsein, Gegenwärtigkeit',
     matchText: ['Eckhart Tolle', 'Präsenz', 'Bewusstsein', 'Gegenwart', 'Manifestation', ...ECKHART_TOLLE_VIDEOS.map(v => v.title)].join(' ')
+  });
+  entries.push({
+    key: 'videothek-eckharttollemember',
+    tab: 'videothek',
+    openId: 'eckharttollemember',
+    titel: 'Videothek · Eckhart Tolle, Mitgliederbereich',
+    kontext: 'Videothek',
+    snippet: 'Nicht öffentlich abrufbare Videos, Merkliste',
+    matchText: ['Eckhart Tolle', 'Member', 'Mitgliederbereich', 'nicht öffentlich', ...ECKHART_TOLLE_MEMBER_VIDEOS.map(v => v.title)].join(' ')
   });
   entries.push({
     key: 'videothek-buddhismus',

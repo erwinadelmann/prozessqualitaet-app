@@ -16,6 +16,7 @@ import { HOTEL_MATZE_VIDEOS } from '../data/hotel-matze-videos.js';
 import { EFT_VIDEOS } from '../data/eft-videos.js';
 import { LEBENSWEISHEITEN_VIDEOS } from '../data/lebensweisheiten-videos.js';
 import { ECKHART_TOLLE_VIDEOS } from '../data/eckhart-tolle-videos.js';
+import { ECKHART_TOLLE_MEMBER_VIDEOS } from '../data/eckhart-tolle-member-videos.js';
 import { BUDDHISMUS_VIDEOS } from '../data/buddhismus-videos.js';
 import { COACHING_GRUNDLAGEN_VIDEOS } from '../data/coaching-grundlagen-videos.js';
 
@@ -193,6 +194,16 @@ const SAMMLUNGEN = [
     eyebrow: 'Videothek · Eckhart Tolle',
     titel: 'Eckhart Tolle',
     hinweis: 'Impulse von Eckhart Tolle zu Präsenz, Bewusstsein und Gegenwärtigkeit. Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+  },
+  {
+    id: 'eckharttollemember',
+    label: 'Eckhart Tolle · Member',
+    storageKey: 'eckhart_tolle_member_videos_v1',
+    seed: ECKHART_TOLLE_MEMBER_VIDEOS,
+    synced: true,
+    eyebrow: 'Videothek · Eckhart Tolle, Mitgliederbereich',
+    titel: 'Eckhart Tolle, Mitgliederbereich',
+    hinweis: 'Videos, die ohne Anmeldung bei YouTube nicht abrufbar sind, sehr wahrscheinlich Inhalte aus dem Mitgliederbereich des Kanals. Sie lassen sich hier voraussichtlich nicht abspielen und dienen vorerst als Merkliste. Die echten Titel liegen noch nicht vor, angezeigt wird die Video-Kennung.'
   },
   {
     id: 'buddhismus',
