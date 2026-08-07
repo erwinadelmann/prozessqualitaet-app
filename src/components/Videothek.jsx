@@ -214,7 +214,7 @@ const SAMMLUNGEN = [
     synced: true,
     eyebrow: 'Videothek · Buddhismus',
     titel: 'Buddhismus',
-    hinweis: 'Vorträge von Lama Ole Nydahl. Die Reihe „Tiefsinnige Fragen" liegt jetzt vollständig in der Sammlung „Buddhismus · Ayya Khema". Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
+    hinweis: 'Vorträge von Lama Ole Nydahl zu Meditation, Geist, Wirklichkeit und Partnerschaft, überwiegend vom Kanal „Diamond Way Buddhism". Die Reihe „Tiefsinnige Fragen" liegt in der Sammlung „Buddhismus · Ayya Khema". Reihenfolge und Titel sind fest hinterlegt und auf allen Geräten identisch.'
   },
   {
     id: 'ayyakhema',

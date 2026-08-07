@@ -445,8 +445,8 @@ function buildIndex(){
     openId: 'buddhismus',
     titel: 'Videothek · Buddhismus',
     kontext: 'Videothek',
-    snippet: 'Lama Ole Nydahl',
-    matchText: ['Buddhismus', 'Lama Ole Nydahl', 'Gefühle', ...BUDDHISMUS_VIDEOS.map(v => v.title)].join(' ')
+    snippet: 'Lama Ole Nydahl, Diamantweg',
+    matchText: ['Buddhismus', 'Lama Ole Nydahl', 'Diamantweg', 'Diamond Way', 'Meditation', 'Geist', 'Wirklichkeit', 'Partnerschaft', ...BUDDHISMUS_VIDEOS.map(v => v.title)].join(' ')
   });
   entries.push({
     key: 'videothek-ayyakhema',
